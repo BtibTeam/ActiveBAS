@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+</import>
+<properties>
+
+  <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="gaucheBackgroundCouleurClaire" type="gx:Brush" value="#616161">
+  </property>
+
+  <property name="gaucheBackgroundCouleur" type="gx:Brush" value="#424242">
+  </property>
+
+  <property name="gaucheBackgroundCouleurSombre" type="gx:Brush" value="#212121">
+  </property>
+
+  <property name="enTeteForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="enTeteBackgroundCouleurClaire" type="gx:Brush" value="#039be5">
+  </property>
+
+  <property name="enTeteBackgroundCouleur" type="gx:Brush" value="#0288d1">
+  </property>
+
+  <property name="enTeteBackgroundCouleurSombre" type="gx:Brush" value="#0277bd">
+  </property>
+
+  <property name="vueCentraleForegroundNoire" type="gx:Brush" value="black">
+  </property>
+
+  <property name="vueCentraleBackgroundBlanc" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleurClaire" type="gx:Brush" value="#546e7a">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleur" type="gx:Brush" value="#455a64">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleurSombre" type="gx:Brush" value="#37474f">
+  </property>
+
+  <property name="vueCentraleElementForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleurClaire" type="gx:Brush" value="#1e88e5">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleur" type="gx:Brush" value="#1976d2">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleurSombre" type="gx:Brush" value="#1565c0">
+  </property>
+
+  <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
+  </property>
+
+</properties>
+<content>
+<ScrollPane>
+
+  <CanvasPane name="content" viewSize="1000.0,800.0" scale="fitRatio" minScaleFactor="0.5" maxScaleFactor="1.0">
+
+    <GridPane layout="80.0,100.0,100.0,190.0" columnCount="1" columnAlign="center">
+
+      <Label font="bold underline 12.0pt SansSerif" halign="fill">
+        <ValueBinding ord="$(slotPathOrd)">
+          <ObjectToString name="text" format="%displayName% : "/>
+        </ValueBinding>
+        <PopupBinding ord="station:|$(slotPathOrd)" title="D&#xe9;tails" size="1200.0,800.0"/>
+      </Label>
+
+      <Label font="12.0pt SansSerif" halign="fill">
+        <ValueBinding ord="$(slotPathOrd)">
+          <ObjectToString name="text" format="%out.value%"/>
+        </ValueBinding>
+        <PopupBinding ord="station:|$(slotPathOrd)" title="D&#xe9;tails" size="1200.0,800.0"/>
+      </Label>
+
+      <BoundLabel image="file:^px/kitPxGraphics/Sensors/sensor_duct_bulbtemp_top.png"/>
+
+      <IdBinding id="capteurGaineTemperature"/>
+
+      <PopupBinding ord="station:|$(slotPathOrd)" title="D&#xe9;tails" size="1200.0,800.0"/>
+
+    </GridPane>
+
+    <Label layout="250.0,150.0,70.0,90.0" image="module://kitPxGraphics/Sensors/sensor_mpress.png">
+      <IdBinding id="boitierAmbiance"/>
+    </Label>
+
+  </CanvasPane>
+
+</ScrollPane>
+</content>
+</px>

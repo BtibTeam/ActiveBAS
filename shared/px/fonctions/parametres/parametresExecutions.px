@@ -1,24 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0" media="workbench:WbPxMedia">
+<px version="1.0">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
-  <module name="btibCore"/>
-  <module name="btibVision"/>
-  <module name="converters"/>
   <module name="gx"/>
   <module name="kitPx"/>
-  <module name="vykonPro"/>
-  <module name="workbench"/>
 </import>
 <properties>
-
-  <property name="nomSite" type="baja:String" value="Le rabelais">
-  </property>
-
-  <property name="ordSite" type="baja:Ord" value="station:|slot:/Accueil/Navigation$20G$e9ographique">
-  </property>
 
   <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
   </property>
@@ -92,11 +81,11 @@
 
       <GridPane name="content" columnCount="1" valign="top" rowGap="30.0">
 
-        <Label name="Label" text="Attention aux ex&#xe9;cutions au d&#xe9;marrage et p&#xe9;riodiques sur un JACE.&#xa;Cela peut consid&#xe9;rablement r&#xe9;duire les performances sp&#xe9;cialement sur la base de donn&#xe9;es des alarmes" font="14.0pt SansSerif" foreground="white" halign="left" wordWrapEnabled="true"/>
+        <Label text="Attention aux ex&#xe9;cutions au d&#xe9;marrage et p&#xe9;riodiques sur un JACE.&#xa;Cela peut consid&#xe9;rablement r&#xe9;duire les performances sp&#xe9;cialement sur la base de donn&#xe9;es des alarmes" font="14.0pt SansSerif" foreground="white" halign="left" wordWrapEnabled="true"/>
 
-        <PxInclude name="PxInclude" ord="file:^px/fonctions/parametres/BqltoWidgets_Liste_des_composants_Mise_a_jour.px"/>
+        <PxInclude ord="file:^px/fonctions/parametres/BqltoWidgets_Liste_des_composants_Mise_a_jour.px"/>
 
-        <SaveButton name="SaveButton" image="module://icons/x16/save.png" foreground="#484848" background="white">
+        <SaveButton image="module://icons/x16/save.png" foreground="#484848" background="white">
           <WsAnnotation name="wsAnnotation" value="14,14,8"/>
         </SaveButton>
 

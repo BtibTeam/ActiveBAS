@@ -1,23 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0" media="workbench:WbPxMedia">
+<px version="1.0">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
-  <module name="btibCore"/>
   <module name="btibVision"/>
-  <module name="converters"/>
   <module name="gx"/>
-  <module name="kitPx"/>
-  <module name="vykonPro"/>
   <module name="workbench"/>
 </import>
 <properties>
 
   <property name="nomSite" type="baja:String" value="Le rabelais">
-  </property>
-
-  <property name="ordSite" type="baja:Ord" value="station:|slot:/Accueil/Navigation$20G$e9ographique">
   </property>
 
   <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
@@ -92,14 +85,14 @@
 
       <GridPane name="content" columnCount="1" valign="top" halign="fill" columnAlign="fill" rowGap="20.0" stretchColumn="0">
 
-        <BqlToWidgetsView name="BqlToWidgetsView">
-          <WbViewBinding name="WbViewBinding" ord="station:|slot:/Accueil/Param$e8tres$20stations/Liste$20des$20param$e8tres"/>
+        <BqlToWidgetsView>
+          <WbViewBinding ord="station:|slot:/Accueil/Param$e8tres$20stations/Liste$20des$20param$e8tres"/>
         </BqlToWidgetsView>
 
-        <Line name="Line" stroke="white" pen="0.5" geom="0.0,0.0 1600.0,0.0"/>
+        <Line stroke="white" pen="0.5" geom="0.0,0.0 1600.0,0.0"/>
 
-        <BqlToWidgetsView name="BqlToWidgetsView1">
-          <WbViewBinding name="WbViewBinding" ord="station:|slot:/Accueil/Param$e8tres$20stations/Liste$20des$20aspects"/>
+        <BqlToWidgetsView>
+          <WbViewBinding ord="station:|slot:/Accueil/Param$e8tres$20stations/Liste$20des$20aspects"/>
         </BqlToWidgetsView>
 
       </GridPane>

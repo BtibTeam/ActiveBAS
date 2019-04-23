@@ -9,12 +9,6 @@
 </import>
 <properties>
 
-  <property name="nomSite" type="baja:String" value="Le rabelais">
-  </property>
-
-  <property name="ordSite" type="baja:Ord" value="station:|slot:/Accueil/Navigation$20G$e9ographique">
-  </property>
-
   <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
   </property>
 
@@ -116,6 +110,15 @@
       <Picture layout="485.0,245.0,50.0,40.0" image="file:^images/icones/moteur.svg" scale="fitRatio"/>
 
     </CanvasPane>
+
+  </CanvasPane>
+
+  <PxInclude name="right" ord="file:^px/menus/droite.px"/>
+
+</EdgePane>
+</content>
+</px>
+anvasPane>
 
   </CanvasPane>
 

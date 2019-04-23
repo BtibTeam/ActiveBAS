@@ -1,24 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0" media="workbench:WbPxMedia">
+<px version="1.0">
 <import>
-  <module name="alarm"/>
   <module name="baja"/>
   <module name="bajaui"/>
-  <module name="btibCore"/>
-  <module name="btibVision"/>
-  <module name="converters"/>
   <module name="gx"/>
-  <module name="kitPx"/>
-  <module name="vykonPro"/>
-  <module name="workbench"/>
 </import>
 <properties>
 
   <property name="nomSite" type="baja:String" value="Le rabelais">
-  </property>
-
-  <property name="ordSite" type="baja:Ord" value="station:|slot:/Accueil/Navigation$20G$e9ographique">
   </property>
 
   <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
@@ -91,9 +81,9 @@
 
     <CanvasPane name="center" viewSize="1300.0,800.0" minScaleFactor="0.5" maxScaleFactor="1.0" valign="top" background="#37474f">
 
-      <Label name="Label" layout="150.0,40.0,670.0,20.0" text="D&#xe9;finissez ici les priorit&#xe9;s pour chaque classe d&#x27;alarmes et chaque transition" foreground="white" halign="left"/>
+      <Label layout="150.0,40.0,670.0,20.0" text="D&#xe9;finissez ici les priorit&#xe9;s pour chaque classe d&#x27;alarmes et chaque transition" foreground="white" halign="left"/>
 
-      <PxInclude name="PxInclude" layout="50.0,80.0,910.0,650.0" ord="file:^px/fonctions/parametres/Liste_classe_d_alarmes.px"/>
+      <PxInclude layout="50.0,80.0,910.0,650.0" ord="file:^px/fonctions/parametres/Liste_classe_d_alarmes.px"/>
 
     </CanvasPane>
 

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="btibVision"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+</import>
+<properties>
+
+  <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="gaucheBackgroundCouleurClaire" type="gx:Brush" value="#616161">
+  </property>
+
+  <property name="gaucheBackgroundCouleur" type="gx:Brush" value="#424242">
+  </property>
+
+  <property name="gaucheBackgroundCouleurSombre" type="gx:Brush" value="#212121">
+  </property>
+
+  <property name="enTeteForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="enTeteBackgroundCouleurClaire" type="gx:Brush" value="#039be5">
+  </property>
+
+  <property name="enTeteBackgroundCouleur" type="gx:Brush" value="#0288d1">
+  </property>
+
+  <property name="enTeteBackgroundCouleurSombre" type="gx:Brush" value="#0277bd">
+  </property>
+
+  <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
+  </property>
+
+  <property name="vueCentraleForegroundNoire" type="gx:Brush" value="black">
+  </property>
+
+  <property name="vueCentraleBackgroundBlanc" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleurClaire" type="gx:Brush" value="#546e7a">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleur" type="gx:Brush" value="#455a64">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleurSombre" type="gx:Brush" value="#37474f">
+  </property>
+
+  <property name="vueCentraleElementForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleurClaire" type="gx:Brush" value="#1e88e5">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleur" type="gx:Brush" value="#1976d2">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleurSombre" type="gx:Brush" value="#1565c0">
+  </property>
+
+</properties>
+<content>
+<BorderPane padding="0.0" border="1.0 solid null">
+
+  <OverCanvasPane name="content" viewSize="230.0,60.0" background="#039be5" overBackground="#0288d1">
+
+    <BoundLabel layout="30.0,0.0,140.0,20.0" font="12.0pt Trebuchet MS" foreground="white" halign="left">
+      <BoundLabelBinding ord="$(lien)" statusEffect="none">
+        <ObjectToString name="text" format="%time%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Picture layout="10.0,2.0,16.0,16.0" scale="fitRatio">
+      <ValueBinding ord="$(lien)/lightIcon">
+        <OrdToImage name="image"/>
+      </ValueBinding>
+    </Picture>
+
+    <BoundLabel layout="10.0,20.0,210.0,20.0" font="bold 12.0pt SansSerif" foreground="white" halign="left">
+      <BoundLabelBinding ord="$(lien)" statusEffect="none">
+        <ObjectToString name="text" format="%source%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="80.0,40.0,140.0,20.0" foreground="white" halign="left">
+      <BoundLabelBinding ord="$(lien)" statusEffect="none">
+        <ObjectToString name="text" format="%message%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="10.0,40.0,70.0,20.0" foreground="white" halign="left">
+      <BoundLabelBinding ord="$(lien)" statusEffect="none">
+        <ObjectToString name="text" format="%ackState%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <PxTemplateInfo name="templateInfo" templateName="BandeauAlarmesVert" vendor="B.tib" version="1.0"/>
+
+    <ImageButton layout="175.0,0.0,50.0,20.0" text="Acq." image="" background="white" valign="fill" disabled="">
+      <ActionBinding ord="$(lien)/ack" widgetEvent="actionPerformed"/>
+      <ValueBinding ord="$(lien)/ackState">
+        <IEnumToSimple name="visible" map="baja:Boolean 0,2=false;default=true;"/>
+      </ValueBinding>
+    </ImageButton>
+
+  </OverCanvasPane>
+
+</BorderPane>
+</content>
+</px>
