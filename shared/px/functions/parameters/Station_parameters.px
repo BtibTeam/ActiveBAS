@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="btibVision"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+</import>
+<properties>
+
+  <property name="bqlToWidgetsHandle" type="baja:String" value="1c637">
+  </property>
+
+</properties>
+<content>
+<ScrollPane viewportBackground="#37474f" borderPolicy="never">
+
+  <GridPane name="content" columnCount="4" halign="left" columnGap="30.0">
+
+    <OverCanvasPane viewSize="250.0,200.0" background="#6a1b9a" overBackground="#632588" radius="8.0px 8.0px 8.0px 8.0px">
+
+      <Label layout="20.0,30.0,210.0,40.0" text="Localization" image="" font="18.0pt Calibri" foreground="white" wordWrapEnabled="true">
+        <ValueBinding ord="slot:/Services/BtibService/aspectContainer/localization" hyperlink="slot:/Services/BtibService/aspectContainer/localization"/>
+      </Label>
+
+      <Picture layout="100.0,90.0,50.0,50.0" image="" scale="fitRatio">
+        <ValueBinding ord="slot:/Services/BtibService/aspectContainer/localization" hyperlink="slot:/Services/BtibService/aspectContainer/localization"/>
+        <ValueBinding ord="slot:/Services/BtibService/aspectContainer/localization/lightAspectIcon">
+          <OrdToImage name="image"/>
+        </ValueBinding>
+      </Picture>
+
+      <ValueBinding ord="slot:/Services/BtibService/aspectContainer/localization" hyperlink="slot:/Services/BtibService/aspectContainer/localization"/>
+
+    </OverCanvasPane>
+
+    <OverCanvasPane viewSize="250.0,200.0" background="#6a1b9a" overBackground="#632588" radius="8.0px 8.0px 8.0px 8.0px">
+
+      <Label layout="20.0,30.0,210.0,40.0" text="Nature" image="" font="18.0pt Calibri" foreground="white" wordWrapEnabled="true">
+        <ValueBinding ord="slot:/Services/BtibService/aspectContainer/Nature" hyperlink="slot:/Services/BtibService/aspectContainer/Nature"/>
+      </Label>
+
+      <Picture layout="100.0,90.0,50.0,50.0" image="" scale="fitRatio">
+        <ValueBinding ord="slot:/Services/BtibService/aspectContainer/Nature" hyperlink="slot:/Services/BtibService/aspectContainer/Nature"/>
+        <ValueBinding ord="slot:/Services/BtibService/aspectContainer/Nature/lightAspectIcon">
+          <OrdToImage name="image"/>
+        </ValueBinding>
+      </Picture>
+
+      <ValueBinding ord="slot:/Services/BtibService/aspectContainer/Nature" hyperlink="slot:/Services/BtibService/aspectContainer/Nature"/>
+
+    </OverCanvasPane>
+
+    <OverCanvasPane viewSize="250.0,200.0" background="#6a1b9a" overBackground="#632588" radius="8.0px 8.0px 8.0px 8.0px">
+
+      <Label layout="20.0,30.0,210.0,40.0" text="Subsystem" image="" font="18.0pt Calibri" foreground="white" wordWrapEnabled="true">
+        <ValueBinding ord="slot:/Services/BtibService/aspectContainer/subsystem" hyperlink="slot:/Services/BtibService/aspectContainer/subsystem"/>
+      </Label>
+
+      <Picture layout="100.0,90.0,50.0,50.0" image="" scale="fitRatio">
+        <ValueBinding ord="slot:/Services/BtibService/aspectContainer/subsystem" hyperlink="slot:/Services/BtibService/aspectContainer/subsystem"/>
+        <ValueBinding ord="slot:/Services/BtibService/aspectContainer/subsystem/lightAspectIcon">
+          <OrdToImage name="image"/>
+        </ValueBinding>
+      </Picture>
+
+      <ValueBinding ord="slot:/Services/BtibService/aspectContainer/subsystem" hyperlink="slot:/Services/BtibService/aspectContainer/subsystem"/>
+
+    </OverCanvasPane>
+
+    <OverCanvasPane viewSize="250.0,200.0" background="#6a1b9a" overBackground="#632588" radius="8.0px 8.0px 8.0px 8.0px">
+
+      <Label layout="20.0,30.0,210.0,40.0" text="Equipment" image="" font="18.0pt Calibri" foreground="white" wordWrapEnabled="true">
+        <ValueBinding ord="slot:/Services/BtibService/aspectContainer/equipment" hyperlink="slot:/Services/BtibService/aspectContainer/equipment"/>
+      </Label>
+
+      <Picture layout="100.0,90.0,50.0,50.0" image="" scale="fitRatio">
+        <ValueBinding ord="slot:/Services/BtibService/aspectContainer/equipment" hyperlink="slot:/Services/BtibService/aspectContainer/equipment"/>
+        <ValueBinding ord="slot:/Services/BtibService/aspectContainer/equipment/lightAspectIcon">
+          <OrdToImage name="image"/>
+        </ValueBinding>
+      </Picture>
+
+      <ValueBinding ord="slot:/Services/BtibService/aspectContainer/equipment" hyperlink="slot:/Services/BtibService/aspectContainer/equipment"/>
+
+    </OverCanvasPane>
+
+  </GridPane>
+
+</ScrollPane>
+</content>
+</px>

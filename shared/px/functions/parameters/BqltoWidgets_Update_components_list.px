@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+  <module name="workbench"/>
+</import>
+<properties>
+
+  <property name="bqlToWidgetsHandle" type="baja:String" value="1b23a">
+  </property>
+
+</properties>
+<content>
+<ScrollPane viewportBackground="#37474f" borderPolicy="never">
+
+  <GridPane name="content" columnCount="5" valign="top" rowAlign="top" columnGap="30.0">
+
+    <CanvasPane viewSize="300.0,200.0" background="white">
+
+      <GridPane layout="10.0,95.0,280.0,80.0" columnGap="6.0">
+
+        <Label text="LowRate" image="" font="bold 12.0pt SansSerif" foreground="black" halign="left"/>
+
+        <GenericFieldEditor>
+          <WbFieldEditorBinding ord="station:|slot:/Home/Alarms/Statistics/Update$20Config/lowRate"/>
+        </GenericFieldEditor>
+
+        <Label text="NormalRate" image="" font="bold 12.0pt SansSerif" foreground="black" halign="left"/>
+
+        <GenericFieldEditor>
+          <WbFieldEditorBinding ord="station:|slot:/Home/Alarms/Statistics/Update$20Config/normalRate"/>
+        </GenericFieldEditor>
+
+        <Label text="FastRate" image="" font="bold 12.0pt SansSerif" foreground="black" halign="left"/>
+
+        <GenericFieldEditor>
+          <WbFieldEditorBinding ord="station:|slot:/Home/Alarms/Statistics/Update$20Config/fastRate"/>
+        </GenericFieldEditor>
+
+        <Label text="Execute on start" image="" font="bold 12.0pt SansSerif" foreground="black" halign="left"/>
+
+        <GenericFieldEditor>
+          <WbFieldEditorBinding ord="station:|slot:/Home/Alarms/Statistics/Update$20Config/executeOnStart"/>
+        </GenericFieldEditor>
+
+      </GridPane>
+
+      <Label layout="20.0,20.0,250.0,50.0" image="" font="bold 16.0pt SansSerif" foreground="black" wordWrapEnabled="true">
+        <ValueBinding ord="station:|slot:/Home/Alarms/Statistics/Update$20Config">
+          <ObjectToString name="text" format="%description%"/>
+        </ValueBinding>
+      </Label>
+
+      <Line stroke="#9d9d9d" geom="20.0,80.0 280.0,80.0"/>
+
+    </CanvasPane>
+
+    <CanvasPane viewSize="300.0,200.0" background="white">
+
+      <GridPane layout="10.0,95.0,280.0,80.0" columnGap="6.0">
+
+        <Label text="LowRate" image="" font="bold 12.0pt SansSerif" foreground="black" halign="left"/>
+
+        <GenericFieldEditor>
+          <WbFieldEditorBinding ord="station:|slot:/Home/System$20Navigation/Update$20Config/lowRate"/>
+        </GenericFieldEditor>
+
+        <Label text="NormalRate" image="" font="bold 12.0pt SansSerif" foreground="black" halign="left"/>
+
+        <GenericFieldEditor>
+          <WbFieldEditorBinding ord="station:|slot:/Home/System$20Navigation/Update$20Config/normalRate"/>
+        </GenericFieldEditor>
+
+        <Label text="FastRate" image="" font="bold 12.0pt SansSerif" foreground="black" halign="left"/>
+
+        <GenericFieldEditor>
+          <WbFieldEditorBinding ord="station:|slot:/Home/System$20Navigation/Update$20Config/fastRate"/>
+        </GenericFieldEditor>
+
+        <Label text="Execute on start" image="" font="bold 12.0pt SansSerif" foreground="black" halign="left"/>
+
+        <GenericFieldEditor>
+          <WbFieldEditorBinding ord="station:|slot:/Home/System$20Navigation/Update$20Config/executeOnStart"/>
+        </GenericFieldEditor>
+
+      </GridPane>
+
+      <Label layout="20.0,20.0,250.0,50.0" image="" font="bold 16.0pt SansSerif" foreground="black" wordWrapEnabled="true">
+        <ValueBinding ord="station:|slot:/Home/System$20Navigation/Update$20Config">
+          <ObjectToString name="text" format="%description%"/>
+        </ValueBinding>
+      </Label>
+
+      <Line stroke="#9d9d9d" geom="20.0,80.0 280.0,80.0"/>
+
+    </CanvasPane>
+
+    <CanvasPane viewSize="300.0,200.0" background="white">
+
+      <GridPane layout="10.0,95.0,280.0,80.0" columnGap="6.0">
+
+        <Label text="LowRate" image="" font="bold 12.0pt SansSerif" foreground="black" halign="left"/>
+
+        <GenericFieldEditor>
+          <WbFieldEditorBinding ord="station:|slot:/Home/Point$20Lists/Update$20Config/lowRate"/>
+        </GenericFieldEditor>
+
+        <Label text="NormalRate" image="" font="bold 12.0pt SansSerif" foreground="black" halign="left"/>
+
+        <GenericFieldEditor>
+          <WbFieldEditorBinding ord="station:|slot:/Home/Point$20Lists/Update$20Config/normalRate"/>
+        </GenericFieldEditor>
+
+        <Label text="FastRate" image="" font="bold 12.0pt SansSerif" foreground="black" halign="left"/>
+
+        <GenericFieldEditor>
+          <WbFieldEditorBinding ord="station:|slot:/Home/Point$20Lists/Update$20Config/fastRate"/>
+        </GenericFieldEditor>
+
+        <Label text="Execute on start" image="" font="bold 12.0pt SansSerif" foreground="black" halign="left"/>
+
+        <GenericFieldEditor>
+          <WbFieldEditorBinding ord="station:|slot:/Home/Point$20Lists/Update$20Config/executeOnStart"/>
+        </GenericFieldEditor>
+
+      </GridPane>
+
+      <Label layout="20.0,20.0,250.0,50.0" image="" font="bold 16.0pt SansSerif" foreground="black" wordWrapEnabled="true">
+        <ValueBinding ord="station:|slot:/Home/Point$20Lists/Update$20Config">
+          <ObjectToString name="text" format="%description%"/>
+        </ValueBinding>
+      </Label>
+
+      <Line stroke="#9d9d9d" geom="20.0,80.0 280.0,80.0"/>
+
+    </CanvasPane>
+
+  </GridPane>
+
+</ScrollPane>
+</content>
+</px>

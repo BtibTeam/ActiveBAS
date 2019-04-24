@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="btibVision"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+  <module name="vykonPro"/>
+  <module name="workbench"/>
+</import>
+<properties>
+
+  <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="gaucheBackgroundCouleurClaire" type="gx:Brush" value="#616161">
+  </property>
+
+  <property name="gaucheBackgroundCouleur" type="gx:Brush" value="#424242">
+  </property>
+
+  <property name="gaucheBackgroundCouleurSombre" type="gx:Brush" value="#212121">
+  </property>
+
+  <property name="enTeteForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="enTeteBackgroundCouleurClaire" type="gx:Brush" value="#039be5">
+  </property>
+
+  <property name="enTeteBackgroundCouleur" type="gx:Brush" value="#0288d1">
+  </property>
+
+  <property name="enTeteBackgroundCouleurSombre" type="gx:Brush" value="#0277bd">
+  </property>
+
+  <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
+  </property>
+
+  <property name="vueCentraleForegroundNoire" type="gx:Brush" value="black">
+  </property>
+
+  <property name="vueCentraleBackgroundBlanc" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleurClaire" type="gx:Brush" value="#546e7a">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleur" type="gx:Brush" value="#455a64">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleurSombre" type="gx:Brush" value="#37474f">
+    <target ord="slot:content/center/fill"/>
+  </property>
+
+  <property name="vueCentraleElementForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleurClaire" type="gx:Brush" value="#1e88e5">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleur" type="gx:Brush" value="#1976d2">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleurSombre" type="gx:Brush" value="#1565c0">
+  </property>
+
+</properties>
+<content>
+<ScrollPane>
+
+  <EdgePane name="content">
+
+    <PxInclude name="top" ord="file:^px/menus/haut.px"/>
+
+    <PxInclude name="left" ord="file:^px/menus/gauche.px"/>
+
+    <BorderPane name="center" padding="40.0 10.0 10.0 10.0" fill="#37474f">
+
+      <GridPane name="content" columnCount="1" valign="top" rowGap="30.0">
+
+        <Label name="Label" text="Careful with the executions on start, specifically on a JACE&#xa;It can drasticaly reduce general performance specifically with the alarm database" font="14.0pt SansSerif" foreground="white" halign="left" wordWrapEnabled="true"/>
+
+        <PxInclude name="PxInclude" ord="file:^px/functions/parameters/BqltoWidgets_Update_components_list.px"/>
+
+        <SaveButton name="SaveButton" image="module://icons/x16/save.png" foreground="#484848" background="white">
+          <WsAnnotation name="wsAnnotation" value="14,14,8"/>
+        </SaveButton>
+
+      </GridPane>
+
+    </BorderPane>
+
+    <PxInclude name="right" ord="file:^px/menus/droite.px"/>
+
+  </EdgePane>
+
+</ScrollPane>
+</content>
+</px>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="btibVision"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+</import>
+<properties>
+
+  <property name="bqlToWidgetsHandle" type="baja:String" value="11c8f">
+  </property>
+
+</properties>
+<content>
+<ScrollPane viewportBackground="transparent" borderPolicy="never">
+
+  <GridPane name="content" columnCount="5" halign="left" rowGap="20.0" columnGap="20.0">
+
+    <OverBorderPane fill="#fafafa" overFill="#ebebeb" radius="10.0px 10.0px 10.0px 10.0px">
+
+      <CanvasPane name="content" viewSize="200.0,200.0" minScaleFactor="0.5" maxScaleFactor="1.0">
+
+        <Picture layout="60.0,20.0,80.0,80.0" image="" scale="fitRatio">
+          <ValueBinding ord="module://themeBtib/image/svg/writablePoint_c.svg">
+            <OrdToImage name="image"/>
+          </ValueBinding>
+        </Picture>
+
+        <Label layout="0.0,120.0,200.0,40.0" text="Writable points" image="" font="16.0pt Calibri" foreground="#37474f" wordWrapEnabled="true"/>
+
+        <Label layout="20.0,160.0,160.0,40.0" image="" font="bold 18.0pt Calibri" foreground="#37474f">
+          <ValueBinding ord="slot:/Home/Point$20Lists/Others/Writable$20points/BqlSize">
+            <ObjectToString name="text" format="%Size%"/>
+          </ValueBinding>
+        </Label>
+
+        <Label layout="0.0,0.0,200.0,200.0" image="" foreground="#37474f">
+          <ValueBinding ord="slot:" hyperlink="slot:/Home/Point$20Lists/Others/Writable$20points"/>
+        </Label>
+
+      </CanvasPane>
+
+    </OverBorderPane>
+
+    <OverBorderPane fill="#fafafa" overFill="#ebebeb" radius="10.0px 10.0px 10.0px 10.0px">
+
+      <CanvasPane name="content" viewSize="200.0,200.0" minScaleFactor="0.5" maxScaleFactor="1.0">
+
+        <Picture layout="60.0,20.0,80.0,80.0" image="" scale="fitRatio">
+          <ValueBinding ord="module://themeBtib/image/svg/pointCheck_c.svg">
+            <OrdToImage name="image"/>
+          </ValueBinding>
+        </Picture>
+
+        <Label layout="0.0,120.0,200.0,40.0" text="Checked points" image="" font="16.0pt Calibri" foreground="#37474f" wordWrapEnabled="true"/>
+
+        <Label layout="20.0,160.0,160.0,40.0" image="" font="bold 18.0pt Calibri" foreground="#37474f">
+          <ValueBinding ord="slot:/Home/Point$20Lists/Others/Checked$20points/BqlSize">
+            <ObjectToString name="text" format="%Size%"/>
+          </ValueBinding>
+        </Label>
+
+        <Label layout="0.0,0.0,200.0,200.0" image="" foreground="#37474f">
+          <ValueBinding ord="slot:" hyperlink="slot:/Home/Point$20Lists/Others/Checked$20points"/>
+        </Label>
+
+      </CanvasPane>
+
+    </OverBorderPane>
+
+    <OverBorderPane fill="#fafafa" overFill="#ebebeb" radius="10.0px 10.0px 10.0px 10.0px">
+
+      <CanvasPane name="content" viewSize="200.0,200.0" minScaleFactor="0.5" maxScaleFactor="1.0">
+
+        <Picture layout="60.0,20.0,80.0,80.0" image="" scale="fitRatio">
+          <ValueBinding ord="module://themeBtib/image/svg/elapsedTime_c.svg">
+            <OrdToImage name="image"/>
+          </ValueBinding>
+        </Picture>
+
+        <Label layout="0.0,120.0,200.0,40.0" text="Boolean points with Discrete Totalizer" image="" font="16.0pt Calibri" foreground="#37474f" wordWrapEnabled="true"/>
+
+        <Label layout="20.0,160.0,160.0,40.0" image="" font="bold 18.0pt Calibri" foreground="#37474f">
+          <ValueBinding ord="slot:/Home/Point$20Lists/Others/Boolean$20points$20with$20Discrete$20Totalizer/BqlSize">
+            <ObjectToString name="text" format="%Size%"/>
+          </ValueBinding>
+        </Label>
+
+        <Label layout="0.0,0.0,200.0,200.0" image="" foreground="#37474f">
+          <ValueBinding ord="slot:" hyperlink="slot:/Home/Point$20Lists/Others/Boolean$20points$20with$20Discrete$20Totalizer"/>
+        </Label>
+
+      </CanvasPane>
+
+    </OverBorderPane>
+
+    <OverBorderPane fill="#fafafa" overFill="#ebebeb" radius="10.0px 10.0px 10.0px 10.0px">
+
+      <CanvasPane name="content" viewSize="200.0,200.0" minScaleFactor="0.5" maxScaleFactor="1.0">
+
+        <Picture layout="60.0,20.0,80.0,80.0" image="" scale="fitRatio">
+          <ValueBinding ord="module://themeBtib/image/svg/elapsedTime_c.svg">
+            <OrdToImage name="image"/>
+          </ValueBinding>
+        </Picture>
+
+        <Label layout="0.0,120.0,200.0,40.0" text="Numeric points with Numeric Totalizer" image="" font="16.0pt Calibri" foreground="#37474f" wordWrapEnabled="true"/>
+
+        <Label layout="20.0,160.0,160.0,40.0" image="" font="bold 18.0pt Calibri" foreground="#37474f">
+          <ValueBinding ord="slot:/Home/Point$20Lists/Others/Numeric$20points$20with$20Numeric$20Totalizer/BqlSize">
+            <ObjectToString name="text" format="%Size%"/>
+          </ValueBinding>
+        </Label>
+
+        <Label layout="0.0,0.0,200.0,200.0" image="" foreground="#37474f">
+          <ValueBinding ord="slot:" hyperlink="slot:/Home/Point$20Lists/Others/Numeric$20points$20with$20Numeric$20Totalizer"/>
+        </Label>
+
+      </CanvasPane>
+
+    </OverBorderPane>
+
+  </GridPane>
+
+</ScrollPane>
+</content>
+</px>
