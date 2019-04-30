@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0" media="workbench:WbPxMedia">
+<px version="1.0">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
@@ -11,82 +11,88 @@
 </import>
 <properties>
 
+  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/h1EJV75C3hPA">
+  </property>
+
+  <property name="siteName" type="baja:String" value="QG">
+  </property>
+
+  <property name="lightLogo" type="gx:Image" value="file:^images/logos/logo_w.svg">
+  </property>
+
+  <property name="centralDarkForeground" type="gx:Brush" value="#232323">
+  </property>
+
+  <property name="centralWhiteBackground" type="gx:Brush" value="white">
+  </property>
+
+  <property name="centralColorForeground" type="gx:Brush" value="#f0f0f0">
+  </property>
+
+  <property name="centralLightColorBackground" type="gx:Brush" value="#546e7a">
+  </property>
+
+  <property name="centralColorBackground" type="gx:Brush" value="#455a64">
+  </property>
+
+  <property name="centralDarkColorBackground" type="gx:Brush" value="#37474f">
+  </property>
+
+  <property name="elementColorBackground" type="gx:Brush" value="#1976d2">
+  </property>
+
+  <property name="elementLightColorBackground" type="gx:Brush" value="#1976d2">
+  </property>
+
+  <property name="elementDarkColorBackground" type="gx:Brush" value="#1565c0">
+  </property>
+
+  <property name="elementLightForeground" type="gx:Brush" value="#f9f9f9">
+  </property>
+
+  <property name="leftForeground" type="gx:Brush" value="#f4f4f4">
+  </property>
+
+  <property name="leftLightBackground" type="gx:Brush" value="#616161">
+  </property>
+
+  <property name="leftColorBackground" type="gx:Brush" value="#424242">
+  </property>
+
+  <property name="leftDarkBackground" type="gx:Brush" value="#212121">
+  </property>
+
+  <property name="headerForegroundColor" type="gx:Brush" value="#f7f7f7">
+  </property>
+
+  <property name="headerLightColorBackground" type="gx:Brush" value="#039be5">
+  </property>
+
+  <property name="headerColorBackground" type="gx:Brush" value="#0288d1">
+  </property>
+
+  <property name="headerDarkColorBackground" type="gx:Brush" value="#0277bd">
+  </property>
+
   <property name="nomSite" type="baja:String" value="Le rabelais">
-  </property>
-
-  <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
-  </property>
-
-  <property name="gaucheBackgroundCouleurClaire" type="gx:Brush" value="#616161">
-  </property>
-
-  <property name="gaucheBackgroundCouleur" type="gx:Brush" value="#424242">
-  </property>
-
-  <property name="gaucheBackgroundCouleurSombre" type="gx:Brush" value="#212121">
-  </property>
-
-  <property name="enTeteForegroundCouleur" type="gx:Brush" value="white">
-  </property>
-
-  <property name="enTeteBackgroundCouleurClaire" type="gx:Brush" value="#039be5">
-  </property>
-
-  <property name="enTeteBackgroundCouleur" type="gx:Brush" value="#0288d1">
-  </property>
-
-  <property name="enTeteBackgroundCouleurSombre" type="gx:Brush" value="#0277bd">
-  </property>
-
-  <property name="vueCentraleForegroundNoire" type="gx:Brush" value="black">
-  </property>
-
-  <property name="vueCentraleBackgroundBlanc" type="gx:Brush" value="white">
-  </property>
-
-  <property name="vueCentraleForegroundCouleur" type="gx:Brush" value="white">
-  </property>
-
-  <property name="vueCentraleBackgroundCouleurClaire" type="gx:Brush" value="#546e7a">
-  </property>
-
-  <property name="vueCentraleBackgroundCouleur" type="gx:Brush" value="#455a64">
-  </property>
-
-  <property name="vueCentraleBackgroundCouleurSombre" type="gx:Brush" value="#37474f">
-  </property>
-
-  <property name="vueCentraleElementForegroundCouleur" type="gx:Brush" value="white">
-  </property>
-
-  <property name="vueCentraleElementBackgroundCouleurClaire" type="gx:Brush" value="#1e88e5">
-  </property>
-
-  <property name="vueCentraleElementBackgroundCouleur" type="gx:Brush" value="#1976d2">
-  </property>
-
-  <property name="vueCentraleElementBackgroundCouleurSombre" type="gx:Brush" value="#1565c0">
-  </property>
-
-  <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
   </property>
 
 </properties>
 <content>
 <OverCanvasPane viewSize="250.0,200.0" background="#6a1b9a" overBackground="#632588" radius="8.0px 8.0px 8.0px 8.0px">
 
-  <Label name="Label" layout="20.0,30.0,210.0,40.0" text="$(displayName)" font="18.0pt Calibri" foreground="white" wordWrapEnabled="true">
-    <ValueBinding name="ValueBinding" ord="$(slotPathOrd)" hyperlink="$(slotPathOrd)"/>
+  <Label layout="20.0,30.0,210.0,40.0" text="$(displayName)" font="18.0pt Calibri" foreground="white" wordWrapEnabled="true">
+    <ValueBinding ord="$(slotPathOrd)" hyperlink="$(slotPathOrd)"/>
   </Label>
 
-  <Picture name="Picture" layout="100.0,90.0,50.0,50.0" scale="fitRatio">
-    <ValueBinding name="ValueBinding" ord="$(slotPathOrd)" hyperlink="$(slotPathOrd)"/>
-    <ValueBinding name="ValueBinding1" ord="$(slotPathOrd)/lightAspectIcon">
+  <Picture layout="100.0,90.0,50.0,50.0" scale="fitRatio">
+    <ValueBinding ord="$(slotPathOrd)" hyperlink="$(slotPathOrd)"/>
+    <ValueBinding ord="$(slotPathOrd)/lightAspectIcon">
       <OrdToImage name="image"/>
     </ValueBinding>
   </Picture>
 
-  <ValueBinding name="ValueBinding" ord="$(slotPathOrd)" hyperlink="$(slotPathOrd)"/>
+  <ValueBinding ord="$(slotPathOrd)" hyperlink="$(slotPathOrd)"/>
 
 </OverCanvasPane>
 </content>

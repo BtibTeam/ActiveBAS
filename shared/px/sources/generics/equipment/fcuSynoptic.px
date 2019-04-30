@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="converters"/>
+  <module name="gx"/>
+</import>
+<properties>
+
+  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/h1EJV75C3hPA">
+  </property>
+
+  <property name="siteName" type="baja:String" value="QG">
+  </property>
+
+  <property name="lightLogo" type="gx:Image" value="file:^images/logos/logo_w.svg">
+  </property>
+
+  <property name="centralDarkForeground" type="gx:Brush" value="#232323">
+  </property>
+
+  <property name="centralWhiteBackground" type="gx:Brush" value="white">
+  </property>
+
+  <property name="centralColorForeground" type="gx:Brush" value="#f0f0f0">
+  </property>
+
+  <property name="centralLightColorBackground" type="gx:Brush" value="#546e7a">
+  </property>
+
+  <property name="centralColorBackground" type="gx:Brush" value="#455a64">
+  </property>
+
+  <property name="centralDarkColorBackground" type="gx:Brush" value="#37474f">
+  </property>
+
+  <property name="elementColorBackground" type="gx:Brush" value="#1976d2">
+  </property>
+
+  <property name="elementLightColorBackground" type="gx:Brush" value="#1976d2">
+  </property>
+
+  <property name="elementDarkColorBackground" type="gx:Brush" value="#1565c0">
+  </property>
+
+  <property name="elementLightForeground" type="gx:Brush" value="#f9f9f9">
+  </property>
+
+  <property name="leftForeground" type="gx:Brush" value="#f4f4f4">
+  </property>
+
+  <property name="leftLightBackground" type="gx:Brush" value="#616161">
+  </property>
+
+  <property name="leftColorBackground" type="gx:Brush" value="#424242">
+  </property>
+
+  <property name="leftDarkBackground" type="gx:Brush" value="#212121">
+  </property>
+
+  <property name="headerForegroundColor" type="gx:Brush" value="#f7f7f7">
+  </property>
+
+  <property name="headerLightColorBackground" type="gx:Brush" value="#039be5">
+  </property>
+
+  <property name="headerColorBackground" type="gx:Brush" value="#0288d1">
+  </property>
+
+  <property name="headerDarkColorBackground" type="gx:Brush" value="#0277bd">
+  </property>
+
+  <property name="nomSite" type="baja:String" value="Le rabelais">
+  </property>
+
+</properties>
+<content>
+<CanvasPane viewSize="500.0,300.0">
+
+  <Picture name="Picture" layout="160.0,70.0,170.0,90.0" image="module://kitPxN4svg/Ductwork/Duct_Horz_Short.svg"/>
+
+  <Picture name="Picture1" layout="40.0,70.0,120.0,90.0" image="module://kitPxN4svg/Ductwork/Duct_Horz_End_Left.svg"/>
+
+  <Picture name="Picture2" layout="330.0,70.0,130.0,90.0" image="module://kitPxN4svg/Ductwork/Duct_Horz_End_Right.svg"/>
+
+  <Picture name="Picture3" layout="120.0,70.0,80.0,120.0">
+    <ValueBinding name="ValueBinding" ord="slot:points/Heat$20output">
+      <INumericToSimple name="image" map="gx:Image -inf:20.0=module://kitPxN4svg/Coils/Coils_Cooling_2Way_Bottom/Coils_Cooling_2Way_Bottom_0.svg;20.0:40.0=module://kitPxN4svg/Coils/Coils_Cooling_2Way_Bottom/Coils_Cooling_2Way_Bottom_1.svg;40.0:60.0=module://kitPxN4svg/Coils/Coils_Cooling_2Way_Bottom/Coils_Cooling_2Way_Bottom_2.svg;60.0:80.0=module://kitPxN4svg/Coils/Coils_Cooling_2Way_Bottom/Coils_Cooling_2Way_Bottom_3.svg;80.0:+inf=module://kitPxN4svg/Coils/Coils_Cooling_2Way_Bottom/Coils_Cooling_2Way_Bottom_4.svg;default=module://kitPxN4svg/Coils/Coils_Cooling_2Way_Bottom/Coils_Cooling_2Way_Bottom_0.svg;"/>
+    </ValueBinding>
+  </Picture>
+
+  <Picture name="Picture4" layout="190.0,70.0,80.0,120.0">
+    <ValueBinding name="ValueBinding" ord="slot:points/Cool$20output">
+      <INumericToSimple name="image" map="gx:Image -inf:20.0=module://kitPxN4svg/Coils/Coils_Heating_2Way_Bottom/Coils_Heating_2Way_Bottom_0.svg;20.0:40.0=module://kitPxN4svg/Coils/Coils_Heating_2Way_Bottom/Coils_Heating_2Way_Bottom_1.svg;40.0:60.0=module://kitPxN4svg/Coils/Coils_Heating_2Way_Bottom/Coils_Heating_2Way_Bottom_2.svg;60.0:80.0=module://kitPxN4svg/Coils/Coils_Heating_2Way_Bottom/Coils_Heating_2Way_Bottom_3.svg;80.0:+inf=module://kitPxN4svg/Coils/Coils_Heating_2Way_Bottom/Coils_Heating_2Way_Bottom_4.svg;default=module://kitPxN4svg/Coils/Coils_Heating_2Way_Bottom/Coils_Heating_2Way_Bottom_0.svg;"/>
+    </ValueBinding>
+  </Picture>
+
+  <Picture name="Picture5" layout="270.0,70.0,130.0,90.0">
+    <ValueBinding name="ValueBinding" ord="slot:points/Fan$20state">
+      <IBooleanToSimple name="image">
+        <Image name="trueValue" value="module://kitPxN4svg/Fans/Fans_Horz/Fans_Horz_Right/Fans_Horz_Right_On.svg"/>
+        <Image name="falseValue" value="module://kitPxN4svg/Fans/Fans_Horz/Fans_Horz_Right/Fans_Horz_Right_Off.svg"/>
+      </IBooleanToSimple>
+    </ValueBinding>
+  </Picture>
+
+  <Label name="Label" layout="300.0,190.0,190.0,20.0" font="12.0pt Trebuchet MS" foreground="white" background="#37474f">
+    <ValueBinding name="ValueBinding" ord="slot:points/Space$20Temp">
+      <ObjectToString name="text" format="Zone temperature %out.value%"/>
+    </ValueBinding>
+  </Label>
+
+  <Label name="Label1" layout="300.0,220.0,190.0,20.0" font="12.0pt Trebuchet MS" foreground="white" background="#37474f">
+    <ValueBinding name="ValueBinding" ord="slot:points/Humidity">
+      <ObjectToString name="text" format="Zone relative humidity %out.value%"/>
+    </ValueBinding>
+  </Label>
+
+  <Label name="Label2" layout="40.0,10.0,190.0,30.0" font="bold 16.0pt Trebuchet MS" foreground="#484747" background="#ededed">
+    <ValueBinding name="ValueBinding" ord="slot:">
+      <ObjectToString name="text" format="%displayName%"/>
+    </ValueBinding>
+  </Label>
+
+</CanvasPane>
+</content>
+</px>

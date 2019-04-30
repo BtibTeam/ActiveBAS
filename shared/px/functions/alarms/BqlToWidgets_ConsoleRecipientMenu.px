@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="btibVision"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+</import>
+<properties>
+
+  <property name="bqlToWidgetsHandle" type="baja:String" value="7b53">
+  </property>
+
+</properties>
+<content>
+<ScrollPane viewportBackground="white" borderPolicy="never">
+
+  <GridPane name="content" columnCount="4" valign="top" rowGap="24.0" columnGap="24.0">
+
+    <OverCanvasPane viewSize="250.0,200.0" background="#039be5" overBackground="#02669c">
+
+      <Label layout="0.0,30.0,250.0,40.0" text="General Console" image="" font="20.0pt Calibri" foreground="#f2f2f2">
+        <ValueBinding ord="slot:" hyperlink="station:|slot:/Services/AlarmService/General$20Console"/>
+      </Label>
+
+      <ValueBinding ord="station:|slot:/" hyperlink="station:|slot:/Services/AlarmService/General$20Console"/>
+
+      <Picture layout="85.0,90.0,85.0,85.0" image="" scale="fitRatio">
+        <ValueBinding ord="module://themeBtib|module://themeBtib/image/svg/alarm_w.svg" hyperlink="station:|slot:/Services/AlarmService/General$20Console">
+          <OrdToImage name="image"/>
+        </ValueBinding>
+      </Picture>
+
+    </OverCanvasPane>
+
+    <OverCanvasPane viewSize="250.0,200.0" background="#039be5" overBackground="#02669c">
+
+      <Label layout="0.0,30.0,250.0,40.0" text="HVAC_Console" image="" font="20.0pt Calibri" foreground="#f2f2f2">
+        <ValueBinding ord="slot:" hyperlink="station:|slot:/Services/AlarmService/HVAC_Console"/>
+      </Label>
+
+      <ValueBinding ord="station:|slot:/" hyperlink="station:|slot:/Services/AlarmService/HVAC_Console"/>
+
+      <Picture layout="85.0,90.0,85.0,85.0" image="" scale="fitRatio">
+        <ValueBinding ord="module://themeBtib/image/svg/subsystem/hvac_w.svg" hyperlink="station:|slot:/Services/AlarmService/HVAC_Console">
+          <OrdToImage name="image"/>
+        </ValueBinding>
+      </Picture>
+
+    </OverCanvasPane>
+
+    <OverCanvasPane viewSize="250.0,200.0" background="#039be5" overBackground="#02669c">
+
+      <Label layout="0.0,30.0,250.0,40.0" text="Electricity_Console" image="" font="20.0pt Calibri" foreground="#f2f2f2">
+        <ValueBinding ord="slot:" hyperlink="station:|slot:/Services/AlarmService/Electricity_Console"/>
+      </Label>
+
+      <ValueBinding ord="station:|slot:/" hyperlink="station:|slot:/Services/AlarmService/Electricity_Console"/>
+
+      <Picture layout="85.0,90.0,85.0,85.0" image="" scale="fitRatio">
+        <ValueBinding ord="module://themeBtib/image/svg/subsystem/electricity_w.svg" hyperlink="station:|slot:/Services/AlarmService/Electricity_Console">
+          <OrdToImage name="image"/>
+        </ValueBinding>
+      </Picture>
+
+    </OverCanvasPane>
+
+  </GridPane>
+
+</ScrollPane>
+</content>
+</px>

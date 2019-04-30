@@ -8,61 +8,67 @@
 </import>
 <properties>
 
-  <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
+  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/h1EJV75C3hPA">
   </property>
 
-  <property name="gaucheBackgroundCouleurClaire" type="gx:Brush" value="#616161">
+  <property name="siteName" type="baja:String" value="QG">
   </property>
 
-  <property name="gaucheBackgroundCouleur" type="gx:Brush" value="#424242">
+  <property name="lightLogo" type="gx:Image" value="file:^images/logos/logo_w.svg">
   </property>
 
-  <property name="gaucheBackgroundCouleurSombre" type="gx:Brush" value="#212121">
+  <property name="centralDarkForeground" type="gx:Brush" value="#232323">
   </property>
 
-  <property name="enTeteForegroundCouleur" type="gx:Brush" value="white">
+  <property name="centralWhiteBackground" type="gx:Brush" value="white">
   </property>
 
-  <property name="enTeteBackgroundCouleurClaire" type="gx:Brush" value="#039be5">
+  <property name="centralColorForeground" type="gx:Brush" value="#f0f0f0">
   </property>
 
-  <property name="enTeteBackgroundCouleur" type="gx:Brush" value="#0288d1">
+  <property name="centralLightColorBackground" type="gx:Brush" value="#546e7a">
   </property>
 
-  <property name="enTeteBackgroundCouleurSombre" type="gx:Brush" value="#0277bd">
+  <property name="centralColorBackground" type="gx:Brush" value="#455a64">
   </property>
 
-  <property name="vueCentraleForegroundNoire" type="gx:Brush" value="black">
+  <property name="centralDarkColorBackground" type="gx:Brush" value="#37474f">
   </property>
 
-  <property name="vueCentraleBackgroundBlanc" type="gx:Brush" value="white">
+  <property name="elementColorBackground" type="gx:Brush" value="#1976d2">
   </property>
 
-  <property name="vueCentraleForegroundCouleur" type="gx:Brush" value="white">
+  <property name="elementLightColorBackground" type="gx:Brush" value="#1976d2">
   </property>
 
-  <property name="vueCentraleBackgroundCouleurClaire" type="gx:Brush" value="#546e7a">
+  <property name="elementDarkColorBackground" type="gx:Brush" value="#1565c0">
   </property>
 
-  <property name="vueCentraleBackgroundCouleur" type="gx:Brush" value="#455a64">
+  <property name="elementLightForeground" type="gx:Brush" value="#f9f9f9">
   </property>
 
-  <property name="vueCentraleBackgroundCouleurSombre" type="gx:Brush" value="#37474f">
+  <property name="leftForeground" type="gx:Brush" value="#f4f4f4">
   </property>
 
-  <property name="vueCentraleElementForegroundCouleur" type="gx:Brush" value="white">
+  <property name="leftLightBackground" type="gx:Brush" value="#616161">
   </property>
 
-  <property name="vueCentraleElementBackgroundCouleurClaire" type="gx:Brush" value="#1e88e5">
+  <property name="leftColorBackground" type="gx:Brush" value="#424242">
   </property>
 
-  <property name="vueCentraleElementBackgroundCouleur" type="gx:Brush" value="#1976d2">
+  <property name="leftDarkBackground" type="gx:Brush" value="#212121">
   </property>
 
-  <property name="vueCentraleElementBackgroundCouleurSombre" type="gx:Brush" value="#1565c0">
+  <property name="headerForegroundColor" type="gx:Brush" value="#f7f7f7">
   </property>
 
-  <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
+  <property name="headerLightColorBackground" type="gx:Brush" value="#039be5">
+  </property>
+
+  <property name="headerColorBackground" type="gx:Brush" value="#0288d1">
+  </property>
+
+  <property name="headerDarkColorBackground" type="gx:Brush" value="#0277bd">
   </property>
 
 </properties>

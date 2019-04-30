@@ -1,31 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0">
+<px version="1.0" media="workbench:WbPxMedia">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
   <module name="converters"/>
   <module name="gx"/>
 </import>
+<properties>
+
+  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/h1EJV75C3hPA">
+  </property>
+
+  <property name="siteName" type="baja:String" value="QG">
+  </property>
+
+  <property name="lightLogo" type="gx:Image" value="file:^images/logos/logo_w.svg">
+  </property>
+
+  <property name="centralDarkForeground" type="gx:Brush" value="#232323">
+  </property>
+
+  <property name="centralWhiteBackground" type="gx:Brush" value="white">
+  </property>
+
+  <property name="centralColorForeground" type="gx:Brush" value="#f0f0f0">
+  </property>
+
+  <property name="centralLightColorBackground" type="gx:Brush" value="#546e7a">
+  </property>
+
+  <property name="centralColorBackground" type="gx:Brush" value="#455a64">
+  </property>
+
+  <property name="centralDarkColorBackground" type="gx:Brush" value="#37474f">
+  </property>
+
+  <property name="elementColorBackground" type="gx:Brush" value="#1976d2">
+  </property>
+
+  <property name="elementLightColorBackground" type="gx:Brush" value="#1976d2">
+  </property>
+
+  <property name="elementDarkColorBackground" type="gx:Brush" value="#1565c0">
+  </property>
+
+  <property name="elementLightForeground" type="gx:Brush" value="#f9f9f9">
+  </property>
+
+  <property name="leftForeground" type="gx:Brush" value="#f4f4f4">
+  </property>
+
+  <property name="leftLightBackground" type="gx:Brush" value="#616161">
+  </property>
+
+  <property name="leftColorBackground" type="gx:Brush" value="#424242">
+  </property>
+
+  <property name="leftDarkBackground" type="gx:Brush" value="#212121">
+  </property>
+
+  <property name="headerForegroundColor" type="gx:Brush" value="#f7f7f7">
+  </property>
+
+  <property name="headerLightColorBackground" type="gx:Brush" value="#039be5">
+  </property>
+
+  <property name="headerColorBackground" type="gx:Brush" value="#0288d1">
+  </property>
+
+  <property name="headerDarkColorBackground" type="gx:Brush" value="#0277bd">
+  </property>
+
+</properties>
 <content>
 <ScrollPane>
 
   <CanvasPane name="content" viewSize="1920.0,100.0" scale="fitRatio" minScaleFactor="0.5" maxScaleFactor="1.0" background="#2196f3">
 
-    <Label layout="30.0,0.0,125.0,95.0">
-      <ValueBinding ord="station:|slot:/Accueil/M$e9teo/DarkSkyWeather/currently/weatherIcon">
+    <Label name="Label" layout="30.0,0.0,125.0,95.0">
+      <ValueBinding name="ValueBinding" ord="station:|slot:/Home/Weather/DarkSkyWeather/currently/weatherIcon">
         <IEnumToSimple name="image" map="gx:Image 5=file:^images/weather/wind.png;0=file:^images/weather/clearDay.png;9=file:^images/weather/partlyCloudyNight.png;4=file:^images/weather/hail.png;7=file:^images/weather/cloudy.png;3=file:^images/weather/sleet.png;6=file:^images/weather/fog.png;1=file:^images/weather/clearNight.png;2=file:^images/weather/rain.png;8=file:^images/weather/partlyCloudyDay.png;default=null;"/>
       </ValueBinding>
     </Label>
 
-    <Label layout="170.0,0.0,1430.0,100.0" font="36.0pt Roboto" foreground="white" halign="left">
-      <ValueBinding ord="station:|slot:/Accueil/M$e9teo/DarkSkyWeather/currently/summary/value">
+    <Label name="Label1" layout="170.0,0.0,1430.0,100.0" font="36.0pt Roboto" foreground="white" halign="left">
+      <ValueBinding name="ValueBinding" ord="station:|slot:/Home/Weather/DarkSkyWeather/currently/summary/value">
         <ObjectToString name="text"/>
       </ValueBinding>
     </Label>
 
-    <Label layout="1740.0,0.0,179.99999999999977,100.0" font="48.0pt Roboto" foreground="white" halign="left">
-      <ValueBinding ord="station:|slot:/Accueil/M$e9teo/DarkSkyWeather/currently/temperature">
+    <Label name="Label2" layout="1740.0,0.0,179.99999999999977,100.0" font="48.0pt Roboto" foreground="white" halign="left">
+      <ValueBinding name="ValueBinding" ord="station:|slot:/Home/Weather/DarkSkyWeather/currently/temperature">
         <ObjectToString name="text" format="%value%"/>
       </ValueBinding>
     </Label>

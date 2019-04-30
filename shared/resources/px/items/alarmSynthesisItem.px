@@ -12,63 +12,67 @@
 </import>
 <properties>
 
-  <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
+  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/h1EJV75C3hPA">
   </property>
 
-  <property name="gaucheBackgroundCouleurClaire" type="gx:Brush" value="#616161">
+  <property name="siteName" type="baja:String" value="QG">
   </property>
 
-  <property name="gaucheBackgroundCouleur" type="gx:Brush" value="#424242">
+  <property name="lightLogo" type="gx:Image" value="file:^images/logos/logo_w.svg">
   </property>
 
-  <property name="gaucheBackgroundCouleurSombre" type="gx:Brush" value="#212121">
+  <property name="centralDarkForeground" type="gx:Brush" value="#232323">
   </property>
 
-  <property name="enTeteForegroundCouleur" type="gx:Brush" value="white">
+  <property name="centralWhiteBackground" type="gx:Brush" value="white">
   </property>
 
-  <property name="enTeteBackgroundCouleurClaire" type="gx:Brush" value="#039be5">
-    <target ord="slot:content/background"/>
+  <property name="centralColorForeground" type="gx:Brush" value="#f0f0f0">
   </property>
 
-  <property name="enTeteBackgroundCouleur" type="gx:Brush" value="#0288d1">
-    <target ord="slot:content/overBackground"/>
+  <property name="centralLightColorBackground" type="gx:Brush" value="#546e7a">
   </property>
 
-  <property name="enTeteBackgroundCouleurSombre" type="gx:Brush" value="#0277bd">
+  <property name="centralColorBackground" type="gx:Brush" value="#455a64">
   </property>
 
-  <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
+  <property name="centralDarkColorBackground" type="gx:Brush" value="#37474f">
   </property>
 
-  <property name="vueCentraleForegroundNoire" type="gx:Brush" value="black">
+  <property name="elementColorBackground" type="gx:Brush" value="#1976d2">
   </property>
 
-  <property name="vueCentraleBackgroundBlanc" type="gx:Brush" value="white">
+  <property name="elementLightColorBackground" type="gx:Brush" value="#1976d2">
   </property>
 
-  <property name="vueCentraleForegroundCouleur" type="gx:Brush" value="white">
+  <property name="elementDarkColorBackground" type="gx:Brush" value="#1565c0">
   </property>
 
-  <property name="vueCentraleBackgroundCouleurClaire" type="gx:Brush" value="#546e7a">
+  <property name="elementLightForeground" type="gx:Brush" value="#f9f9f9">
   </property>
 
-  <property name="vueCentraleBackgroundCouleur" type="gx:Brush" value="#455a64">
+  <property name="leftForeground" type="gx:Brush" value="#f4f4f4">
   </property>
 
-  <property name="vueCentraleBackgroundCouleurSombre" type="gx:Brush" value="#37474f">
+  <property name="leftLightBackground" type="gx:Brush" value="#616161">
   </property>
 
-  <property name="vueCentraleElementForegroundCouleur" type="gx:Brush" value="white">
+  <property name="leftColorBackground" type="gx:Brush" value="#424242">
   </property>
 
-  <property name="vueCentraleElementBackgroundCouleurClaire" type="gx:Brush" value="#1e88e5">
+  <property name="leftDarkBackground" type="gx:Brush" value="#212121">
   </property>
 
-  <property name="vueCentraleElementBackgroundCouleur" type="gx:Brush" value="#1976d2">
+  <property name="headerForegroundColor" type="gx:Brush" value="#f7f7f7">
   </property>
 
-  <property name="vueCentraleElementBackgroundCouleurSombre" type="gx:Brush" value="#1565c0">
+  <property name="headerLightColorBackground" type="gx:Brush" value="#039be5">
+  </property>
+
+  <property name="headerColorBackground" type="gx:Brush" value="#0288d1">
+  </property>
+
+  <property name="headerDarkColorBackground" type="gx:Brush" value="#0277bd">
   </property>
 
 </properties>
@@ -86,36 +90,36 @@
     <PxTemplateInfo name="templateInfo" templateName="BandeauAlarmesVert" vendor="B.tib" version="1.0"/>
 
     <BoundLabel name="BoundLabel" layout="50.0,36.0,180.0,15.0" font="12.0pt Calibri" foreground="white" halign="left">
-      <BoundLabelBinding name="BoundLabelBinding" ord="station:|slot:/Services/AlarmService/$(subsystem)_Synthese/unackedAlarmCountSynthesis" statusEffect="none">
-        <ObjectToString name="text" format="%.% alarme non acquitt&#xe9;e"/>
+      <BoundLabelBinding name="BoundLabelBinding" ord="station:|slot:/Services/AlarmService/$(subsystem)_Synthesis/unackedAlarmCountSynthesis" statusEffect="none">
+        <ObjectToString name="text" format="%.% unacked alarm"/>
         <INumericToSimple name="visible" map="baja:Boolean 0.0:1.0=true;default=false;"/>
       </BoundLabelBinding>
     </BoundLabel>
 
     <BoundLabel name="BoundLabel1" layout="50.0,36.0,180.0,15.0" font="12.0pt Calibri" foreground="white" halign="left">
-      <BoundLabelBinding name="BoundLabelBinding" ord="station:|slot:/Services/AlarmService/$(subsystem)_Synthese/unackedAlarmCountSynthesis" statusEffect="none">
-        <ObjectToString name="text" format="%.% alarmes non acquitt&#xe9;es"/>
+      <BoundLabelBinding name="BoundLabelBinding" ord="station:|slot:/Services/AlarmService/$(subsystem)_Synthesis/unackedAlarmCountSynthesis" statusEffect="none">
+        <ObjectToString name="text" format="%.% unacked alarms"/>
         <INumericToSimple name="visible" map="baja:Boolean 2.0:+inf=true;default=false;"/>
       </BoundLabelBinding>
     </BoundLabel>
 
     <BoundLabel name="BoundLabel2" layout="50.0,21.0,180.0,15.0" font="12.0pt Calibri" foreground="white" halign="left">
-      <BoundLabelBinding name="BoundLabelBinding" ord="station:|slot:/Services/AlarmService/$(subsystem)_Synthese/inAlarmCountSynthesis" statusEffect="none">
-        <ObjectToString name="text" format="%.% alarme en cours"/>
+      <BoundLabelBinding name="BoundLabelBinding" ord="station:|slot:/Services/AlarmService/$(subsystem)_Synthesis/inAlarmCountSynthesis" statusEffect="none">
+        <ObjectToString name="text" format="%.% in alarm"/>
         <INumericToSimple name="visible" map="baja:Boolean 0.0:1.0=true;default=false;"/>
       </BoundLabelBinding>
     </BoundLabel>
 
     <BoundLabel name="BoundLabel3" layout="50.0,21.0,180.0,15.0" font="12.0pt Calibri" foreground="white" halign="left">
-      <BoundLabelBinding name="BoundLabelBinding" ord="station:|slot:/Services/AlarmService/$(subsystem)_Synthese/inAlarmCountSynthesis" statusEffect="none">
-        <ObjectToString name="text" format="%.% alarmes en cours"/>
+      <BoundLabelBinding name="BoundLabelBinding" ord="station:|slot:/Services/AlarmService/$(subsystem)_Synthesis/inAlarmCountSynthesis" statusEffect="none">
+        <ObjectToString name="text" format="%.% in alarms"/>
         <INumericToSimple name="visible" map="baja:Boolean 2.0:+inf=true;default=false;"/>
       </BoundLabelBinding>
     </BoundLabel>
 
     <BoundLabel name="BoundLabel4" layout="50.0,0.0,180.0,20.0" font="16.0pt Calibri" foreground="white" halign="left">
       <BoundLabelBinding name="BoundLabelBinding" ord="$(slotPathOrd)/subsystem" statusEffect="none">
-        <ObjectToString name="text" format="Console %.%"/>
+        <ObjectToString name="text" format="%.% Console"/>
       </BoundLabelBinding>
     </BoundLabel>
 

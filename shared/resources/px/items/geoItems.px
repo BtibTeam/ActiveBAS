@@ -14,67 +14,70 @@
 </import>
 <properties>
 
-  <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
+  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/h1EJV75C3hPA">
   </property>
 
-  <property name="gaucheBackgroundCouleurClaire" type="gx:Brush" value="#616161">
+  <property name="siteName" type="baja:String" value="QG">
   </property>
 
-  <property name="gaucheBackgroundCouleur" type="gx:Brush" value="#424242">
+  <property name="lightLogo" type="gx:Image" value="file:^images/logos/logo_w.svg">
   </property>
 
-  <property name="gaucheBackgroundCouleurSombre" type="gx:Brush" value="#212121">
+  <property name="centralDarkForeground" type="gx:Brush" value="#232323">
   </property>
 
-  <property name="enTeteForegroundCouleur" type="gx:Brush" value="white">
+  <property name="centralWhiteBackground" type="gx:Brush" value="white">
   </property>
 
-  <property name="enTeteBackgroundCouleurClaire" type="gx:Brush" value="#039be5">
+  <property name="centralColorForeground" type="gx:Brush" value="#f0f0f0">
   </property>
 
-  <property name="enTeteBackgroundCouleur" type="gx:Brush" value="#0288d1">
+  <property name="centralLightColorBackground" type="gx:Brush" value="#546e7a">
   </property>
 
-  <property name="enTeteBackgroundCouleurSombre" type="gx:Brush" value="#0277bd">
+  <property name="centralColorBackground" type="gx:Brush" value="#455a64">
   </property>
 
-  <property name="vueCentraleForegroundNoire" type="gx:Brush" value="black">
+  <property name="centralDarkColorBackground" type="gx:Brush" value="#37474f">
   </property>
 
-  <property name="vueCentraleBackgroundBlanc" type="gx:Brush" value="white">
+  <property name="elementColorBackground" type="gx:Brush" value="#1976d2">
   </property>
 
-  <property name="vueCentraleForegroundCouleur" type="gx:Brush" value="white">
+  <property name="elementLightColorBackground" type="gx:Brush" value="#1976d2">
   </property>
 
-  <property name="vueCentraleBackgroundCouleurClaire" type="gx:Brush" value="#546e7a">
+  <property name="elementDarkColorBackground" type="gx:Brush" value="#1565c0">
   </property>
 
-  <property name="vueCentraleBackgroundCouleur" type="gx:Brush" value="#455a64">
+  <property name="elementLightForeground" type="gx:Brush" value="#f9f9f9">
   </property>
 
-  <property name="vueCentraleBackgroundCouleurSombre" type="gx:Brush" value="#37474f">
+  <property name="leftForeground" type="gx:Brush" value="#f4f4f4">
   </property>
 
-  <property name="vueCentraleElementForegroundCouleur" type="gx:Brush" value="white">
+  <property name="leftLightBackground" type="gx:Brush" value="#616161">
   </property>
 
-  <property name="vueCentraleElementBackgroundCouleurClaire" type="gx:Brush" value="#1e88e5">
+  <property name="leftColorBackground" type="gx:Brush" value="#424242">
   </property>
 
-  <property name="vueCentraleElementBackgroundCouleur" type="gx:Brush" value="#1976d2">
+  <property name="leftDarkBackground" type="gx:Brush" value="#212121">
   </property>
 
-  <property name="vueCentraleElementBackgroundCouleurSombre" type="gx:Brush" value="#1565c0">
+  <property name="headerForegroundColor" type="gx:Brush" value="#f7f7f7">
   </property>
 
-  <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
+  <property name="headerLightColorBackground" type="gx:Brush" value="#039be5">
+  </property>
+
+  <property name="headerColorBackground" type="gx:Brush" value="#0288d1">
+  </property>
+
+  <property name="headerDarkColorBackground" type="gx:Brush" value="#0277bd">
   </property>
 
 </properties>
-<layers>
-  <layer name="fondDePlan" status="normal"/>
-</layers>
 <content>
 <ScrollPane>
 
@@ -86,7 +89,7 @@
     </Polygon>
 
     <Label name="Label" layout="190.0,350.0,80.0,60.0" image="module://themeBtib/image/x30/devices/electricity/powerMeasurementDevice_ok.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
-      <IdBinding name="IdBinding" id="Compteur"/>
+      <IdBinding name="IdBinding" id="Meter"/>
       <SourceBinding name="SourceBinding" ord="station:|$(slotPathOrd)"/>
       <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)">
         <ObjectToString name="text" format="%displayName%"/>
@@ -97,12 +100,7 @@
       <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)" hyperlink="station:|$(slotPathOrd)">
         <ObjectToString name="text" format="%displayName%"/>
       </ValueBinding>
-      <IdBinding name="IdBinding" id="CTA"/>
-    </Label>
-
-    <Label name="Label2" layout="390.0,350.0,80.0,60.0" image="file:^images/icones/capteurLumiereOcc.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
-      <IdBinding name="IdBinding" id="Multicapteur"/>
-      <SourceBinding name="SourceBinding" ord="station:|$(slotPathOrd)"/>
+      <IdBinding name="IdBinding" id="AHU"/>
     </Label>
 
     <GridPane name="GridPane" layout="90.0,350.0,30.0,40.0" columnCount="1" valign="top" halign="left" columnAlign="center" rowGap="0.0">
@@ -125,19 +123,9 @@
 
       <SourceBinding name="SourceBinding" ord="station:|$(slotPathOrd)"/>
 
-      <IdBinding name="IdBinding" id="VC"/>
+      <IdBinding name="IdBinding" id="FCU"/>
 
     </GridPane>
-
-    <Label name="Label3" layout="490.0,350.0,80.0,60.0" image="file:^images/icones/controleurMaitre.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
-      <IdBinding name="IdBinding" id="Contr&#xf4;leur d&#x27;&#xe9;clairage"/>
-      <SourceBinding name="SourceBinding" ord="station:|$(slotPathOrd)"/>
-    </Label>
-
-    <Label name="Label4" layout="590.0,350.0,80.0,60.0" image="module://themeBtib/image/x30/subsystem/lighting_down.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
-      <IdBinding name="IdBinding" id="Lampe"/>
-      <SourceBinding name="SourceBinding" ord="station:|$(slotPathOrd)"/>
-    </Label>
 
     <OverBorderPane name="OverBorderPane" layout="40.0,40.0,220.0,210.0" padding="0.0" fill="white" radius="10.0px 10.0px 10.0px 10.0px">
 
@@ -149,8 +137,8 @@
             <ValueBinding name="ValueBinding" hyperlink="$(buildingOrd)"/>
           </Label>
 
-          <Label name="Label1" layout="10.0,60.0,200.0,35.0" text="$(descriptionBatiment)" font="14.0pt Calibri" foreground="white" halign="left" valign="top" wordWrapEnabled="true">
-            <ValueBinding name="ValueBinding" hyperlink="$(ordBatiment)"/>
+          <Label name="Label1" layout="10.0,60.0,200.0,35.0" text="$(buildingDescription)" font="14.0pt Calibri" foreground="white" halign="left" valign="top" wordWrapEnabled="true">
+            <ValueBinding name="ValueBinding" hyperlink="$(buildingOrd)"/>
           </Label>
 
         </CanvasPane>
@@ -161,19 +149,19 @@
 
             <Label name="Label" image="module://themeBtib/image/x16/status/alarm.png" font="14.0pt Calibri Light" foreground="#454545" halign="left" wordWrapEnabled="true">
               <ValueBinding name="ValueBinding" ord="$(alarmPointSynthesisOrd)/value">
-                <ObjectToString name="text" format="%.% points en alarme"/>
+                <ObjectToString name="text" format="%.% alarm points"/>
               </ValueBinding>
             </Label>
 
             <Label name="Label1" image="module://themeBtib/image/x16/status/overridden.png" font="14.0pt Calibri Light" foreground="#454545" halign="left" wordWrapEnabled="true">
               <ValueBinding name="ValueBinding" ord="$(overiddenPointSynthesisOrd)/value">
-                <ObjectToString name="text" format="%.% points d&#xe9;rog&#xe9;s"/>
+                <ObjectToString name="text" format="%.% overridden points"/>
               </ValueBinding>
             </Label>
 
             <Label name="Label2" image="module://themeBtib/image/x16/status/fault.png" font="14.0pt Calibri Light" foreground="#454545" halign="left" wordWrapEnabled="true">
               <ValueBinding name="ValueBinding" ord="$(faultPointSynthesisOrd)/value">
-                <ObjectToString name="text" format="%.% points en d&#xe9;faut"/>
+                <ObjectToString name="text" format="%.% fault points"/>
               </ValueBinding>
             </Label>
 
@@ -183,7 +171,7 @@
 
       </GridPane>
 
-      <IdBinding name="IdBinding" id="batimentDansSite"/>
+      <IdBinding name="IdBinding" id="buildingInSite"/>
 
     </OverBorderPane>
 
@@ -198,11 +186,10 @@
 
     <Label name="Label7" layout="590.0,10.0,220.0,20.0" text="BqlToWidgetView to list floors" background="#f7f7f7" halign="left"/>
 
-    <Label name="Label8" layout="90.0,320.0,220.0,20.0" text="Widget repr&#xe9;sentant des &#xe9;quipements" background="#f7f7f7" halign="left"/>
+    <Label name="Label8" layout="90.0,320.0,220.0,20.0" text="Widgets rrepresenting devices" background="#f7f7f7" halign="left"/>
 
     <Polygon name="Polygon1" fill="#8023b82c" stroke="white" pen="0.0" geom="855.0,195.0 865.0,255.0 925.0,255.0 1005.0,265.0 1005.0,175.0 905.0,175.0 ">
       <IdBinding name="IdBinding" id="zoneInFloor"/>
-      <LayerTag name="LayerTag" layerName="fondDePlan"/>
     </Polygon>
 
     <Label name="Label9" layout="855.0,135.0,200.0,20.0" text="Polygon representing a zone" background="#f7f7f7" halign="left"/>

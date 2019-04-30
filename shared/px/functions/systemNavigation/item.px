@@ -8,25 +8,91 @@
   <module name="gx"/>
   <module name="kitPx"/>
 </import>
+<properties>
+
+  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/h1EJV75C3hPA">
+  </property>
+
+  <property name="siteName" type="baja:String" value="QG">
+  </property>
+
+  <property name="lightLogo" type="gx:Image" value="file:^images/logos/logo_w.svg">
+  </property>
+
+  <property name="centralDarkForeground" type="gx:Brush" value="#232323">
+  </property>
+
+  <property name="centralWhiteBackground" type="gx:Brush" value="white">
+  </property>
+
+  <property name="centralColorForeground" type="gx:Brush" value="#f0f0f0">
+  </property>
+
+  <property name="centralLightColorBackground" type="gx:Brush" value="#546e7a">
+  </property>
+
+  <property name="centralColorBackground" type="gx:Brush" value="#455a64">
+  </property>
+
+  <property name="centralDarkColorBackground" type="gx:Brush" value="#37474f">
+  </property>
+
+  <property name="elementColorBackground" type="gx:Brush" value="#1976d2">
+  </property>
+
+  <property name="elementLightColorBackground" type="gx:Brush" value="#1976d2">
+  </property>
+
+  <property name="elementDarkColorBackground" type="gx:Brush" value="#1565c0">
+  </property>
+
+  <property name="elementLightForeground" type="gx:Brush" value="#f9f9f9">
+  </property>
+
+  <property name="leftForeground" type="gx:Brush" value="#f4f4f4">
+  </property>
+
+  <property name="leftLightBackground" type="gx:Brush" value="#616161">
+  </property>
+
+  <property name="leftColorBackground" type="gx:Brush" value="#424242">
+  </property>
+
+  <property name="leftDarkBackground" type="gx:Brush" value="#212121">
+  </property>
+
+  <property name="headerForegroundColor" type="gx:Brush" value="#f7f7f7">
+  </property>
+
+  <property name="headerLightColorBackground" type="gx:Brush" value="#039be5">
+  </property>
+
+  <property name="headerColorBackground" type="gx:Brush" value="#0288d1">
+  </property>
+
+  <property name="headerDarkColorBackground" type="gx:Brush" value="#0277bd">
+  </property>
+
+</properties>
 <content>
 <CanvasPane viewSize="120.0,30.0" minScaleFactor="0.5" maxScaleFactor="1.0">
 
-  <Label layout="0.0,0.0,50.0,30.0" font="bold 18.0pt Calibri" halign="right">
-    <ValueBinding ord="$(slotPathOrd)/DownPointsBqlSize/size">
+  <Label name="Label" layout="0.0,0.0,50.0,30.0" font="bold 18.0pt Calibri" halign="right">
+    <ValueBinding name="ValueBinding" ord="$(slotPathOrd)/DownPointsBqlSize/size">
       <ObjectToString name="text" format="%.% "/>
       <INumericToSimple name="foreground" map="gx:Brush 0.0:0.5=black;0.5:+inf=red;default=null;"/>
       <INumericToSimple name="blink" map="baja:Boolean 0.0:0.5=false;0.5:+inf=true;default=false;"/>
     </ValueBinding>
   </Label>
 
-  <Label layout="50.0,0.0,70.0,30.0" font="bold 18.0pt Calibri" foreground="black" halign="left">
-    <ValueBinding ord="$(slotPathOrd)/BqlSize/size">
+  <Label name="Label1" layout="50.0,0.0,70.0,30.0" font="bold 18.0pt Calibri" foreground="black" halign="left">
+    <ValueBinding name="ValueBinding" ord="$(slotPathOrd)/BqlSize/size">
       <ObjectToString name="text" format="/ %.%"/>
     </ValueBinding>
   </Label>
 
-  <Label layout="0.0,0.0,120.0,30.0">
-    <PopupBinding ord="$(slotPathOrd)" title="Information" position="10.0,10.0" size="900.0,700.0"/>
+  <Label name="Label2" layout="0.0,0.0,120.0,30.0">
+    <PopupBinding name="PopupBinding" ord="$(slotPathOrd)" title="Information" position="10.0,10.0" size="1200.0,800.0"/>
   </Label>
 
 </CanvasPane>

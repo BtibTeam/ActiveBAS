@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="vykonPro"/>
+</import>
+<properties>
+
+  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/h1EJV75C3hPA">
+  </property>
+
+  <property name="siteName" type="baja:String" value="QG">
+  </property>
+
+  <property name="lightLogo" type="gx:Image" value="file:^images/logos/logo_w.svg">
+  </property>
+
+  <property name="centralDarkForeground" type="gx:Brush" value="#232323">
+  </property>
+
+  <property name="centralWhiteBackground" type="gx:Brush" value="white">
+  </property>
+
+  <property name="centralColorForeground" type="gx:Brush" value="#f0f0f0">
+  </property>
+
+  <property name="centralLightColorBackground" type="gx:Brush" value="#546e7a">
+  </property>
+
+  <property name="centralColorBackground" type="gx:Brush" value="#455a64">
+  </property>
+
+  <property name="centralDarkColorBackground" type="gx:Brush" value="#37474f">
+  </property>
+
+  <property name="elementColorBackground" type="gx:Brush" value="#1976d2">
+  </property>
+
+  <property name="elementLightColorBackground" type="gx:Brush" value="#1976d2">
+  </property>
+
+  <property name="elementDarkColorBackground" type="gx:Brush" value="#1565c0">
+  </property>
+
+  <property name="elementLightForeground" type="gx:Brush" value="#f9f9f9">
+  </property>
+
+  <property name="leftForeground" type="gx:Brush" value="#f4f4f4">
+  </property>
+
+  <property name="leftLightBackground" type="gx:Brush" value="#616161">
+  </property>
+
+  <property name="leftColorBackground" type="gx:Brush" value="#424242">
+  </property>
+
+  <property name="leftDarkBackground" type="gx:Brush" value="#212121">
+  </property>
+
+  <property name="headerForegroundColor" type="gx:Brush" value="#f7f7f7">
+  </property>
+
+  <property name="headerLightColorBackground" type="gx:Brush" value="#039be5">
+  </property>
+
+  <property name="headerColorBackground" type="gx:Brush" value="#0288d1">
+  </property>
+
+  <property name="headerDarkColorBackground" type="gx:Brush" value="#0277bd">
+  </property>
+
+  <property name="ordSite" type="baja:Ord" value="station:|slot:/Accueil/Navigation$20G$e9ographique">
+  </property>
+
+  <property name="vueCentraleForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleur" type="gx:Brush" value="#455a64">
+  </property>
+
+  <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
+    <target ord="slot:BorderPane1/content/Label/foreground"/>
+    <target ord="slot:BorderPane1/content/Label1/foreground"/>
+    <target ord="slot:BorderPane1/content/Label2/foreground"/>
+    <target ord="slot:BorderPane1/content/Label3/foreground"/>
+    <target ord="slot:BorderPane1/content/Label4/foreground"/>
+    <target ord="slot:BorderPane2/content/Label/foreground"/>
+    <target ord="slot:BorderPane2/content/Label1/foreground"/>
+    <target ord="slot:BorderPane1/content/Label5/foreground"/>
+    <target ord="slot:BorderPane2/content/Label3/foreground"/>
+  </property>
+
+  <property name="gaucheBackgroundCouleurClaire" type="gx:Brush" value="#616161">
+    <target ord="slot:BorderPane/content/background"/>
+  </property>
+
+  <property name="enTeteForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="enTeteBackgroundCouleurClaire" type="gx:Brush" value="#039be5">
+  </property>
+
+</properties>
+<content>
+<GridPane columnCount="1" valign="fill" rowAlign="fill" columnAlign="fill" rowGap="0.0" stretchRow="3">
+
+  <BorderPane padding="0.0" border="top(1.0 solid #5d5d5d) bottom(1.0 solid #5d5d5d)">
+
+    <CanvasPane name="content" viewSize="250.0,80.0" background="#616161">
+
+      <Picture layout="10.0,20.0,40.0,40.0" image="module://themeBtib/image/x20/building_w.png"/>
+
+      <Label layout="70.0,0.0,180.0,80.0" font="18.0pt Calibri" foreground="white" halign="left">
+        <ValueBinding ord="station:|slot:/Services/BtibService/pxProperties/nomSite">
+          <ObjectToString name="text" format="%propertyValue%"/>
+        </ValueBinding>
+      </Label>
+
+    </CanvasPane>
+
+  </BorderPane>
+
+  <BorderPane padding="16.0 0.0 24.0 16.0" border="bottom(1.0 solid #5d5d5d)" fill="#212121">
+
+    <GridPane name="content" columnCount="1" valign="top" halign="left" rowGap="24.0">
+
+      <Label text="General" font="bold 19.0pt Calibri" foreground="white" halign="left"/>
+
+      <Label image="module://themeBtib/image/x16/buildings_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
+        <ValueBinding ord="station:|slot:/Home" hyperlink="station:|slot:/Home">
+          <ObjectToString name="text" format="%displayName%"/>
+        </ValueBinding>
+      </Label>
+
+      <Label image="module://themeBtib/image/x16/alarm_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
+        <ValueBinding ord="station:|slot:/Home/Alarms" hyperlink="station:|slot:/Services/AlarmService/General$20Console">
+          <ObjectToString name="text" format="%displayName%"/>
+        </ValueBinding>
+      </Label>
+
+      <Label image="file:^images/icones/carte_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
+        <ValueBinding ord="station:|slot:/Home/Map" hyperlink="station:|slot:/Home/Map">
+          <ObjectToString name="text" format="%displayName%"/>
+        </ValueBinding>
+      </Label>
+
+      <Label text="Geographic Navigation" image="module://themeBtib/image/x16/geoNav_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
+        <EnhancedHyperlinkBinding ord="station:|slot:/Services/BtibService/pxProperties/siteOrd" hyperlinkFormat="%propertyValue%"/>
+      </Label>
+
+      <Label image="module://themeBtib/image/x16/system_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
+        <ValueBinding ord="station:|slot:/Home/System$20Navigation" hyperlink="station:|slot:/Home/System$20Navigation">
+          <ObjectToString name="text" format="%displayName%"/>
+        </ValueBinding>
+      </Label>
+
+    </GridPane>
+
+  </BorderPane>
+
+  <BorderPane padding="16.0 0.0 24.0 16.0" border="bottom(1.0 solid #5d5d5d)" fill="#212121">
+
+    <GridPane name="content" columnCount="1" valign="top" halign="fill" columnAlign="fill" rowGap="24.0" stretchColumn="0">
+
+      <Label text="Data" font="bold 19.0pt Calibri" foreground="white" halign="left"/>
+
+      <Label image="module://themeBtib/image/x16/pointsList_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
+        <ValueBinding ord="station:|slot:/Home/Point$20Lists" hyperlink="station:|slot:/Home/Point$20Lists">
+          <ObjectToString name="text" format="%displayName%"/>
+        </ValueBinding>
+      </Label>
+
+      <Label image="module://themeBtib/image/x16/pie-chart_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
+        <ValueBinding ord="station:|slot:/Home/Dashboard" hyperlink="station:|slot:/Home/Dashboard">
+          <ObjectToString name="text" format="%displayName%"/>
+        </ValueBinding>
+      </Label>
+
+      <Label image="module://themeBtib/image/x16/graphicPannel_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
+        <ValueBinding ord="station:|slot:/Home/Kiosk" hyperlink="station:|slot:/Home/Kiosk">
+          <ObjectToString name="text" format="%displayName%"/>
+        </ValueBinding>
+      </Label>
+
+    </GridPane>
+
+  </BorderPane>
+
+  <BorderPane padding="16.0 0.0 24.0 16.0" border="bottom(1.0 solid #5d5d5d)" fill="#212121"/>
+
+</GridPane>
+</content>
+</px>
