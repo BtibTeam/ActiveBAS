@@ -1,5 +1,5 @@
 # [47.1.0]
-Version initiale
+Initial version
 
-# [47.2.0] (2019-04-17)
+# [47.2.0] (5/1/2019)
 Release Candidate 1

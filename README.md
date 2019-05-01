@@ -1,66 +1,65 @@
-# Active-StandAlone-Fr
-Station de démonstration Active. Cette station vous permettra de démarrer votre projet de GTB. Elle offre de manière entièrement automatisée :
- - La gestion des navigations géographique et système
- - La gestion des alarmes par métier
- - La gestion des droits d'accès par métier
- - La gestion des vues de détails sur les points et équipements
- - La gestion des bilans d'exploitation
+# Active-StandAlone
+BMS boiler plate station based on the [Active-Framework](https://active-framework.com). Active is an appliance Framework dedicated to industrialize applications on Niagara by automating a lot of tasks. This boiler plate is dedicated to a tradionnal BMS application. It includes the following features:
+- Geographic and System navigation
+- Alarm management by subsystems (HVAC, Plumbing...)
+- User rights management by subsystems
+- Detailed view on devices and points (Automated dashboard views)
+- Point list per status and subsystem
 
- Elle offre en plus
- - Des fonctions de tableaux de bord
- - Un kiosque
- - Des fonction de tagging avancées sur la Nature en intégrant le projet [BSO](https://bso-project.org) (Building Semantic Ontology) basé sur [Haystack](https://project-haystack.org)
+You will also find:
+- Dashboards capabilities for alarms and energy
+- A kiosk (to display on a tv)
+- Advanced tagging features based on the project [BSO](https://bso-project.org) (Building Semantic Ontology) which is based on [Haystack](https://project-haystack.org)
 
- L'ensemble est bien entendu personnalisable et entièrement personnalisable. Les couleurs peuvent être facilement modifiées grâce à un système de thème.
+All of the station can be personalized as the result is mainly Niagara vanilla components and widgets.
 
 ## Installation
 
-Pour profiter de la station
-```
-Installer les derniers modules Active (version minimum 46.10.0)
-```
+To use the station:
+- Install the latest Active-Framework modules (min version 46.10.0)
+- Download the station [here](http://modules:modulesB.tib@modules.btib.fr/Stations/ActiveStandAloneEn-47.2.0.zip)
 
-```
-Télécharger la station [ici](http://modules:modulesB.tib@modules.btib.fr/Stations/ActiveStandAloneFr-47.2.0.zip)
-```
+## Screenshots
 
-## Captures d'écran
+### Home page
+![image](https://user-images.githubusercontent.com/24372104/57017857-4b074900-6c21-11e9-9e02-32b7096176fe.png)
 
-### Navigation géographique
-![Navigation géographique](https://user-images.githubusercontent.com/24372104/56462338-24941300-63c2-11e9-9bcc-28ecfae38450.PNG)
+### Geographic Navigation
+![Geographic Navigation](https://user-images.githubusercontent.com/24372104/57018502-1943b180-6c24-11e9-9e81-2ee6c0500f3f.png)
 
-### Vue d'étage
-![Vue d'étage](https://user-images.githubusercontent.com/24372104/56462410-0bd82d00-63c3-11e9-86ca-32cf4a662e2b.PNG)
+### Floor View
+![Floor View](https://user-images.githubusercontent.com/24372104/57018815-109fab00-6c25-11e9-906c-a44ce2b82a3f.png)
 
-### Recloisonnement
-![Recloisonnement](https://user-images.githubusercontent.com/24372104/56462425-214d5700-63c3-11e9-901e-bab3b9fe0066.PNG)
+### Dashboard
+![Dashboard](https://user-images.githubusercontent.com/24372104/57018862-39c03b80-6c25-11e9-860e-2e3d2e84ceb7.png)
 
-### Tableau de bord
-![Tableau de bord](https://user-images.githubusercontent.com/24372104/56462346-4e4d3a00-63c2-11e9-81c6-884c31700bb3.PNG)
+### Point List
+![Point List](https://user-images.githubusercontent.com/24372104/57018895-5492b000-6c25-11e9-8858-fe0899e7645f.png)
 
-### Bilans d'exploitation (liste de points)
-![Bilan d'exploitation](https://user-images.githubusercontent.com/24372104/56462412-0e3a8700-63c3-11e9-8b32-d341709f3c32.PNG)
+### Equipment Popup
+![Equipment popup](https://user-images.githubusercontent.com/24372104/57019111-c834bd00-6c25-11e9-9dff-9a453f35dd1a.png)
 
-### Popup Equipement
-![Popup équipement](https://user-images.githubusercontent.com/24372104/56462416-15619500-63c3-11e9-8703-da9a1e7294e0.PNG)
+### Kiosk
+![Kiosk](https://user-images.githubusercontent.com/24372104/57019140-e3073180-6c25-11e9-992a-58e5a5a1a635.png)
 
-### Kiosque
-![Kiosque](https://user-images.githubusercontent.com/24372104/56462415-12ff3b00-63c3-11e9-94d2-5f3893008a1d.PNG)
+### General parameters
+![General Parameters](https://user-images.githubusercontent.com/24372104/57019182-09c56800-6c26-11e9-93c1-6769775a5066.png)
 
-### Paramétrage général
-![Paramétrage](https://user-images.githubusercontent.com/24372104/56462420-198db280-63c3-11e9-8ec7-9981c80459db.PNG)
+### Console Recipients Menu
+![Console Recipients Menu](https://user-images.githubusercontent.com/24372104/57019538-201ff380-6c27-11e9-9846-bd99fe542a65.png)
 
-### Menu des consoles d'alarmes
-![Menu des consoles d'alarmes](https://user-images.githubusercontent.com/24372104/56462422-1d213980-63c3-11e9-988a-589b18f32dbe.PNG)
+### Alarm Statistics
+![Alarm Statistics](https://user-images.githubusercontent.com/24372104/57019574-3c239500-6c27-11e9-9927-b0e44e9ad628.png)
 
-### Statistiques des alarmes
-![Statistiques des alarmes](https://user-images.githubusercontent.com/24372104/56462404-fd8a1100-63c2-11e9-8da0-08342644c7b8.PNG)
+### Map
+![Map](https://user-images.githubusercontent.com/24372104/57019622-5c535400-6c27-11e9-8629-36be99f7ddfc.png)
 
-### Carte
-![Carte](https://user-images.githubusercontent.com/24372104/56462428-24e0de00-63c3-11e9-9ce8-8d8a87223d18.PNG)
-
-### Loi d'eau
-![Loi d'eau](https://user-images.githubusercontent.com/24372104/56462432-2dd1af80-63c3-11e9-816c-3f0410f95a8c.PNG)
+### Temperature Reset
+![Temperature Reset](https://user-images.githubusercontent.com/24372104/57019772-b522ec80-6c27-11e9-810f-af9d1d7b18f1.png)
 
 ### Login
-![Login](https://user-images.githubusercontent.com/24372104/56462403-f82cc680-63c2-11e9-9219-54f120adafad.PNG)
+![Login](https://user-images.githubusercontent.com/24372104/57019847-ddaae680-6c27-11e9-9113-48654d3d62cb.png)7
+
+### Strategies
+Here is an example of a strategy to automate integration tasks
+![Strategies](https://user-images.githubusercontent.com/24372104/57019968-3da18d00-6c28-11e9-905e-e5110ef72425.png)

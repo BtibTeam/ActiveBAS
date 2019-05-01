@@ -116,7 +116,7 @@
       </Label>
 
       <Label name="Label1" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
-        <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)/points/Temp$e9rature$20ambiante">
+        <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)/points/Space$20Temp">
           <ObjectToString name="text" format="%out.value%"/>
         </ValueBinding>
       </Label>
