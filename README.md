@@ -1,4 +1,4 @@
-# Active-StandAlone
+# Active-BAS
 BMS boiler plate station based on the [Active-Framework](https://active-framework.com). Active is an appliance Framework dedicated to industrialize applications on Niagara by automating a lot of tasks. This boiler plate is dedicated to a tradionnal BMS application. It includes the following features:
 - Geographic and System navigation
 - Alarm management by subsystems (HVAC, Plumbing...)
