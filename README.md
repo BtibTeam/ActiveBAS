@@ -17,7 +17,7 @@ All of the station can be personalized as the result is mainly Niagara vanilla c
 
 To use the station:
 - Install the latest Active-Framework modules (min version 46.10.0)
-- Download the station [here](http://modules:modulesB.tib@modules.btib.fr/Stations/ActiveStandAloneEn-47.2.0.zip)
+- Download the station from the doc platform
 
 ## Screenshots
 

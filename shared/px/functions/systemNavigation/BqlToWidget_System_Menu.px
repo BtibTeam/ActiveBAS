@@ -66,7 +66,7 @@
         </Label>
 
         <Label layout="0.0,0.0,120.0,30.0" image="">
-          <PopupBinding ord="slot:/Home/System$20Navigation/Level$201/EXCEL10" title="Information" position="10.0,10.0" size="1200.0,800.0"/>
+          <PopupBinding ord="slot:/Home/System$20Navigation/Level$201/EXCEL10" title="Information" position="10.0,10.0" size="1200.0,900.0"/>
         </Label>
 
       </CanvasPane>
@@ -92,7 +92,7 @@
         </Label>
 
         <Label layout="0.0,0.0,120.0,30.0" image="">
-          <PopupBinding ord="slot:/Home/System$20Navigation/Level$202/EXCEL10" title="Information" position="10.0,10.0" size="1200.0,800.0"/>
+          <PopupBinding ord="slot:/Home/System$20Navigation/Level$202/EXCEL10" title="Information" position="10.0,10.0" size="1200.0,900.0"/>
         </Label>
 
       </CanvasPane>
