@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="btibStructure"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+</import>
+<properties>
+
+  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/h1EJV75C3hPA">
+  </property>
+
+  <property name="siteName" type="baja:String" value="QG">
+  </property>
+
+  <property name="lightLogo" type="gx:Image" value="file:^images/logos/logo_w.svg">
+  </property>
+
+  <property name="centralDarkForeground" type="gx:Brush" value="#232323">
+  </property>
+
+  <property name="centralWhiteBackground" type="gx:Brush" value="white">
+  </property>
+
+  <property name="centralColorForeground" type="gx:Brush" value="#f0f0f0">
+  </property>
+
+  <property name="centralLightColorBackground" type="gx:Brush" value="#546e7a">
+  </property>
+
+  <property name="centralColorBackground" type="gx:Brush" value="#455a64">
+  </property>
+
+  <property name="centralDarkColorBackground" type="gx:Brush" value="#37474f">
+  </property>
+
+  <property name="elementColorBackground" type="gx:Brush" value="#1976d2">
+  </property>
+
+  <property name="elementLightColorBackground" type="gx:Brush" value="#1976d2">
+  </property>
+
+  <property name="elementDarkColorBackground" type="gx:Brush" value="#1565c0">
+  </property>
+
+  <property name="elementLightForeground" type="gx:Brush" value="#f9f9f9">
+  </property>
+
+  <property name="leftForeground" type="gx:Brush" value="#f4f4f4">
+  </property>
+
+  <property name="leftLightBackground" type="gx:Brush" value="#616161">
+  </property>
+
+  <property name="leftColorBackground" type="gx:Brush" value="#424242">
+  </property>
+
+  <property name="leftDarkBackground" type="gx:Brush" value="#212121">
+  </property>
+
+  <property name="headerForegroundColor" type="gx:Brush" value="#f7f7f7">
+  </property>
+
+  <property name="headerLightColorBackground" type="gx:Brush" value="#039be5">
+  </property>
+
+  <property name="headerColorBackground" type="gx:Brush" value="#0288d1">
+  </property>
+
+  <property name="headerDarkColorBackground" type="gx:Brush" value="#0277bd">
+  </property>
+
+</properties>
+<content>
+<EdgePane>
+
+  <PxInclude name="top" ord="file:^px/menus/header.px"/>
+
+  <PxInclude name="left" ord="file:^px/menus/left.px"/>
+
+  <EdgePane name="center">
+
+    <CanvasPane name="top" viewSize="1000.0,40.0" halign="left" background="#f2f2f2">
+
+      <GridPane layout="10.0,0.0,640.0,40.0" columnCount="10" halign="left">
+
+        <Label text="Headquarters /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
+          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/localization/building/P1H6wPwiwSl3"/>
+        </Label>
+
+        <Label text="Level 3 /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
+          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/localization/floor/U1IyrjiyLOLY"/>
+        </Label>
+
+      </GridPane>
+
+    </CanvasPane>
+
+    <ScrollPane name="center">
+
+      <CanvasPane name="content" viewSize="1200.0,1400.0" halign="left" valign="top" background="white">
+
+        <CanvasPane layout="50.0,50.0,1100.0,1200.0" viewSize="1100.0,1200.0" halign="left" valign="top" background="image( source(file:^images/plans/bureauBtib.PNG) halign(left) valign(top) )">
+
+          <IdBinding id="floorCanvas"/>
+
+          <GridPane layout="0.0,0.0,30.0,40.0" columnCount="1" valign="top" halign="left" columnAlign="center" rowGap="0.0">
+
+            <Label image="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+              <PopupBinding ord="station:|slot:/Drivers/LonNetwork/FCU_04|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_04/b$3amaitre">
+                <IBooleanToSimple name="image">
+                  <Image name="trueValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png"/>
+                  <Image name="falseValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_disabled.png"/>
+                </IBooleanToSimple>
+              </ValueBinding>
+            </Label>
+
+            <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_04/points/Space$20Temp">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+            <SourceBinding ord="station:|slot:/Drivers/LonNetwork/FCU_04"/>
+
+            <IdBinding id="FCU"/>
+
+            <String name="id" value="widget_1e7ee_6a76_0"/>
+
+          </GridPane>
+
+        </CanvasPane>
+
+      </CanvasPane>
+
+    </ScrollPane>
+
+  </EdgePane>
+
+</EdgePane>
+</content>
+</px>
