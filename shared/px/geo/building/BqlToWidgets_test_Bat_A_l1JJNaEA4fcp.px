@@ -8,14 +8,14 @@
 </import>
 <properties>
 
-  <property name="bqlToWidgetsHandle" type="baja:String" value="1e2cd">
+  <property name="bqlToWidgetsHandle" type="baja:String" value="20630">
   </property>
 
 </properties>
 <content>
 <ScrollPane viewportBackground="transparent" borderPolicy="never">
 
-  <GridPane name="content" columnCount="1" valign="top" rowGap="20.0"/>
+  <Label name="content" text="Error: The BQL query is not valid"/>
 
 </ScrollPane>
 </content>
