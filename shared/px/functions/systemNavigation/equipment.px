@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0">
+<px version="1.0" media="workbench:WbPxMedia">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
@@ -76,12 +76,12 @@
 <content>
 <CanvasPane viewSize="150.0,140.0" minScaleFactor="0.5" maxScaleFactor="1.0">
 
-  <Label layout="0.0,0.0,150.0,20.0" text="$(equipment)" font="bold 14.0pt Calibri" wordWrapEnabled="true"/>
+  <Label name="Label" layout="0.0,0.0,150.0,20.0" text="$(equipment)" font="bold 14.0pt Calibri" wordWrapEnabled="true"/>
 
-  <Label layout="0.0,20.0,150.0,20.0" text="$(equipmentType)" font="12.0pt Calibri"/>
+  <Label name="Label1" layout="0.0,20.0,150.0,40.0" text="$(equipmentType)" font="12.0pt Calibri" valign="top" wordWrapEnabled="true"/>
 
-  <Picture layout="30.0,50.0,90.0,90.0" scale="fitRatio">
-    <ValueBinding ord="$(picture)">
+  <Picture name="Picture" layout="30.0,60.0,90.0,80.0" scale="fitRatio">
+    <ValueBinding name="ValueBinding" ord="$(picture)">
       <OrdToImage name="image"/>
     </ValueBinding>
   </Picture>

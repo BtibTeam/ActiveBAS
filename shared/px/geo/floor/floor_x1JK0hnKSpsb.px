@@ -5,10 +5,7 @@
   <module name="baja"/>
   <module name="bajaui"/>
   <module name="btibCore"/>
-  <module name="btibStructure"/>
-  <module name="converters"/>
   <module name="gx"/>
-  <module name="kitPx"/>
 </import>
 <properties>
 
@@ -89,12 +86,12 @@
 
       <GridPane layout="10.0,0.0,640.0,40.0" columnCount="10" halign="left">
 
-        <Label text="Headquarters /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
-          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/localization/building/P1H6wPwiwSl3"/>
+        <Label text="Le Rabelais /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
+          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/location/building/d1JJZQNwGxSh"/>
         </Label>
 
-        <Label text="Level 1 /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
-          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/localization/floor/S1IpdfLF5yQc"/>
+        <Label text="Roof floor /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
+          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/location/floor/x1JK0hnKSpsb"/>
         </Label>
 
       </GridPane>
@@ -108,32 +105,6 @@
         <CanvasPane layout="50.0,50.0,1100.0,1200.0" viewSize="1100.0,1200.0" halign="left" valign="top" background="image( source(file:^images/plans/bureauBtib.PNG) halign(left) valign(top) )">
 
           <IdBinding id="floorCanvas"/>
-
-          <GridPane layout="0.0,0.0,30.0,40.0" columnCount="1" valign="top" halign="left" columnAlign="center" rowGap="0.0">
-
-            <Label image="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
-              <PopupBinding ord="station:|slot:/Drivers/LonNetwork/FCU_01|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
-              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_01/b$3amaitre">
-                <IBooleanToSimple name="image">
-                  <Image name="trueValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png"/>
-                  <Image name="falseValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_disabled.png"/>
-                </IBooleanToSimple>
-              </ValueBinding>
-            </Label>
-
-            <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
-              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_01/points/Space$20Temp">
-                <ObjectToString name="text" format="%out.value%"/>
-              </ValueBinding>
-            </Label>
-
-            <SourceBinding ord="station:|slot:/Drivers/LonNetwork/FCU_01"/>
-
-            <IdBinding id="FCU"/>
-
-            <String name="id" value="widget_1e264_6a76_0"/>
-
-          </GridPane>
 
         </CanvasPane>
 

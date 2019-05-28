@@ -89,12 +89,12 @@
 
       <GridPane layout="10.0,0.0,640.0,40.0" columnCount="10" halign="left">
 
-        <Label text="Headquarters /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
-          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/localization/building/P1H6wPwiwSl3"/>
+        <Label text="Le Rabelais /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
+          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/location/building/d1JJZQNwGxSh"/>
         </Label>
 
-        <Label text="Level 3 /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
-          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/localization/floor/U1IyrjiyLOLY"/>
+        <Label text="Ground floor /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
+          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/location/floor/s1JK0chuBGSh"/>
         </Label>
 
       </GridPane>
@@ -112,8 +112,8 @@
           <GridPane layout="0.0,0.0,30.0,40.0" columnCount="1" valign="top" halign="left" columnAlign="center" rowGap="0.0">
 
             <Label image="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
-              <PopupBinding ord="station:|slot:/Drivers/LonNetwork/FCU_04|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
-              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_04/b$3amaitre">
+              <PopupBinding ord="station:|slot:/Drivers/LonNetwork/FCU_Demo|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_Demo/b$3amaitre">
                 <IBooleanToSimple name="image">
                   <Image name="trueValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png"/>
                   <Image name="falseValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_disabled.png"/>
@@ -122,16 +122,16 @@
             </Label>
 
             <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
-              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_04/points/Space$20Temp">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_Demo/points/Space$20Temp">
                 <ObjectToString name="text" format="%out.value%"/>
               </ValueBinding>
             </Label>
 
-            <SourceBinding ord="station:|slot:/Drivers/LonNetwork/FCU_04"/>
+            <SourceBinding ord="station:|slot:/Drivers/LonNetwork/FCU_Demo"/>
 
             <IdBinding id="FCU"/>
 
-            <String name="id" value="widget_1e7ee_6a76_0"/>
+            <String name="id" value="widget_1eeec_6a76_0"/>
 
           </GridPane>
 
