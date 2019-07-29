@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0">
+<px version="1.0" media="workbench:WbPxMedia">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="btibVision"/>
+  <module name="converters"/>
   <module name="gx"/>
   <module name="kitPx"/>
+  <module name="vykonPro"/>
   <module name="workbench"/>
 </import>
 <properties>
@@ -85,39 +89,53 @@
 
     <CanvasPane name="center" viewSize="1300.0,800.0" minScaleFactor="0.5" maxScaleFactor="1.0" valign="top" background="#455a64">
 
-      <Label layout="30.0,70.0,330.0,20.0" text="Set here the main parameters of the station" font="bold 12.0pt SansSerif" foreground="white" halign="left"/>
+      <Label name="Label" layout="30.0,70.0,330.0,20.0" text="Set here the main parameters of the station" font="bold 12.0pt SansSerif" foreground="white" halign="left"/>
 
-      <GridPane layout="30.0,110.0,pref,pref" columnAlign="fill" rowGap="10.0" columnGap="10.0">
+      <GridPane name="GridPane" layout="30.0,110.0,pref,pref" columnCount="3" columnAlign="fill" rowGap="10.0" columnGap="10.0">
 
-        <Label text="Geographic Navigation Mode" font="14.0pt SansSerif" foreground="white" halign="left"/>
+        <Label name="Label" text="Geographic Navigation Mode" font="14.0pt SansSerif" foreground="white" halign="left"/>
 
-        <GenericFieldEditor>
-          <WbFieldEditorBinding ord="slot:geographicNavigationMode"/>
+        <GenericFieldEditor name="GenericFieldEditor">
+          <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:geographicNavigationMode"/>
         </GenericFieldEditor>
 
-        <Separator/>
+        <Label name="Label3" text="Initialize building after switching to polygons" font="italic 12.0pt SansSerif" foreground="white" halign="left"/>
 
-        <Separator/>
+        <Separator name="Separator"/>
 
-        <Label text="Station theme" font="14.0pt SansSerif" foreground="white" halign="left"/>
+        <Separator name="Separator1"/>
 
-        <GenericFieldEditor>
-          <WbFieldEditorBinding ord="slot:theme"/>
+        <Separator name="Separator4"/>
+
+        <Label name="Label1" text="Station theme" font="14.0pt SansSerif" foreground="white" halign="left"/>
+
+        <GenericFieldEditor name="GenericFieldEditor1">
+          <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:theme"/>
         </GenericFieldEditor>
 
-        <Separator/>
+        <Label name="Label4" text="Build your own theme easily" font="italic underline 12.0pt SansSerif" foreground="white" halign="left">
+          <ValueBinding name="ValueBinding" hyperlink="https://github.com/BtibTeam/niagara-theme-generator"/>
+        </Label>
 
-        <Separator/>
+        <Separator name="Separator2"/>
 
-        <Label text="Site name (if several buildings)" font="14.0pt SansSerif" foreground="white" halign="left"/>
+        <Separator name="Separator5"/>
 
-        <GenericFieldEditor>
-          <WbFieldEditorBinding ord="slot:siteName"/>
+        <Separator name="Separator3"/>
+
+        <Label name="Label2" text="Site name (if several buildings)" font="14.0pt SansSerif" foreground="white" halign="left"/>
+
+        <GenericFieldEditor name="GenericFieldEditor2">
+          <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:siteName"/>
         </GenericFieldEditor>
+
+        <Label name="Label5" text="Appear at the top left" font="italic 12.0pt SansSerif" foreground="white" halign="left">
+          <ValueBinding name="ValueBinding" hyperlink="https://github.com/BtibTeam/niagara-theme-generator"/>
+        </Label>
 
       </GridPane>
 
-      <SaveButton layout="440.0,60.0,100.0,30.0" image="module://icons/x16/save.png" foreground="#484848" background="white">
+      <SaveButton name="SaveButton" layout="645.0,65.0,100.0,30.0" image="module://icons/x16/save.png" foreground="#484848" background="white">
         <WsAnnotation name="wsAnnotation" value="14,14,8"/>
       </SaveButton>
 

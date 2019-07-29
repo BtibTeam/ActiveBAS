@@ -86,12 +86,12 @@
 
       <GridPane layout="10.0,0.0,640.0,40.0" columnCount="10" halign="left">
 
-        <Label text="Le Rabelais /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
-          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/location/building/d1JJZQNwGxSh"/>
+        <Label text="Bat A /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
+          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/location/building/v1PxEH5Rt5WR"/>
         </Label>
 
         <Label text="Level 1 /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
-          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/location/floor/y1JK0elN9gjk"/>
+          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/location/floor/b1PxEJ3mUMD0"/>
         </Label>
 
       </GridPane>

@@ -5,9 +5,7 @@
   <module name="baja"/>
   <module name="bajaui"/>
   <module name="btibCore"/>
-  <module name="btibVision"/>
   <module name="gx"/>
-  <module name="workbench"/>
 </import>
 <properties>
 
@@ -90,8 +88,8 @@
 
         <GridPane name="content" columnCount="10" halign="left" stretchColumn="0">
 
-          <Label text="Le Rabelais /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
-            <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/location/building/d1JJZQNwGxSh"/>
+          <Label text="Bat A /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
+            <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/location/building/v1PxEH5Rt5WR"/>
           </Label>
 
         </GridPane>
@@ -100,11 +98,19 @@
 
       <IdBinding id="buildingGrid"/>
 
-      <BqlToWidgetsView>
-        <WbViewBinding ord="slot:Floor$20Menu"/>
-        <IdBinding id="floorMenu"/>
-        <String name="id" value="widget_207d5_13b41_0"/>
-      </BqlToWidgetsView>
+      <CanvasPane layout="850.0,45.0,100.0,50.0" viewSize="1200.0,800.0">
+
+        <IdBinding id="buildingCanvas"/>
+
+        <String name="id" value="widget_20ef3_14c33_0"/>
+
+        <Polygon fill="#b32326b8" stroke="white" pen="0.0" geom="330.0,190.0 310.0,260.0 440.0,250.0 560.0,250.0 560.0,180.0 460.0,160.0 ">
+          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/location/floor/b1PxEJ3mUMD0"/>
+          <IdBinding id="floorInBuilding"/>
+          <String name="id" value="widget_20ef6_dbff_0"/>
+        </Polygon>
+
+      </CanvasPane>
 
     </GridPane>
 

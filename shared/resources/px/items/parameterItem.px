@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0">
+<px version="1.0" media="workbench:WbPxMedia">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
@@ -82,20 +82,20 @@
 
 </properties>
 <content>
-<OverCanvasPane viewSize="250.0,200.0" background="#1976d2" overBackground="#1565c0" radius="8.0px 8.0px 8.0px 8.0px">
+<OverCanvasPane viewSize="140.0,140.0" background="#1976d2" overBackground="#1565c0" radius="8.0px 8.0px 8.0px 8.0px">
 
-  <Label layout="20.0,30.0,210.0,40.0" text="$(escapedDisplayName)" font="18.0pt Calibri" foreground="white" wordWrapEnabled="true">
-    <ValueBinding ord="$(slotPathOrd)" hyperlink="$(slotPathOrd)"/>
+  <Label name="Label" layout="10.0,10.0,120.0,40.0" text="$(escapedDisplayName)" font="14.0pt Calibri" foreground="white" wordWrapEnabled="true">
+    <ValueBinding name="ValueBinding" ord="$(slotPathOrd)" hyperlink="$(slotPathOrd)"/>
   </Label>
 
-  <Picture layout="100.0,90.0,50.0,50.0" scale="fitRatio">
-    <ValueBinding ord="$(slotPathOrd)" hyperlink="$(slotPathOrd)"/>
-    <ValueBinding ord="$(slotPathOrd)/lightIcon">
+  <Picture name="Picture" layout="45.0,70.0,50.0,50.0" scale="fitRatio">
+    <ValueBinding name="ValueBinding" ord="$(slotPathOrd)" hyperlink="$(slotPathOrd)"/>
+    <ValueBinding name="ValueBinding1" ord="$(slotPathOrd)/lightIcon">
       <PassThrough name="image"/>
     </ValueBinding>
   </Picture>
 
-  <ValueBinding ord="$(slotPathOrd)" hyperlink="$(slotPathOrd)"/>
+  <ValueBinding name="ValueBinding" ord="$(slotPathOrd)" hyperlink="$(slotPathOrd)"/>
 
 </OverCanvasPane>
 </content>

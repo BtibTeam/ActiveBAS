@@ -26,7 +26,7 @@
       <OverCanvasPane name="content" viewSize="230.0,60.0" background="#039be5" overBackground="#0288d1">
 
         <Picture layout="10.0,15.0,30.0,30.0" image="" scale="fitRatio">
-          <ValueBinding ord="module://themeBtib/image/svg/subsystem/hvac_w.svg">
+          <ValueBinding ord="module://themeBtib/image/svg/subsystem/undefined_w.svg">
             <OrdToImage name="image"/>
           </ValueBinding>
         </Picture>
@@ -34,100 +34,44 @@
         <PxTemplateInfo name="templateInfo" templateName="BandeauAlarmesVert" vendor="B.tib" version="1.0"/>
 
         <BoundLabel layout="50.0,36.0,180.0,15.0" image="" font="12.0pt Calibri" foreground="white" halign="left">
-          <BoundLabelBinding ord="station:|slot:/Services/AlarmService/HVAC_Synthesis/unackedAlarmCountSynthesis" statusEffect="none">
+          <BoundLabelBinding ord="station:|slot:/Services/AlarmService/Kitchen_Synthesis/unackedAlarmCountSynthesis" statusEffect="none">
             <ObjectToString name="text" format="%.% unacked alarm"/>
             <INumericToSimple name="visible" map="baja:Boolean 0.0:1.0=true;default=false;"/>
           </BoundLabelBinding>
         </BoundLabel>
 
         <BoundLabel layout="50.0,36.0,180.0,15.0" image="" font="12.0pt Calibri" foreground="white" halign="left">
-          <BoundLabelBinding ord="station:|slot:/Services/AlarmService/HVAC_Synthesis/unackedAlarmCountSynthesis" statusEffect="none">
+          <BoundLabelBinding ord="station:|slot:/Services/AlarmService/Kitchen_Synthesis/unackedAlarmCountSynthesis" statusEffect="none">
             <ObjectToString name="text" format="%.% unacked alarms"/>
             <INumericToSimple name="visible" map="baja:Boolean 2.0:+inf=true;default=false;"/>
           </BoundLabelBinding>
         </BoundLabel>
 
         <BoundLabel layout="50.0,21.0,180.0,15.0" image="" font="12.0pt Calibri" foreground="white" halign="left">
-          <BoundLabelBinding ord="station:|slot:/Services/AlarmService/HVAC_Synthesis/inAlarmCountSynthesis" statusEffect="none">
+          <BoundLabelBinding ord="station:|slot:/Services/AlarmService/Kitchen_Synthesis/inAlarmCountSynthesis" statusEffect="none">
             <ObjectToString name="text" format="%.% in alarm"/>
             <INumericToSimple name="visible" map="baja:Boolean 0.0:1.0=true;default=false;"/>
           </BoundLabelBinding>
         </BoundLabel>
 
         <BoundLabel layout="50.0,21.0,180.0,15.0" image="" font="12.0pt Calibri" foreground="white" halign="left">
-          <BoundLabelBinding ord="station:|slot:/Services/AlarmService/HVAC_Synthesis/inAlarmCountSynthesis" statusEffect="none">
+          <BoundLabelBinding ord="station:|slot:/Services/AlarmService/Kitchen_Synthesis/inAlarmCountSynthesis" statusEffect="none">
             <ObjectToString name="text" format="%.% in alarms"/>
             <INumericToSimple name="visible" map="baja:Boolean 2.0:+inf=true;default=false;"/>
           </BoundLabelBinding>
         </BoundLabel>
 
         <BoundLabel layout="50.0,0.0,180.0,20.0" image="" font="16.0pt Calibri" foreground="white" halign="left">
-          <BoundLabelBinding ord="slot:/Services/AlarmService/HVAC_Console/subsystem" statusEffect="none">
+          <BoundLabelBinding ord="slot:/Services/AlarmService/Kitchen_Console/subsystem" statusEffect="none">
             <ObjectToString name="text" format="%.% Console"/>
           </BoundLabelBinding>
         </BoundLabel>
 
         <BoundLabel layout="0.0,0.0,230.0,60.0" image="" font="16.0pt Calibri" foreground="white" halign="left">
-          <BoundLabelBinding ord="slot:/Services/AlarmService/HVAC_Console" hyperlink="slot:/Services/AlarmService/HVAC_Console|view:console" statusEffect="none"/>
+          <BoundLabelBinding ord="slot:/Services/AlarmService/Kitchen_Console" hyperlink="slot:/Services/AlarmService/Kitchen_Console|view:console" statusEffect="none"/>
         </BoundLabel>
 
-        <ValueBinding ord="slot:/Services/AlarmService/HVAC_Console" hyperlink="slot:/Services/AlarmService/HVAC_Console|view:console"/>
-
-      </OverCanvasPane>
-
-    </BorderPane>
-
-    <BorderPane padding="0.0" border="1.0 solid null">
-
-      <OverCanvasPane name="content" viewSize="230.0,60.0" background="#039be5" overBackground="#0288d1">
-
-        <Picture layout="10.0,15.0,30.0,30.0" image="" scale="fitRatio">
-          <ValueBinding ord="module://themeBtib/image/svg/subsystem/plumbing_w.svg">
-            <OrdToImage name="image"/>
-          </ValueBinding>
-        </Picture>
-
-        <PxTemplateInfo name="templateInfo" templateName="BandeauAlarmesVert" vendor="B.tib" version="1.0"/>
-
-        <BoundLabel layout="50.0,36.0,180.0,15.0" image="" font="12.0pt Calibri" foreground="white" halign="left">
-          <BoundLabelBinding ord="station:|slot:/Services/AlarmService/Plumbing_Synthesis/unackedAlarmCountSynthesis" statusEffect="none">
-            <ObjectToString name="text" format="%.% unacked alarm"/>
-            <INumericToSimple name="visible" map="baja:Boolean 0.0:1.0=true;default=false;"/>
-          </BoundLabelBinding>
-        </BoundLabel>
-
-        <BoundLabel layout="50.0,36.0,180.0,15.0" image="" font="12.0pt Calibri" foreground="white" halign="left">
-          <BoundLabelBinding ord="station:|slot:/Services/AlarmService/Plumbing_Synthesis/unackedAlarmCountSynthesis" statusEffect="none">
-            <ObjectToString name="text" format="%.% unacked alarms"/>
-            <INumericToSimple name="visible" map="baja:Boolean 2.0:+inf=true;default=false;"/>
-          </BoundLabelBinding>
-        </BoundLabel>
-
-        <BoundLabel layout="50.0,21.0,180.0,15.0" image="" font="12.0pt Calibri" foreground="white" halign="left">
-          <BoundLabelBinding ord="station:|slot:/Services/AlarmService/Plumbing_Synthesis/inAlarmCountSynthesis" statusEffect="none">
-            <ObjectToString name="text" format="%.% in alarm"/>
-            <INumericToSimple name="visible" map="baja:Boolean 0.0:1.0=true;default=false;"/>
-          </BoundLabelBinding>
-        </BoundLabel>
-
-        <BoundLabel layout="50.0,21.0,180.0,15.0" image="" font="12.0pt Calibri" foreground="white" halign="left">
-          <BoundLabelBinding ord="station:|slot:/Services/AlarmService/Plumbing_Synthesis/inAlarmCountSynthesis" statusEffect="none">
-            <ObjectToString name="text" format="%.% in alarms"/>
-            <INumericToSimple name="visible" map="baja:Boolean 2.0:+inf=true;default=false;"/>
-          </BoundLabelBinding>
-        </BoundLabel>
-
-        <BoundLabel layout="50.0,0.0,180.0,20.0" image="" font="16.0pt Calibri" foreground="white" halign="left">
-          <BoundLabelBinding ord="slot:/Services/AlarmService/Plumbing_Console/subsystem" statusEffect="none">
-            <ObjectToString name="text" format="%.% Console"/>
-          </BoundLabelBinding>
-        </BoundLabel>
-
-        <BoundLabel layout="0.0,0.0,230.0,60.0" image="" font="16.0pt Calibri" foreground="white" halign="left">
-          <BoundLabelBinding ord="slot:/Services/AlarmService/Plumbing_Console" hyperlink="slot:/Services/AlarmService/Plumbing_Console|view:console" statusEffect="none"/>
-        </BoundLabel>
-
-        <ValueBinding ord="slot:/Services/AlarmService/Plumbing_Console" hyperlink="slot:/Services/AlarmService/Plumbing_Console|view:console"/>
+        <ValueBinding ord="slot:/Services/AlarmService/Kitchen_Console" hyperlink="slot:/Services/AlarmService/Kitchen_Console|view:console"/>
 
       </OverCanvasPane>
 
