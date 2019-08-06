@@ -82,13 +82,15 @@
 
 </properties>
 <content>
-<OverCanvasPane viewSize="140.0,140.0" background="#1976d2" overBackground="#1565c0" radius="8.0px 8.0px 8.0px 8.0px">
+<OverCanvasPane viewSize="300.0,100.0" background="white" overBackground="#1a4688f1" radius="4.0px 4.0px 4.0px 4.0px">
 
-  <Label name="Label" layout="10.0,10.0,120.0,40.0" text="$(escapedDisplayName)" font="14.0pt Calibri" foreground="white" wordWrapEnabled="true">
+  <Picture name="Picture" layout="10.0,20.0,60.0,60.0" image="file:^images/icons/circularShapeBlue.svg" scale="fitRatio"/>
+
+  <Label name="Label" layout="85.0,15.0,210.0,30.0" text="$(escapedDisplayName)" font="bold 16.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
     <ValueBinding name="ValueBinding" ord="$(slotPathOrd)" hyperlink="$(slotPathOrd)"/>
   </Label>
 
-  <Picture name="Picture" layout="45.0,70.0,50.0,50.0" scale="fitRatio">
+  <Picture name="Picture1" layout="25.0,35.0,30.0,30.0" scale="fitRatio">
     <ValueBinding name="ValueBinding" ord="$(slotPathOrd)" hyperlink="$(slotPathOrd)"/>
     <ValueBinding name="ValueBinding1" ord="$(slotPathOrd)/lightIcon">
       <PassThrough name="image"/>
@@ -96,6 +98,10 @@
   </Picture>
 
   <ValueBinding name="ValueBinding" ord="$(slotPathOrd)" hyperlink="$(slotPathOrd)"/>
+
+  <Label name="Label1" layout="85.0,45.0,210.0,45.0" text="$(description)" font="14.0pt Calibri Light" foreground="#797979" halign="left" valign="top" wordWrapEnabled="true">
+    <ValueBinding name="ValueBinding" ord="$(slotPathOrd)" hyperlink="$(slotPathOrd)"/>
+  </Label>
 
 </OverCanvasPane>
 </content>

@@ -142,7 +142,7 @@
         </ValueBinding>
       </Label>
 
-      <Label name="Label3" image="file:^images/icones/carte_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
+      <Label name="Label3" image="file:^images/icons/map_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
         <ValueBinding name="ValueBinding" ord="station:|slot:/Home/Map" hyperlink="station:|slot:/Home/Map">
           <ObjectToString name="text" format="%displayName%"/>
         </ValueBinding>

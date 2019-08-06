@@ -8,18 +8,18 @@
   <module name="gx"/>
 </import>
 <content>
-<ScrollPane>
+<CanvasPane viewSize="1920.0,100.0" scale="fitRatio" minScaleFactor="0.5" maxScaleFactor="1.0">
 
-  <CanvasPane name="content" viewSize="1920.0,100.0" scale="fitRatio" minScaleFactor="0.5" maxScaleFactor="1.0" background="image( source(file:^images/backgrounds/building.jpg) )">
+  <Label layout="60.0,0.0,1540.0,100.0" font="80.0pt Calibri" foreground="white" halign="left">
+    <ValueBinding ord="station:|slot:/Services/BtibService/pxProperties/siteName/propertyValue">
+      <ObjectToString name="text"/>
+    </ValueBinding>
+  </Label>
 
-    <Label layout="60.0,0.0,1540.0,100.0" font="80.0pt Calibri" foreground="white" halign="left">
-      <ValueBinding ord="station:|slot:/Services/BtibService/pxProperties/siteName/propertyValue">
-        <ObjectToString name="text"/>
-      </ValueBinding>
-    </Label>
+  <ValueBinding ord="station:|slot:/Home/Station$20parameters/General$20Parameters/Main$20Parameters/homePicture">
+    <PassThrough name="background"/>
+  </ValueBinding>
 
-  </CanvasPane>
-
-</ScrollPane>
+</CanvasPane>
 </content>
 </px>

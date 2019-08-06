@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="gx"/>
+</import>
+<content>
+<GridPane columnGap="50.0" uniformColumnWidth="true">
+
+  <GridPane columnCount="1" rowGap="10.0">
+
+    <Label text="$(displayName)" font="bold 16.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
+      <ValueBinding ord="$(slotPathOrd)" hyperlink="$(slotPathOrd)"/>
+    </Label>
+
+    <Label text="$(description)" font="14.0pt Calibri Light" foreground="#797979" halign="left" valign="top" wordWrapEnabled="true">
+      <ValueBinding ord="$(slotPathOrd)" hyperlink="$(slotPathOrd)"/>
+    </Label>
+
+    <Label/>
+
+    <Button text="Modify">
+      <ValueBinding hyperlink="$(pxFileOrd)"/>
+    </Button>
+
+  </GridPane>
+
+  <CanvasPane viewSize="1800.0,1000.0" scale="fitRatio" minScaleFactor="0.2" maxScaleFactor="0.21">
+
+    <PxInclude ord="$(pxFileOrd)"/>
+
+  </CanvasPane>
+
+</GridPane>
+</content>
+</px>

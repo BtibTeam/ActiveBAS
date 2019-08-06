@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="btibVision"/>
+  <module name="converters"/>
+  <module name="gx"/>
+</import>
+<properties>
+
+  <property name="bqlToWidgetsHandle" type="baja:String" value="fb3b">
+  </property>
+
+</properties>
+<content>
+<ScrollPane viewportBackground="#fafafa" borderPolicy="never">
+
+  <FlowPane name="content" rowAlign="top" hgap="30" vgap="30">
+
+    <OverCanvasPane viewSize="300.0,100.0" background="white" overBackground="#1a4688f1" radius="4.0px 4.0px 4.0px 4.0px">
+
+      <Picture layout="10.0,20.0,60.0,60.0" image="file:^images/icons/circularShapeBlue.svg" scale="fitRatio"/>
+
+      <Label layout="85.0,15.0,210.0,30.0" text="Main Parameters" image="" font="bold 16.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
+        <ValueBinding ord="slot:/Home/Station$20parameters/General$20Parameters/Main$20Parameters" hyperlink="slot:/Home/Station$20parameters/General$20Parameters/Main$20Parameters"/>
+      </Label>
+
+      <Picture layout="25.0,35.0,30.0,30.0" image="" scale="fitRatio">
+        <ValueBinding ord="slot:/Home/Station$20parameters/General$20Parameters/Main$20Parameters" hyperlink="slot:/Home/Station$20parameters/General$20Parameters/Main$20Parameters"/>
+        <ValueBinding ord="slot:/Home/Station$20parameters/General$20Parameters/Main$20Parameters/lightIcon">
+          <PassThrough name="image"/>
+        </ValueBinding>
+      </Picture>
+
+      <ValueBinding ord="slot:/Home/Station$20parameters/General$20Parameters/Main$20Parameters" hyperlink="slot:/Home/Station$20parameters/General$20Parameters/Main$20Parameters"/>
+
+      <Label layout="85.0,45.0,210.0,45.0" text="Site name, theme etc." image="" font="14.0pt Calibri Light" foreground="#797979" halign="left" valign="top" wordWrapEnabled="true">
+        <ValueBinding ord="slot:/Home/Station$20parameters/General$20Parameters/Main$20Parameters" hyperlink="slot:/Home/Station$20parameters/General$20Parameters/Main$20Parameters"/>
+      </Label>
+
+    </OverCanvasPane>
+
+    <OverCanvasPane viewSize="300.0,100.0" background="white" overBackground="#1a4688f1" radius="4.0px 4.0px 4.0px 4.0px">
+
+      <Picture layout="10.0,20.0,60.0,60.0" image="file:^images/icons/circularShapeBlue.svg" scale="fitRatio"/>
+
+      <Label layout="85.0,15.0,210.0,30.0" text="Execution Parameters" image="" font="bold 16.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
+        <ValueBinding ord="slot:/Home/Station$20parameters/General$20Parameters/Execution$20Parameters" hyperlink="slot:/Home/Station$20parameters/General$20Parameters/Execution$20Parameters"/>
+      </Label>
+
+      <Picture layout="25.0,35.0,30.0,30.0" image="" scale="fitRatio">
+        <ValueBinding ord="slot:/Home/Station$20parameters/General$20Parameters/Execution$20Parameters" hyperlink="slot:/Home/Station$20parameters/General$20Parameters/Execution$20Parameters"/>
+        <ValueBinding ord="slot:/Home/Station$20parameters/General$20Parameters/Execution$20Parameters/lightIcon">
+          <PassThrough name="image"/>
+        </ValueBinding>
+      </Picture>
+
+      <ValueBinding ord="slot:/Home/Station$20parameters/General$20Parameters/Execution$20Parameters" hyperlink="slot:/Home/Station$20parameters/General$20Parameters/Execution$20Parameters"/>
+
+      <Label layout="85.0,45.0,210.0,45.0" text="Execution frequency for the different synthesis" image="" font="14.0pt Calibri Light" foreground="#797979" halign="left" valign="top" wordWrapEnabled="true">
+        <ValueBinding ord="slot:/Home/Station$20parameters/General$20Parameters/Execution$20Parameters" hyperlink="slot:/Home/Station$20parameters/General$20Parameters/Execution$20Parameters"/>
+      </Label>
+
+    </OverCanvasPane>
+
+    <OverCanvasPane viewSize="300.0,100.0" background="white" overBackground="#1a4688f1" radius="4.0px 4.0px 4.0px 4.0px">
+
+      <Picture layout="10.0,20.0,60.0,60.0" image="file:^images/icons/circularShapeBlue.svg" scale="fitRatio"/>
+
+      <Label layout="85.0,15.0,210.0,30.0" text="Alarm Class Parameters" image="" font="bold 16.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
+        <ValueBinding ord="slot:/Home/Station$20parameters/General$20Parameters/Alarm$20Class$20Parameters" hyperlink="slot:/Home/Station$20parameters/General$20Parameters/Alarm$20Class$20Parameters"/>
+      </Label>
+
+      <Picture layout="25.0,35.0,30.0,30.0" image="" scale="fitRatio">
+        <ValueBinding ord="slot:/Home/Station$20parameters/General$20Parameters/Alarm$20Class$20Parameters" hyperlink="slot:/Home/Station$20parameters/General$20Parameters/Alarm$20Class$20Parameters"/>
+        <ValueBinding ord="slot:/Home/Station$20parameters/General$20Parameters/Alarm$20Class$20Parameters/lightIcon">
+          <PassThrough name="image"/>
+        </ValueBinding>
+      </Picture>
+
+      <ValueBinding ord="slot:/Home/Station$20parameters/General$20Parameters/Alarm$20Class$20Parameters" hyperlink="slot:/Home/Station$20parameters/General$20Parameters/Alarm$20Class$20Parameters"/>
+
+      <Label layout="85.0,45.0,210.0,45.0" text="Priority for each transition" image="" font="14.0pt Calibri Light" foreground="#797979" halign="left" valign="top" wordWrapEnabled="true">
+        <ValueBinding ord="slot:/Home/Station$20parameters/General$20Parameters/Alarm$20Class$20Parameters" hyperlink="slot:/Home/Station$20parameters/General$20Parameters/Alarm$20Class$20Parameters"/>
+      </Label>
+
+    </OverCanvasPane>
+
+  </FlowPane>
+
+</ScrollPane>
+</content>
+</px>

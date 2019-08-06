@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="btibVision"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+  <module name="vykonPro"/>
+  <module name="workbench"/>
+</import>
+<properties>
+
+  <property name="bqlToWidgetsHandle" type="baja:String" value="21fcf">
+  </property>
+
+</properties>
+<content>
+<ScrollPane viewportBackground="#fafafa" borderPolicy="never">
+
+  <GridPane name="content" columnCount="1" valign="top" rowAlign="top" columnGap="30.0">
+
+    <GridPane name="GridPane" columnGap="50.0" uniformColumnWidth="true">
+
+      <GridPane name="GridPane" columnCount="1" rowGap="10.0">
+
+        <Label name="Label" text="Building Mask" image="" font="bold 16.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
+          <ValueBinding name="ValueBinding" ord="slot:/Services/BtibService/resource/Px$20Masks/Building$20Mask" hyperlink="slot:/Services/BtibService/resource/Px$20Masks/Building$20Mask"/>
+        </Label>
+
+        <Label name="Label1" text="Mask used when a new building is declared in the NodeCreator (px copy-pasted)" image="" font="14.0pt Calibri Light" foreground="#797979" halign="left" valign="top" wordWrapEnabled="true">
+          <ValueBinding name="ValueBinding" ord="slot:/Services/BtibService/resource/Px$20Masks/Building$20Mask" hyperlink="slot:/Services/BtibService/resource/Px$20Masks/Building$20Mask"/>
+        </Label>
+
+        <Label name="Label2" image=""/>
+
+        <Button name="Button" text="Modify" image="">
+          <ValueBinding name="ValueBinding" hyperlink="file:^resources/demo/buildingMask.px"/>
+        </Button>
+
+      </GridPane>
+
+      <CanvasPane name="CanvasPane" viewSize="1800.0,1000.0" scale="fitRatio" minScaleFactor="0.2" maxScaleFactor="0.21">
+
+        <PxInclude name="PxInclude" ord="file:^resources/px/masks/buildingMask.px"/>
+
+      </CanvasPane>
+
+    </GridPane>
+
+    <GridPane name="GridPane1" columnGap="50.0" uniformColumnWidth="true">
+
+      <GridPane name="GridPane" columnCount="1" rowGap="10.0">
+
+        <Label name="Label" text="Floor Mask" image="" font="bold 16.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
+          <ValueBinding name="ValueBinding" ord="slot:/Services/BtibService/resource/Px$20Masks/Floor$20Mask" hyperlink="slot:/Services/BtibService/resource/Px$20Masks/Floor$20Mask"/>
+        </Label>
+
+        <Label name="Label1" text="Mask used when a new floor is declared in the NodeCreator (px copy-pasted)" image="" font="14.0pt Calibri Light" foreground="#797979" halign="left" valign="top" wordWrapEnabled="true">
+          <ValueBinding name="ValueBinding" ord="slot:/Services/BtibService/resource/Px$20Masks/Floor$20Mask" hyperlink="slot:/Services/BtibService/resource/Px$20Masks/Floor$20Mask"/>
+        </Label>
+
+        <Label name="Label2" image=""/>
+
+        <Button name="Button" text="Modify" image="">
+          <ValueBinding name="ValueBinding" hyperlink="file:^resources/demo/floorMask.px"/>
+        </Button>
+
+      </GridPane>
+
+      <CanvasPane name="CanvasPane" viewSize="1800.0,1000.0" scale="fitRatio" minScaleFactor="0.2" maxScaleFactor="0.21">
+
+        <PxInclude name="PxInclude" ord="$(pxFileOrd)"/>
+
+      </CanvasPane>
+
+    </GridPane>
+
+    <GridPane name="GridPane2" columnGap="50.0" uniformColumnWidth="true">
+
+      <GridPane name="GridPane" columnCount="1" rowGap="10.0">
+
+        <Label name="Label" text="AHU Mask" image="" font="bold 16.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
+          <ValueBinding name="ValueBinding" ord="slot:/Services/BtibService/resource/Px$20Masks/AHU$20Mask" hyperlink="slot:/Services/BtibService/resource/Px$20Masks/AHU$20Mask"/>
+        </Label>
+
+        <Label name="Label1" text="Mask used when an equipment is defined as an AHU (Nature aspect)" image="" font="14.0pt Calibri Light" foreground="#797979" halign="left" valign="top" wordWrapEnabled="true">
+          <ValueBinding name="ValueBinding" ord="slot:/Services/BtibService/resource/Px$20Masks/AHU$20Mask" hyperlink="slot:/Services/BtibService/resource/Px$20Masks/AHU$20Mask"/>
+        </Label>
+
+        <Label name="Label2" image=""/>
+
+        <Button name="Button" text="Modify" image="">
+          <ValueBinding name="ValueBinding" hyperlink="file:^resources/px/masks/ahuMask.px"/>
+        </Button>
+
+      </GridPane>
+
+      <CanvasPane name="CanvasPane" viewSize="1800.0,1000.0" scale="fitRatio" minScaleFactor="0.2" maxScaleFactor="0.21">
+
+        <PxInclude name="PxInclude" ord="$(pxFileOrd)"/>
+
+      </CanvasPane>
+
+    </GridPane>
+
+  </GridPane>
+
+</ScrollPane>
+</content>
+</px>

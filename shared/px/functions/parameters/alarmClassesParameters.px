@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0">
+<px version="1.0" media="workbench:WbPxMedia">
 <import>
+  <module name="alarm"/>
   <module name="baja"/>
   <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="btibVision"/>
+  <module name="converters"/>
   <module name="gx"/>
+  <module name="kitPx"/>
+  <module name="vykonPro"/>
+  <module name="workbench"/>
 </import>
 <properties>
 
@@ -84,11 +91,11 @@
 
     <PxInclude name="left" ord="file:^px/menus/left.px"/>
 
-    <CanvasPane name="center" viewSize="1300.0,800.0" minScaleFactor="0.5" maxScaleFactor="1.0" valign="top" background="#37474f">
+    <CanvasPane name="center" viewSize="800.0,800.0" minScaleFactor="0.5" maxScaleFactor="1.0" halign="left" valign="top" background="#fafafa">
 
-      <Label layout="150.0,40.0,670.0,20.0" text="Define here the priorities for each alarm class and each transition" foreground="white" halign="left"/>
+      <Label name="Label" layout="50.0,50.0,670.0,20.0" text="Define here the priorities for each alarm class and each transition" font="14.0pt SansSerif" foreground="#303030" halign="left"/>
 
-      <PxInclude layout="50.0,80.0,910.0,650.0" ord="file:^px/functions/parameters/Alarm_Class_List.px"/>
+      <PxInclude name="PxInclude" layout="50.0,80.0,730.0,620.0" ord="file:^px/functions/parameters/Alarm_Class_List.px"/>
 
     </CanvasPane>
 

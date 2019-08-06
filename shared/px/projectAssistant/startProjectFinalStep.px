@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="btibVision"/>
+  <module name="control"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+  <module name="workbench"/>
+</import>
+<properties>
+
+  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/h1EJV75C3hPA">
+  </property>
+
+  <property name="siteName" type="baja:String" value="QG">
+  </property>
+
+  <property name="lightLogo" type="gx:Image" value="file:^images/logos/logo_w.svg">
+  </property>
+
+  <property name="centralDarkForeground" type="gx:Brush" value="#232323">
+  </property>
+
+  <property name="centralWhiteBackground" type="gx:Brush" value="white">
+  </property>
+
+  <property name="centralColorForeground" type="gx:Brush" value="#f0f0f0">
+  </property>
+
+  <property name="centralLightColorBackground" type="gx:Brush" value="#546e7a">
+  </property>
+
+  <property name="centralColorBackground" type="gx:Brush" value="#455a64">
+  </property>
+
+  <property name="centralDarkColorBackground" type="gx:Brush" value="#37474f">
+  </property>
+
+  <property name="elementColorBackground" type="gx:Brush" value="#1976d2">
+  </property>
+
+  <property name="elementLightColorBackground" type="gx:Brush" value="#1976d2">
+  </property>
+
+  <property name="elementDarkColorBackground" type="gx:Brush" value="#1565c0">
+  </property>
+
+  <property name="elementLightForeground" type="gx:Brush" value="#f9f9f9">
+  </property>
+
+  <property name="leftForeground" type="gx:Brush" value="#f4f4f4">
+  </property>
+
+  <property name="leftLightBackground" type="gx:Brush" value="#616161">
+  </property>
+
+  <property name="leftColorBackground" type="gx:Brush" value="#424242">
+  </property>
+
+  <property name="leftDarkBackground" type="gx:Brush" value="#212121">
+  </property>
+
+  <property name="headerForegroundColor" type="gx:Brush" value="#f7f7f7">
+  </property>
+
+  <property name="headerLightColorBackground" type="gx:Brush" value="#039be5">
+  </property>
+
+  <property name="headerColorBackground" type="gx:Brush" value="#0288d1">
+  </property>
+
+  <property name="headerDarkColorBackground" type="gx:Brush" value="#0277bd">
+  </property>
+
+  <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="gaucheBackgroundCouleur" type="gx:Brush" value="#424242">
+  </property>
+
+  <property name="enTeteForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="enTeteBackgroundCouleurClaire" type="gx:Brush" value="#039be5">
+  </property>
+
+  <property name="enTeteBackgroundCouleur" type="gx:Brush" value="#0288d1">
+  </property>
+
+  <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
+  </property>
+
+  <property name="vueCentraleBackgroundBlanc" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleurClaire" type="gx:Brush" value="#546e7a">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleurSombre" type="gx:Brush" value="#37474f">
+  </property>
+
+  <property name="vueCentraleElementForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleurClaire" type="gx:Brush" value="#1e88e5">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleur" type="gx:Brush" value="#1976d2">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleurSombre" type="gx:Brush" value="#1565c0">
+  </property>
+
+</properties>
+<content>
+<EdgePane>
+
+  <PxInclude name="top" ord="file:^px/menus/header.px"/>
+
+  <ScrollPane name="center" borderPolicy="never">
+
+    <BorderPane name="content" padding="20.0" fill="#f7f7f7">
+
+      <GridPane name="content" columnCount="1" valign="top" halign="fill" columnAlign="fill" rowGap="30.0" stretchColumn="0">
+
+        <BqlToWidgetsView name="BqlToWidgetsView">
+          <WbViewBinding name="WbViewBinding" ord="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Progress$20Bar"/>
+        </BqlToWidgetsView>
+
+        <BorderPane name="BorderPane" fill="white">
+
+          <GridPane name="content" columnCount="3" halign="fill" rowAlign="bottom" columnAlign="fill" columnGap="8.0" stretchColumn="0">
+
+            <GridPane name="GridPane" columnCount="1" halign="left">
+
+              <Label name="Label" text="Explore the different parameters of the station." font="18.0pt Calibri" foreground="#282828" halign="left"/>
+
+            </GridPane>
+
+            <Button name="Button" styleClasses="toolbar" text="  Back  " font="20.0pt SansSerif" foreground="#3a3a3a" background="white" valign="bottom" buttonStyle="toolBar">
+              <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$205"/>
+              <ActionBinding name="ActionBinding" ord="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$206/Step$20Completed/inactive" widgetEvent="actionPerformed">
+                <Override name="actionArg"/>
+              </ActionBinding>
+            </Button>
+
+            <Button name="Button1" styleClasses="toolbar" text="  Finish  " font="20.0pt SansSerif" foreground="white" background="#b2d035" valign="bottom" buttonStyle="toolBar">
+              <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Home"/>
+            </Button>
+
+          </GridPane>
+
+        </BorderPane>
+
+        <Label name="Label" text="Point extensions" font="bold 18.0pt Calibri" foreground="#4f4f4f" halign="left"/>
+
+        <BqlToWidgetsView name="BqlToWidgetsView1">
+          <WbViewBinding name="WbViewBinding" ord="station:|slot:/Home/Station$20parameters/Point$20Extensions$20Mapping$20List"/>
+        </BqlToWidgetsView>
+
+        <Label name="Label1" text="Masks" font="bold 18.0pt Calibri" foreground="#4f4f4f" halign="left"/>
+
+        <FlowPane name="FlowPane" align="fill" hgap="30" vgap="30">
+
+          <OverCanvasPane name="OverCanvasPane" viewSize="300.0,100.0" background="white" overBackground="#1a3aa756" radius="8.0px 8.0px 8.0px 8.0px">
+
+            <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Home/Station$20parameters/Masks"/>
+
+            <Picture name="Picture" layout="10.0,20.0,60.0,60.0" image="file:^images/icons/circularShapeGreen.svg" scale="fitRatio"/>
+
+            <Label name="Label" layout="85.0,45.0,195.0,45.0" text="px used as models for creating views" image="" font="14.0pt Calibri Light" foreground="#797979" halign="left" valign="top" wordWrapEnabled="true"/>
+
+            <Picture name="Picture1" layout="25.0,35.0,30.0,30.0" image="file:^images/icons/masks_w.svg" scale="fitRatio">
+              <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Home/Station$20parameters/Masks"/>
+            </Picture>
+
+            <Label name="Label1" layout="85.0,15.0,210.0,30.0" text="Full Px Masks" image="" font="bold 16.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
+              <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Home/Station$20parameters/Masks"/>
+            </Label>
+
+          </OverCanvasPane>
+
+          <OverCanvasPane name="OverCanvasPane1" viewSize="300.0,100.0" background="white" overBackground="#1a3aa756" radius="8.0px 8.0px 8.0px 8.0px">
+
+            <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Services/BtibService/resource/Px$20Items/Geo$20items$20for$20Geo$20views"/>
+
+            <Picture name="Picture" layout="10.0,20.0,60.0,60.0" image="file:^images/icons/circularShapeGreen.svg" scale="fitRatio"/>
+
+            <Label name="Label" layout="85.0,45.0,195.0,45.0" text="Widgets used to represent a geo widget (floor...) in a parent view" image="" font="14.0pt Calibri Light" foreground="#797979" halign="left" valign="top" wordWrapEnabled="true"/>
+
+            <Picture name="Picture1" layout="25.0,35.0,30.0,30.0" image="file:^images/icons/building_w.svg" scale="fitRatio">
+              <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Services/BtibService/resource/Px$20Items/Geo$20items$20for$20Geo$20views"/>
+            </Picture>
+
+            <Label name="Label1" layout="85.0,15.0,210.0,30.0" text="Geo widgets for Geo views" image="" font="bold 16.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
+              <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Services/BtibService/resource/Px$20Items/Geo$20items$20for$20Geo$20views"/>
+            </Label>
+
+          </OverCanvasPane>
+
+          <OverCanvasPane name="OverCanvasPane2" viewSize="300.0,100.0" background="white" overBackground="#1a3aa756" radius="8.0px 8.0px 8.0px 8.0px">
+
+            <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Services/BtibService/resource/Px$20Items/Nature$20items$20for$20Geo$20views"/>
+
+            <Picture name="Picture" layout="10.0,20.0,60.0,60.0" image="file:^images/icons/circularShapeGreen.svg" scale="fitRatio"/>
+
+            <Label name="Label" layout="85.0,45.0,195.0,45.0" text="Widgets used to represent an equipment in a geo view" image="" font="14.0pt Calibri Light" foreground="#797979" halign="left" valign="top" wordWrapEnabled="true"/>
+
+            <Picture name="Picture1" layout="25.0,35.0,30.0,30.0" image="module://themeBtib/image/svg/devices/hvac/ahu_w.svg" scale="fitRatio">
+              <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Services/BtibService/resource/Px$20Items/Nature$20items$20for$20Geo$20views"/>
+            </Picture>
+
+            <Label name="Label1" layout="85.0,15.0,210.0,30.0" text="Equipments for Geo views" image="" font="bold 16.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
+              <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Services/BtibService/resource/Px$20Items/Nature$20items$20for$20Geo$20views"/>
+            </Label>
+
+          </OverCanvasPane>
+
+          <OverCanvasPane name="OverCanvasPane3" viewSize="300.0,100.0" background="white" overBackground="#1a3aa756" radius="8.0px 8.0px 8.0px 8.0px">
+
+            <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Services/BtibService/resource/Px$20Items/Nature$20items$20for$20AHU$20views"/>
+
+            <Picture name="Picture" layout="10.0,20.0,60.0,60.0" image="file:^images/icons/circularShapeGreen.svg" scale="fitRatio"/>
+
+            <Label name="Label" layout="85.0,45.0,195.0,45.0" text="Widgets used to represent an element of an AHU" image="" font="14.0pt Calibri Light" foreground="#797979" halign="left" valign="top" wordWrapEnabled="true"/>
+
+            <Picture name="Picture1" layout="25.0,35.0,30.0,30.0" image="file:^images/icons/duct_w.svg" scale="fitRatio">
+              <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Services/BtibService/resource/Px$20Items/Nature$20items$20for$20AHU$20views"/>
+            </Picture>
+
+            <Label name="Label1" layout="85.0,15.0,210.0,30.0" text="Elements for AHU views" image="" font="bold 16.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
+              <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Services/BtibService/resource/Px$20Items/Nature$20items$20for$20AHU$20views"/>
+            </Label>
+
+          </OverCanvasPane>
+
+        </FlowPane>
+
+        <Label name="Label2" text="General mapping" font="bold 18.0pt Calibri" foreground="#4f4f4f" halign="left"/>
+
+        <BqlToWidgetsView name="BqlToWidgetsView2">
+          <WbViewBinding name="WbViewBinding" ord="station:|slot:/Home/Station$20parameters/General$20Resource$20Definition$20List"/>
+        </BqlToWidgetsView>
+
+      </GridPane>
+
+    </BorderPane>
+
+  </ScrollPane>
+
+</EdgePane>
+</content>
+</px>
