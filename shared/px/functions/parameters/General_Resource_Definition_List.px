@@ -22,89 +22,85 @@
 
     <OverCanvasPane viewSize="300.0,100.0" background="white" overBackground="#1af7aa29" radius="8.0px 8.0px 8.0px 8.0px">
 
-      <ValueBinding ord="slot:/Services/BtibService/resource/general/color" hyperlink="slot:/Services/BtibService/resource/general/color"/>
-
       <Picture layout="10.0,20.0,60.0,60.0" image="file:^images/icons/circularShapeOrange.svg" scale="fitRatio"/>
 
-      <Label layout="85.0,45.0,210.0,45.0" text="Mapping between resources and chart colors" image="" font="14.0pt Calibri Light" foreground="#797979" halign="left" valign="top" wordWrapEnabled="true">
-        <ValueBinding ord="slot:/Services/BtibService/resource/general/color" hyperlink="slot:/Services/BtibService/resource/general/color"/>
-      </Label>
+      <Label layout="85.0,45.0,210.0,45.0" text="Mapping between resources and chart colors" image="" font="14.0pt Calibri Light" foreground="#797979" halign="left" valign="top" wordWrapEnabled="true"/>
 
       <Picture layout="25.0,35.0,30.0,30.0" image="" scale="fitRatio">
-        <ValueBinding ord="slot:/Services/BtibService/resource/general/color/icon" hyperlink="slot:/Services/BtibService/resource/general/color">
+        <ValueBinding ord="slot:/Services/BtibService/resource/general/color/icon">
           <OrdToImage name="image"/>
         </ValueBinding>
+        <ValueBinding hyperlink="slot:/Services/BtibService/resource/general/color"/>
       </Picture>
 
       <Label layout="85.0,15.0,210.0,30.0" text="Color" image="" font="bold 16.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
-        <ValueBinding ord="slot:/Services/BtibService/resource/general/color" hyperlink="slot:/Services/BtibService/resource/general/color"/>
+        <ValueBinding hyperlink="slot:/Services/BtibService/resource/general/color"/>
       </Label>
+
+      <ValueBinding hyperlink="slot:/Services/BtibService/resource/general/color"/>
 
     </OverCanvasPane>
 
     <OverCanvasPane viewSize="300.0,100.0" background="white" overBackground="#1af7aa29" radius="8.0px 8.0px 8.0px 8.0px">
 
-      <ValueBinding ord="slot:/Services/BtibService/resource/general/graphType" hyperlink="slot:/Services/BtibService/resource/general/graphType"/>
-
       <Picture layout="10.0,20.0,60.0,60.0" image="file:^images/icons/circularShapeOrange.svg" scale="fitRatio"/>
 
-      <Label layout="85.0,45.0,210.0,45.0" text="Mapping between dimensions and types of charts" image="" font="14.0pt Calibri Light" foreground="#797979" halign="left" valign="top" wordWrapEnabled="true">
-        <ValueBinding ord="slot:/Services/BtibService/resource/general/graphType" hyperlink="slot:/Services/BtibService/resource/general/graphType"/>
-      </Label>
+      <Label layout="85.0,45.0,210.0,45.0" text="Mapping between dimensions and types of charts" image="" font="14.0pt Calibri Light" foreground="#797979" halign="left" valign="top" wordWrapEnabled="true"/>
 
       <Picture layout="25.0,35.0,30.0,30.0" image="" scale="fitRatio">
-        <ValueBinding ord="slot:/Services/BtibService/resource/general/graphType/icon" hyperlink="slot:/Services/BtibService/resource/general/graphType">
+        <ValueBinding ord="slot:/Services/BtibService/resource/general/graphType/icon">
           <OrdToImage name="image"/>
         </ValueBinding>
+        <ValueBinding hyperlink="slot:/Services/BtibService/resource/general/graphType"/>
       </Picture>
 
       <Label layout="85.0,15.0,210.0,30.0" text="Graph Type" image="" font="bold 16.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
-        <ValueBinding ord="slot:/Services/BtibService/resource/general/graphType" hyperlink="slot:/Services/BtibService/resource/general/graphType"/>
+        <ValueBinding hyperlink="slot:/Services/BtibService/resource/general/graphType"/>
       </Label>
+
+      <ValueBinding hyperlink="slot:/Services/BtibService/resource/general/graphType"/>
 
     </OverCanvasPane>
 
     <OverCanvasPane viewSize="300.0,100.0" background="white" overBackground="#1af7aa29" radius="8.0px 8.0px 8.0px 8.0px">
 
-      <ValueBinding ord="slot:/Services/BtibService/resource/general/yAggregation" hyperlink="slot:/Services/BtibService/resource/general/yAggregation"/>
-
       <Picture layout="10.0,20.0,60.0,60.0" image="file:^images/icons/circularShapeOrange.svg" scale="fitRatio"/>
 
-      <Label layout="85.0,45.0,210.0,45.0" text="Mapping between dimensions and chart aggregation operators" image="" font="14.0pt Calibri Light" foreground="#797979" halign="left" valign="top" wordWrapEnabled="true">
-        <ValueBinding ord="slot:/Services/BtibService/resource/general/yAggregation" hyperlink="slot:/Services/BtibService/resource/general/yAggregation"/>
-      </Label>
+      <Label layout="85.0,45.0,210.0,45.0" text="Mapping between dimensions and chart aggregation operators" image="" font="14.0pt Calibri Light" foreground="#797979" halign="left" valign="top" wordWrapEnabled="true"/>
 
       <Picture layout="25.0,35.0,30.0,30.0" image="" scale="fitRatio">
-        <ValueBinding ord="slot:/Services/BtibService/resource/general/yAggregation/icon" hyperlink="slot:/Services/BtibService/resource/general/yAggregation">
+        <ValueBinding ord="slot:/Services/BtibService/resource/general/yAggregation/icon">
           <OrdToImage name="image"/>
         </ValueBinding>
+        <ValueBinding hyperlink="slot:/Services/BtibService/resource/general/yAggregation"/>
       </Picture>
 
       <Label layout="85.0,15.0,210.0,30.0" text="Y Aggregation" image="" font="bold 16.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
-        <ValueBinding ord="slot:/Services/BtibService/resource/general/yAggregation" hyperlink="slot:/Services/BtibService/resource/general/yAggregation"/>
+        <ValueBinding hyperlink="slot:/Services/BtibService/resource/general/yAggregation"/>
       </Label>
+
+      <ValueBinding hyperlink="slot:/Services/BtibService/resource/general/yAggregation"/>
 
     </OverCanvasPane>
 
     <OverCanvasPane viewSize="300.0,100.0" background="white" overBackground="#1af7aa29" radius="8.0px 8.0px 8.0px 8.0px">
 
-      <ValueBinding ord="slot:/Services/BtibService/resource/general/delta" hyperlink="slot:/Services/BtibService/resource/general/delta"/>
-
       <Picture layout="10.0,20.0,60.0,60.0" image="file:^images/icons/circularShapeOrange.svg" scale="fitRatio"/>
 
-      <Label layout="85.0,45.0,210.0,45.0" text="Mapping between dimensions and delta operation for consumptions" image="" font="14.0pt Calibri Light" foreground="#797979" halign="left" valign="top" wordWrapEnabled="true">
-        <ValueBinding ord="slot:/Services/BtibService/resource/general/delta" hyperlink="slot:/Services/BtibService/resource/general/delta"/>
-      </Label>
+      <Label layout="85.0,45.0,210.0,45.0" text="Mapping between dimensions and delta operation for consumptions" image="" font="14.0pt Calibri Light" foreground="#797979" halign="left" valign="top" wordWrapEnabled="true"/>
 
       <Picture layout="25.0,35.0,30.0,30.0" image="" scale="fitRatio">
-        <ValueBinding ord="slot:/Services/BtibService/resource/general/delta/icon" hyperlink="slot:/Services/BtibService/resource/general/delta">
+        <ValueBinding ord="slot:/Services/BtibService/resource/general/delta/icon">
           <OrdToImage name="image"/>
         </ValueBinding>
+        <ValueBinding hyperlink="slot:/Services/BtibService/resource/general/delta"/>
       </Picture>
 
       <Label layout="85.0,15.0,210.0,30.0" text="Delta" image="" font="bold 16.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
-        <ValueBinding ord="slot:/Services/BtibService/resource/general/delta" hyperlink="slot:/Services/BtibService/resource/general/delta"/>
+        <ValueBinding hyperlink="slot:/Services/BtibService/resource/general/delta"/>
       </Label>
+
+      <ValueBinding hyperlink="slot:/Services/BtibService/resource/general/delta"/>
 
     </OverCanvasPane>
 

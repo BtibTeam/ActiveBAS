@@ -98,7 +98,7 @@
 
         <Line name="Line" stroke="#a8a8a8" geom="0.0,0.0 700.0,0.0"/>
 
-        <Label name="Label1" text="To define a new element:&#xa; 1. Duplicate an existing resource&#xa; 2. Define the mapping with the Nature model &#xa; 3. Open the px &#xa; 4. Create the new widget, it can be anything &#xa; 5. Add a binding called &#x22;IdBinding&#x22; and give it the widgetId you used in the resource" font="16.0pt Calibri" halign="left"/>
+        <Label name="Label1" text="To define a new element:&#xa; 1. Duplicate an existing resource&#xa; 2. Define the mapping with the Nature model &#xa; 3. Open the px &#xa; 4. Create the new widget, it can be anything &#xa; 5. Add a binding called &#x22;IdBinding&#x22; and give it the widgetId you used in the resource.&#xa; 6. After you made some changes, you will have to init the Nodes/InfoSource that may be affected" font="16.0pt Calibri" halign="left"/>
 
         <Line name="Line1" stroke="#a8a8a8" geom="0.0,0.0 700.0,0.0"/>
 

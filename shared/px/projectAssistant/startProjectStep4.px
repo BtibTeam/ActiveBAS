@@ -138,7 +138,7 @@
 
             <GridPane name="content" columnCount="3" halign="fill" rowAlign="bottom" columnAlign="fill" columnGap="8.0" stretchColumn="0">
 
-              <Label name="Label" text="Equipments are defined for the system navigation and for the automated popups on devices.&#xa;Open the btibProducts palette (or yours) and drag them into the corresponding parent or create news ones by drag&amp;droping new references" font="18.0pt Calibri" foreground="#282828" halign="left"/>
+              <Label name="Label" text="Equipments are defined for the system navigation and for the automated popup on devices.&#xa;Open the btibProducts palette (or yours) and drag the ones you need into the corresponding parent or create news ones by drag&amp;droping the &#x22;Reference&#x22; definition" font="18.0pt Calibri" foreground="#282828" halign="left"/>
 
               <Button name="Button" styleClasses="toolbar" text="  Back  " font="20.0pt SansSerif" foreground="#3a3a3a" background="white" valign="bottom" buttonStyle="toolBar">
                 <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$203"/>

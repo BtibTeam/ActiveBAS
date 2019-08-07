@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0">
+<px version="1.0" media="workbench:WbPxMedia">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
-  <module name="btibCore"/>
+  <module name="converters"/>
   <module name="gx"/>
+  <module name="kitPx"/>
 </import>
 <properties>
 
@@ -72,38 +73,53 @@
   <property name="headerDarkColorBackground" type="gx:Brush" value="#0277bd">
   </property>
 
+  <property name="nomSite" type="baja:String" value="Le rabelais">
+  </property>
+
+  <property name="vueCentraleForegroundNoire" type="gx:Brush" value="black">
+  </property>
+
 </properties>
 <content>
-<EdgePane>
+<CanvasPane viewSize="200.0,150.0" background="#f7f7f7">
 
-  <PxInclude name="top" ord="file:^px/menus/header.px"/>
+  <Picture name="Picture" layout="65.0,0.0,70.0,70.0" scale="fitRatio">
+    <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)/Step$20Completed">
+      <IBooleanToSimple name="image">
+        <Image name="trueValue" value="file:^images/icons/circularShapeLightGreen.svg"/>
+        <Image name="falseValue" value="file:^images/icons/circularShapeGray.svg"/>
+      </IBooleanToSimple>
+    </ValueBinding>
+  </Picture>
 
-  <PxInclude name="left" ord="file:^px/menus/left.px"/>
+  <Label name="Label" layout="30.0,75.0,140.0,30.0" text="$(displayName)" font="bold 18.0pt Calibri" wordWrapEnabled="true">
+    <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)/Step$20Completed">
+      <IBooleanToSimple name="foreground">
+        <Brush name="trueValue" value="#b2d035"/>
+        <Brush name="falseValue" value="#d5d5d5"/>
+      </IBooleanToSimple>
+    </ValueBinding>
+  </Label>
 
-  <BorderPane name="center" padding="0.0" fill="image( source(file:^images/backgrounds/lePlaza.jpg) valign(top) )">
+  <Picture name="Picture1" layout="82.5,15.0,35.0,35.0" image="file:^images/icons/building_w.svg" scale="fitRatio">
+    <ValueBinding name="ValueBinding" ord="$(lightIcon)">
+      <OrdToImage name="image"/>
+    </ValueBinding>
+  </Picture>
 
-    <GridPane name="content" columnCount="1" valign="fill" halign="fill" rowAlign="fill" columnAlign="fill" rowGap="30.0" stretchRow="1" stretchColumn="0">
+  <ValueBinding name="ValueBinding" ord="$(slotPathOrd)"/>
 
-      <BorderPane fill="#80f2f2f2">
+  <Label name="Label1" layout="20.0,110.0,160.0,40.0" text="$(description)" font="14.0pt Calibri Light" foreground="#797979" valign="top" wordWrapEnabled="true"/>
 
-        <GridPane name="content" columnCount="10" halign="left" stretchColumn="0">
+  <Line name="Line" pen="6.0" geom="135.0,35.0 225.0,35.0">
+    <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)/Step$20Completed">
+      <IBooleanToSimple name="stroke">
+        <Brush name="trueValue" value="#b2d035"/>
+        <Brush name="falseValue" value="#d5d5d5"/>
+      </IBooleanToSimple>
+    </ValueBinding>
+  </Line>
 
-          <Label text="%err:null:err:null:displayName% /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
-            <ValueBinding hyperlink="station:|%err:null:slotPathOrd%"/>
-          </Label>
-
-        </GridPane>
-
-      </BorderPane>
-
-      <IdBinding id="buildingGrid"/>
-
-    </GridPane>
-
-  </BorderPane>
-
-  <PxInclude name="right" ord="file:^px/menus/right.px"/>
-
-</EdgePane>
+</CanvasPane>
 </content>
 </px>

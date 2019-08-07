@@ -139,7 +139,7 @@
 
             <GridPane name="content" columnCount="3" halign="fill" rowAlign="bottom" columnAlign="fill" columnGap="8.0" stretchColumn="0" bandBrush="white">
 
-              <Label name="Label" text="Create the subsystems you will have on site among: &#x22;Electricity&#x22;, &#x22;Elevator&#x22;, &#x22;HVAC&#x22;, &#x22;Plumbing&#x22;, &#x22;System&#x22;, &#x22;Kitchen&#x22;, &#x22;Laboratory&#x22;, &#x22;Lighting&#x22;, &#x22;Medical&#x22;,&#xa;&#x22;Medical fluid&#x22; and &#x22;Others&#x22;. You can create new ones, but you will have to handle the icons matching by chaging the associated strategy." font="18.0pt Calibri" foreground="#282828" halign="left"/>
+              <Label name="Label" text="Create the subsystems you will have on site among: &#x22;Electricity&#x22;, &#x22;Elevator&#x22;, &#x22;HVAC&#x22;, &#x22;Plumbing&#x22;, &#x22;System&#x22;, &#x22;Kitchen&#x22;, &#x22;Laboratory&#x22;, &#x22;Lighting&#x22;, &#x22;Medical&#x22;,&#xa;&#x22;Medical fluid&#x22; and &#x22;Others&#x22;. You can create new ones, but you will have to handle the icons matching by changing the associated strategy." font="18.0pt Calibri" foreground="#282828" halign="left"/>
 
               <Button name="Button" styleClasses="toolbar" text="  Back  " font="20.0pt SansSerif" foreground="#3a3a3a" background="white" valign="bottom" buttonStyle="toolBar">
                 <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$202"/>

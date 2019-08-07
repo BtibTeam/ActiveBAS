@@ -81,9 +81,9 @@
 
 </properties>
 <content>
-<CanvasPane viewSize="230.0,150.0" background="#f7f7f7">
+<CanvasPane viewSize="200.0,150.0" background="#f7f7f7">
 
-  <Picture name="Picture" layout="80.0,0.0,70.0,70.0" scale="fitRatio">
+  <Picture name="Picture" layout="65.0,0.0,70.0,70.0" scale="fitRatio">
     <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)/Step$20Completed">
       <IBooleanToSimple name="image">
         <Image name="trueValue" value="file:^images/icons/circularShapeLightGreen.svg"/>
@@ -92,7 +92,7 @@
     </ValueBinding>
   </Picture>
 
-  <Label name="Label" layout="45.0,75.0,140.0,30.0" text="$(displayName)" font="bold 18.0pt Calibri" wordWrapEnabled="true">
+  <Label name="Label" layout="30.0,75.0,140.0,30.0" text="$(displayName)" font="bold 18.0pt Calibri" wordWrapEnabled="true">
     <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)/Step$20Completed">
       <IBooleanToSimple name="foreground">
         <Brush name="trueValue" value="#b2d035"/>
@@ -101,7 +101,7 @@
     </ValueBinding>
   </Label>
 
-  <Picture name="Picture1" layout="97.5,15.0,35.0,35.0" image="file:^images/icons/building_w.svg" scale="fitRatio">
+  <Picture name="Picture1" layout="82.5,15.0,35.0,35.0" image="file:^images/icons/building_w.svg" scale="fitRatio">
     <ValueBinding name="ValueBinding" ord="$(lightIcon)">
       <OrdToImage name="image"/>
     </ValueBinding>
@@ -109,9 +109,18 @@
 
   <ValueBinding name="ValueBinding" ord="$(slotPathOrd)"/>
 
-  <Label name="Label1" layout="20.0,110.0,190.0,40.0" text="$(description)" font="14.0pt Calibri Light" foreground="#797979" valign="top" wordWrapEnabled="true"/>
+  <Label name="Label1" layout="20.0,110.0,160.0,40.0" text="$(description)" font="14.0pt Calibri Light" foreground="#797979" valign="top" wordWrapEnabled="true"/>
 
-  <Line name="Line1" pen="6.0" geom="0.0,35.0 90.0,35.0">
+  <Line name="Line" pen="6.0" geom="135.0,35.0 225.0,35.0">
+    <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)/Step$20Completed">
+      <IBooleanToSimple name="stroke">
+        <Brush name="trueValue" value="#b2d035"/>
+        <Brush name="falseValue" value="#d5d5d5"/>
+      </IBooleanToSimple>
+    </ValueBinding>
+  </Line>
+
+  <Line name="Line1" pen="6.0" geom="0.0,35.0 75.0,35.0">
     <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)/Step$20Completed">
       <IBooleanToSimple name="stroke">
         <Brush name="trueValue" value="#b2d035"/>

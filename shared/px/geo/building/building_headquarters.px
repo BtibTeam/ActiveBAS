@@ -88,7 +88,7 @@
 
         <GridPane name="content" columnCount="10" halign="left" stretchColumn="0">
 
-          <Label text="headquarters /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
+          <Label text="Headquarters /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
             <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/location/building/headquarters"/>
           </Label>
 
@@ -97,32 +97,6 @@
       </BorderPane>
 
       <IdBinding id="buildingGrid"/>
-
-      <CanvasPane layout="850.0,45.0,100.0,50.0" viewSize="1200.0,800.0">
-
-        <IdBinding id="buildingCanvas"/>
-
-        <String name="id" value="widget_21866_14c33_0"/>
-
-        <Polygon fill="#b32326b8" stroke="white" pen="0.0" geom="330.0,190.0 310.0,260.0 440.0,250.0 560.0,250.0 560.0,180.0 460.0,160.0 ">
-          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/location/floor/groundFloor"/>
-          <IdBinding id="floorInBuilding"/>
-          <String name="id" value="widget_21893_dbff_0"/>
-        </Polygon>
-
-        <Polygon fill="#b32326b8" stroke="white" pen="0.0" geom="340.0,200.0 320.0,270.0 450.0,260.0 570.0,260.0 570.0,190.0 470.0,170.0 ">
-          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/location/floor/level1"/>
-          <IdBinding id="floorInBuilding"/>
-          <String name="id" value="widget_21896_dbff_0"/>
-        </Polygon>
-
-        <Polygon fill="#b32326b8" stroke="white" pen="0.0" geom="350.0,210.0 330.0,280.0 460.0,270.0 580.0,270.0 580.0,200.0 480.0,180.0 ">
-          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/location/floor/level2"/>
-          <IdBinding id="floorInBuilding"/>
-          <String name="id" value="widget_21899_dbff_0"/>
-        </Polygon>
-
-      </CanvasPane>
 
     </GridPane>
 

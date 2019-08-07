@@ -14,9 +14,9 @@
 
     <GridPane name="content" columnCount="1" halign="fill" columnGap="0.0" stretchColumn="0">
 
-      <BorderPane>
+      <BorderPane padding="5.0">
 
-        <Label name="content" font="42.0pt Calibri" foreground="#1976d2">
+        <Label name="content" font="34.0pt Calibri" foreground="#1976d2">
           <ValueBinding ord="slot:">
             <ObjectToString name="text" format="%time().weekday%"/>
           </ValueBinding>
@@ -26,13 +26,17 @@
 
       <GridPane halign="fill" columnGap="0.0" uniformRowHeight="true" stretchColumn="0">
 
-        <Picture scale="fitRatio">
-          <ValueBinding ord="station:|slot:/Home/Weather/DarkSkyWeather/currently/weatherIcon">
-            <IEnumToSimple name="image" map="gx:Image 4=file:^images/weather/hail128.png;3=file:^images/weather/snow128.png;8=file:^images/weather/partlyCloudyDay128.png;0=file:^images/weather/clearDay128.png;1=file:^images/weather/clearNight128.png;2=file:^images/weather/rain128.png;7=file:^images/weather/cloudy128.png;9=file:^images/weather/partlyCloudyNight128.png;6=file:^images/weather/fog128.png;5=file:^images/weather/wind128.png;default=file:^images/weather/clearDay128.png;"/>
-          </ValueBinding>
-        </Picture>
+        <CanvasPane viewSize="70.0,70.0">
 
-        <Label font="90.0pt Calibri" foreground="#393939">
+          <Picture scale="fitRatio">
+            <ValueBinding ord="station:|slot:/Home/Weather/DarkSkyWeather/currently/weatherIcon">
+              <IEnumToSimple name="image" map="gx:Image 4=file:^images/weather/hail128.png;3=file:^images/weather/snow128.png;8=file:^images/weather/partlyCloudyDay128.png;0=file:^images/weather/clearDay128.png;1=file:^images/weather/clearNight128.png;2=file:^images/weather/rain128.png;7=file:^images/weather/cloudy128.png;9=file:^images/weather/partlyCloudyNight128.png;6=file:^images/weather/fog128.png;5=file:^images/weather/wind128.png;default=file:^images/weather/clearDay128.png;"/>
+            </ValueBinding>
+          </Picture>
+
+        </CanvasPane>
+
+        <Label font="60.0pt Calibri" foreground="#393939">
           <ValueBinding ord="station:|slot:/Home/Weather/DarkSkyWeather/Temperature">
             <ObjectToString name="text" format="%out.value%"/>
           </ValueBinding>
@@ -40,9 +44,9 @@
 
       </GridPane>
 
-      <BorderPane>
+      <BorderPane padding="5.0">
 
-        <Label name="content" font="22.0pt Calibri" foreground="#828282" wordWrapEnabled="true">
+        <Label name="content" font="18.0pt Calibri" foreground="#828282" wordWrapEnabled="true">
           <ValueBinding ord="station:|slot:/Home/Weather/DarkSkyWeather/currently/summary">
             <ObjectToString name="text" format="%value%"/>
           </ValueBinding>
@@ -58,37 +62,37 @@
 
     <GridPane name="content" halign="fill" columnGap="30.0" stretchColumn="0">
 
-      <CanvasPane viewSize="54.0,54.0">
+      <CanvasPane viewSize="45.0,45.0">
 
         <Picture image="file:^images/weather/rain.svg" scale="fitRatio"/>
 
       </CanvasPane>
 
-      <Label font="54.0pt Calibri" foreground="white" valign="top">
+      <Label font="40.0pt Calibri" foreground="white" valign="top">
         <ValueBinding ord="station:|slot:/Home/Weather/DarkSkyWeather/currently/precipitationProbability">
           <ObjectToString name="text" format="%value%"/>
         </ValueBinding>
       </Label>
 
-      <CanvasPane viewSize="54.0,54.0">
+      <CanvasPane viewSize="45.0,45.0">
 
         <Picture image="file:^images/weather/humidity.svg" scale="fitRatio"/>
 
       </CanvasPane>
 
-      <Label font="54.0pt Calibri" foreground="white" valign="top">
+      <Label font="40.0pt Calibri" foreground="white" valign="top">
         <ValueBinding ord="station:|slot:/Home/Weather/DarkSkyWeather/currently/humidity">
           <ObjectToString name="text" format="%value%"/>
         </ValueBinding>
       </Label>
 
-      <CanvasPane viewSize="54.0,54.0">
+      <CanvasPane viewSize="45.0,45.0">
 
         <Picture image="file:^images/weather/wind.svg" scale="fitRatio"/>
 
       </CanvasPane>
 
-      <Label font="54.0pt Calibri" foreground="white" valign="top">
+      <Label font="40.0pt Calibri" foreground="white" valign="top">
         <ValueBinding ord="station:|slot:/Home/Weather/DarkSkyWeather/WindSpeed">
           <ObjectToString name="text" format="%out.value%"/>
         </ValueBinding>

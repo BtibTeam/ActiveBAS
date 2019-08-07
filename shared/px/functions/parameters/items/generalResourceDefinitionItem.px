@@ -4,7 +4,8 @@
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
-  <module name="converters"/>
+  <module name="btibCore"/>
+  <module name="btibVision"/>
   <module name="gx"/>
   <module name="kitPx"/>
 </import>
@@ -76,59 +77,27 @@
   <property name="nomSite" type="baja:String" value="Le rabelais">
   </property>
 
-  <property name="vueCentraleForegroundNoire" type="gx:Brush" value="black">
-  </property>
-
 </properties>
 <content>
-<CanvasPane viewSize="230.0,150.0" background="#f7f7f7">
+<OverCanvasPane viewSize="300.0,100.0" background="white" overBackground="#1af7aa29" radius="8.0px 8.0px 8.0px 8.0px">
 
-  <Picture name="Picture" layout="80.0,0.0,70.0,70.0" scale="fitRatio">
-    <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)/Step$20Completed">
-      <IBooleanToSimple name="image">
-        <Image name="trueValue" value="file:^images/icons/circularShapeLightGreen.svg"/>
-        <Image name="falseValue" value="file:^images/icons/circularShapeGray.svg"/>
-      </IBooleanToSimple>
-    </ValueBinding>
-  </Picture>
+  <Picture name="Picture" layout="10.0,20.0,60.0,60.0" image="file:^images/icons/circularShapeOrange.svg" scale="fitRatio"/>
 
-  <Label name="Label" layout="45.0,75.0,140.0,30.0" text="$(displayName)" font="bold 18.0pt Calibri" wordWrapEnabled="true">
-    <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)/Step$20Completed">
-      <IBooleanToSimple name="foreground">
-        <Brush name="trueValue" value="#b2d035"/>
-        <Brush name="falseValue" value="#d5d5d5"/>
-      </IBooleanToSimple>
-    </ValueBinding>
-  </Label>
+  <Label name="Label" layout="85.0,45.0,210.0,45.0" text="$(description)" font="14.0pt Calibri Light" foreground="#797979" halign="left" valign="top" wordWrapEnabled="true"/>
 
-  <Picture name="Picture1" layout="97.5,15.0,35.0,35.0" image="file:^images/icons/building_w.svg" scale="fitRatio">
-    <ValueBinding name="ValueBinding" ord="$(lightIcon)">
+  <Picture name="Picture1" layout="25.0,35.0,30.0,30.0" scale="fitRatio">
+    <ValueBinding name="ValueBinding" ord="$(slotPathOrd)/icon">
       <OrdToImage name="image"/>
     </ValueBinding>
+    <ValueBinding name="ValueBinding1" hyperlink="$(slotPathOrd)"/>
   </Picture>
 
-  <ValueBinding name="ValueBinding" ord="$(slotPathOrd)"/>
+  <Label name="Label1" layout="85.0,15.0,210.0,30.0" text="$(displayName)" font="bold 16.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
+    <ValueBinding name="ValueBinding" hyperlink="$(slotPathOrd)"/>
+  </Label>
 
-  <Label name="Label1" layout="20.0,110.0,190.0,40.0" text="$(description)" font="14.0pt Calibri Light" foreground="#797979" valign="top" wordWrapEnabled="true"/>
+  <ValueBinding name="ValueBinding" hyperlink="$(slotPathOrd)"/>
 
-  <Line name="Line" pen="6.0" geom="150.0,35.0 240.0,35.0">
-    <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)/Step$20Completed">
-      <IBooleanToSimple name="stroke">
-        <Brush name="trueValue" value="#b2d035"/>
-        <Brush name="falseValue" value="#d5d5d5"/>
-      </IBooleanToSimple>
-    </ValueBinding>
-  </Line>
-
-  <Line name="Line1" pen="6.0" geom="0.0,35.0 90.0,35.0">
-    <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)/Step$20Completed">
-      <IBooleanToSimple name="stroke">
-        <Brush name="trueValue" value="#b2d035"/>
-        <Brush name="falseValue" value="#d5d5d5"/>
-      </IBooleanToSimple>
-    </ValueBinding>
-  </Line>
-
-</CanvasPane>
+</OverCanvasPane>
 </content>
 </px>

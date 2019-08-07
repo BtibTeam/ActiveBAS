@@ -139,7 +139,7 @@
 
             <GridPane name="GridPane" columnCount="1" halign="left">
 
-              <Label name="Label" text="Create the buildings/floors/zones you have on site.&#xa;If you have many to create you can import them from a .csv file" font="18.0pt Calibri" foreground="#282828" halign="left"/>
+              <Label name="Label" text="Create the buildings/floors/zones... you have on site.&#xa;If you have many to create you can import them from a .csv file" font="18.0pt Calibri" foreground="#282828" halign="left"/>
 
               <Label name="Label1" text="See a .csv example file" font="underline 16.0pt Calibri" foreground="#282828" halign="left">
                 <EnhancedHyperlinkBinding name="EnhancedHyperlinkBinding" ord="slot:nodeCreatorCsvExample" hyperlinkFormat="%.%">

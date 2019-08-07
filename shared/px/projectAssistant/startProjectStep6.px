@@ -137,7 +137,7 @@
 
             <GridPane name="GridPane" columnCount="1" halign="left">
 
-              <Label name="Label" text="Great! Now you have a data model ready. Let&#x27;s export it to Excel in a pre-configured file.&#xa; Then create your drivers and assign them to the data model you just created.&#xa; You will save a lot of time." font="18.0pt Calibri" foreground="#282828" halign="left"/>
+              <Label name="Label" text="Great! Now you have now a data model ready to be used. Let&#x27;s export it to Excel in a pre-configured file for ActivePro.&#xa; Then you can simply create your drivers/devices/points and assign them to the data model you just created." font="18.0pt Calibri" foreground="#282828" halign="left"/>
 
             </GridPane>
 
@@ -148,28 +148,39 @@
               </ActionBinding>
             </Button>
 
-            <Button name="Button1" styleClasses="toolbar" text="  Final step  " font="20.0pt SansSerif" foreground="white" background="#b2d035" valign="bottom" buttonStyle="toolBar">
+            <Button name="Button1" styleClasses="toolbar" text="  Next step  " font="20.0pt SansSerif" foreground="white" background="#b2d035" valign="bottom" buttonStyle="toolBar">
               <ActionBinding name="ActionBinding" ord="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Final/Step$20Completed/active" widgetEvent="actionPerformed">
                 <Override name="actionArg"/>
               </ActionBinding>
               <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Final"/>
+              <ActionBinding name="ActionBinding1" ord="station:|slot:/Services/BtibService/strategy/Project$20Assistant/Finish$20Project$20Assistant/AutomaticTrigger/fireTrigger" widgetEvent="actionPerformed"/>
             </Button>
 
           </GridPane>
 
         </BorderPane>
 
-        <GridPane name="GridPane">
+        <CanvasPane name="CanvasPane" viewSize="80.0,80.0">
 
-          <Button name="Button" styleClasses="toolbar" text="  Export to Excel  " font="20.0pt SansSerif" foreground="white" background="#009688" valign="bottom" buttonStyle="toolBar">
-            <ActionBinding name="ActionBinding" ord="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$206/Step$20Completed/active" widgetEvent="actionPerformed">
-              <Override name="actionArg"/>
-            </ActionBinding>
-            <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$206"/>
-            <ActionBinding name="ActionBinding1" ord="station:|slot:/Services/BtibService/aspectContainer/location/initialize" widgetEvent="actionPerformed"/>
-          </Button>
+          <Picture name="Picture" image="file:^images/icons/excel.svg" scale="fitRatio"/>
 
-        </GridPane>
+        </CanvasPane>
+
+        <BorderPane name="BorderPane1">
+
+          <GridPane name="content">
+
+            <Button name="Button" styleClasses="toolbar" text="  Export to Excel  " font="20.0pt SansSerif" foreground="white" background="#2e7d32" valign="bottom" buttonStyle="toolBar">
+              <ActionBinding name="ActionBinding" ord="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$206/Step$20Completed/active" widgetEvent="actionPerformed">
+                <Override name="actionArg"/>
+              </ActionBinding>
+              <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$206"/>
+              <ActionBinding name="ActionBinding1" ord="station:|slot:/Services/BtibService/aspectContainer/location/initialize" widgetEvent="actionPerformed"/>
+            </Button>
+
+          </GridPane>
+
+        </BorderPane>
 
       </GridPane>
 

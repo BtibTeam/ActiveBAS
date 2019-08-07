@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="gx"/>
+</import>
+<content>
+<ScrollPane>
+
+  <CanvasPane name="content" viewSize="1000.0,600.0" scale="fitRatio" minScaleFactor="0.5" maxScaleFactor="1.0">
+
+    <Label layout="130.0,90.0,730.0,140.0" text="This is an example of a synoptic for a device.&#xa; Every time a device has a pxView called &#x22;synoptic&#x22;, this card will appear in the FlexView." font="18.0pt SansSerif" foreground="white" background="#e45858"/>
+
+    <Label layout="130.0,250.0,700.0,110.0" text="To try it:&#xa; 1 - Create a new view on a device and call it &#x22;synoptic&#x22;. Careful, it&#x27;s the name of the view (the slot) not the px. The px can take any name.&#xa; 2 - Refresh the view on the device, a new tab &#x22;Synoptic&#x22; should appear." font="18.0pt SansSerif" foreground="#313131" halign="left" wordWrapEnabled="true"/>
+
+    <Label layout="140.0,550.0,700.0,30.0" text="P.S. Try to create a synoptic with a nicer design than this one ;)" font="italic 18.0pt SansSerif" foreground="#313131" wordWrapEnabled="true"/>
+
+  </CanvasPane>
+
+</ScrollPane>
+</content>
+</px>

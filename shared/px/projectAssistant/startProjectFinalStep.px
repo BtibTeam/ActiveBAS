@@ -10,6 +10,7 @@
   <module name="converters"/>
   <module name="gx"/>
   <module name="kitPx"/>
+  <module name="vykonPro"/>
   <module name="workbench"/>
 </import>
 <properties>
@@ -138,13 +139,13 @@
 
             <GridPane name="GridPane" columnCount="1" halign="left">
 
-              <Label name="Label" text="Explore the different parameters of the station." font="18.0pt Calibri" foreground="#282828" halign="left"/>
+              <Label name="Label" text="Explore the different parameters of the station. &#xa;You can find all those parameters in the menu available at the top right." font="18.0pt Calibri" foreground="#282828" halign="left"/>
 
             </GridPane>
 
             <Button name="Button" styleClasses="toolbar" text="  Back  " font="20.0pt SansSerif" foreground="#3a3a3a" background="white" valign="bottom" buttonStyle="toolBar">
-              <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$205"/>
-              <ActionBinding name="ActionBinding" ord="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$206/Step$20Completed/inactive" widgetEvent="actionPerformed">
+              <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$206"/>
+              <ActionBinding name="ActionBinding" ord="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Final/Step$20Completed/inactive" widgetEvent="actionPerformed">
                 <Override name="actionArg"/>
               </ActionBinding>
             </Button>

@@ -6,6 +6,7 @@
   <module name="bajaui"/>
   <module name="btibCore"/>
   <module name="btibVision"/>
+  <module name="control"/>
   <module name="converters"/>
   <module name="gx"/>
   <module name="kitPx"/>
@@ -124,7 +125,13 @@
 
     <GridPane name="content" columnCount="1" columnAlign="center" rowGap="50.0" columnGap="30.0" uniformColumnWidth="true">
 
-      <Label name="Label" text="The station is going to be filled with demo data&#xa; so you can demonstrate its potential." font="18.0pt Calibri">
+      <CanvasPane name="CanvasPane" viewSize="200.0,200.0">
+
+        <Picture name="Picture" image="file:^images/icons/funnel.svg" scale="fitRatio"/>
+
+      </CanvasPane>
+
+      <Label name="Label" text="The station is going to be filled with demo data&#xa; so you can demonstrate its potential. Ready?" font="18.0pt Calibri">
         <ValueBinding name="ValueBinding" ord="station:|slot:/Home/Project$20Assistant/Set$20up$20the$20demo/And/out">
           <IBooleanToSimple name="visible">
             <Boolean name="trueValue" value="false"/>
@@ -133,16 +140,28 @@
         </ValueBinding>
       </Label>
 
-      <ImageButton name="ImageButton" styleClasses="toolbar" text="  Prepare the station  " font="20.0pt SansSerif" foreground="white" background="#b2d035" buttonStyle="toolBar">
-        <ActionBinding name="ActionBinding" ord="station:|slot:/Home/Project$20Assistant/Set$20up$20the$20demo/OneShot/fire" widgetEvent="actionPerformed"/>
-        <WsAnnotation name="wsAnnotation" value="6,6,8"/>
+      <GridPane name="GridPane1" columnGap="10.0">
+
+        <Button name="Button" styleClasses="toolbar" text="  Back  " font="20.0pt SansSerif" foreground="#3a3a3a" background="white" valign="bottom" buttonStyle="toolBar">
+          <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Home/Project$20Assistant"/>
+          <ActionBinding name="ActionBinding" ord="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$201/Step$20Completed/inactive" widgetEvent="actionPerformed">
+            <Override name="actionArg"/>
+          </ActionBinding>
+        </Button>
+
+        <ImageButton name="ImageButton" styleClasses="toolbar" text="  Prepare the station  " font="20.0pt SansSerif" foreground="white" background="#b2d035" buttonStyle="toolBar">
+          <ActionBinding name="ActionBinding" ord="station:|slot:/Home/Project$20Assistant/Set$20up$20the$20demo/OneShot/fire" widgetEvent="actionPerformed"/>
+          <WsAnnotation name="wsAnnotation" value="6,6,8"/>
+        </ImageButton>
+
         <ValueBinding name="ValueBinding" ord="station:|slot:/Home/Project$20Assistant/Set$20up$20the$20demo/RSLatch/out">
           <IBooleanToSimple name="visible">
             <Boolean name="trueValue" value="false"/>
             <Boolean name="falseValue" value="true"/>
           </IBooleanToSimple>
         </ValueBinding>
-      </ImageButton>
+
+      </GridPane>
 
       <Label name="Label1" text="The station is ready!" font="14.0pt Calibri">
         <ValueBinding name="ValueBinding" ord="station:|slot:/Home/Project$20Assistant/Set$20up$20the$20demo/And/out">
@@ -171,6 +190,7 @@
         <ValueBinding name="ValueBinding" ord="station:|slot:/Home/Project$20Assistant/Set$20up$20the$20demo/And/out" hyperlink="station:|slot:/Home">
           <IBooleanToSimple name="visible"/>
         </ValueBinding>
+        <ActionBinding name="ActionBinding" ord="station:|slot:/Services/BtibService/strategy/Project$20Assistant/Finish$20Project$20Assistant/AutomaticTrigger/fireTrigger" widgetEvent="actionPerformed"/>
       </ImageButton>
 
     </GridPane>

@@ -19,9 +19,9 @@
 
   <GridPane name="content" columnCount="7" valign="top" rowAlign="top" rowGap="0.0" columnGap="0.0">
 
-    <CanvasPane viewSize="230.0,150.0" background="#f7f7f7">
+    <CanvasPane viewSize="200.0,150.0" background="#f7f7f7">
 
-      <Picture layout="80.0,0.0,70.0,70.0" image="" scale="fitRatio">
+      <Picture layout="65.0,0.0,70.0,70.0" image="" scale="fitRatio">
         <ValueBinding ord="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$201/Step$20Completed">
           <IBooleanToSimple name="image">
             <Image name="trueValue" value="file:^images/icons/circularShapeLightGreen.svg"/>
@@ -30,7 +30,7 @@
         </ValueBinding>
       </Picture>
 
-      <Label layout="45.0,75.0,140.0,30.0" text="Step 1" image="" font="bold 18.0pt Calibri" wordWrapEnabled="true">
+      <Label layout="30.0,75.0,140.0,30.0" text="Step 1" image="" font="bold 18.0pt Calibri" wordWrapEnabled="true">
         <ValueBinding ord="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$201/Step$20Completed">
           <IBooleanToSimple name="foreground">
             <Brush name="trueValue" value="#b2d035"/>
@@ -39,7 +39,7 @@
         </ValueBinding>
       </Label>
 
-      <Picture layout="97.5,15.0,35.0,35.0" image="file:^images/icons/building_w.svg" scale="fitRatio">
+      <Picture layout="82.5,15.0,35.0,35.0" image="file:^images/icons/building_w.svg" scale="fitRatio">
         <ValueBinding ord="file:^images/icons/building_w.svg">
           <OrdToImage name="image"/>
         </ValueBinding>
@@ -47,9 +47,9 @@
 
       <ValueBinding ord="slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$201"/>
 
-      <Label layout="20.0,110.0,190.0,40.0" text="Configure the main parameters of the station" image="" font="14.0pt Calibri Light" foreground="#797979" valign="top" wordWrapEnabled="true"/>
+      <Label layout="20.0,110.0,160.0,40.0" text="Configure the main parameters of the station" image="" font="14.0pt Calibri Light" foreground="#797979" valign="top" wordWrapEnabled="true"/>
 
-      <Line pen="6.0" geom="150.0,35.0 240.0,35.0">
+      <Line pen="6.0" geom="135.0,35.0 225.0,35.0">
         <ValueBinding ord="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$201/Step$20Completed">
           <IBooleanToSimple name="stroke">
             <Brush name="trueValue" value="#b2d035"/>
@@ -60,9 +60,9 @@
 
     </CanvasPane>
 
-    <CanvasPane viewSize="230.0,150.0" background="#f7f7f7">
+    <CanvasPane viewSize="200.0,150.0" background="#f7f7f7">
 
-      <Picture layout="80.0,0.0,70.0,70.0" image="" scale="fitRatio">
+      <Picture layout="65.0,0.0,70.0,70.0" image="" scale="fitRatio">
         <ValueBinding ord="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$202/Step$20Completed">
           <IBooleanToSimple name="image">
             <Image name="trueValue" value="file:^images/icons/circularShapeLightGreen.svg"/>
@@ -71,7 +71,7 @@
         </ValueBinding>
       </Picture>
 
-      <Label layout="45.0,75.0,140.0,30.0" text="Step 2" image="" font="bold 18.0pt Calibri" wordWrapEnabled="true">
+      <Label layout="30.0,75.0,140.0,30.0" text="Step 2" image="" font="bold 18.0pt Calibri" wordWrapEnabled="true">
         <ValueBinding ord="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$202/Step$20Completed">
           <IBooleanToSimple name="foreground">
             <Brush name="trueValue" value="#b2d035"/>
@@ -80,7 +80,7 @@
         </ValueBinding>
       </Label>
 
-      <Picture layout="97.5,15.0,35.0,35.0" image="file:^images/icons/building_w.svg" scale="fitRatio">
+      <Picture layout="82.5,15.0,35.0,35.0" image="file:^images/icons/building_w.svg" scale="fitRatio">
         <ValueBinding ord="module://themeBtib/image/svg/buldings_w.svg">
           <OrdToImage name="image"/>
         </ValueBinding>
@@ -88,9 +88,9 @@
 
       <ValueBinding ord="slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$202"/>
 
-      <Label layout="20.0,110.0,190.0,40.0" text="Configure the building structure for tagging and views" image="" font="14.0pt Calibri Light" foreground="#797979" valign="top" wordWrapEnabled="true"/>
+      <Label layout="20.0,110.0,160.0,40.0" text="Configure the building structure for tagging and views" image="" font="14.0pt Calibri Light" foreground="#797979" valign="top" wordWrapEnabled="true"/>
 
-      <Line pen="6.0" geom="150.0,35.0 240.0,35.0">
+      <Line pen="6.0" geom="135.0,35.0 225.0,35.0">
         <ValueBinding ord="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$202/Step$20Completed">
           <IBooleanToSimple name="stroke">
             <Brush name="trueValue" value="#b2d035"/>
@@ -99,7 +99,7 @@
         </ValueBinding>
       </Line>
 
-      <Line pen="6.0" geom="0.0,35.0 90.0,35.0">
+      <Line pen="6.0" geom="0.0,35.0 75.0,35.0">
         <ValueBinding ord="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$202/Step$20Completed">
           <IBooleanToSimple name="stroke">
             <Brush name="trueValue" value="#b2d035"/>
@@ -110,9 +110,9 @@
 
     </CanvasPane>
 
-    <CanvasPane viewSize="230.0,150.0" background="#f7f7f7">
+    <CanvasPane viewSize="200.0,150.0" background="#f7f7f7">
 
-      <Picture layout="80.0,0.0,70.0,70.0" image="" scale="fitRatio">
+      <Picture layout="65.0,0.0,70.0,70.0" image="" scale="fitRatio">
         <ValueBinding ord="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$203/Step$20Completed">
           <IBooleanToSimple name="image">
             <Image name="trueValue" value="file:^images/icons/circularShapeLightGreen.svg"/>
@@ -121,7 +121,7 @@
         </ValueBinding>
       </Picture>
 
-      <Label layout="45.0,75.0,140.0,30.0" text="Step 3" image="" font="bold 18.0pt Calibri" wordWrapEnabled="true">
+      <Label layout="30.0,75.0,140.0,30.0" text="Step 3" image="" font="bold 18.0pt Calibri" wordWrapEnabled="true">
         <ValueBinding ord="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$203/Step$20Completed">
           <IBooleanToSimple name="foreground">
             <Brush name="trueValue" value="#b2d035"/>
@@ -130,7 +130,7 @@
         </ValueBinding>
       </Label>
 
-      <Picture layout="97.5,15.0,35.0,35.0" image="file:^images/icons/building_w.svg" scale="fitRatio">
+      <Picture layout="82.5,15.0,35.0,35.0" image="file:^images/icons/building_w.svg" scale="fitRatio">
         <ValueBinding ord="module://themeBtib/image/svg/subsystem_w.svg">
           <OrdToImage name="image"/>
         </ValueBinding>
@@ -138,9 +138,9 @@
 
       <ValueBinding ord="slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$203"/>
 
-      <Label layout="20.0,110.0,190.0,40.0" text="Define the subsystems for alarms and permissions" image="" font="14.0pt Calibri Light" foreground="#797979" valign="top" wordWrapEnabled="true"/>
+      <Label layout="20.0,110.0,160.0,40.0" text="Define the subsystems for alarms and permissions" image="" font="14.0pt Calibri Light" foreground="#797979" valign="top" wordWrapEnabled="true"/>
 
-      <Line pen="6.0" geom="150.0,35.0 240.0,35.0">
+      <Line pen="6.0" geom="135.0,35.0 225.0,35.0">
         <ValueBinding ord="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$203/Step$20Completed">
           <IBooleanToSimple name="stroke">
             <Brush name="trueValue" value="#b2d035"/>
@@ -149,7 +149,7 @@
         </ValueBinding>
       </Line>
 
-      <Line pen="6.0" geom="0.0,35.0 90.0,35.0">
+      <Line pen="6.0" geom="0.0,35.0 75.0,35.0">
         <ValueBinding ord="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$203/Step$20Completed">
           <IBooleanToSimple name="stroke">
             <Brush name="trueValue" value="#b2d035"/>
@@ -160,9 +160,9 @@
 
     </CanvasPane>
 
-    <CanvasPane viewSize="230.0,150.0" background="#f7f7f7">
+    <CanvasPane viewSize="200.0,150.0" background="#f7f7f7">
 
-      <Picture layout="80.0,0.0,70.0,70.0" image="" scale="fitRatio">
+      <Picture layout="65.0,0.0,70.0,70.0" image="" scale="fitRatio">
         <ValueBinding ord="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$204/Step$20Completed">
           <IBooleanToSimple name="image">
             <Image name="trueValue" value="file:^images/icons/circularShapeLightGreen.svg"/>
@@ -171,7 +171,7 @@
         </ValueBinding>
       </Picture>
 
-      <Label layout="45.0,75.0,140.0,30.0" text="Step 4" image="" font="bold 18.0pt Calibri" wordWrapEnabled="true">
+      <Label layout="30.0,75.0,140.0,30.0" text="Step 4" image="" font="bold 18.0pt Calibri" wordWrapEnabled="true">
         <ValueBinding ord="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$204/Step$20Completed">
           <IBooleanToSimple name="foreground">
             <Brush name="trueValue" value="#b2d035"/>
@@ -180,7 +180,7 @@
         </ValueBinding>
       </Label>
 
-      <Picture layout="97.5,15.0,35.0,35.0" image="file:^images/icons/building_w.svg" scale="fitRatio">
+      <Picture layout="82.5,15.0,35.0,35.0" image="file:^images/icons/building_w.svg" scale="fitRatio">
         <ValueBinding ord="module://themeBtib/image/svg/device_w.svg">
           <OrdToImage name="image"/>
         </ValueBinding>
@@ -188,9 +188,9 @@
 
       <ValueBinding ord="slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$204"/>
 
-      <Label layout="20.0,110.0,190.0,40.0" text="Define the different equipments with photo, datasheet..." image="" font="14.0pt Calibri Light" foreground="#797979" valign="top" wordWrapEnabled="true"/>
+      <Label layout="20.0,110.0,160.0,40.0" text="Define the different equipments with photo, datasheet..." image="" font="14.0pt Calibri Light" foreground="#797979" valign="top" wordWrapEnabled="true"/>
 
-      <Line pen="6.0" geom="150.0,35.0 240.0,35.0">
+      <Line pen="6.0" geom="135.0,35.0 225.0,35.0">
         <ValueBinding ord="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$204/Step$20Completed">
           <IBooleanToSimple name="stroke">
             <Brush name="trueValue" value="#b2d035"/>
@@ -199,7 +199,7 @@
         </ValueBinding>
       </Line>
 
-      <Line pen="6.0" geom="0.0,35.0 90.0,35.0">
+      <Line pen="6.0" geom="0.0,35.0 75.0,35.0">
         <ValueBinding ord="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$204/Step$20Completed">
           <IBooleanToSimple name="stroke">
             <Brush name="trueValue" value="#b2d035"/>
@@ -210,9 +210,9 @@
 
     </CanvasPane>
 
-    <CanvasPane viewSize="230.0,150.0" background="#f7f7f7">
+    <CanvasPane viewSize="200.0,150.0" background="#f7f7f7">
 
-      <Picture layout="80.0,0.0,70.0,70.0" image="" scale="fitRatio">
+      <Picture layout="65.0,0.0,70.0,70.0" image="" scale="fitRatio">
         <ValueBinding ord="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$205/Step$20Completed">
           <IBooleanToSimple name="image">
             <Image name="trueValue" value="file:^images/icons/circularShapeLightGreen.svg"/>
@@ -221,7 +221,7 @@
         </ValueBinding>
       </Picture>
 
-      <Label layout="45.0,75.0,140.0,30.0" text="Step 5" image="" font="bold 18.0pt Calibri" wordWrapEnabled="true">
+      <Label layout="30.0,75.0,140.0,30.0" text="Step 5" image="" font="bold 18.0pt Calibri" wordWrapEnabled="true">
         <ValueBinding ord="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$205/Step$20Completed">
           <IBooleanToSimple name="foreground">
             <Brush name="trueValue" value="#b2d035"/>
@@ -230,7 +230,7 @@
         </ValueBinding>
       </Label>
 
-      <Picture layout="97.5,15.0,35.0,35.0" image="file:^images/icons/building_w.svg" scale="fitRatio">
+      <Picture layout="82.5,15.0,35.0,35.0" image="file:^images/icons/building_w.svg" scale="fitRatio">
         <ValueBinding ord="module://themeBtib/image/svg/bulding_w.svg">
           <OrdToImage name="image"/>
         </ValueBinding>
@@ -238,9 +238,9 @@
 
       <ValueBinding ord="slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$205"/>
 
-      <Label layout="20.0,110.0,190.0,40.0" text="Create the geographic structure (buildings, floors...)" image="" font="14.0pt Calibri Light" foreground="#797979" valign="top" wordWrapEnabled="true"/>
+      <Label layout="20.0,110.0,160.0,40.0" text="Create the geographic structure (buildings, floors...)" image="" font="14.0pt Calibri Light" foreground="#797979" valign="top" wordWrapEnabled="true"/>
 
-      <Line pen="6.0" geom="150.0,35.0 240.0,35.0">
+      <Line pen="6.0" geom="135.0,35.0 225.0,35.0">
         <ValueBinding ord="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$205/Step$20Completed">
           <IBooleanToSimple name="stroke">
             <Brush name="trueValue" value="#b2d035"/>
@@ -249,7 +249,7 @@
         </ValueBinding>
       </Line>
 
-      <Line pen="6.0" geom="0.0,35.0 90.0,35.0">
+      <Line pen="6.0" geom="0.0,35.0 75.0,35.0">
         <ValueBinding ord="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$205/Step$20Completed">
           <IBooleanToSimple name="stroke">
             <Brush name="trueValue" value="#b2d035"/>
@@ -260,9 +260,9 @@
 
     </CanvasPane>
 
-    <CanvasPane viewSize="230.0,150.0" background="#f7f7f7">
+    <CanvasPane viewSize="200.0,150.0" background="#f7f7f7">
 
-      <Picture layout="80.0,0.0,70.0,70.0" image="" scale="fitRatio">
+      <Picture layout="65.0,0.0,70.0,70.0" image="" scale="fitRatio">
         <ValueBinding ord="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$206/Step$20Completed">
           <IBooleanToSimple name="image">
             <Image name="trueValue" value="file:^images/icons/circularShapeLightGreen.svg"/>
@@ -271,7 +271,7 @@
         </ValueBinding>
       </Picture>
 
-      <Label layout="45.0,75.0,140.0,30.0" text="Step 6" image="" font="bold 18.0pt Calibri" wordWrapEnabled="true">
+      <Label layout="30.0,75.0,140.0,30.0" text="Step 6" image="" font="bold 18.0pt Calibri" wordWrapEnabled="true">
         <ValueBinding ord="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$206/Step$20Completed">
           <IBooleanToSimple name="foreground">
             <Brush name="trueValue" value="#b2d035"/>
@@ -280,7 +280,7 @@
         </ValueBinding>
       </Label>
 
-      <Picture layout="97.5,15.0,35.0,35.0" image="file:^images/icons/building_w.svg" scale="fitRatio">
+      <Picture layout="82.5,15.0,35.0,35.0" image="file:^images/icons/building_w.svg" scale="fitRatio">
         <ValueBinding ord="module://themeBtib/image/svg/geometric1_w.svg">
           <OrdToImage name="image"/>
         </ValueBinding>
@@ -288,9 +288,9 @@
 
       <ValueBinding ord="slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$206"/>
 
-      <Label layout="20.0,110.0,190.0,40.0" text="Create your drivers, devices and points" image="" font="14.0pt Calibri Light" foreground="#797979" valign="top" wordWrapEnabled="true"/>
+      <Label layout="20.0,110.0,160.0,40.0" text="Create your drivers, devices and points" image="" font="14.0pt Calibri Light" foreground="#797979" valign="top" wordWrapEnabled="true"/>
 
-      <Line pen="6.0" geom="150.0,35.0 240.0,35.0">
+      <Line pen="6.0" geom="135.0,35.0 225.0,35.0">
         <ValueBinding ord="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$206/Step$20Completed">
           <IBooleanToSimple name="stroke">
             <Brush name="trueValue" value="#b2d035"/>
@@ -299,7 +299,7 @@
         </ValueBinding>
       </Line>
 
-      <Line pen="6.0" geom="0.0,35.0 90.0,35.0">
+      <Line pen="6.0" geom="0.0,35.0 75.0,35.0">
         <ValueBinding ord="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$206/Step$20Completed">
           <IBooleanToSimple name="stroke">
             <Brush name="trueValue" value="#b2d035"/>
@@ -310,9 +310,9 @@
 
     </CanvasPane>
 
-    <CanvasPane viewSize="230.0,150.0" background="#f7f7f7">
+    <CanvasPane viewSize="200.0,150.0" background="#f7f7f7">
 
-      <Picture layout="80.0,0.0,70.0,70.0" image="" scale="fitRatio">
+      <Picture layout="65.0,0.0,70.0,70.0" image="" scale="fitRatio">
         <ValueBinding ord="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Final/Step$20Completed">
           <IBooleanToSimple name="image">
             <Image name="trueValue" value="file:^images/icons/circularShapeLightGreen.svg"/>
@@ -321,7 +321,7 @@
         </ValueBinding>
       </Picture>
 
-      <Label layout="45.0,75.0,140.0,30.0" text="Final" image="" font="bold 18.0pt Calibri" wordWrapEnabled="true">
+      <Label layout="30.0,75.0,140.0,30.0" text="Final" image="" font="bold 18.0pt Calibri" wordWrapEnabled="true">
         <ValueBinding ord="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Final/Step$20Completed">
           <IBooleanToSimple name="foreground">
             <Brush name="trueValue" value="#b2d035"/>
@@ -330,7 +330,7 @@
         </ValueBinding>
       </Label>
 
-      <Picture layout="97.5,15.0,35.0,35.0" image="file:^images/icons/building_w.svg" scale="fitRatio">
+      <Picture layout="82.5,15.0,35.0,35.0" image="file:^images/icons/building_w.svg" scale="fitRatio">
         <ValueBinding ord="module://themeBtib/image/svg/power_w.svg">
           <OrdToImage name="image"/>
         </ValueBinding>
@@ -338,9 +338,9 @@
 
       <ValueBinding ord="slot:/Home/Project$20Assistant/Start$20a$20new$20project/Final"/>
 
-      <Label layout="20.0,110.0,190.0,40.0" text="Explore the parameters" image="" font="14.0pt Calibri Light" foreground="#797979" valign="top" wordWrapEnabled="true"/>
+      <Label layout="20.0,110.0,160.0,40.0" text="Explore the parameters" image="" font="14.0pt Calibri Light" foreground="#797979" valign="top" wordWrapEnabled="true"/>
 
-      <Line pen="6.0" geom="0.0,35.0 90.0,35.0">
+      <Line pen="6.0" geom="0.0,35.0 65.0,35.0">
         <ValueBinding ord="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Final/Step$20Completed">
           <IBooleanToSimple name="stroke">
             <Brush name="trueValue" value="#b2d035"/>
