@@ -130,7 +130,7 @@
       <Label name="Label9" text="Does the client computer have&#xa;an Internet connectivity?" font="14.0pt SansSerif" foreground="#282828" halign="left"/>
 
       <GenericFieldEditor name="GenericFieldEditor2">
-        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="station:|slot:/Home/Station$20parameters/General$20Parameters/Main$20Parameters/hasStationInternetConnectivity"/>
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="station:|slot:/Home/Station$20parameters/General$20Parameters/Main$20Parameters/hasClientInternetConnectivity"/>
       </GenericFieldEditor>
 
       <Label name="Label10" text="  Whether the client computer will be able to browse&#xa;  the Web (for the map for example)" font="italic 12.0pt SansSerif" foreground="#282828" halign="left" wordWrapEnabled="true"/>

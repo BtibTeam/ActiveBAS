@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0">
+<px version="1.0" media="workbench:WbPxMedia">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
-  <module name="btibCore"/>
   <module name="gx"/>
 </import>
 <properties>
@@ -74,36 +73,12 @@
 
 </properties>
 <content>
-<EdgePane>
+<CanvasPane viewSize="120.0,30.0" minScaleFactor="0.5" maxScaleFactor="1.0">
 
-  <PxInclude name="top" ord="file:^px/menus/header.px"/>
+  <Label name="Label" layout="0.0,0.0,120.0,30.0" text="$(building)" font="bold 16.0pt Calibri">
+    <ValueBinding name="ValueBinding" hyperlink="station:|$(buildingOrd)/$(buildingEscapedName)_Menu"/>
+  </Label>
 
-  <PxInclude name="left" ord="file:^px/menus/left.px"/>
-
-  <BorderPane name="center" padding="0.0" fill="image( source(file:^images/backgrounds/lePlaza.jpg) valign(top) )">
-
-    <GridPane name="content" columnCount="1" valign="fill" halign="fill" rowAlign="fill" columnAlign="fill" rowGap="30.0" stretchRow="1" stretchColumn="0">
-
-      <BorderPane fill="#80f2f2f2">
-
-        <GridPane name="content" columnCount="10" halign="left" stretchColumn="0">
-
-          <Label text="Bat A /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
-            <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/location/building/v1PxEH5Rt5WR"/>
-          </Label>
-
-        </GridPane>
-
-      </BorderPane>
-
-      <IdBinding id="buildingGrid"/>
-
-    </GridPane>
-
-  </BorderPane>
-
-  <PxInclude name="right" ord="file:^px/menus/right.px"/>
-
-</EdgePane>
+</CanvasPane>
 </content>
 </px>
