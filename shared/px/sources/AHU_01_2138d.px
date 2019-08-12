@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+  <module name="vykonPro"/>
+</import>
+<properties>
+
+  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/h1EJV75C3hPA">
+  </property>
+
+  <property name="siteName" type="baja:String" value="QG">
+  </property>
+
+  <property name="lightLogo" type="gx:Image" value="file:^images/logos/logo_w.svg">
+  </property>
+
+  <property name="centralDarkForeground" type="gx:Brush" value="#232323">
+  </property>
+
+  <property name="centralWhiteBackground" type="gx:Brush" value="white">
+  </property>
+
+  <property name="centralColorForeground" type="gx:Brush" value="#f0f0f0">
+  </property>
+
+  <property name="centralLightColorBackground" type="gx:Brush" value="#546e7a">
+  </property>
+
+  <property name="centralColorBackground" type="gx:Brush" value="#455a64">
+  </property>
+
+  <property name="centralDarkColorBackground" type="gx:Brush" value="#37474f">
+  </property>
+
+  <property name="elementColorBackground" type="gx:Brush" value="#1976d2">
+  </property>
+
+  <property name="elementLightColorBackground" type="gx:Brush" value="#1976d2">
+  </property>
+
+  <property name="elementDarkColorBackground" type="gx:Brush" value="#1565c0">
+  </property>
+
+  <property name="elementLightForeground" type="gx:Brush" value="#f9f9f9">
+  </property>
+
+  <property name="leftForeground" type="gx:Brush" value="#f4f4f4">
+  </property>
+
+  <property name="leftLightBackground" type="gx:Brush" value="#616161">
+  </property>
+
+  <property name="leftColorBackground" type="gx:Brush" value="#424242">
+  </property>
+
+  <property name="leftDarkBackground" type="gx:Brush" value="#212121">
+  </property>
+
+  <property name="headerForegroundColor" type="gx:Brush" value="#f7f7f7">
+  </property>
+
+  <property name="headerLightColorBackground" type="gx:Brush" value="#039be5">
+  </property>
+
+  <property name="headerColorBackground" type="gx:Brush" value="#0288d1">
+  </property>
+
+  <property name="headerDarkColorBackground" type="gx:Brush" value="#0277bd">
+  </property>
+
+</properties>
+<content>
+<EdgePane>
+
+  <PxInclude name="top" ord="file:^px/menus/header.px"/>
+
+  <PxInclude name="left" ord="file:^px/menus/left.px"/>
+
+  <ScrollPane name="center" borderPolicy="never">
+
+    <GridPane name="content" columnCount="1" valign="top" halign="fill" rowAlign="fill" columnAlign="fill" rowGap="0.0" stretchRow="1" stretchColumn="0">
+
+      <CanvasPane name="CanvasPane" viewSize="1200.0,200.0" background="#039be5">
+
+        <Polygon name="Polygon" stroke="white" geom="390.0,25.0 390.0,175.0 720.0,175.0 720.0,25.0 "/>
+
+        <Polygon name="Polygon1" stroke="white" geom="20.0,25.0 20.0,175.0 190.0,175.0 190.0,25.0 "/>
+
+        <Polygon name="Polygon2" stroke="white" geom="220.0,25.0 220.0,175.0 360.0,175.0 360.0,25.0 "/>
+
+        <Polygon name="Polygon3" fill="#37474f" stroke="#37474f" geom="220.0,25.0 220.0,45.0 360.0,45.0 360.0,25.0 "/>
+
+        <Label name="Label" layout="220.0,25.0,140.0,20.0" text="Status" image="" font="bold 12.0pt Tahoma" foreground="#37474f" background="white"/>
+
+        <BoundLabel name="BoundLabel" layout="250.0,115.0,90.0,20.0" image="" font="bold 11.0pt Tahoma" foreground="white" border="1.0 inset black">
+          <BoundLabelBinding name="BoundLabelBinding" ord="slot:points/Running$20State" statusEffect="color">
+            <ObjectToString name="text" format="%out.value%"/>
+          </BoundLabelBinding>
+          <PopupBinding name="PopupBinding" ord="slot:points/Running$20State" title="Details" size="1200.0,800.0"/>
+        </BoundLabel>
+
+        <BoundLabel name="BoundLabel1" layout="280.0,75.0,28.0,28.0">
+          <BoundLabelBinding name="BoundLabelBinding" ord="slot:points/Global$20status">
+            <IBooleanToSimple name="image">
+              <Image name="trueValue" value="module://kitPxGraphics/Misc/Misc_UI_Elements/LEDs/LED_FIRE_RED.png"/>
+              <Image name="falseValue" value="module://kitPxGraphics/Misc/Misc_UI_Elements/LEDs/LED_FIRE_GREEN.png"/>
+            </IBooleanToSimple>
+          </BoundLabelBinding>
+        </BoundLabel>
+
+        <ImageButton name="ImageButton" layout="110.0,55.0,70.0,20.0" text="Start" image="" disabled="">
+          <ActionBinding name="ActionBinding" ord="slot:points/Running$20Command" widgetEvent="actionPerformed">
+            <Boolean name="actionArg" value="true"/>
+          </ActionBinding>
+        </ImageButton>
+
+        <ImageButton name="ImageButton1" layout="30.0,55.0,70.0,20.0" text="Stop" image="" disabled="">
+          <ActionBinding name="ActionBinding" ord="slot:points/Running$20Command" widgetEvent="actionPerformed">
+            <Boolean name="actionArg" value="false"/>
+          </ActionBinding>
+        </ImageButton>
+
+        <BoundLabel name="BoundLabel2" layout="65.0,80.0,90.0,90.0">
+          <ValueBinding name="ValueBinding" ord="slot:points/Running$20Command">
+            <IBooleanToSimple name="image">
+              <Image name="trueValue" value="module://kitPxHvac/misc/dialSwitch2PosRight.gif"/>
+              <Image name="falseValue" value="module://kitPxHvac/misc/dialSwitch2PosLeft.gif"/>
+            </IBooleanToSimple>
+          </ValueBinding>
+        </BoundLabel>
+
+        <Label name="Label1" layout="20.0,25.0,170.0,20.0" text="Command panel" image="" font="bold 12.0pt Tahoma" foreground="#37474f" background="white"/>
+
+        <Label name="Label2" layout="390.0,25.0,330.0,20.0" text="Settings" image="" font="bold 12.0pt Tahoma" foreground="#37474f" background="white"/>
+
+        <Label name="Label3" layout="400.0,55.0,160.0,20.0" text="Occupied Heating Setpoint" image="" font="12.0pt Trebuchet MS" foreground="#37474f" background="white"/>
+
+        <BoundLabel name="BoundLabel3" layout="570.0,55.0,90.0,20.0" image="" font="bold 11.0pt Tahoma" foreground="white" border="1.0 inset black">
+          <BoundLabelBinding name="BoundLabelBinding" ord="slot:points/Occupied$20Heating$20Setpoint" statusEffect="color">
+            <ObjectToString name="text" format="%out.value%"/>
+          </BoundLabelBinding>
+          <PopupBinding name="PopupBinding" ord="slot:points/Occupied$20Heating$20Setpoint" title="Details" size="1200.0,800.0"/>
+        </BoundLabel>
+
+        <Label name="Label4" layout="400.0,85.0,160.0,20.0" text="Occupied Cooling Setpoint" image="" font="12.0pt Trebuchet MS" foreground="#37474f" background="white"/>
+
+        <BoundLabel name="BoundLabel4" layout="570.0,85.0,90.0,20.0" image="" font="bold 11.0pt Tahoma" foreground="white" border="1.0 inset black">
+          <BoundLabelBinding name="BoundLabelBinding" ord="slot:points/Occupied$20Cooling$20Setpoint" statusEffect="color">
+            <ObjectToString name="text" format="%out.value%"/>
+          </BoundLabelBinding>
+          <PopupBinding name="PopupBinding" ord="slot:points/Occupied$20Cooling$20Setpoint" title="Details" size="1200.0,800.0"/>
+        </BoundLabel>
+
+        <ImageButton name="ImageButton2" layout="670.0,55.0,40.0,20.0" text="..." image="" disabled="">
+          <ActionBinding name="ActionBinding" ord="slot:points/Occupied$20Heating$20Setpoint/set" widgetEvent="actionPerformed"/>
+        </ImageButton>
+
+        <ImageButton name="ImageButton3" layout="670.0,85.0,40.0,20.0" text="..." image="" disabled="">
+          <ActionBinding name="ActionBinding" ord="slot:points/Occupied$20Cooling$20Setpoint/set" widgetEvent="actionPerformed"/>
+        </ImageButton>
+
+      </CanvasPane>
+
+      <BorderPane name="BorderPane" padding="20.0" fill="#eceff1">
+
+        <CanvasPane name="content" viewSize="1200.0,700.0" scale="fitRatio" valign="top">
+
+          <IdBinding name="IdBinding" id="Synoptique"/>
+
+          <Picture name="Picture" layout="705.0,300.0,340.0,90.0" image="file:^px/kitPxN4svg/Ductwork/Duct_Horz_Med.svg"/>
+
+          <Picture name="Picture1" layout="310.0,150.0,340.0,90.0" image="file:^px/kitPxN4svg/Ductwork/Duct_Horz_Med.svg"/>
+
+          <Picture name="Picture2" layout="50.0,150.0,120.0,90.0" image="file:^px/kitPxN4svg/Ductwork/Duct_Horz_End_Left.svg"/>
+
+          <Picture name="Picture3" layout="166.0,150.0,340.0,90.0" image="file:^px/kitPxN4svg/Ductwork/Duct_Horz_Med.svg"/>
+
+          <Picture name="Picture4" layout="165.0,300.0,340.0,90.0" image="file:^px/kitPxN4svg/Ductwork/Duct_Horz_Med.svg"/>
+
+          <Picture name="Picture5" layout="519.0,300.0,340.0,90.0" image="file:^px/kitPxN4svg/Ductwork/Duct_Horz_Med.svg"/>
+
+          <Picture name="Picture6" layout="314.0,300.0,340.0,90.0" image="file:^px/kitPxN4svg/Ductwork/Duct_Horz_Med.svg"/>
+
+          <Picture name="Picture7" layout="515.0,300.0,80.0,120.0">
+            <ValueBinding name="ValueBinding" ord="slot:points/Cool$20Stage$20Command">
+              <INumericToSimple name="image" map="gx:Image -inf:20.0=file:^px/kitPxN4svg/Coils/Coils_Cooling_2Way_Bottom/Coils_Cooling_2Way_Bottom_0.svg;20.0:40.0=file:^px/kitPxN4svg/Coils/Coils_Cooling_2Way_Bottom/Coils_Cooling_2Way_Bottom_1.svg;40.0:60.0=file:^px/kitPxN4svg/Coils/Coils_Cooling_2Way_Bottom/Coils_Cooling_2Way_Bottom_2.svg;60.0:80.0=file:^px/kitPxN4svg/Coils/Coils_Cooling_2Way_Bottom/Coils_Cooling_2Way_Bottom_3.svg;80.0:+inf=file:^px/kitPxN4svg/Coils/Coils_Cooling_2Way_Bottom/Coils_Cooling_2Way_Bottom_4.svg;default=file:^px/kitPxN4svg/Coils/Coils_Cooling_2Way_Bottom/Coils_Cooling_2Way_Bottom_0.svg;"/>
+            </ValueBinding>
+            <PopupBinding name="PopupBinding" ord="slot:points/Cool$20Stage$20Command" title="Details" size="1200.0,800.0"/>
+          </Picture>
+
+          <Picture name="Picture8" layout="29.0,300.0,120.0,90.0" image="file:^px/kitPxN4svg/Ductwork/Duct_Horz_End_Left.svg"/>
+
+          <Picture name="Picture9" layout="0.0,335.0,40.0,23.0" image="file:^px/kitPxN4svg/Misc/Arrows/cArrowRight.svg"/>
+
+          <Label name="Label" layout="5.0,130.0,80.0,14.0" text="Exhaust" image="" font="12.0pt Tahoma" foreground="#37474f"/>
+
+          <Picture name="Picture10" layout="555.0,405.0,8.0,30.0" image="file:^px/kitPxN4svg/Piping/small_piping/chwr/chwr_vert_1.svg"/>
+
+          <Picture name="Picture11" layout="555.0,425.0,8.0,30.0" image="file:^px/kitPxN4svg/Piping/small_piping/chwr/chwr_vert_1.svg"/>
+
+          <Picture name="Picture12" layout="535.0,425.0,8.0,30.0" image="file:^px/kitPxN4svg/Piping/small_piping/chws/chws_vert_1.svg"/>
+
+          <Picture name="Picture13" layout="513.0,400.0,40.0,40.0" image="file:^px/kitPxN4svg/Valves/valve_2way_elec_left.svg"/>
+
+          <Picture name="Picture14" layout="685.0,300.0,130.0,90.0">
+            <ValueBinding name="ValueBinding" ord="slot:points/Discharge$20Air$20Fan$20Status">
+              <IBooleanToSimple name="image">
+                <Image name="trueValue" value="file:^px/kitPxN4svg/Fans/Fans_Horz/Fans_Horz_Right/Fans_Horz_Right_On.svg"/>
+                <Image name="falseValue" value="file:^px/kitPxN4svg/Fans/Fans_Horz/Fans_Horz_Right/Fans_Horz_Right_Off.svg"/>
+              </IBooleanToSimple>
+            </ValueBinding>
+            <PopupBinding name="PopupBinding" ord="slot:points/Discharge$20Air$20Fan$20Status" title="Details" size="1200.0,800.0"/>
+          </Picture>
+
+          <Label name="Label1" layout="1105.0,310.0,60.0,14.0" text="Discharge" image="" font="12.0pt Tahoma" foreground="#37474f"/>
+
+          <Picture name="Picture15" layout="959.0,300.0,130.0,90.0" image="file:^px/kitPxN4svg/Ductwork/Duct_Horz_End_Right.svg"/>
+
+          <Picture name="Picture16" layout="994.0,290.0,25.0,67.0" image="file:^px/kitPxN4svg/Sensors/sensor_duct_avgtemp_top.svg"/>
+
+          <Picture name="Picture17" layout="1070.0,330.0,40.0,23.0" image="file:^px/kitPxN4svg/Misc/Arrows/cArrowRight.svg"/>
+
+          <Picture name="Picture18" layout="615.0,150.0,340.0,90.0" image="file:^px/kitPxN4svg/Ductwork/Duct_Horz_Med.svg"/>
+
+          <Picture name="Picture19" layout="955.0,150.0,130.0,90.0" image="file:^px/kitPxN4svg/Ductwork/Duct_Horz_End_Right.svg"/>
+
+          <Picture name="Picture20" layout="585.0,150.0,130.0,90.0">
+            <ValueBinding name="ValueBinding" ord="slot:points/Return$20Air$20Fan$20Status">
+              <IBooleanToSimple name="image">
+                <Image name="trueValue" value="file:^px/kitPxN4svg/Fans/Fans_Horz/Fans_Horz_Left/Fans_Horz_Left_On.svg"/>
+                <Image name="falseValue" value="file:^px/kitPxN4svg/Fans/Fans_Horz/Fans_Horz_Left/Fans_Horz_Left_Off.svg"/>
+              </IBooleanToSimple>
+            </ValueBinding>
+          </Picture>
+
+          <Picture name="Picture21" layout="920.0,140.0,25.0,67.0" image="file:^px/kitPxN4svg/Sensors/sensor_duct_avgtemp_top.svg"/>
+
+          <Picture name="Picture22" layout="920.0,290.0,25.0,67.0" image="file:^px/kitPxN4svg/Sensors/sensor_duct_dp_top.svg"/>
+
+          <Picture name="Picture23" layout="1060.0,185.0,40.0,23.0" image="file:^px/kitPxN4svg/Misc/Arrows/cArrowLeft.svg"/>
+
+          <Picture name="Picture24" layout="0.0,185.0,40.0,23.0" image="file:^px/kitPxN4svg/Misc/Arrows/cArrowLeft.svg"/>
+
+          <BoundLabel name="BoundLabel" layout="885.0,115.0,90.0,20.0" image="" font="bold 11.0pt Tahoma" border="1.0 inset black">
+            <BoundLabelBinding name="BoundLabelBinding" ord="slot:points/Return$20air$20temp" statusEffect="color">
+              <ObjectToString name="text" format="%out.value%"/>
+            </BoundLabelBinding>
+            <PopupBinding name="PopupBinding" ord="slot:points/Return$20air$20temp" title="Details" size="1200.0,800.0"/>
+          </BoundLabel>
+
+          <BoundLabel name="BoundLabel1" layout="965.0,265.0,80.0,20.0" image="" font="bold 11.0pt Tahoma" border="1.0 inset black">
+            <BoundLabelBinding name="BoundLabelBinding" ord="slot:points/Discharge$20air$20temp" statusEffect="color">
+              <ObjectToString name="text" format="%out.value%"/>
+            </BoundLabelBinding>
+            <PopupBinding name="PopupBinding" ord="slot:points/Discharge$20air$20temp" title="Details" size="1200.0,800.0"/>
+          </BoundLabel>
+
+          <BoundLabel name="BoundLabel2" layout="890.0,265.0,80.0,20.0" image="" font="bold 11.0pt Tahoma" border="1.0 inset black">
+            <BoundLabelBinding name="BoundLabelBinding" ord="slot:points/Discharge$20Air$20Pressure" statusEffect="color">
+              <ObjectToString name="text" format="%out.value%"/>
+            </BoundLabelBinding>
+            <PopupBinding name="PopupBinding" ord="slot:points/Discharge$20Air$20Pressure" title="Details" size="1200.0,800.0"/>
+          </BoundLabel>
+
+          <BoundLabel name="BoundLabel3" layout="5.0,265.0,80.0,20.0" image="" font="bold 11.0pt Tahoma" border="1.0 inset black">
+            <BoundLabelBinding name="BoundLabelBinding" ord="slot:points/Freash$20air$20temp" statusEffect="color">
+              <ObjectToString name="text" format="%out.value%"/>
+            </BoundLabelBinding>
+            <PopupBinding name="PopupBinding" ord="slot:points/Freash$20air$20temp" title="Details" size="1200.0,800.0"/>
+          </BoundLabel>
+
+          <BoundLabel name="BoundLabel4" layout="505.0,455.0,80.0,20.0" image="" font="bold 11.0pt Tahoma" border="1.0 inset black">
+            <BoundLabelBinding name="BoundLabelBinding" ord="slot:points/Cool$20Stage$20Command" statusEffect="color">
+              <ObjectToString name="text" format="%out.value%"/>
+            </BoundLabelBinding>
+            <PopupBinding name="PopupBinding" ord="slot:points/Cool$20Stage$20Command" title="Details" size="1200.0,800.0"/>
+          </BoundLabel>
+
+          <BoundLabel name="BoundLabel5" layout="585.0,395.0,80.0,20.0" image="" font="bold 11.0pt Tahoma" border="1.0 inset black">
+            <BoundLabelBinding name="BoundLabelBinding" ord="slot:points/Heat$20Stage$20Command" statusEffect="color">
+              <ObjectToString name="text" format="%out.value%"/>
+            </BoundLabelBinding>
+            <PopupBinding name="PopupBinding" ord="slot:points/Heat$20Stage$20Command" title="Details" size="1200.0,800.0"/>
+          </BoundLabel>
+
+          <Picture name="Picture25" layout="590.0,300.0,80.0,90.0">
+            <ValueBinding name="ValueBinding" ord="slot:points/Heat$20Stage$20Command">
+              <INumericToSimple name="image" map="gx:Image 0.0:1.0=file:^px/kitPxN4svg/Coils/Coils_Heating_Electric/Coils_Heating_Electric_Off.svg;1.0:100.0=file:^px/kitPxN4svg/Coils/Coils_Heating_Electric/Coils_Heating_Electric_On.svg;default=null;"/>
+            </ValueBinding>
+          </Picture>
+
+          <BoundLabel name="BoundLabel6" layout="710.0,395.0,80.0,20.0" image="" font="bold 11.0pt Tahoma" border="1.0 inset black">
+            <BoundLabelBinding name="BoundLabelBinding" ord="slot:points/Discharge$20Air$20Fan$20Status" statusEffect="color">
+              <ObjectToString name="text" format="%out.value%"/>
+            </BoundLabelBinding>
+            <PopupBinding name="PopupBinding" ord="slot:points/Discharge$20Air$20Fan$20Status" title="Details" size="1200.0,800.0"/>
+          </BoundLabel>
+
+          <BoundLabel name="BoundLabel7" layout="625.0,245.0,80.0,20.0" image="" font="bold 11.0pt Tahoma" border="1.0 inset black">
+            <BoundLabelBinding name="BoundLabelBinding" ord="slot:points/Return$20Air$20Fan$20Status" statusEffect="color">
+              <ObjectToString name="text" format="%out.value%"/>
+            </BoundLabelBinding>
+            <PopupBinding name="PopupBinding" ord="slot:points/Return$20Air$20Fan$20Status" title="Details" size="1200.0,800.0"/>
+          </BoundLabel>
+
+          <BoundLabel name="BoundLabel8" layout="625.0,270.0,80.0,20.0" image="" font="bold 11.0pt Tahoma" border="1.0 inset black">
+            <BoundLabelBinding name="BoundLabelBinding" ord="slot:points/Return$20Air$20Fan$20Command" statusEffect="color">
+              <ObjectToString name="text" format="%out.value%"/>
+            </BoundLabelBinding>
+            <PopupBinding name="PopupBinding" ord="slot:points/Return$20Air$20Fan$20Command" title="Details" size="1200.0,800.0"/>
+          </BoundLabel>
+
+          <BoundLabel name="BoundLabel9" layout="710.0,420.0,80.0,20.0" image="" font="bold 11.0pt Tahoma" border="1.0 inset black">
+            <BoundLabelBinding name="BoundLabelBinding" ord="slot:points/Discharge$20Air$20Fan$20Speed" statusEffect="color">
+              <ObjectToString name="text" format="%out.value%"/>
+            </BoundLabelBinding>
+            <PopupBinding name="PopupBinding" ord="slot:points/Discharge$20Air$20Fan$20Speed" title="Details" size="1200.0,800.0"/>
+          </BoundLabel>
+
+          <Picture name="Picture26" layout="80.0,150.0,80.0,90.0" image="module://kitPxN4svg/Dampers/Damper_Horz_Parallel/Damper_Horz_Parallel_4.svg"/>
+
+          <Picture name="Picture27" layout="785.0,150.0,80.0,90.0">
+            <ValueBinding name="ValueBinding" ord="slot:points/Filter$20Alarm">
+              <IBooleanToSimple name="image">
+                <Image name="trueValue" value="module://kitPxN4svg/Filters/Filter_Double/Filter_Double_4.svg"/>
+                <Image name="falseValue" value="module://kitPxN4svg/Filters/Filter_Double/Filter_Double_0.svg"/>
+              </IBooleanToSimple>
+            </ValueBinding>
+          </Picture>
+
+          <Picture name="Picture28" layout="345.0,150.0,110.0,240.0">
+            <ValueBinding name="ValueBinding" ord="slot:points/Heat$20Wheel$20Speed$20Command">
+              <INumericToSimple name="image" map="gx:Image 1.0:100.0=module://kitPxN4svg/Misc/Misc_HeatWheel2/HeatWheel2/misc_heatwheel2_On.svg;default=module://kitPxN4svg/Misc/Misc_HeatWheel2/HeatWheel2/misc_heatwheel2_Off.svg;"/>
+            </ValueBinding>
+          </Picture>
+
+          <Picture name="Picture29" layout="815.0,300.0,80.0,90.0">
+            <ValueBinding name="ValueBinding" ord="slot:points/Discharge$20Air$20Fan$20Status">
+              <IBooleanToSimple name="image">
+                <Image name="trueValue" value="module://kitPxN4svg/Filters/Filter_Single_UV/Filter_Single_UV_On.svg"/>
+                <Image name="falseValue" value="module://kitPxN4svg/Filters/Filter_Single_UV/Filter_Single_UV_Off.svg"/>
+              </IBooleanToSimple>
+            </ValueBinding>
+          </Picture>
+
+          <Picture name="Picture30" layout="205.0,300.0,150.0,120.0" image="module://kitPxN4svg/Ductwork/Duct_Connector_T_Down.svg"/>
+
+          <Picture name="Picture31" layout="155.0,300.0,80.0,90.0">
+            <ValueBinding name="ValueBinding" ord="slot:points/Filter$20Alarm">
+              <IBooleanToSimple name="image">
+                <Image name="trueValue" value="module://kitPxN4svg/Filters/Filter_Double/Filter_Double_4.svg"/>
+                <Image name="falseValue" value="module://kitPxN4svg/Filters/Filter_Double/Filter_Double_0.svg"/>
+              </IBooleanToSimple>
+            </ValueBinding>
+          </Picture>
+
+          <Picture name="Picture32" layout="85.0,300.0,80.0,90.0" image="module://kitPxN4svg/Dampers/Damper_Horz_Parallel/Damper_Horz_Parallel_4.svg"/>
+
+          <Picture name="Picture33" layout="45.0,290.0,25.0,67.0" image="file:^px/kitPxN4svg/Sensors/sensor_duct_avgtemp_top.svg"/>
+
+          <Picture name="Picture34" layout="235.0,400.0,100.0,120.0" image="module://kitPxN4svg/Ductwork/Duct_Vert_End_Down.svg"/>
+
+          <Picture name="Picture35" layout="280.0,500.0,23.0,40.0" image="module://kitPxN4svg/Misc/Arrows/arrowUp.svg"/>
+
+          <Picture name="Picture36" layout="235.0,400.0,100.0,70.0" image="module://kitPxN4svg/Dampers/Damper_Vert_Parallel/Damper_Vert_Parallel_1.svg"/>
+
+          <Path name="Path" stroke="black" geom="M100.0,200.0 L100.0,350.0"/>
+
+          <Picture name="Picture37" layout="95.0,260.0,8.0,13.0" image="module://kitPxN4svg/Dampers/Actuators/Actuator_Horz_small.svg"/>
+
+          <Picture name="Picture38" layout="1015.0,140.0,25.0,67.0" image="module://kitPxN4svg/Sensors/sensor_duct_CO2_top.svg"/>
+
+          <Picture name="Picture39" layout="875.0,140.0,25.0,67.0" image="module://kitPxN4svg/Sensors/sensor_elecmtr.svg"/>
+
+          <Picture name="Picture40" layout="225.0,470.0,77.0,24.0" image="module://kitPxN4svg/Sensors/sensor_duct_temphum_left.svg"/>
+
+          <Picture name="Picture41" layout="475.0,290.0,25.0,67.0" image="module://kitPxN4svg/Sensors/sensor_duct_flow_vert_down/sensor_duct_flow_vert_down_Off.svg"/>
+
+          <Picture name="Picture42" layout="655.0,290.0,25.0,67.0" image="module://kitPxN4svg/Sensors/sensor_duct_smk_top.svg"/>
+
+          <BoundLabel name="BoundLabel10" layout="155.0,400.0,80.0,20.0" image="" font="bold 11.0pt Tahoma" border="1.0 inset black">
+            <BoundLabelBinding name="BoundLabelBinding" ord="slot:points/Filter$20Alarm" statusEffect="color">
+              <ObjectToString name="text" format="%out.value%"/>
+              <IBooleanToSimple name="background">
+                <Brush name="trueValue" value="red"/>
+                <Brush name="falseValue" value="lime"/>
+              </IBooleanToSimple>
+              <IBooleanToSimple name="foreground">
+                <Brush name="trueValue" value="white"/>
+                <Brush name="falseValue" value="black"/>
+              </IBooleanToSimple>
+            </BoundLabelBinding>
+            <PopupBinding name="PopupBinding" ord="slot:points/Filter$20Alarm" title="Details" size="1200.0,800.0"/>
+          </BoundLabel>
+
+          <BoundLabel name="BoundLabel11" layout="775.0,120.0,80.0,20.0" image="" font="bold 11.0pt Tahoma" border="1.0 inset black">
+            <BoundLabelBinding name="BoundLabelBinding" ord="slot:points/Filter$20Alarm" statusEffect="color">
+              <ObjectToString name="text" format="%out.value%"/>
+              <IBooleanToSimple name="background">
+                <Brush name="trueValue" value="red"/>
+                <Brush name="falseValue" value="lime"/>
+              </IBooleanToSimple>
+              <IBooleanToSimple name="foreground">
+                <Brush name="trueValue" value="white"/>
+                <Brush name="falseValue" value="black"/>
+              </IBooleanToSimple>
+            </BoundLabelBinding>
+            <PopupBinding name="PopupBinding" ord="slot:points/Filter$20Alarm" title="Details" size="1200.0,800.0"/>
+          </BoundLabel>
+
+          <BoundLabel name="BoundLabel12" layout="285.0,250.0,80.0,20.0" image="" font="bold 11.0pt Tahoma" border="1.0 inset black">
+            <BoundLabelBinding name="BoundLabelBinding" ord="slot:points/Heat$20Wheel$20Speed$20Command" statusEffect="color">
+              <ObjectToString name="text" format="%out.value%"/>
+            </BoundLabelBinding>
+            <PopupBinding name="PopupBinding" ord="slot:points/Heat$20Wheel$20Speed$20Command" title="Details" size="1200.0,800.0"/>
+          </BoundLabel>
+
+          <BoundLabel name="BoundLabel13" layout="105.0,260.0,80.0,20.0" image="" font="bold 11.0pt Tahoma" border="1.0 inset black">
+            <BoundLabelBinding name="BoundLabelBinding" ord="slot:points/Damper$20State" statusEffect="color">
+              <ObjectToString name="text" format="%out.value%"/>
+            </BoundLabelBinding>
+            <PopupBinding name="PopupBinding" ord="slot:points/Damper$20State" title="Details" size="1200.0,800.0"/>
+          </BoundLabel>
+
+          <Label name="Label2" layout="35.0,410.0,54.0,14.0" text="Fresh air" image="" font="12.0pt Tahoma" foreground="#37474f"/>
+
+          <Label name="Label3" layout="1095.0,160.0,80.0,14.0" text="Return" image="" font="12.0pt Tahoma" foreground="#37474f"/>
+
+        </CanvasPane>
+
+      </BorderPane>
+
+    </GridPane>
+
+  </ScrollPane>
+
+</EdgePane>
+</content>
+</px>

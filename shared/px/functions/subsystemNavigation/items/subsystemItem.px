@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="btibVision"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+</import>
+<properties>
+
+  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/h1EJV75C3hPA">
+  </property>
+
+  <property name="siteName" type="baja:String" value="QG">
+  </property>
+
+  <property name="lightLogo" type="gx:Image" value="file:^images/logos/logo_w.svg">
+  </property>
+
+  <property name="centralDarkForeground" type="gx:Brush" value="#232323">
+  </property>
+
+  <property name="centralWhiteBackground" type="gx:Brush" value="white">
+  </property>
+
+  <property name="centralColorForeground" type="gx:Brush" value="#f0f0f0">
+  </property>
+
+  <property name="centralLightColorBackground" type="gx:Brush" value="#546e7a">
+  </property>
+
+  <property name="centralColorBackground" type="gx:Brush" value="#455a64">
+  </property>
+
+  <property name="centralDarkColorBackground" type="gx:Brush" value="#37474f">
+  </property>
+
+  <property name="elementColorBackground" type="gx:Brush" value="#1976d2">
+  </property>
+
+  <property name="elementLightColorBackground" type="gx:Brush" value="#1976d2">
+  </property>
+
+  <property name="elementDarkColorBackground" type="gx:Brush" value="#1565c0">
+  </property>
+
+  <property name="elementLightForeground" type="gx:Brush" value="#f9f9f9">
+  </property>
+
+  <property name="leftForeground" type="gx:Brush" value="#f4f4f4">
+  </property>
+
+  <property name="leftLightBackground" type="gx:Brush" value="#616161">
+  </property>
+
+  <property name="leftColorBackground" type="gx:Brush" value="#424242">
+  </property>
+
+  <property name="leftDarkBackground" type="gx:Brush" value="#212121">
+  </property>
+
+  <property name="headerForegroundColor" type="gx:Brush" value="#f7f7f7">
+  </property>
+
+  <property name="headerLightColorBackground" type="gx:Brush" value="#039be5">
+  </property>
+
+  <property name="headerColorBackground" type="gx:Brush" value="#0288d1">
+  </property>
+
+  <property name="headerDarkColorBackground" type="gx:Brush" value="#0277bd">
+  </property>
+
+</properties>
+<content>
+<CanvasPane viewSize="800.0,400.0">
+
+  <Label name="Label" layout="270.0,50.0,300.0,20.0" text="Represent a subsystem in the subsystem navigation" background="#f7f7f7"/>
+
+  <OverCanvasPane name="OverCanvasPane" layout="270.0,100.0,300.0,100.0" viewSize="300.0,100.0" background="white" overBackground="#1a6a1b9a" radius="8.0px 8.0px 8.0px 8.0px">
+
+    <ValueBinding name="ValueBinding" hyperlink="station:|$(slotPathOrd)"/>
+
+    <Picture name="Picture" layout="10.0,20.0,60.0,60.0" image="file:^images/icons/circularShapeViolet.svg" scale="fitRatio"/>
+
+    <Picture name="Picture1" layout="25.0,35.0,30.0,30.0" scale="fitRatio">
+      <ValueBinding name="ValueBinding" hyperlink="station:|$(slotPathOrd)"/>
+      <ValueBinding name="ValueBinding1" ord="station:|$(lightIconOrd)">
+        <OrdToImage name="image"/>
+      </ValueBinding>
+    </Picture>
+
+    <Label name="Label" layout="90.0,30.0,190.0,30.0" text="$(displayName)" font="bold 24.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
+      <ValueBinding name="ValueBinding" hyperlink="station:|$(slotPathOrd)"/>
+    </Label>
+
+    <IdBinding name="IdBinding" id="subsystemItem"/>
+
+  </OverCanvasPane>
+
+</CanvasPane>
+</content>
+</px>

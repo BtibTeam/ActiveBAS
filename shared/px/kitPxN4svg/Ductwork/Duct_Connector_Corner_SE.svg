@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="130.001px" height="120.246px" viewBox="0 0 130.001 120.246" style="enable-background:new 0 0 130.001 120.246;"
+	 xml:space="preserve">
+<g id="Duct_x5F_Connector_x5F_Corner_x5F_SE">
+	<g>
+		<polygon style="fill:#E7E9EA;" points="100.047,120.246 100.079,0.089 60.001,0 60.001,120.246 		"/>
+		<g>
+			<polygon style="fill:#DDDFE1;" points="128.493,0.005 128.368,120 98.25,120.246 98.493,0.09 			"/>
+			<polygon style="fill:#E7E9EA;" points="60.001,0.063 60.001,119.996 30.001,119.996 30.001,0.004 			"/>
+		</g>
+		<rect x="128.493" y="0.008" style="fill:#6A7276;" width="1.507" height="119.992"/>
+		<line style="fill:none;stroke:#ABAAA9;stroke-width:0.6;stroke-miterlimit:10;" x1="98.493" y1="98.422" x2="98.493" y2="0.09"/>
+		<polygon style="fill:#E7E9EA;" points="0.001,100.04 61.508,100.061 61.508,50.061 0.001,50.04 		"/>
+		<g>
+			<polyline style="fill:#E7E9EA;" points="61.508,50 0.001,50 0.001,30 61.508,30 			"/>
+			<polygon style="fill:#6A7276;" points="61.508,51.583 0.001,51.576 0.001,49.953 61.508,50.016 			"/>
+			<g>
+				<polyline style="fill:#DDDFE1;" points="128.372,118.494 0.001,118.494 0.001,98.494 98.372,98.494 				"/>
+				<rect x="0.001" y="118.433" style="fill:#6A7276;" width="129.368" height="1.567"/>
+			</g>
+		</g>
+		<line style="fill:none;stroke:#ABAAA9;stroke-width:0.6;stroke-miterlimit:10;" x1="0.001" y1="98.422" x2="98.493" y2="98.587"/>
+		<rect x="60.001" y="0.009" style="fill:#6A7276;" width="1.507" height="51.574"/>
+		
+			<line style="fill:none;stroke:#ABAAA9;stroke-width:0.6;stroke-miterlimit:10;" x1="128.372" y1="118.329" x2="98.372" y2="98.422"/>
+		
+			<line style="fill:none;stroke:#ABAAA9;stroke-width:0.6;stroke-miterlimit:10;" x1="60.001" y1="49.954" x2="30.001" y2="30.046"/>
+	</g>
+</g>
+<g id="Layer_1">
+</g>
+</svg>

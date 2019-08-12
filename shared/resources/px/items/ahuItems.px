@@ -107,7 +107,7 @@
 
     </GridPane>
 
-    <Label name="Label1" layout="70.0,70.0,130.0,20.0" text="Air Temperature Sensor" background="#f7f7f7" halign="left"/>
+    <Label name="Label1" layout="70.0,70.0,130.0,20.0" text="temperatureSensor" background="#f7f7f7" halign="left"/>
 
     <BoundLabel name="BoundLabel" layout="250.0,100.0,134.0,99.0">
       <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)">

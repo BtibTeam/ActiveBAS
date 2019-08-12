@@ -101,7 +101,7 @@
         <WbFieldEditorBinding name="WbFieldEditorBinding" ord="station:|slot:/Home/Station$20parameters/General$20Parameters/Main$20Parameters/geographicNavigationMode"/>
       </GenericFieldEditor>
 
-      <Label name="Label1" text="  Initialize building if you switch to polygons" font="italic 12.0pt SansSerif" foreground="#282828" halign="left"/>
+      <Label name="Label1" text="  Re-initialize each building if you switch to polygons" font="italic 12.0pt SansSerif" foreground="#bd2f2f" halign="left" wordWrapEnabled="true"/>
 
       <Separator name="Separator"/>
 

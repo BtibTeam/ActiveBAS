@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="24.75px" height="67.099px" viewBox="0 0 24.75 67.099" style="enable-background:new 0 0 24.75 67.099;"
+	 xml:space="preserve">
+<g id="sensor_x5F_duct_x5F_lowtemp_x5F_top">
+	<g>
+		<path style="fill:#8C8C80;stroke:#4C4C4D;stroke-width:0.5;stroke-miterlimit:10;" d="M14.354,31.958V64.97
+			c0,1.033-0.762,1.879-1.693,1.879s-1.693-0.845-1.693-1.879V31.958"/>
+		<g>
+			<g>
+				<path style="fill:#B2B2A6;" d="M13.373,31.958v32.777c0,0.497-0.319,0.75-0.712,0.75s-0.712-0.253-0.712-0.75V31.958"/>
+			</g>
+		</g>
+		<g>
+			<rect x="4.25" y="3" style="fill:#B2B2A6;" width="20" height="20"/>
+			<g>
+				<polygon style="fill:#ABAB9C;" points="0.5,0.5 20.5,0.5 24.25,3 4.25,3 				"/>
+			</g>
+			<polygon style="fill:#8C8C80;" points="4.25,3 4.25,23 0.5,20.5 0.5,0.5 			"/>
+			<g>
+				<path style="fill:none;stroke:#E0E0DC;stroke-width:0.75;stroke-miterlimit:10;" d="M24.25,22c0,0.55-0.45,1-1,1h-18
+					c-0.55,0-1-0.45-1-1V4c0-0.55,0.45-1,1-1h18c0.55,0,1,0.45,1,1V22z"/>
+				<line style="fill:none;stroke:#E0E0DC;stroke-width:0.75;stroke-miterlimit:10;" x1="4.25" y1="3.176" x2="0.5" y2="0.5"/>
+			</g>
+			<path style="fill:none;stroke:#4C4C4D;stroke-miterlimit:10;" d="M1.332,21.055C0.874,20.75,0.5,20.05,0.5,19.5v-18
+				c0-0.55,0.45-1,1-1h18c0.55,0,1.374,0.25,1.832,0.555l2.086,1.391C23.876,2.75,24.25,3.45,24.25,4v18c0,0.55-0.45,1-1,1h-18
+				c-0.55,0-1.374-0.25-1.832-0.555L1.332,21.055z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path style="fill:#FFFFFF;" d="M17.268,15.167c0.222,0.449,0.347,0.955,0.347,1.49c0,1.859-1.507,3.365-3.365,3.365
+				s-3.365-1.507-3.365-3.365c0-0.5,0.109-0.974,0.304-1.4C14.042,15.008,15.333,15.174,17.268,15.167z"/>
+		</g>
+		<g>
+			<g>
+				<path style="fill:#FFFFFF;" d="M14.25,5.679c0.487,0,0.883,0.396,0.883,0.883l0.001,7.181v0.461l0.399,0.231
+					c0.791,0.458,1.282,1.31,1.282,2.222c0,1.414-1.151,2.565-2.565,2.565s-2.565-1.151-2.565-2.565
+					c0-0.913,0.491-1.764,1.283-2.222l0.399-0.231v-0.461V6.562C13.367,6.075,13.763,5.679,14.25,5.679 M14.25,4.879
+					c-0.926,0-1.683,0.757-1.683,1.683v7.181c-1.006,0.582-1.682,1.669-1.682,2.915c0,1.859,1.507,3.365,3.365,3.365
+					s3.365-1.507,3.365-3.365c0-0.601-0.157-1.164-0.433-1.653c-0.296-0.524-0.728-0.96-1.248-1.261l-0.001-7.181
+					C15.933,5.636,15.176,4.879,14.25,4.879L14.25,4.879z"/>
+			</g>
+		</g>
+		
+			<line style="fill:none;stroke:#FFFFFF;stroke-width:0.4;stroke-miterlimit:10;" x1="14.166" y1="10.894" x2="15.848" y2="10.894"/>
+		<line style="fill:none;stroke:#FFFFFF;stroke-width:0.4;stroke-miterlimit:10;" x1="14.166" y1="9.211" x2="15.848" y2="9.211"/>
+		<line style="fill:none;stroke:#FFFFFF;stroke-width:0.4;stroke-miterlimit:10;" x1="14.166" y1="7.529" x2="15.848" y2="7.529"/>
+	</g>
+</g>
+<g id="Layer_1_1_">
+</g>
+<polyline style="fill:none;stroke:#FFFFFF;stroke-width:0.4;stroke-miterlimit:10;" points="6.917,15.008 11.208,15.008 
+	16.875,15.008 21.583,15.008 "/>
+</svg>

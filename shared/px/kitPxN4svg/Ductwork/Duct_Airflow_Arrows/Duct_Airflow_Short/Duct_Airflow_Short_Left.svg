@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px"
+	 height="30px" viewBox="0 0 100 30" style="enable-background:new 0 0 100 30;" xml:space="preserve">
+<g id="Duct_x5F_Airflow_x5F_Short_x5F_Left">
+	<g>
+		<g>
+			<polygon style="fill:#D4EDF4;" points="72.213,15.973 83.406,8.479 83.406,12.249 99.637,12.249 99.637,19.697 83.403,19.697 
+				83.427,23.465 			"/>
+			<path style="fill:#808285;" d="M83.056,9.135v2.763v0.7h0.7h15.53v6.749h-15.53h-0.704l0.004,0.704l0.017,2.755l-10.23-6.834
+				L83.056,9.135 M83.756,7.824l-12.173,8.149l12.198,8.149l-0.025-4.074h16.23v-8.149h-16.23V7.824L83.756,7.824z"/>
+
+				<animate id="animation1"
+             attributeName="opacity"
+             from="0" to="1" dur="0.5s"
+             begin="0s;animation2.end" />
+    <animate id="animation2"
+             attributeName="opacity"
+             from="1" to="0" dur="0.5s" 
+             begin="animation1.end" />
+
+		<animateTransform id="strengbounce"
+		 attributeName= "transform"
+		 atrributeType="xml"
+		 type= "translate"
+		 dur="1s"
+		 values="0,0;-90,0"
+		 repeatCount="indefinite" />
+
+
+		</g>
+		<line style="fill:none;" x1="100" y1="30" x2="70" y2="0"/>
+	</g>
+	<rect style="fill:none;" width="100" height="30"/>
+</g>
+<g id="Layer_1">
+</g>
+</svg>

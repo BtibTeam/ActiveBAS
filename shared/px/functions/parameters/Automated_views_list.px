@@ -22,40 +22,40 @@
 
     <OverCanvasPane viewSize="300.0,100.0" background="white" overBackground="#1a1c50a3" radius="8.0px 8.0px 8.0px 8.0px">
 
-      <ValueBinding ord="slot:/Home/Station$20parameters/Automated$20Views/Fake$20device" hyperlink="slot:/Home/Station$20parameters/Automated$20Views/Fake$20device"/>
+      <ValueBinding ord="slot:/Home/Station$20parameters/Automated$20Views/Model$20device" hyperlink="slot:/Home/Station$20parameters/Automated$20Views/Model$20device"/>
 
       <Picture layout="10.0,20.0,60.0,60.0" image="file:^images/icons/circularShapeDarkBlue.svg" scale="fitRatio"/>
 
       <Label layout="85.0,45.0,210.0,45.0" text="Automated view on every device which contains an InfoSource" image="" font="14.0pt Calibri Light" foreground="#797979" halign="left" valign="top" wordWrapEnabled="true"/>
 
       <Picture layout="25.0,35.0,30.0,30.0" image="" scale="fitRatio">
-        <ValueBinding ord="module://themeBtib/image/svg/geometric1_w.svg" hyperlink="slot:/Home/Station$20parameters/Automated$20Views/Fake$20device">
+        <ValueBinding ord="module://themeBtib/image/svg/geometric1_w.svg" hyperlink="slot:/Home/Station$20parameters/Automated$20Views/Model$20device">
           <OrdToImage name="image"/>
         </ValueBinding>
       </Picture>
 
-      <Label layout="85.0,15.0,210.0,30.0" text="Fake device" image="" font="bold 16.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
-        <ValueBinding ord="slot:/Home/Station$20parameters/Automated$20Views/Fake$20device" hyperlink="slot:/Home/Station$20parameters/Automated$20Views/Fake$20device"/>
+      <Label layout="85.0,15.0,210.0,30.0" text="Model device" image="" font="bold 16.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
+        <ValueBinding ord="slot:/Home/Station$20parameters/Automated$20Views/Model$20device" hyperlink="slot:/Home/Station$20parameters/Automated$20Views/Model$20device"/>
       </Label>
 
     </OverCanvasPane>
 
     <OverCanvasPane viewSize="300.0,100.0" background="white" overBackground="#1a1c50a3" radius="8.0px 8.0px 8.0px 8.0px">
 
-      <ValueBinding ord="slot:/Home/Station$20parameters/Automated$20Views/Fake$20device/Fake$20point" hyperlink="slot:/Home/Station$20parameters/Automated$20Views/Fake$20device/Fake$20point"/>
+      <ValueBinding ord="slot:/Home/Station$20parameters/Automated$20Views/Model$20device/Model$20point" hyperlink="slot:/Home/Station$20parameters/Automated$20Views/Model$20device/Model$20point"/>
 
       <Picture layout="10.0,20.0,60.0,60.0" image="file:^images/icons/circularShapeDarkBlue.svg" scale="fitRatio"/>
 
       <Label layout="85.0,45.0,210.0,45.0" text="Automated view on every point which contains an InfoSource" image="" font="14.0pt Calibri Light" foreground="#797979" halign="left" valign="top" wordWrapEnabled="true"/>
 
       <Picture layout="25.0,35.0,30.0,30.0" image="" scale="fitRatio">
-        <ValueBinding ord="module://themeBtib/image/svg/circle_w.svg" hyperlink="slot:/Home/Station$20parameters/Automated$20Views/Fake$20device/Fake$20point">
+        <ValueBinding ord="module://themeBtib/image/svg/circle_w.svg" hyperlink="slot:/Home/Station$20parameters/Automated$20Views/Model$20device/Model$20point">
           <OrdToImage name="image"/>
         </ValueBinding>
       </Picture>
 
-      <Label layout="85.0,15.0,210.0,30.0" text="Fake point" image="" font="bold 16.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
-        <ValueBinding ord="slot:/Home/Station$20parameters/Automated$20Views/Fake$20device/Fake$20point" hyperlink="slot:/Home/Station$20parameters/Automated$20Views/Fake$20device/Fake$20point"/>
+      <Label layout="85.0,15.0,210.0,30.0" text="Model point" image="" font="bold 16.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
+        <ValueBinding ord="slot:/Home/Station$20parameters/Automated$20Views/Model$20device/Model$20point" hyperlink="slot:/Home/Station$20parameters/Automated$20Views/Model$20device/Model$20point"/>
       </Label>
 
     </OverCanvasPane>

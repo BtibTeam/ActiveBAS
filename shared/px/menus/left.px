@@ -92,6 +92,7 @@
     <target ord="slot:BorderPane2/content/Label1/foreground"/>
     <target ord="slot:BorderPane1/content/Label5/foreground"/>
     <target ord="slot:BorderPane2/content/Label3/foreground"/>
+    <target ord="slot:BorderPane1/content/Label6/foreground"/>
   </property>
 
   <property name="gaucheBackgroundCouleurClaire" type="gx:Brush" value="#616161">
@@ -136,25 +137,26 @@
         </ValueBinding>
       </Label>
 
-      <Label name="Label2" image="module://themeBtib/image/x16/alarm_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
-        <ValueBinding name="ValueBinding" ord="station:|slot:/Home/Alarms" hyperlink="station:|slot:/Services/AlarmService/General$20Console">
-          <ObjectToString name="text" format="%displayName%"/>
-        </ValueBinding>
-      </Label>
-
-      <Label name="Label3" image="file:^images/icons/map_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
-        <ValueBinding name="ValueBinding" ord="station:|slot:/Home/Map" hyperlink="station:|slot:/Home/Map">
-          <ObjectToString name="text" format="%displayName%"/>
-        </ValueBinding>
+      <Label name="Label2" text="Alarms" image="module://themeBtib/image/x16/alarm_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
+        <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Services/AlarmService/General_Console"/>
       </Label>
 
       <Label name="Label4" text="Geographic Navigation" image="module://themeBtib/image/x16/geoNav_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
         <EnhancedHyperlinkBinding name="EnhancedHyperlinkBinding" ord="station:|slot:/Services/BtibService/pxProperties/siteOrd" hyperlinkFormat="%propertyValue%"/>
       </Label>
 
-      <Label name="Label5" image="module://themeBtib/image/x16/system_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
-        <ValueBinding name="ValueBinding" ord="station:|slot:/Home/System$20Navigation" hyperlink="station:|slot:/Home/System$20Navigation">
-          <ObjectToString name="text" format="%displayName%"/>
+      <Label name="Label6" text="Subsystem Navigation" image="module://themeBtib/image/x16/doubleWrench_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
+        <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Home/Subsystem$20Navigation"/>
+      </Label>
+
+      <Label name="Label5" text="System Navigation" image="module://themeBtib/image/x16/system_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
+        <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Home/System$20Navigation"/>
+      </Label>
+
+      <Label name="Label3" text="Map" image="file:^images/icons/map_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
+        <ValueBinding name="ValueBinding" ord="station:|slot:/Home/Map/Map$20Container/enabled" hyperlink="station:|slot:/Home/Map">
+          <IBooleanToSimple name="visible"/>
+          <IBooleanToSimple name="enabled"/>
         </ValueBinding>
       </Label>
 
@@ -168,22 +170,16 @@
 
       <Label name="Label" text="Data" font="bold 19.0pt Calibri" foreground="white" halign="left"/>
 
-      <Label name="Label1" image="module://themeBtib/image/x16/pointsList_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
-        <ValueBinding name="ValueBinding" ord="station:|slot:/Home/Point$20Lists" hyperlink="station:|slot:/Home/Point$20Lists">
-          <ObjectToString name="text" format="%displayName%"/>
-        </ValueBinding>
+      <Label name="Label1" text="Point Lists" image="module://themeBtib/image/x16/pointsList_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
+        <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Home/Point$20Lists"/>
       </Label>
 
-      <Label name="Label2" image="module://themeBtib/image/x16/pie-chart_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
-        <ValueBinding name="ValueBinding" ord="station:|slot:/Home/Dashboard" hyperlink="station:|slot:/Home/Dashboard">
-          <ObjectToString name="text" format="%displayName%"/>
-        </ValueBinding>
+      <Label name="Label2" text="Dashboard" image="module://themeBtib/image/x16/pie-chart_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
+        <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Home/Dashboard"/>
       </Label>
 
-      <Label name="Label3" image="module://themeBtib/image/x16/graphicPannel_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
-        <ValueBinding name="ValueBinding" ord="station:|slot:/Home/Kiosk" hyperlink="station:|slot:/Home/Kiosk">
-          <ObjectToString name="text" format="%displayName%"/>
-        </ValueBinding>
+      <Label name="Label3" text="Kiosk" image="module://themeBtib/image/x16/graphicPannel_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
+        <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Home/Kiosk"/>
       </Label>
 
     </GridPane>

@@ -104,12 +104,12 @@
 
             <CanvasPane viewSize="220.0,100.0" background="#039be5">
 
-              <Label layout="10.0,10.0,200.0,50.0" text="Bat A" image="" font="20.0pt Calibri" foreground="white" halign="left" wordWrapEnabled="true">
-                <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/location/building/v1PxEH5Rt5WR"/>
+              <Label layout="10.0,10.0,200.0,50.0" text="Almas" image="" font="20.0pt Calibri" foreground="white" halign="left" wordWrapEnabled="true">
+                <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/location/building/R1QPaemEVsXB"/>
               </Label>
 
               <Label layout="10.0,60.0,200.0,35.0" image="" font="14.0pt Calibri" foreground="white" halign="left" valign="top" wordWrapEnabled="true">
-                <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/location/building/v1PxEH5Rt5WR"/>
+                <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/location/building/R1QPaemEVsXB"/>
               </Label>
 
             </CanvasPane>
@@ -119,19 +119,19 @@
               <GridPane layout="10.0,0.0,200.0,100.0" columnCount="1" halign="left" columnAlign="fill" rowGap="10.0" stretchColumn="0">
 
                 <Label image="module://themeBtib/image/x16/status/alarm.png" font="14.0pt Calibri Light" foreground="#454545" halign="left" wordWrapEnabled="true">
-                  <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/location/building/v1PxEH5Rt5WR/Synthesis/alarmCount/value">
+                  <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/location/building/R1QPaemEVsXB/Synthesis/alarmCount/value">
                     <ObjectToString name="text" format="%.% alarm points"/>
                   </ValueBinding>
                 </Label>
 
                 <Label image="module://themeBtib/image/x16/status/overridden.png" font="14.0pt Calibri Light" foreground="#454545" halign="left" wordWrapEnabled="true">
-                  <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/location/building/v1PxEH5Rt5WR/Synthesis/overriddenCount/value">
+                  <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/location/building/R1QPaemEVsXB/Synthesis/overriddenCount/value">
                     <ObjectToString name="text" format="%.% overridden points"/>
                   </ValueBinding>
                 </Label>
 
                 <Label image="module://themeBtib/image/x16/status/fault.png" font="14.0pt Calibri Light" foreground="#454545" halign="left" wordWrapEnabled="true">
-                  <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/location/building/v1PxEH5Rt5WR/Synthesis/faultCount/value">
+                  <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/location/building/R1QPaemEVsXB/Synthesis/faultCount/value">
                     <ObjectToString name="text" format="%.% fault points"/>
                   </ValueBinding>
                 </Label>
@@ -144,7 +144,7 @@
 
           <IdBinding id="buildingInSite"/>
 
-          <String name="id" value="widget_20ef3_11672_0"/>
+          <String name="id" value="widget_2425a_11672_0"/>
 
         </OverBorderPane>
 
@@ -154,12 +154,12 @@
 
             <CanvasPane viewSize="220.0,100.0" background="#039be5">
 
-              <Label layout="10.0,10.0,200.0,50.0" text="Headquarters" image="" font="20.0pt Calibri" foreground="white" halign="left" wordWrapEnabled="true">
-                <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/location/building/headquarters"/>
+              <Label layout="10.0,10.0,200.0,50.0" text="Olympus" image="" font="20.0pt Calibri" foreground="white" halign="left" wordWrapEnabled="true">
+                <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/location/building/H1QPaImmUnJW"/>
               </Label>
 
               <Label layout="10.0,60.0,200.0,35.0" image="" font="14.0pt Calibri" foreground="white" halign="left" valign="top" wordWrapEnabled="true">
-                <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/location/building/headquarters"/>
+                <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/location/building/H1QPaImmUnJW"/>
               </Label>
 
             </CanvasPane>
@@ -169,19 +169,19 @@
               <GridPane layout="10.0,0.0,200.0,100.0" columnCount="1" halign="left" columnAlign="fill" rowGap="10.0" stretchColumn="0">
 
                 <Label image="module://themeBtib/image/x16/status/alarm.png" font="14.0pt Calibri Light" foreground="#454545" halign="left" wordWrapEnabled="true">
-                  <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/location/building/headquarters/Synthesis/alarmCount/value">
+                  <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/location/building/H1QPaImmUnJW/Synthesis/alarmCount/value">
                     <ObjectToString name="text" format="%.% alarm points"/>
                   </ValueBinding>
                 </Label>
 
                 <Label image="module://themeBtib/image/x16/status/overridden.png" font="14.0pt Calibri Light" foreground="#454545" halign="left" wordWrapEnabled="true">
-                  <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/location/building/headquarters/Synthesis/overriddenCount/value">
+                  <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/location/building/H1QPaImmUnJW/Synthesis/overriddenCount/value">
                     <ObjectToString name="text" format="%.% overridden points"/>
                   </ValueBinding>
                 </Label>
 
                 <Label image="module://themeBtib/image/x16/status/fault.png" font="14.0pt Calibri Light" foreground="#454545" halign="left" wordWrapEnabled="true">
-                  <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/location/building/headquarters/Synthesis/faultCount/value">
+                  <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/location/building/H1QPaImmUnJW/Synthesis/faultCount/value">
                     <ObjectToString name="text" format="%.% fault points"/>
                   </ValueBinding>
                 </Label>
@@ -194,7 +194,7 @@
 
           <IdBinding id="buildingInSite"/>
 
-          <String name="id" value="widget_21866_11672_0"/>
+          <String name="id" value="widget_24263_11672_0"/>
 
         </OverBorderPane>
 

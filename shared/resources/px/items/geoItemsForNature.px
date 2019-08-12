@@ -99,7 +99,7 @@
     <GridPane name="GridPane" layout="40.0,50.0,60.0,40.0" columnCount="1" valign="top" columnAlign="center" rowGap="0.0">
 
       <Label name="Label" image="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
-        <PopupBinding name="PopupBinding" ord="station:|$(slotPathOrd)|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
+        <PopupBinding name="PopupBinding" ord="station:|$(slotPathOrd)|view:btibVision:FlexPane" title="D&#xe9;tails" size="1350.0,800.0"/>
         <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)/b$3amaitre">
           <IBooleanToSimple name="image">
             <Image name="trueValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png"/>

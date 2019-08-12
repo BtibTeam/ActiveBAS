@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="80px" height="90px" viewBox="0 0 80 90" style="enable-background:new 0 0 80 90;" xml:space="preserve">
+<g id="Coils_x5F_Heating_x5F_Electric_x5F_On">
+	<g>
+		<g>
+			<polygon style="fill:#E7E9EA;" points="0,70.04 80,70.061 80,20.061 0,20.04 			"/>
+			<g>
+				<polyline style="fill:#E7E9EA;" points="80,20 0,20 0,0 80,0 				"/>
+				<polygon style="fill:#6A7276;" points="80,21.583 0,21.576 0,19.953 80,19.953 				"/>
+				<g>
+					<polyline style="fill:#DDDFE1;" points="80,88.494 0,88.494 0,68.494 80,68.494 					"/>
+					<rect y="88.433" style="fill:#6A7276;" width="80" height="1.567"/>
+				</g>
+			</g>
+		</g>
+		<line style="fill:none;stroke:#ABAAA9;stroke-width:0.6;stroke-miterlimit:10;" x1="0" y1="68.422" x2="80" y2="68.422"/>
+	</g>
+	<line style="fill:none;stroke:#FFFFFF;stroke-width:0.2;stroke-miterlimit:10;" x1="36.422" y1="21.307" x2="38.385" y2="22.6"/>
+	<polygon style="fill:#CDCEC6;" points="56.87,87.961 54.959,87.961 53.634,87.389 40.904,87.389 39.76,87.961 37.596,87.961 
+		37.596,22.82 56.87,22.82 	"/>
+	<polygon style="fill:#AEAFA7;" points="10.827,21.307 10.827,69.866 37.595,87.961 37.595,22.82 35.222,21.307 	"/>
+	<polygon style="fill:#B4B5B0;" points="35.222,21.307 37.596,22.82 39.669,22.82 40.874,23.347 53.703,23.362 55.028,22.821 
+		56.87,22.82 54.557,21.307 	"/>
+	<line style="fill:none;stroke:#FFFFFF;stroke-width:0.2;stroke-miterlimit:10;" x1="35.222" y1="21.307" x2="37.519" y2="22.82"/>
+	<polyline style="fill:none;stroke:#999999;stroke-width:0.25;stroke-miterlimit:10;" points="37.2,21.307 40.874,23.347 
+		40.874,86.967 	"/>
+	<polyline style="fill:none;stroke:#DCDBDB;stroke-width:0.25;stroke-miterlimit:10;" points="52.694,21.307 55.028,22.821 
+		55.028,87.524 	"/>
+	<polyline style="fill:none;stroke:#999999;stroke-width:0.25;stroke-miterlimit:10;" points="50.601,21.307 53.703,23.362 
+		53.703,86.997 	"/>
+	<polyline style="fill:none;stroke:#DCDBDB;stroke-width:0.25;stroke-miterlimit:10;" points="36.944,21.307 39.669,22.82 
+		39.669,87.599 	"/>
+	<polygon style="fill:none;stroke:#F7F8F9;stroke-width:0.2;stroke-miterlimit:10;" points="56.715,87.961 54.804,87.961 
+		53.479,87.389 40.749,87.389 39.605,87.961 37.519,87.961 37.519,22.82 39.669,22.82 40.874,23.347 53.703,23.362 55.028,22.82 
+		56.715,22.82 	"/>
+	<polygon style="fill:#BCB9AA;" points="31.709,21.307 35.854,24.145 35.854,82.728 12.567,67.151 12.567,21.307 	"/>
+	<path style="fill:none;stroke:#4F4C4B;stroke-width:2;stroke-miterlimit:10;" d="M54.555,21.307c0,0,0.521,0.341,1.157,0.757
+		s1.157,1.657,1.157,2.757v61.141c0,1.1-0.43,2-0.955,2c-0.526,0-1.254-0.129-1.618-0.286c-0.364-0.157-1.563-0.286-2.663-0.286
+		h-8.73c-1.1,0-2.257,0.129-2.572,0.286c-0.315,0.157-1.059,0.286-1.654,0.286c-0.595,0-1.828-0.504-2.739-1.12L12.484,70.986
+		c-0.911-0.616-1.657-2.02-1.657-3.12v-46.56"/>
+	<polygon style="fill:#A09D92;" points="35.854,67.15 35.854,82.728 12.567,67.151 	"/>
+	<g>
+		<g>
+			<path style="fill:#F05223;stroke:#000000;stroke-width:0.1;stroke-miterlimit:10;" d="M35.989,75.008L15.107,61.059
+				c0,0-0.758-0.863-0.66-1.733c0.098-0.871,0.66-1.267,0.66-1.267l20.882,13.949V75.008z"/>
+			<g>
+				<path style="fill:#F05223;stroke:#000000;stroke-width:0.1;stroke-miterlimit:10;" d="M35.989,69.007L15.108,55.058
+					c0,0-0.779-1.042-0.66-1.865s0.66-1.136,0.66-1.136L35.99,66.006L35.989,69.007z"/>
+			</g>
+			<path style="fill:#F05223;stroke:#000000;stroke-width:0.1;stroke-miterlimit:10;" d="M35.989,63.007L15.108,49.058
+				c0,0-0.758-0.912-0.66-1.768s0.66-1.232,0.66-1.232L35.99,60.007L35.989,63.007z"/>
+			<path style="fill:#F05223;stroke:#000000;stroke-width:0.1;stroke-miterlimit:10;" d="M35.989,57.007L15.108,43.058
+				c0,0-0.758-1.084-0.66-1.865s0.66-1.136,0.66-1.136L35.99,54.006L35.989,57.007z"/>
+			<g>
+				<path style="fill:#F05223;stroke:#000000;stroke-width:0.1;stroke-miterlimit:10;" d="M35.989,51.006L15.108,37.057
+					c0,0-0.757-1.03-0.66-1.9s0.66-1.1,0.66-1.1L35.99,48.006L35.989,51.006z"/>
+			</g>
+			<path style="fill:#F05223;stroke:#000000;stroke-width:0.1;stroke-miterlimit:10;" d="M35.99,45.006L15.108,31.057
+				c0,0-0.778-1.033-0.66-1.838c0.118-0.806,0.66-1.162,0.66-1.162L35.99,42.006V45.006z"/>
+			<path style="fill:#F05223;stroke:#000000;stroke-width:0.1;stroke-miterlimit:10;" d="M35.99,39.006L15.108,25.057
+				c0,0-0.799-1.074-0.66-1.952c0.139-0.879,0.66-1.048,0.66-1.048L35.99,36.005V39.006z"/>
+			<g>
+				<polygon style="fill:#F05223;stroke:#000000;stroke-width:0.1;stroke-miterlimit:10;" points="35.99,33.005 18.326,21.19 
+					22.811,21.189 35.99,30.005 				"/>
+			</g>
+			<polygon style="fill:#F05223;stroke:#000000;stroke-width:0.1;stroke-miterlimit:10;" points="35.99,27.005 27.296,21.189 
+				31.781,21.189 35.99,24.005 			"/>
+		</g>
+		<path style="fill:#F05223;stroke:#000000;stroke-width:0.1;stroke-miterlimit:10;" d="M35.99,80.492L15.108,66.544
+			c0,0-0.757-1.081-0.66-1.856s0.66-1.144,0.66-1.144L35.99,77.492V80.492z"/>
+	</g>
+	<polyline style="fill:none;stroke:#3F3E3A;stroke-miterlimit:10;" points="12.567,21.307 12.567,67.151 35.854,82.728 
+		35.854,24.145 31.709,21.307 	"/>
+	<g>
+		<polygon style="fill:#FBDD00;stroke:#B39B31;stroke-miterlimit:10;" points="48.251,49.846 53.234,42.836 45.698,42.836 
+			41.525,53.707 45.823,53.707 41.837,62.8 52.922,49.846 		"/>
+	</g>
+</g>
+<g id="Layer_1_1_">
+</g>
+</svg>

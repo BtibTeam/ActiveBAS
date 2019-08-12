@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="btibStructure"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+</import>
+<properties>
+
+  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/h1EJV75C3hPA">
+  </property>
+
+  <property name="siteName" type="baja:String" value="QG">
+  </property>
+
+  <property name="lightLogo" type="gx:Image" value="file:^images/logos/logo_w.svg">
+  </property>
+
+  <property name="centralDarkForeground" type="gx:Brush" value="#232323">
+  </property>
+
+  <property name="centralWhiteBackground" type="gx:Brush" value="white">
+  </property>
+
+  <property name="centralColorForeground" type="gx:Brush" value="#f0f0f0">
+  </property>
+
+  <property name="centralLightColorBackground" type="gx:Brush" value="#546e7a">
+  </property>
+
+  <property name="centralColorBackground" type="gx:Brush" value="#455a64">
+  </property>
+
+  <property name="centralDarkColorBackground" type="gx:Brush" value="#37474f">
+  </property>
+
+  <property name="elementColorBackground" type="gx:Brush" value="#1976d2">
+  </property>
+
+  <property name="elementLightColorBackground" type="gx:Brush" value="#1976d2">
+  </property>
+
+  <property name="elementDarkColorBackground" type="gx:Brush" value="#1565c0">
+  </property>
+
+  <property name="elementLightForeground" type="gx:Brush" value="#f9f9f9">
+  </property>
+
+  <property name="leftForeground" type="gx:Brush" value="#f4f4f4">
+  </property>
+
+  <property name="leftLightBackground" type="gx:Brush" value="#616161">
+  </property>
+
+  <property name="leftColorBackground" type="gx:Brush" value="#424242">
+  </property>
+
+  <property name="leftDarkBackground" type="gx:Brush" value="#212121">
+  </property>
+
+  <property name="headerForegroundColor" type="gx:Brush" value="#f7f7f7">
+  </property>
+
+  <property name="headerLightColorBackground" type="gx:Brush" value="#039be5">
+  </property>
+
+  <property name="headerColorBackground" type="gx:Brush" value="#0288d1">
+  </property>
+
+  <property name="headerDarkColorBackground" type="gx:Brush" value="#0277bd">
+  </property>
+
+</properties>
+<content>
+<EdgePane>
+
+  <PxInclude name="top" ord="file:^px/menus/header.px"/>
+
+  <PxInclude name="left" ord="file:^px/menus/left.px"/>
+
+  <EdgePane name="center">
+
+    <CanvasPane name="top" viewSize="1000.0,40.0" halign="left" background="#f2f2f2">
+
+      <GridPane layout="10.0,0.0,640.0,40.0" columnCount="10" halign="left">
+
+        <Label text="Olympus /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
+          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/location/building/H1QPaImmUnJW"/>
+        </Label>
+
+        <Label text="Level 2 /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
+          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/location/floor/h1QPaK6MTo3r"/>
+        </Label>
+
+      </GridPane>
+
+    </CanvasPane>
+
+    <ScrollPane name="center">
+
+      <CanvasPane name="content" viewSize="1200.0,1400.0" halign="left" valign="top" background="white">
+
+        <CanvasPane layout="50.0,50.0,1100.0,1200.0" viewSize="1100.0,1200.0" halign="left" valign="top" background="image( source(file:^images/plans/bureauBtib.PNG) halign(left) valign(top) )">
+
+          <IdBinding id="floorCanvas"/>
+
+          <GridPane layout="120.0,120.0,60.0,40.0" columnCount="1" valign="top" columnAlign="center" rowGap="0.0">
+
+            <Label image="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+              <PopupBinding ord="station:|slot:/Drivers/LonNetwork/FCU_02|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_02/b$3amaitre">
+                <IBooleanToSimple name="image">
+                  <Image name="trueValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png"/>
+                  <Image name="falseValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_disabled.png"/>
+                </IBooleanToSimple>
+              </ValueBinding>
+            </Label>
+
+            <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_02/points/Space$20Temp">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+            <SourceBinding ord="station:|slot:/Drivers/LonNetwork/FCU_02"/>
+
+            <IdBinding id="FCU"/>
+
+            <String name="id" value="widget_247b9_6a76_0"/>
+
+          </GridPane>
+
+          <GridPane layout="130.0,130.0,60.0,40.0" columnCount="1" valign="top" columnAlign="center" rowGap="0.0">
+
+            <Label image="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+              <PopupBinding ord="station:|slot:/Drivers/LonNetwork/FCU_03|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_03/b$3amaitre">
+                <IBooleanToSimple name="image">
+                  <Image name="trueValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png"/>
+                  <Image name="falseValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_disabled.png"/>
+                </IBooleanToSimple>
+              </ValueBinding>
+            </Label>
+
+            <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_03/points/Space$20Temp">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+            <SourceBinding ord="station:|slot:/Drivers/LonNetwork/FCU_03"/>
+
+            <IdBinding id="FCU"/>
+
+            <String name="id" value="widget_24818_6a76_0"/>
+
+          </GridPane>
+
+          <GridPane layout="140.0,140.0,60.0,40.0" columnCount="1" valign="top" columnAlign="center" rowGap="0.0">
+
+            <Label image="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+              <PopupBinding ord="station:|slot:/Drivers/LonNetwork/FCU_04|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_04/b$3amaitre">
+                <IBooleanToSimple name="image">
+                  <Image name="trueValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png"/>
+                  <Image name="falseValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_disabled.png"/>
+                </IBooleanToSimple>
+              </ValueBinding>
+            </Label>
+
+            <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_04/points/Space$20Temp">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+            <SourceBinding ord="station:|slot:/Drivers/LonNetwork/FCU_04"/>
+
+            <IdBinding id="FCU"/>
+
+            <String name="id" value="widget_24877_6a76_0"/>
+
+          </GridPane>
+
+          <GridPane layout="150.0,150.0,60.0,40.0" columnCount="1" valign="top" columnAlign="center" rowGap="0.0">
+
+            <Label image="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+              <PopupBinding ord="station:|slot:/Drivers/LonNetwork/FCU_05|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_05/b$3amaitre">
+                <IBooleanToSimple name="image">
+                  <Image name="trueValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png"/>
+                  <Image name="falseValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_disabled.png"/>
+                </IBooleanToSimple>
+              </ValueBinding>
+            </Label>
+
+            <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_05/points/Space$20Temp">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+            <SourceBinding ord="station:|slot:/Drivers/LonNetwork/FCU_05"/>
+
+            <IdBinding id="FCU"/>
+
+            <String name="id" value="widget_248d6_6a76_0"/>
+
+          </GridPane>
+
+          <GridPane layout="160.0,160.0,60.0,40.0" columnCount="1" valign="top" columnAlign="center" rowGap="0.0">
+
+            <Label image="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+              <PopupBinding ord="station:|slot:/Drivers/LonNetwork/FCU_06|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_06/b$3amaitre">
+                <IBooleanToSimple name="image">
+                  <Image name="trueValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png"/>
+                  <Image name="falseValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_disabled.png"/>
+                </IBooleanToSimple>
+              </ValueBinding>
+            </Label>
+
+            <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_06/points/Space$20Temp">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+            <SourceBinding ord="station:|slot:/Drivers/LonNetwork/FCU_06"/>
+
+            <IdBinding id="FCU"/>
+
+            <String name="id" value="widget_24935_6a76_0"/>
+
+          </GridPane>
+
+          <GridPane layout="170.0,170.0,60.0,40.0" columnCount="1" valign="top" columnAlign="center" rowGap="0.0">
+
+            <Label image="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+              <PopupBinding ord="station:|slot:/Drivers/LonNetwork/FCU_07|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_07/b$3amaitre">
+                <IBooleanToSimple name="image">
+                  <Image name="trueValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png"/>
+                  <Image name="falseValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_disabled.png"/>
+                </IBooleanToSimple>
+              </ValueBinding>
+            </Label>
+
+            <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_07/points/Space$20Temp">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+            <SourceBinding ord="station:|slot:/Drivers/LonNetwork/FCU_07"/>
+
+            <IdBinding id="FCU"/>
+
+            <String name="id" value="widget_24994_6a76_0"/>
+
+          </GridPane>
+
+          <GridPane layout="180.0,180.0,60.0,40.0" columnCount="1" valign="top" columnAlign="center" rowGap="0.0">
+
+            <Label image="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+              <PopupBinding ord="station:|slot:/Drivers/LonNetwork/FCU_08|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_08/b$3amaitre">
+                <IBooleanToSimple name="image">
+                  <Image name="trueValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png"/>
+                  <Image name="falseValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_disabled.png"/>
+                </IBooleanToSimple>
+              </ValueBinding>
+            </Label>
+
+            <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_08/points/Space$20Temp">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+            <SourceBinding ord="station:|slot:/Drivers/LonNetwork/FCU_08"/>
+
+            <IdBinding id="FCU"/>
+
+            <String name="id" value="widget_249f3_6a76_0"/>
+
+          </GridPane>
+
+          <GridPane layout="190.0,190.0,60.0,40.0" columnCount="1" valign="top" columnAlign="center" rowGap="0.0">
+
+            <Label image="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+              <PopupBinding ord="station:|slot:/Drivers/LonNetwork/FCU_09|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_09/b$3amaitre">
+                <IBooleanToSimple name="image">
+                  <Image name="trueValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png"/>
+                  <Image name="falseValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_disabled.png"/>
+                </IBooleanToSimple>
+              </ValueBinding>
+            </Label>
+
+            <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_09/points/Space$20Temp">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+            <SourceBinding ord="station:|slot:/Drivers/LonNetwork/FCU_09"/>
+
+            <IdBinding id="FCU"/>
+
+            <String name="id" value="widget_24a52_6a76_0"/>
+
+          </GridPane>
+
+          <GridPane layout="0.0,0.0,60.0,40.0" columnCount="1" valign="top" columnAlign="center" rowGap="0.0">
+
+            <Label image="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+              <PopupBinding ord="station:|slot:/Drivers/LonNetwork/FCU_010|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_010/b$3amaitre">
+                <IBooleanToSimple name="image">
+                  <Image name="trueValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png"/>
+                  <Image name="falseValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_disabled.png"/>
+                </IBooleanToSimple>
+              </ValueBinding>
+            </Label>
+
+            <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_010/points/Space$20Temp">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+            <SourceBinding ord="station:|slot:/Drivers/LonNetwork/FCU_010"/>
+
+            <IdBinding id="FCU"/>
+
+            <String name="id" value="widget_24ab1_6a76_0"/>
+
+          </GridPane>
+
+          <GridPane layout="10.0,10.0,60.0,40.0" columnCount="1" valign="top" columnAlign="center" rowGap="0.0">
+
+            <Label image="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+              <PopupBinding ord="station:|slot:/Drivers/LonNetwork/FCU_011|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_011/b$3amaitre">
+                <IBooleanToSimple name="image">
+                  <Image name="trueValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png"/>
+                  <Image name="falseValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_disabled.png"/>
+                </IBooleanToSimple>
+              </ValueBinding>
+            </Label>
+
+            <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_011/points/Space$20Temp">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+            <SourceBinding ord="station:|slot:/Drivers/LonNetwork/FCU_011"/>
+
+            <IdBinding id="FCU"/>
+
+            <String name="id" value="widget_24b10_6a76_0"/>
+
+          </GridPane>
+
+          <GridPane layout="20.0,20.0,60.0,40.0" columnCount="1" valign="top" columnAlign="center" rowGap="0.0">
+
+            <Label image="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+              <PopupBinding ord="station:|slot:/Drivers/LonNetwork/FCU_012|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_012/b$3amaitre">
+                <IBooleanToSimple name="image">
+                  <Image name="trueValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png"/>
+                  <Image name="falseValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_disabled.png"/>
+                </IBooleanToSimple>
+              </ValueBinding>
+            </Label>
+
+            <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_012/points/Space$20Temp">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+            <SourceBinding ord="station:|slot:/Drivers/LonNetwork/FCU_012"/>
+
+            <IdBinding id="FCU"/>
+
+            <String name="id" value="widget_24b6f_6a76_0"/>
+
+          </GridPane>
+
+          <GridPane layout="30.0,30.0,60.0,40.0" columnCount="1" valign="top" columnAlign="center" rowGap="0.0">
+
+            <Label image="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+              <PopupBinding ord="station:|slot:/Drivers/LonNetwork/FCU_013|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_013/b$3amaitre">
+                <IBooleanToSimple name="image">
+                  <Image name="trueValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png"/>
+                  <Image name="falseValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_disabled.png"/>
+                </IBooleanToSimple>
+              </ValueBinding>
+            </Label>
+
+            <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_013/points/Space$20Temp">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+            <SourceBinding ord="station:|slot:/Drivers/LonNetwork/FCU_013"/>
+
+            <IdBinding id="FCU"/>
+
+            <String name="id" value="widget_24bce_6a76_0"/>
+
+          </GridPane>
+
+          <GridPane layout="40.0,40.0,60.0,40.0" columnCount="1" valign="top" columnAlign="center" rowGap="0.0">
+
+            <Label image="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+              <PopupBinding ord="station:|slot:/Drivers/LonNetwork/FCU_014|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_014/b$3amaitre">
+                <IBooleanToSimple name="image">
+                  <Image name="trueValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png"/>
+                  <Image name="falseValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_disabled.png"/>
+                </IBooleanToSimple>
+              </ValueBinding>
+            </Label>
+
+            <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_014/points/Space$20Temp">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+            <SourceBinding ord="station:|slot:/Drivers/LonNetwork/FCU_014"/>
+
+            <IdBinding id="FCU"/>
+
+            <String name="id" value="widget_24c2d_6a76_0"/>
+
+          </GridPane>
+
+          <GridPane layout="50.0,50.0,60.0,40.0" columnCount="1" valign="top" columnAlign="center" rowGap="0.0">
+
+            <Label image="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+              <PopupBinding ord="station:|slot:/Drivers/LonNetwork/FCU_015|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_015/b$3amaitre">
+                <IBooleanToSimple name="image">
+                  <Image name="trueValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png"/>
+                  <Image name="falseValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_disabled.png"/>
+                </IBooleanToSimple>
+              </ValueBinding>
+            </Label>
+
+            <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_015/points/Space$20Temp">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+            <SourceBinding ord="station:|slot:/Drivers/LonNetwork/FCU_015"/>
+
+            <IdBinding id="FCU"/>
+
+            <String name="id" value="widget_24c8c_6a76_0"/>
+
+          </GridPane>
+
+          <GridPane layout="60.0,60.0,60.0,40.0" columnCount="1" valign="top" columnAlign="center" rowGap="0.0">
+
+            <Label image="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+              <PopupBinding ord="station:|slot:/Drivers/LonNetwork/FCU_016|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_016/b$3amaitre">
+                <IBooleanToSimple name="image">
+                  <Image name="trueValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png"/>
+                  <Image name="falseValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_disabled.png"/>
+                </IBooleanToSimple>
+              </ValueBinding>
+            </Label>
+
+            <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_016/points/Space$20Temp">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+            <SourceBinding ord="station:|slot:/Drivers/LonNetwork/FCU_016"/>
+
+            <IdBinding id="FCU"/>
+
+            <String name="id" value="widget_24ceb_6a76_0"/>
+
+          </GridPane>
+
+        </CanvasPane>
+
+      </CanvasPane>
+
+    </ScrollPane>
+
+  </EdgePane>
+
+</EdgePane>
+</content>
+</px>

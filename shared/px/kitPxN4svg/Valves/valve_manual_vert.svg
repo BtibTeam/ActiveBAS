@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="30.303px" height="37.5px" viewBox="0 0 30.303 37.5" style="enable-background:new 0 0 30.303 37.5;" xml:space="preserve"
+	>
+<g id="valve_x5F_manual_x5F_vert">
+	<g>
+		<g>
+			<path style="fill:#D5CFC9;" d="M29.151,24.152l-8.809-0.003v0.004c-1.598,0-2.894-2.239-2.894-5.002s1.296-5.002,2.894-5.002
+				l8.809,0.003"/>
+			<g>
+				<path style="fill:#E8E3DE;" d="M29.052,21.617L17.8,21.616c0,0-0.352-1.2-0.352-2.465c0-1.265,0.351-2.461,0.351-2.461
+					l11.253,0.003"/>
+			</g>
+			<path style="fill:none;stroke:#51514E;stroke-width:0.5;stroke-miterlimit:10;" d="M29.008,24.246l-8.666-0.05
+				c-1.438,0-2.893-1.484-2.894-4.89s1.456-5.122,2.8-5.122l8.761,0.01"/>
+		</g>
+		<g>
+			<polyline style="fill:#D5CFC9;" points="27.924,24.708 30.001,24.193 30.001,14.193 28.004,13.61 			"/>
+			<polyline style="fill:#D5CFC9;" points="28.002,25.152 30.003,25.152 30.003,13.126 28.002,13.126 			"/>
+			<polyline style="fill:none;stroke:#51514E;stroke-width:0.6;stroke-miterlimit:10;" points="28.002,25.151 30.003,25.152 
+				30.003,13.125 28.003,13.126 			"/>
+			
+				<line style="fill:none;stroke:#51514E;stroke-width:0.2;stroke-miterlimit:10;" x1="28.002" y1="12.844" x2="28.002" y2="25.466"/>
+		</g>
+		<g>
+			<path style="fill:#D5CFC9;" d="M20.006,0.153c0,1.598-2.239,2.894-5.002,2.894s-5.002-1.296-5.002-2.894l-0.003,0l0.003,34.106
+				H9.999c0,1.598,2.239,2.894,5.002,2.894s5.002-1.296,5.002-2.894L19.999,0.153L20.006,0.153z"/>
+			<g>
+				<path style="fill:#E8E3DE;" d="M17.465,2.696c0,0-1.196,0.383-2.461,0.383s-2.465-0.384-2.465-0.384l0.001,34.059
+					c0,0,1.2,0.384,2.465,0.384s2.461-0.383,2.461-0.383L17.463,2.695L17.465,2.696z"/>
+			</g>
+			<line style="fill:#D5CFC9;" x1="17.466" y1="14.155" x2="17.466" y2="24.154"/>
+			<g>
+				<line style="fill:#E8E3DE;" x1="16.482" y1="16.695" x2="16.482" y2="21.619"/>
+			</g>
+		</g>
+		<path style="fill:none;stroke:#51514E;stroke-width:0.5;stroke-miterlimit:10;" d="M20,14.197L19.999,0.25l0.007,0
+			c0,1.598-2.239,2.894-5.002,2.894s-5.002-1.296-5.002-2.894L10,0.25l0.003,34.106H9.999c0,1.598,2.239,2.894,5.002,2.894
+			s5.002-1.296,5.002-2.894l-0.001-10.108"/>
+		<circle style="fill:#FFFFFF;" cx="16.25" cy="19.153" r="10.472"/>
+		<g>
+			<g>
+				<path style="fill:#51514E;" d="M16.25,9.681c5.223,0,9.472,4.249,9.472,9.472s-4.249,9.472-9.472,9.472
+					s-9.472-4.249-9.472-9.472S11.028,9.681,16.25,9.681 M16.25,8.681c-5.784,0-10.472,4.689-10.472,10.472
+					c0,5.784,4.688,10.472,10.472,10.472s10.472-4.689,10.472-10.472C26.723,13.369,22.034,8.681,16.25,8.681L16.25,8.681z"/>
+			</g>
+		</g>
+		<line style="fill:none;" x1="0" y1="10.153" x2="30" y2="10.153"/>
+		<g>
+			<polygon style="fill:#F2F2F2;stroke:#51514E;stroke-width:1.8;stroke-linejoin:round;stroke-miterlimit:10;" points="
+				9.444,23.394 9.444,16.588 16.25,19.991 			"/>
+			
+				<line style="fill:#F2F2F2;stroke:#51514E;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="16.25" y1="13.878" x2="16.25" y2="19.558"/>
+			
+				<line style="fill:#F2F2F2;stroke:#51514E;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="13.16" y1="13.61" x2="19.341" y2="13.61"/>
+			<polygon style="fill:#F2F2F2;stroke:#51514E;stroke-width:1.8;stroke-linejoin:round;stroke-miterlimit:10;" points="
+				23.057,16.588 23.057,23.394 16.25,19.991 			"/>
+		</g>
+	</g>
+</g>
+<g id="Layer_1">
+</g>
+</svg>
