@@ -170,13 +170,7 @@
 
           <GridPane name="content">
 
-            <Button name="Button" styleClasses="toolbar" text="  Export to Excel  " font="20.0pt SansSerif" foreground="white" background="#2e7d32" valign="bottom" buttonStyle="toolBar">
-              <ActionBinding name="ActionBinding" ord="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$206/Step$20Completed/active" widgetEvent="actionPerformed">
-                <Override name="actionArg"/>
-              </ActionBinding>
-              <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Home/Project$20Assistant/Start$20a$20new$20project/Step$206"/>
-              <ActionBinding name="ActionBinding1" ord="station:|slot:/Services/BtibService/aspectContainer/location/initialize" widgetEvent="actionPerformed"/>
-            </Button>
+            <ActiveProExcelExportButton name="ActiveProExcelExportButton" text="EXPORT TO EXCEL" font="20.0pt SansSerif" foreground="white" background="#2e7d32"/>
 
           </GridPane>
 

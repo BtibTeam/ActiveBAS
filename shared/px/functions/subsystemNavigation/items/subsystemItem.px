@@ -93,7 +93,7 @@
       </ValueBinding>
     </Picture>
 
-    <Label name="Label" layout="90.0,30.0,190.0,30.0" text="$(displayName)" font="bold 24.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
+    <Label name="Label" layout="90.0,30.0,190.0,30.0" text="$(displayName)" font="bold 20.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
       <ValueBinding name="ValueBinding" hyperlink="station:|$(slotPathOrd)"/>
     </Label>
 

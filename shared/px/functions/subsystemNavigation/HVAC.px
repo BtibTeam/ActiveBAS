@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0" media="workbench:WbPxMedia">
+<px version="1.0">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
   <module name="btibCore"/>
   <module name="btibVision"/>
-  <module name="converters"/>
   <module name="gx"/>
   <module name="kitPx"/>
-  <module name="vykonPro"/>
-  <module name="workbench"/>
 </import>
 <properties>
 
@@ -89,61 +86,61 @@
 
     <BorderPane name="center" padding="20.0" fill="#fafafa">
 
-      <GridPane name="content" valign="top" rowGap="30.0" columnGap="30.0">
+      <GridPane name="content" columnCount="3" valign="top" halign="left" rowGap="30.0" columnGap="30.0">
 
-        <IdBinding name="IdBinding" id="gridPane"/>
+        <IdBinding id="gridPane"/>
 
-        <OverCanvasPane name="OverCanvasPane" viewSize="300.0,100.0" background="white" overBackground="#1a4688f1" radius="8.0px 8.0px 8.0px 8.0px">
+        <OverCanvasPane layout="0.0,0.0,300.0,100.0" viewSize="300.0,100.0" background="white" overBackground="#1a4688f1" radius="8.0px 8.0px 8.0px 8.0px">
 
-          <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Home/Subsystem$20Navigation/HVAC/AHU"/>
+          <ValueBinding hyperlink="station:|slot:/Home/Subsystem$20Navigation/HVAC/AHU"/>
 
-          <Picture name="Picture" layout="10.0,20.0,60.0,60.0" image="file:^images/icons/circularShapeBlue.svg" scale="fitRatio"/>
+          <Picture layout="10.0,20.0,60.0,60.0" image="file:^images/icons/circularShapeBlue.svg" scale="fitRatio"/>
 
-          <Label name="Label" layout="85.0,45.0,210.0,45.0" text="AHU" image="" font="14.0pt Calibri Light" foreground="#797979" halign="left" valign="top" wordWrapEnabled="true">
-            <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Home/Subsystem$20Navigation/HVAC/AHU"/>
+          <Label layout="85.0,45.0,210.0,45.0" text="AHU" image="" font="14.0pt Calibri Light" foreground="#797979" halign="left" valign="top" wordWrapEnabled="true">
+            <ValueBinding hyperlink="station:|slot:/Home/Subsystem$20Navigation/HVAC/AHU"/>
           </Label>
 
-          <Picture name="Picture1" layout="25.0,35.0,30.0,30.0" scale="fitRatio">
-            <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Home/Subsystem$20Navigation/HVAC/AHU"/>
-            <ValueBinding name="ValueBinding1" ord="station:|module://themeBtib/image/svg/devices/hvac/ahu_w.svg">
+          <Picture layout="25.0,35.0,30.0,30.0" image="" scale="fitRatio">
+            <ValueBinding hyperlink="station:|slot:/Home/Subsystem$20Navigation/HVAC/AHU"/>
+            <ValueBinding ord="station:|module://themeBtib/image/svg/devices/hvac/ahu_w.svg">
               <OrdToImage name="image"/>
             </ValueBinding>
           </Picture>
 
-          <Label name="Label1" layout="85.0,15.0,210.0,30.0" text="AHU" image="" font="bold 16.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
-            <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Home/Subsystem$20Navigation/HVAC/AHU"/>
+          <Label layout="85.0,15.0,210.0,30.0" text="AHU" image="" font="bold 16.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
+            <ValueBinding hyperlink="station:|slot:/Home/Subsystem$20Navigation/HVAC/AHU"/>
           </Label>
 
-          <IdBinding name="IdBinding" id="equipmentItem"/>
+          <IdBinding id="equipmentItem"/>
 
-          <String name="id" value="widget_2140e_23d2b_0"/>
+          <String name="id" value="widget_AHU_23d2b_0"/>
 
         </OverCanvasPane>
 
-        <OverCanvasPane name="OverCanvasPane1" viewSize="300.0,100.0" background="white" overBackground="#1a4688f1" radius="8.0px 8.0px 8.0px 8.0px">
+        <OverCanvasPane layout="10.0,10.0,300.0,100.0" viewSize="300.0,100.0" background="white" overBackground="#1a4688f1" radius="8.0px 8.0px 8.0px 8.0px">
 
-          <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Home/Subsystem$20Navigation/HVAC/FCU$3bTerminal$20Unit"/>
+          <ValueBinding hyperlink="station:|slot:/Home/Subsystem$20Navigation/HVAC/FCU$3bTerminal$20Unit"/>
 
-          <Picture name="Picture" layout="10.0,20.0,60.0,60.0" image="file:^images/icons/circularShapeBlue.svg" scale="fitRatio"/>
+          <Picture layout="10.0,20.0,60.0,60.0" image="file:^images/icons/circularShapeBlue.svg" scale="fitRatio"/>
 
-          <Label name="Label" layout="85.0,45.0,210.0,45.0" text="Fan-Coil Unit" image="" font="14.0pt Calibri Light" foreground="#797979" halign="left" valign="top" wordWrapEnabled="true">
-            <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Home/Subsystem$20Navigation/HVAC/FCU$3bTerminal$20Unit"/>
+          <Label layout="85.0,45.0,210.0,45.0" text="Fan-Coil Unit" image="" font="14.0pt Calibri Light" foreground="#797979" halign="left" valign="top" wordWrapEnabled="true">
+            <ValueBinding hyperlink="station:|slot:/Home/Subsystem$20Navigation/HVAC/FCU$3bTerminal$20Unit"/>
           </Label>
 
-          <Picture name="Picture1" layout="25.0,35.0,30.0,30.0" scale="fitRatio">
-            <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Home/Subsystem$20Navigation/HVAC/FCU$3bTerminal$20Unit"/>
-            <ValueBinding name="ValueBinding1" ord="station:|module://themeBtib/image/svg/devices/hvac/fanCoilUnit_w.svg">
+          <Picture layout="25.0,35.0,30.0,30.0" image="" scale="fitRatio">
+            <ValueBinding hyperlink="station:|slot:/Home/Subsystem$20Navigation/HVAC/FCU$3bTerminal$20Unit"/>
+            <ValueBinding ord="station:|module://themeBtib/image/svg/devices/hvac/fanCoilUnit_w.svg">
               <OrdToImage name="image"/>
             </ValueBinding>
           </Picture>
 
-          <Label name="Label1" layout="85.0,15.0,210.0,30.0" text="FCU;Terminal Unit" image="" font="bold 16.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
-            <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Home/Subsystem$20Navigation/HVAC/FCU$3bTerminal$20Unit"/>
+          <Label layout="85.0,15.0,210.0,30.0" text="FCU;Terminal Unit" image="" font="bold 16.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
+            <ValueBinding hyperlink="station:|slot:/Home/Subsystem$20Navigation/HVAC/FCU$3bTerminal$20Unit"/>
           </Label>
 
-          <IdBinding name="IdBinding" id="equipmentItem"/>
+          <IdBinding id="equipmentItem"/>
 
-          <String name="id" value="widget_214b8_23d2b_0"/>
+          <String name="id" value="widget_FCU;Terminal Unit_23d2b_0"/>
 
         </OverCanvasPane>
 

@@ -125,7 +125,7 @@
           <Line name="Line" stroke="#bfbfbf" geom="0.0,0.0 1300.0,0.0"/>
 
           <BqlToWidgetsView name="BqlToWidgetsView">
-            <WbViewBinding name="WbViewBinding" ord="station:|slot:/Home/Point$20Lists/By$20Subsystem/BqlToWidgets"/>
+            <WbViewBinding name="WbViewBinding" ord="station:|slot:/Home/Point$20Lists/By$20Subsystem/Subsystem$20Menu"/>
           </BqlToWidgetsView>
 
         </GridPane>

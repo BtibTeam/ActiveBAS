@@ -210,9 +210,9 @@
         </Button>
 
         <Label name="Label" font="bold 14.0pt SansSerif" halign="left">
-          <ValueBinding name="ValueBinding" ord="station:|slot:/Home/Station$20parameters/General$20Parameters/Main$20Parameters/CheckVykonPro$20module/size">
-            <INumericToSimple name="text" map="baja:String 1.0:+inf=Great! VykonPro modules are here.;default=Please install VykonPro modules;"/>
-            <INumericToSimple name="foreground" map="gx:Brush 1.0:+inf=#3aa756;default=#e7443c;"/>
+          <ValueBinding name="ValueBinding" ord="station:|slot:/Home/Station$20parameters/General$20Parameters/Main$20Parameters/StatusStringToStatusEnum/out">
+            <IEnumToSimple name="foreground" map="gx:Brush 1=#e7443c;2=#3aa756;default=null;"/>
+            <IEnumToSimple name="text" map="baja:String 1=Please install VykonPro modules;2=Great! VykonPro modules are here;default=;"/>
           </ValueBinding>
         </Label>
 

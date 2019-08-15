@@ -89,7 +89,7 @@
 
     <BorderPane name="center" padding="20.0" fill="#fafafa">
 
-      <GridPane name="content" valign="top" rowGap="30.0" columnGap="30.0">
+      <GridPane name="content" columnCount="3" valign="top" halign="left" rowGap="30.0" columnGap="30.0">
 
         <IdBinding name="IdBinding" id="gridPane"/>
 
