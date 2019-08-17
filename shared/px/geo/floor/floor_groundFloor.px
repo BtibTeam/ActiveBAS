@@ -86,12 +86,12 @@
 
       <GridPane layout="10.0,0.0,640.0,40.0" columnCount="10" halign="left">
 
-        <Label text="Almas /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
-          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/location/building/R1QPaemEVsXB"/>
+        <Label text="Headquarters /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
+          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/location/building/headquarters"/>
         </Label>
 
         <Label text="Ground Floor /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
-          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/location/floor/c1QPahS6OFn9"/>
+          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/location/floor/groundFloor"/>
         </Label>
 
       </GridPane>

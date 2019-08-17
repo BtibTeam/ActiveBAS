@@ -91,537 +91,6 @@
 
         <IdBinding id="gridPane"/>
 
-        <OverCanvasPane layout="0.0,0.0,450.0,80.0" viewSize="450.0,80.0" background="white" overBackground="#1aa1a1a1" radius="8.0px 8.0px 8.0px 8.0px">
-
-          <Picture layout="400.0,10.0,40.0,30.0" image="" scale="fitRatio">
-            <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_Demo" hyperlink="slot:/Drivers/LonNetwork/FCU_Demo|view:view">
-              <IStatusToSimple name="image">
-                <Image name="disabled" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_disabled.png"/>
-                <Image name="fault" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_fault.png"/>
-                <Image name="down" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_down.png"/>
-                <Image name="alarm" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_alarm.png"/>
-                <Image name="stale" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
-                <Image name="overridden" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_overriden.png"/>
-                <Image name="nullStatus" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_disabled.png"/>
-                <Image name="unackedAlarm" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
-                <Image name="ok" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
-              </IStatusToSimple>
-            </ValueBinding>
-          </Picture>
-
-          <Label layout="10.0,10.0,300.0,30.0" text="FCU_Demo" image="" font="bold 18.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
-            <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_Demo" title="Details" size="1350.0,800.0"/>
-          </Label>
-
-          <IdBinding id="FCU"/>
-
-          <Label layout="10.0,40.0,330.0,30.0" text="Almas - Level 3" image="" font="16.0pt Calibri" foreground="#757575" halign="left" wordWrapEnabled="true">
-            <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_Demo" title="Details" size="1350.0,800.0"/>
-          </Label>
-
-          <Label layout="400.0,40.0,40.0,30.0" image="" font="28.0pt SansSerif" foreground="#404040">
-            <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_Demo/points/Occupancy">
-              <IBooleanToSimple name="image">
-                <Image name="trueValue" value="module://kitPxHvac/boolean/occupiedTrue.gif"/>
-                <Image name="falseValue" value="module://kitPxHvac/boolean/occupiedFalse.gif"/>
-              </IBooleanToSimple>
-            </ValueBinding>
-          </Label>
-
-          <GridPane layout="330.0,10.0,60.0,60.0" columnCount="1" rowGap="10.0">
-
-            <Label image="" font="14.0pt SansSerif" foreground="#404040">
-              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_Demo/points/Active$20setpoint">
-                <ObjectToString name="text" format="%out.value%"/>
-              </ValueBinding>
-            </Label>
-
-            <Label image="" font="14.0pt SansSerif" foreground="#404040">
-              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_Demo/points/Space$20Temp">
-                <ObjectToString name="text" format="%out.value%"/>
-              </ValueBinding>
-            </Label>
-
-          </GridPane>
-
-          <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_Demo" title="Details" size="1350.0,800.0"/>
-
-          <String name="id" value="widget_214b8_23c4a_0"/>
-
-        </OverCanvasPane>
-
-        <OverCanvasPane layout="10.0,10.0,450.0,80.0" viewSize="450.0,80.0" background="white" overBackground="#1aa1a1a1" radius="8.0px 8.0px 8.0px 8.0px">
-
-          <Picture layout="400.0,10.0,40.0,30.0" image="" scale="fitRatio">
-            <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_01" hyperlink="slot:/Drivers/LonNetwork/FCU_01|view:view">
-              <IStatusToSimple name="image">
-                <Image name="disabled" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_disabled.png"/>
-                <Image name="fault" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_fault.png"/>
-                <Image name="down" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_down.png"/>
-                <Image name="alarm" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_alarm.png"/>
-                <Image name="stale" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
-                <Image name="overridden" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_overriden.png"/>
-                <Image name="nullStatus" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_disabled.png"/>
-                <Image name="unackedAlarm" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
-                <Image name="ok" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
-              </IStatusToSimple>
-            </ValueBinding>
-          </Picture>
-
-          <Label layout="10.0,10.0,300.0,30.0" text="FCU_01" image="" font="bold 18.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
-            <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_01" title="Details" size="1350.0,800.0"/>
-          </Label>
-
-          <IdBinding id="FCU"/>
-
-          <Label layout="10.0,40.0,330.0,30.0" text="Almas - Level 2" image="" font="16.0pt Calibri" foreground="#757575" halign="left" wordWrapEnabled="true">
-            <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_01" title="Details" size="1350.0,800.0"/>
-          </Label>
-
-          <Label layout="400.0,40.0,40.0,30.0" image="" font="28.0pt SansSerif" foreground="#404040">
-            <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_01/points/Occupancy">
-              <IBooleanToSimple name="image">
-                <Image name="trueValue" value="module://kitPxHvac/boolean/occupiedTrue.gif"/>
-                <Image name="falseValue" value="module://kitPxHvac/boolean/occupiedFalse.gif"/>
-              </IBooleanToSimple>
-            </ValueBinding>
-          </Label>
-
-          <GridPane layout="330.0,10.0,60.0,60.0" columnCount="1" rowGap="10.0">
-
-            <Label image="" font="14.0pt SansSerif" foreground="#404040">
-              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_01/points/Active$20setpoint">
-                <ObjectToString name="text" format="%out.value%"/>
-              </ValueBinding>
-            </Label>
-
-            <Label image="" font="14.0pt SansSerif" foreground="#404040">
-              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_01/points/Space$20Temp">
-                <ObjectToString name="text" format="%out.value%"/>
-              </ValueBinding>
-            </Label>
-
-          </GridPane>
-
-          <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_01" title="Details" size="1350.0,800.0"/>
-
-          <String name="id" value="widget_21517_23c4a_0"/>
-
-        </OverCanvasPane>
-
-        <OverCanvasPane layout="20.0,20.0,450.0,80.0" viewSize="450.0,80.0" background="white" overBackground="#1aa1a1a1" radius="8.0px 8.0px 8.0px 8.0px">
-
-          <Picture layout="400.0,10.0,40.0,30.0" image="" scale="fitRatio">
-            <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_02" hyperlink="slot:/Drivers/LonNetwork/FCU_02|view:view">
-              <IStatusToSimple name="image">
-                <Image name="disabled" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_disabled.png"/>
-                <Image name="fault" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_fault.png"/>
-                <Image name="down" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_down.png"/>
-                <Image name="alarm" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_alarm.png"/>
-                <Image name="stale" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
-                <Image name="overridden" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_overriden.png"/>
-                <Image name="nullStatus" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_disabled.png"/>
-                <Image name="unackedAlarm" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
-                <Image name="ok" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
-              </IStatusToSimple>
-            </ValueBinding>
-          </Picture>
-
-          <Label layout="10.0,10.0,300.0,30.0" text="FCU_02" image="" font="bold 18.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
-            <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_02" title="Details" size="1350.0,800.0"/>
-          </Label>
-
-          <IdBinding id="FCU"/>
-
-          <Label layout="10.0,40.0,330.0,30.0" text="Olympus - Level 2" image="" font="16.0pt Calibri" foreground="#757575" halign="left" wordWrapEnabled="true">
-            <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_02" title="Details" size="1350.0,800.0"/>
-          </Label>
-
-          <Label layout="400.0,40.0,40.0,30.0" image="" font="28.0pt SansSerif" foreground="#404040">
-            <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_02/points/Occupancy">
-              <IBooleanToSimple name="image">
-                <Image name="trueValue" value="module://kitPxHvac/boolean/occupiedTrue.gif"/>
-                <Image name="falseValue" value="module://kitPxHvac/boolean/occupiedFalse.gif"/>
-              </IBooleanToSimple>
-            </ValueBinding>
-          </Label>
-
-          <GridPane layout="330.0,10.0,60.0,60.0" columnCount="1" rowGap="10.0">
-
-            <Label image="" font="14.0pt SansSerif" foreground="#404040">
-              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_02/points/Active$20setpoint">
-                <ObjectToString name="text" format="%out.value%"/>
-              </ValueBinding>
-            </Label>
-
-            <Label image="" font="14.0pt SansSerif" foreground="#404040">
-              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_02/points/Space$20Temp">
-                <ObjectToString name="text" format="%out.value%"/>
-              </ValueBinding>
-            </Label>
-
-          </GridPane>
-
-          <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_02" title="Details" size="1350.0,800.0"/>
-
-          <String name="id" value="widget_247b9_23c4a_0"/>
-
-        </OverCanvasPane>
-
-        <OverCanvasPane layout="30.0,30.0,450.0,80.0" viewSize="450.0,80.0" background="white" overBackground="#1aa1a1a1" radius="8.0px 8.0px 8.0px 8.0px">
-
-          <Picture layout="400.0,10.0,40.0,30.0" image="" scale="fitRatio">
-            <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_03" hyperlink="slot:/Drivers/LonNetwork/FCU_03|view:view">
-              <IStatusToSimple name="image">
-                <Image name="disabled" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_disabled.png"/>
-                <Image name="fault" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_fault.png"/>
-                <Image name="down" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_down.png"/>
-                <Image name="alarm" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_alarm.png"/>
-                <Image name="stale" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
-                <Image name="overridden" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_overriden.png"/>
-                <Image name="nullStatus" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_disabled.png"/>
-                <Image name="unackedAlarm" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
-                <Image name="ok" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
-              </IStatusToSimple>
-            </ValueBinding>
-          </Picture>
-
-          <Label layout="10.0,10.0,300.0,30.0" text="FCU_03" image="" font="bold 18.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
-            <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_03" title="Details" size="1350.0,800.0"/>
-          </Label>
-
-          <IdBinding id="FCU"/>
-
-          <Label layout="10.0,40.0,330.0,30.0" text="Olympus - Level 2" image="" font="16.0pt Calibri" foreground="#757575" halign="left" wordWrapEnabled="true">
-            <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_03" title="Details" size="1350.0,800.0"/>
-          </Label>
-
-          <Label layout="400.0,40.0,40.0,30.0" image="" font="28.0pt SansSerif" foreground="#404040">
-            <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_03/points/Occupancy">
-              <IBooleanToSimple name="image">
-                <Image name="trueValue" value="module://kitPxHvac/boolean/occupiedTrue.gif"/>
-                <Image name="falseValue" value="module://kitPxHvac/boolean/occupiedFalse.gif"/>
-              </IBooleanToSimple>
-            </ValueBinding>
-          </Label>
-
-          <GridPane layout="330.0,10.0,60.0,60.0" columnCount="1" rowGap="10.0">
-
-            <Label image="" font="14.0pt SansSerif" foreground="#404040">
-              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_03/points/Active$20setpoint">
-                <ObjectToString name="text" format="%out.value%"/>
-              </ValueBinding>
-            </Label>
-
-            <Label image="" font="14.0pt SansSerif" foreground="#404040">
-              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_03/points/Space$20Temp">
-                <ObjectToString name="text" format="%out.value%"/>
-              </ValueBinding>
-            </Label>
-
-          </GridPane>
-
-          <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_03" title="Details" size="1350.0,800.0"/>
-
-          <String name="id" value="widget_24818_23c4a_0"/>
-
-        </OverCanvasPane>
-
-        <OverCanvasPane layout="40.0,40.0,450.0,80.0" viewSize="450.0,80.0" background="white" overBackground="#1aa1a1a1" radius="8.0px 8.0px 8.0px 8.0px">
-
-          <Picture layout="400.0,10.0,40.0,30.0" image="" scale="fitRatio">
-            <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_04" hyperlink="slot:/Drivers/LonNetwork/FCU_04|view:view">
-              <IStatusToSimple name="image">
-                <Image name="disabled" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_disabled.png"/>
-                <Image name="fault" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_fault.png"/>
-                <Image name="down" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_down.png"/>
-                <Image name="alarm" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_alarm.png"/>
-                <Image name="stale" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
-                <Image name="overridden" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_overriden.png"/>
-                <Image name="nullStatus" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_disabled.png"/>
-                <Image name="unackedAlarm" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
-                <Image name="ok" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
-              </IStatusToSimple>
-            </ValueBinding>
-          </Picture>
-
-          <Label layout="10.0,10.0,300.0,30.0" text="FCU_04" image="" font="bold 18.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
-            <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_04" title="Details" size="1350.0,800.0"/>
-          </Label>
-
-          <IdBinding id="FCU"/>
-
-          <Label layout="10.0,40.0,330.0,30.0" text="Olympus - Level 2" image="" font="16.0pt Calibri" foreground="#757575" halign="left" wordWrapEnabled="true">
-            <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_04" title="Details" size="1350.0,800.0"/>
-          </Label>
-
-          <Label layout="400.0,40.0,40.0,30.0" image="" font="28.0pt SansSerif" foreground="#404040">
-            <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_04/points/Occupancy">
-              <IBooleanToSimple name="image">
-                <Image name="trueValue" value="module://kitPxHvac/boolean/occupiedTrue.gif"/>
-                <Image name="falseValue" value="module://kitPxHvac/boolean/occupiedFalse.gif"/>
-              </IBooleanToSimple>
-            </ValueBinding>
-          </Label>
-
-          <GridPane layout="330.0,10.0,60.0,60.0" columnCount="1" rowGap="10.0">
-
-            <Label image="" font="14.0pt SansSerif" foreground="#404040">
-              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_04/points/Active$20setpoint">
-                <ObjectToString name="text" format="%out.value%"/>
-              </ValueBinding>
-            </Label>
-
-            <Label image="" font="14.0pt SansSerif" foreground="#404040">
-              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_04/points/Space$20Temp">
-                <ObjectToString name="text" format="%out.value%"/>
-              </ValueBinding>
-            </Label>
-
-          </GridPane>
-
-          <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_04" title="Details" size="1350.0,800.0"/>
-
-          <String name="id" value="widget_24877_23c4a_0"/>
-
-        </OverCanvasPane>
-
-        <OverCanvasPane layout="50.0,50.0,450.0,80.0" viewSize="450.0,80.0" background="white" overBackground="#1aa1a1a1" radius="8.0px 8.0px 8.0px 8.0px">
-
-          <Picture layout="400.0,10.0,40.0,30.0" image="" scale="fitRatio">
-            <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_05" hyperlink="slot:/Drivers/LonNetwork/FCU_05|view:view">
-              <IStatusToSimple name="image">
-                <Image name="disabled" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_disabled.png"/>
-                <Image name="fault" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_fault.png"/>
-                <Image name="down" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_down.png"/>
-                <Image name="alarm" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_alarm.png"/>
-                <Image name="stale" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
-                <Image name="overridden" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_overriden.png"/>
-                <Image name="nullStatus" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_disabled.png"/>
-                <Image name="unackedAlarm" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
-                <Image name="ok" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
-              </IStatusToSimple>
-            </ValueBinding>
-          </Picture>
-
-          <Label layout="10.0,10.0,300.0,30.0" text="FCU_05" image="" font="bold 18.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
-            <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_05" title="Details" size="1350.0,800.0"/>
-          </Label>
-
-          <IdBinding id="FCU"/>
-
-          <Label layout="10.0,40.0,330.0,30.0" text="Olympus - Level 2" image="" font="16.0pt Calibri" foreground="#757575" halign="left" wordWrapEnabled="true">
-            <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_05" title="Details" size="1350.0,800.0"/>
-          </Label>
-
-          <Label layout="400.0,40.0,40.0,30.0" image="" font="28.0pt SansSerif" foreground="#404040">
-            <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_05/points/Occupancy">
-              <IBooleanToSimple name="image">
-                <Image name="trueValue" value="module://kitPxHvac/boolean/occupiedTrue.gif"/>
-                <Image name="falseValue" value="module://kitPxHvac/boolean/occupiedFalse.gif"/>
-              </IBooleanToSimple>
-            </ValueBinding>
-          </Label>
-
-          <GridPane layout="330.0,10.0,60.0,60.0" columnCount="1" rowGap="10.0">
-
-            <Label image="" font="14.0pt SansSerif" foreground="#404040">
-              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_05/points/Active$20setpoint">
-                <ObjectToString name="text" format="%out.value%"/>
-              </ValueBinding>
-            </Label>
-
-            <Label image="" font="14.0pt SansSerif" foreground="#404040">
-              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_05/points/Space$20Temp">
-                <ObjectToString name="text" format="%out.value%"/>
-              </ValueBinding>
-            </Label>
-
-          </GridPane>
-
-          <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_05" title="Details" size="1350.0,800.0"/>
-
-          <String name="id" value="widget_248d6_23c4a_0"/>
-
-        </OverCanvasPane>
-
-        <OverCanvasPane layout="60.0,60.0,450.0,80.0" viewSize="450.0,80.0" background="white" overBackground="#1aa1a1a1" radius="8.0px 8.0px 8.0px 8.0px">
-
-          <Picture layout="400.0,10.0,40.0,30.0" image="" scale="fitRatio">
-            <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_06" hyperlink="slot:/Drivers/LonNetwork/FCU_06|view:view">
-              <IStatusToSimple name="image">
-                <Image name="disabled" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_disabled.png"/>
-                <Image name="fault" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_fault.png"/>
-                <Image name="down" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_down.png"/>
-                <Image name="alarm" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_alarm.png"/>
-                <Image name="stale" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
-                <Image name="overridden" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_overriden.png"/>
-                <Image name="nullStatus" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_disabled.png"/>
-                <Image name="unackedAlarm" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
-                <Image name="ok" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
-              </IStatusToSimple>
-            </ValueBinding>
-          </Picture>
-
-          <Label layout="10.0,10.0,300.0,30.0" text="FCU_06" image="" font="bold 18.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
-            <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_06" title="Details" size="1350.0,800.0"/>
-          </Label>
-
-          <IdBinding id="FCU"/>
-
-          <Label layout="10.0,40.0,330.0,30.0" text="Olympus - Level 2" image="" font="16.0pt Calibri" foreground="#757575" halign="left" wordWrapEnabled="true">
-            <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_06" title="Details" size="1350.0,800.0"/>
-          </Label>
-
-          <Label layout="400.0,40.0,40.0,30.0" image="" font="28.0pt SansSerif" foreground="#404040">
-            <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_06/points/Occupancy">
-              <IBooleanToSimple name="image">
-                <Image name="trueValue" value="module://kitPxHvac/boolean/occupiedTrue.gif"/>
-                <Image name="falseValue" value="module://kitPxHvac/boolean/occupiedFalse.gif"/>
-              </IBooleanToSimple>
-            </ValueBinding>
-          </Label>
-
-          <GridPane layout="330.0,10.0,60.0,60.0" columnCount="1" rowGap="10.0">
-
-            <Label image="" font="14.0pt SansSerif" foreground="#404040">
-              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_06/points/Active$20setpoint">
-                <ObjectToString name="text" format="%out.value%"/>
-              </ValueBinding>
-            </Label>
-
-            <Label image="" font="14.0pt SansSerif" foreground="#404040">
-              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_06/points/Space$20Temp">
-                <ObjectToString name="text" format="%out.value%"/>
-              </ValueBinding>
-            </Label>
-
-          </GridPane>
-
-          <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_06" title="Details" size="1350.0,800.0"/>
-
-          <String name="id" value="widget_24935_23c4a_0"/>
-
-        </OverCanvasPane>
-
-        <OverCanvasPane layout="70.0,70.0,450.0,80.0" viewSize="450.0,80.0" background="white" overBackground="#1aa1a1a1" radius="8.0px 8.0px 8.0px 8.0px">
-
-          <Picture layout="400.0,10.0,40.0,30.0" image="" scale="fitRatio">
-            <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_07" hyperlink="slot:/Drivers/LonNetwork/FCU_07|view:view">
-              <IStatusToSimple name="image">
-                <Image name="disabled" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_disabled.png"/>
-                <Image name="fault" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_fault.png"/>
-                <Image name="down" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_down.png"/>
-                <Image name="alarm" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_alarm.png"/>
-                <Image name="stale" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
-                <Image name="overridden" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_overriden.png"/>
-                <Image name="nullStatus" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_disabled.png"/>
-                <Image name="unackedAlarm" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
-                <Image name="ok" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
-              </IStatusToSimple>
-            </ValueBinding>
-          </Picture>
-
-          <Label layout="10.0,10.0,300.0,30.0" text="FCU_07" image="" font="bold 18.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
-            <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_07" title="Details" size="1350.0,800.0"/>
-          </Label>
-
-          <IdBinding id="FCU"/>
-
-          <Label layout="10.0,40.0,330.0,30.0" text="Olympus - Level 2" image="" font="16.0pt Calibri" foreground="#757575" halign="left" wordWrapEnabled="true">
-            <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_07" title="Details" size="1350.0,800.0"/>
-          </Label>
-
-          <Label layout="400.0,40.0,40.0,30.0" image="" font="28.0pt SansSerif" foreground="#404040">
-            <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_07/points/Occupancy">
-              <IBooleanToSimple name="image">
-                <Image name="trueValue" value="module://kitPxHvac/boolean/occupiedTrue.gif"/>
-                <Image name="falseValue" value="module://kitPxHvac/boolean/occupiedFalse.gif"/>
-              </IBooleanToSimple>
-            </ValueBinding>
-          </Label>
-
-          <GridPane layout="330.0,10.0,60.0,60.0" columnCount="1" rowGap="10.0">
-
-            <Label image="" font="14.0pt SansSerif" foreground="#404040">
-              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_07/points/Active$20setpoint">
-                <ObjectToString name="text" format="%out.value%"/>
-              </ValueBinding>
-            </Label>
-
-            <Label image="" font="14.0pt SansSerif" foreground="#404040">
-              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_07/points/Space$20Temp">
-                <ObjectToString name="text" format="%out.value%"/>
-              </ValueBinding>
-            </Label>
-
-          </GridPane>
-
-          <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_07" title="Details" size="1350.0,800.0"/>
-
-          <String name="id" value="widget_24994_23c4a_0"/>
-
-        </OverCanvasPane>
-
-        <OverCanvasPane layout="80.0,80.0,450.0,80.0" viewSize="450.0,80.0" background="white" overBackground="#1aa1a1a1" radius="8.0px 8.0px 8.0px 8.0px">
-
-          <Picture layout="400.0,10.0,40.0,30.0" image="" scale="fitRatio">
-            <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_08" hyperlink="slot:/Drivers/LonNetwork/FCU_08|view:view">
-              <IStatusToSimple name="image">
-                <Image name="disabled" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_disabled.png"/>
-                <Image name="fault" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_fault.png"/>
-                <Image name="down" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_down.png"/>
-                <Image name="alarm" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_alarm.png"/>
-                <Image name="stale" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
-                <Image name="overridden" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_overriden.png"/>
-                <Image name="nullStatus" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_disabled.png"/>
-                <Image name="unackedAlarm" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
-                <Image name="ok" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
-              </IStatusToSimple>
-            </ValueBinding>
-          </Picture>
-
-          <Label layout="10.0,10.0,300.0,30.0" text="FCU_08" image="" font="bold 18.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
-            <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_08" title="Details" size="1350.0,800.0"/>
-          </Label>
-
-          <IdBinding id="FCU"/>
-
-          <Label layout="10.0,40.0,330.0,30.0" text="Olympus - Level 2" image="" font="16.0pt Calibri" foreground="#757575" halign="left" wordWrapEnabled="true">
-            <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_08" title="Details" size="1350.0,800.0"/>
-          </Label>
-
-          <Label layout="400.0,40.0,40.0,30.0" image="" font="28.0pt SansSerif" foreground="#404040">
-            <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_08/points/Occupancy">
-              <IBooleanToSimple name="image">
-                <Image name="trueValue" value="module://kitPxHvac/boolean/occupiedTrue.gif"/>
-                <Image name="falseValue" value="module://kitPxHvac/boolean/occupiedFalse.gif"/>
-              </IBooleanToSimple>
-            </ValueBinding>
-          </Label>
-
-          <GridPane layout="330.0,10.0,60.0,60.0" columnCount="1" rowGap="10.0">
-
-            <Label image="" font="14.0pt SansSerif" foreground="#404040">
-              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_08/points/Active$20setpoint">
-                <ObjectToString name="text" format="%out.value%"/>
-              </ValueBinding>
-            </Label>
-
-            <Label image="" font="14.0pt SansSerif" foreground="#404040">
-              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_08/points/Space$20Temp">
-                <ObjectToString name="text" format="%out.value%"/>
-              </ValueBinding>
-            </Label>
-
-          </GridPane>
-
-          <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_08" title="Details" size="1350.0,800.0"/>
-
-          <String name="id" value="widget_249f3_23c4a_0"/>
-
-        </OverCanvasPane>
-
         <OverCanvasPane layout="90.0,90.0,450.0,80.0" viewSize="450.0,80.0" background="white" overBackground="#1aa1a1a1" radius="8.0px 8.0px 8.0px 8.0px">
 
           <Picture layout="400.0,10.0,40.0,30.0" image="" scale="fitRatio">
@@ -1386,6 +855,537 @@
           <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_021" title="Details" size="1350.0,800.0"/>
 
           <String name="id" value="widget_24ec6_23c4a_0"/>
+
+        </OverCanvasPane>
+
+        <OverCanvasPane layout="10.0,10.0,450.0,80.0" viewSize="450.0,80.0" background="white" overBackground="#1aa1a1a1" radius="8.0px 8.0px 8.0px 8.0px">
+
+          <Picture layout="400.0,10.0,40.0,30.0" image="" scale="fitRatio">
+            <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_01" hyperlink="slot:/Drivers/LonNetwork/FCU_01|view:view">
+              <IStatusToSimple name="image">
+                <Image name="disabled" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_disabled.png"/>
+                <Image name="fault" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_fault.png"/>
+                <Image name="down" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_down.png"/>
+                <Image name="alarm" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_alarm.png"/>
+                <Image name="stale" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
+                <Image name="overridden" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_overriden.png"/>
+                <Image name="nullStatus" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_disabled.png"/>
+                <Image name="unackedAlarm" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
+                <Image name="ok" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
+              </IStatusToSimple>
+            </ValueBinding>
+          </Picture>
+
+          <Label layout="10.0,10.0,300.0,30.0" text="FCU_01" image="" font="bold 18.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
+            <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_01" title="Details" size="1350.0,800.0"/>
+          </Label>
+
+          <IdBinding id="FCU"/>
+
+          <Label layout="10.0,40.0,330.0,30.0" text="Almas - Level 5" image="" font="16.0pt Calibri" foreground="#757575" halign="left" wordWrapEnabled="true">
+            <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_01" title="Details" size="1350.0,800.0"/>
+          </Label>
+
+          <Label layout="400.0,40.0,40.0,30.0" image="" font="28.0pt SansSerif" foreground="#404040">
+            <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_01/points/Occupancy">
+              <IBooleanToSimple name="image">
+                <Image name="trueValue" value="module://kitPxHvac/boolean/occupiedTrue.gif"/>
+                <Image name="falseValue" value="module://kitPxHvac/boolean/occupiedFalse.gif"/>
+              </IBooleanToSimple>
+            </ValueBinding>
+          </Label>
+
+          <GridPane layout="330.0,10.0,60.0,60.0" columnCount="1" rowGap="10.0">
+
+            <Label image="" font="14.0pt SansSerif" foreground="#404040">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_01/points/Active$20setpoint">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+            <Label image="" font="14.0pt SansSerif" foreground="#404040">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_01/points/Space$20Temp">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+          </GridPane>
+
+          <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_01" title="Details" size="1350.0,800.0"/>
+
+          <String name="id" value="widget_21517_23c4a_0"/>
+
+        </OverCanvasPane>
+
+        <OverCanvasPane layout="20.0,20.0,450.0,80.0" viewSize="450.0,80.0" background="white" overBackground="#1aa1a1a1" radius="8.0px 8.0px 8.0px 8.0px">
+
+          <Picture layout="400.0,10.0,40.0,30.0" image="" scale="fitRatio">
+            <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_02" hyperlink="slot:/Drivers/LonNetwork/FCU_02|view:view">
+              <IStatusToSimple name="image">
+                <Image name="disabled" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_disabled.png"/>
+                <Image name="fault" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_fault.png"/>
+                <Image name="down" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_down.png"/>
+                <Image name="alarm" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_alarm.png"/>
+                <Image name="stale" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
+                <Image name="overridden" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_overriden.png"/>
+                <Image name="nullStatus" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_disabled.png"/>
+                <Image name="unackedAlarm" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
+                <Image name="ok" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
+              </IStatusToSimple>
+            </ValueBinding>
+          </Picture>
+
+          <Label layout="10.0,10.0,300.0,30.0" text="FCU_02" image="" font="bold 18.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
+            <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_02" title="Details" size="1350.0,800.0"/>
+          </Label>
+
+          <IdBinding id="FCU"/>
+
+          <Label layout="10.0,40.0,330.0,30.0" text="Almas - Level 5" image="" font="16.0pt Calibri" foreground="#757575" halign="left" wordWrapEnabled="true">
+            <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_02" title="Details" size="1350.0,800.0"/>
+          </Label>
+
+          <Label layout="400.0,40.0,40.0,30.0" image="" font="28.0pt SansSerif" foreground="#404040">
+            <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_02/points/Occupancy">
+              <IBooleanToSimple name="image">
+                <Image name="trueValue" value="module://kitPxHvac/boolean/occupiedTrue.gif"/>
+                <Image name="falseValue" value="module://kitPxHvac/boolean/occupiedFalse.gif"/>
+              </IBooleanToSimple>
+            </ValueBinding>
+          </Label>
+
+          <GridPane layout="330.0,10.0,60.0,60.0" columnCount="1" rowGap="10.0">
+
+            <Label image="" font="14.0pt SansSerif" foreground="#404040">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_02/points/Active$20setpoint">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+            <Label image="" font="14.0pt SansSerif" foreground="#404040">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_02/points/Space$20Temp">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+          </GridPane>
+
+          <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_02" title="Details" size="1350.0,800.0"/>
+
+          <String name="id" value="widget_247b9_23c4a_0"/>
+
+        </OverCanvasPane>
+
+        <OverCanvasPane layout="30.0,30.0,450.0,80.0" viewSize="450.0,80.0" background="white" overBackground="#1aa1a1a1" radius="8.0px 8.0px 8.0px 8.0px">
+
+          <Picture layout="400.0,10.0,40.0,30.0" image="" scale="fitRatio">
+            <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_03" hyperlink="slot:/Drivers/LonNetwork/FCU_03|view:view">
+              <IStatusToSimple name="image">
+                <Image name="disabled" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_disabled.png"/>
+                <Image name="fault" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_fault.png"/>
+                <Image name="down" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_down.png"/>
+                <Image name="alarm" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_alarm.png"/>
+                <Image name="stale" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
+                <Image name="overridden" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_overriden.png"/>
+                <Image name="nullStatus" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_disabled.png"/>
+                <Image name="unackedAlarm" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
+                <Image name="ok" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
+              </IStatusToSimple>
+            </ValueBinding>
+          </Picture>
+
+          <Label layout="10.0,10.0,300.0,30.0" text="FCU_03" image="" font="bold 18.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
+            <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_03" title="Details" size="1350.0,800.0"/>
+          </Label>
+
+          <IdBinding id="FCU"/>
+
+          <Label layout="10.0,40.0,330.0,30.0" text="Almas - Level 5" image="" font="16.0pt Calibri" foreground="#757575" halign="left" wordWrapEnabled="true">
+            <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_03" title="Details" size="1350.0,800.0"/>
+          </Label>
+
+          <Label layout="400.0,40.0,40.0,30.0" image="" font="28.0pt SansSerif" foreground="#404040">
+            <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_03/points/Occupancy">
+              <IBooleanToSimple name="image">
+                <Image name="trueValue" value="module://kitPxHvac/boolean/occupiedTrue.gif"/>
+                <Image name="falseValue" value="module://kitPxHvac/boolean/occupiedFalse.gif"/>
+              </IBooleanToSimple>
+            </ValueBinding>
+          </Label>
+
+          <GridPane layout="330.0,10.0,60.0,60.0" columnCount="1" rowGap="10.0">
+
+            <Label image="" font="14.0pt SansSerif" foreground="#404040">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_03/points/Active$20setpoint">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+            <Label image="" font="14.0pt SansSerif" foreground="#404040">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_03/points/Space$20Temp">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+          </GridPane>
+
+          <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_03" title="Details" size="1350.0,800.0"/>
+
+          <String name="id" value="widget_24818_23c4a_0"/>
+
+        </OverCanvasPane>
+
+        <OverCanvasPane layout="40.0,40.0,450.0,80.0" viewSize="450.0,80.0" background="white" overBackground="#1aa1a1a1" radius="8.0px 8.0px 8.0px 8.0px">
+
+          <Picture layout="400.0,10.0,40.0,30.0" image="" scale="fitRatio">
+            <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_04" hyperlink="slot:/Drivers/LonNetwork/FCU_04|view:view">
+              <IStatusToSimple name="image">
+                <Image name="disabled" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_disabled.png"/>
+                <Image name="fault" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_fault.png"/>
+                <Image name="down" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_down.png"/>
+                <Image name="alarm" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_alarm.png"/>
+                <Image name="stale" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
+                <Image name="overridden" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_overriden.png"/>
+                <Image name="nullStatus" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_disabled.png"/>
+                <Image name="unackedAlarm" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
+                <Image name="ok" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
+              </IStatusToSimple>
+            </ValueBinding>
+          </Picture>
+
+          <Label layout="10.0,10.0,300.0,30.0" text="FCU_04" image="" font="bold 18.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
+            <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_04" title="Details" size="1350.0,800.0"/>
+          </Label>
+
+          <IdBinding id="FCU"/>
+
+          <Label layout="10.0,40.0,330.0,30.0" text="Almas - Level 5" image="" font="16.0pt Calibri" foreground="#757575" halign="left" wordWrapEnabled="true">
+            <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_04" title="Details" size="1350.0,800.0"/>
+          </Label>
+
+          <Label layout="400.0,40.0,40.0,30.0" image="" font="28.0pt SansSerif" foreground="#404040">
+            <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_04/points/Occupancy">
+              <IBooleanToSimple name="image">
+                <Image name="trueValue" value="module://kitPxHvac/boolean/occupiedTrue.gif"/>
+                <Image name="falseValue" value="module://kitPxHvac/boolean/occupiedFalse.gif"/>
+              </IBooleanToSimple>
+            </ValueBinding>
+          </Label>
+
+          <GridPane layout="330.0,10.0,60.0,60.0" columnCount="1" rowGap="10.0">
+
+            <Label image="" font="14.0pt SansSerif" foreground="#404040">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_04/points/Active$20setpoint">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+            <Label image="" font="14.0pt SansSerif" foreground="#404040">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_04/points/Space$20Temp">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+          </GridPane>
+
+          <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_04" title="Details" size="1350.0,800.0"/>
+
+          <String name="id" value="widget_24877_23c4a_0"/>
+
+        </OverCanvasPane>
+
+        <OverCanvasPane layout="50.0,50.0,450.0,80.0" viewSize="450.0,80.0" background="white" overBackground="#1aa1a1a1" radius="8.0px 8.0px 8.0px 8.0px">
+
+          <Picture layout="400.0,10.0,40.0,30.0" image="" scale="fitRatio">
+            <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_05" hyperlink="slot:/Drivers/LonNetwork/FCU_05|view:view">
+              <IStatusToSimple name="image">
+                <Image name="disabled" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_disabled.png"/>
+                <Image name="fault" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_fault.png"/>
+                <Image name="down" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_down.png"/>
+                <Image name="alarm" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_alarm.png"/>
+                <Image name="stale" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
+                <Image name="overridden" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_overriden.png"/>
+                <Image name="nullStatus" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_disabled.png"/>
+                <Image name="unackedAlarm" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
+                <Image name="ok" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
+              </IStatusToSimple>
+            </ValueBinding>
+          </Picture>
+
+          <Label layout="10.0,10.0,300.0,30.0" text="FCU_05" image="" font="bold 18.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
+            <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_05" title="Details" size="1350.0,800.0"/>
+          </Label>
+
+          <IdBinding id="FCU"/>
+
+          <Label layout="10.0,40.0,330.0,30.0" text="Almas - Level 5" image="" font="16.0pt Calibri" foreground="#757575" halign="left" wordWrapEnabled="true">
+            <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_05" title="Details" size="1350.0,800.0"/>
+          </Label>
+
+          <Label layout="400.0,40.0,40.0,30.0" image="" font="28.0pt SansSerif" foreground="#404040">
+            <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_05/points/Occupancy">
+              <IBooleanToSimple name="image">
+                <Image name="trueValue" value="module://kitPxHvac/boolean/occupiedTrue.gif"/>
+                <Image name="falseValue" value="module://kitPxHvac/boolean/occupiedFalse.gif"/>
+              </IBooleanToSimple>
+            </ValueBinding>
+          </Label>
+
+          <GridPane layout="330.0,10.0,60.0,60.0" columnCount="1" rowGap="10.0">
+
+            <Label image="" font="14.0pt SansSerif" foreground="#404040">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_05/points/Active$20setpoint">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+            <Label image="" font="14.0pt SansSerif" foreground="#404040">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_05/points/Space$20Temp">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+          </GridPane>
+
+          <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_05" title="Details" size="1350.0,800.0"/>
+
+          <String name="id" value="widget_248d6_23c4a_0"/>
+
+        </OverCanvasPane>
+
+        <OverCanvasPane layout="60.0,60.0,450.0,80.0" viewSize="450.0,80.0" background="white" overBackground="#1aa1a1a1" radius="8.0px 8.0px 8.0px 8.0px">
+
+          <Picture layout="400.0,10.0,40.0,30.0" image="" scale="fitRatio">
+            <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_06" hyperlink="slot:/Drivers/LonNetwork/FCU_06|view:view">
+              <IStatusToSimple name="image">
+                <Image name="disabled" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_disabled.png"/>
+                <Image name="fault" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_fault.png"/>
+                <Image name="down" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_down.png"/>
+                <Image name="alarm" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_alarm.png"/>
+                <Image name="stale" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
+                <Image name="overridden" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_overriden.png"/>
+                <Image name="nullStatus" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_disabled.png"/>
+                <Image name="unackedAlarm" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
+                <Image name="ok" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
+              </IStatusToSimple>
+            </ValueBinding>
+          </Picture>
+
+          <Label layout="10.0,10.0,300.0,30.0" text="FCU_06" image="" font="bold 18.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
+            <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_06" title="Details" size="1350.0,800.0"/>
+          </Label>
+
+          <IdBinding id="FCU"/>
+
+          <Label layout="10.0,40.0,330.0,30.0" text="Almas - Level 5" image="" font="16.0pt Calibri" foreground="#757575" halign="left" wordWrapEnabled="true">
+            <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_06" title="Details" size="1350.0,800.0"/>
+          </Label>
+
+          <Label layout="400.0,40.0,40.0,30.0" image="" font="28.0pt SansSerif" foreground="#404040">
+            <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_06/points/Occupancy">
+              <IBooleanToSimple name="image">
+                <Image name="trueValue" value="module://kitPxHvac/boolean/occupiedTrue.gif"/>
+                <Image name="falseValue" value="module://kitPxHvac/boolean/occupiedFalse.gif"/>
+              </IBooleanToSimple>
+            </ValueBinding>
+          </Label>
+
+          <GridPane layout="330.0,10.0,60.0,60.0" columnCount="1" rowGap="10.0">
+
+            <Label image="" font="14.0pt SansSerif" foreground="#404040">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_06/points/Active$20setpoint">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+            <Label image="" font="14.0pt SansSerif" foreground="#404040">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_06/points/Space$20Temp">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+          </GridPane>
+
+          <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_06" title="Details" size="1350.0,800.0"/>
+
+          <String name="id" value="widget_24935_23c4a_0"/>
+
+        </OverCanvasPane>
+
+        <OverCanvasPane layout="70.0,70.0,450.0,80.0" viewSize="450.0,80.0" background="white" overBackground="#1aa1a1a1" radius="8.0px 8.0px 8.0px 8.0px">
+
+          <Picture layout="400.0,10.0,40.0,30.0" image="" scale="fitRatio">
+            <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_07" hyperlink="slot:/Drivers/LonNetwork/FCU_07|view:view">
+              <IStatusToSimple name="image">
+                <Image name="disabled" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_disabled.png"/>
+                <Image name="fault" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_fault.png"/>
+                <Image name="down" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_down.png"/>
+                <Image name="alarm" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_alarm.png"/>
+                <Image name="stale" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
+                <Image name="overridden" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_overriden.png"/>
+                <Image name="nullStatus" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_disabled.png"/>
+                <Image name="unackedAlarm" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
+                <Image name="ok" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
+              </IStatusToSimple>
+            </ValueBinding>
+          </Picture>
+
+          <Label layout="10.0,10.0,300.0,30.0" text="FCU_07" image="" font="bold 18.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
+            <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_07" title="Details" size="1350.0,800.0"/>
+          </Label>
+
+          <IdBinding id="FCU"/>
+
+          <Label layout="10.0,40.0,330.0,30.0" text="Almas - Level 5" image="" font="16.0pt Calibri" foreground="#757575" halign="left" wordWrapEnabled="true">
+            <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_07" title="Details" size="1350.0,800.0"/>
+          </Label>
+
+          <Label layout="400.0,40.0,40.0,30.0" image="" font="28.0pt SansSerif" foreground="#404040">
+            <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_07/points/Occupancy">
+              <IBooleanToSimple name="image">
+                <Image name="trueValue" value="module://kitPxHvac/boolean/occupiedTrue.gif"/>
+                <Image name="falseValue" value="module://kitPxHvac/boolean/occupiedFalse.gif"/>
+              </IBooleanToSimple>
+            </ValueBinding>
+          </Label>
+
+          <GridPane layout="330.0,10.0,60.0,60.0" columnCount="1" rowGap="10.0">
+
+            <Label image="" font="14.0pt SansSerif" foreground="#404040">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_07/points/Active$20setpoint">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+            <Label image="" font="14.0pt SansSerif" foreground="#404040">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_07/points/Space$20Temp">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+          </GridPane>
+
+          <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_07" title="Details" size="1350.0,800.0"/>
+
+          <String name="id" value="widget_24994_23c4a_0"/>
+
+        </OverCanvasPane>
+
+        <OverCanvasPane layout="80.0,80.0,450.0,80.0" viewSize="450.0,80.0" background="white" overBackground="#1aa1a1a1" radius="8.0px 8.0px 8.0px 8.0px">
+
+          <Picture layout="400.0,10.0,40.0,30.0" image="" scale="fitRatio">
+            <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_08" hyperlink="slot:/Drivers/LonNetwork/FCU_08|view:view">
+              <IStatusToSimple name="image">
+                <Image name="disabled" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_disabled.png"/>
+                <Image name="fault" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_fault.png"/>
+                <Image name="down" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_down.png"/>
+                <Image name="alarm" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_alarm.png"/>
+                <Image name="stale" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
+                <Image name="overridden" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_overriden.png"/>
+                <Image name="nullStatus" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_disabled.png"/>
+                <Image name="unackedAlarm" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
+                <Image name="ok" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
+              </IStatusToSimple>
+            </ValueBinding>
+          </Picture>
+
+          <Label layout="10.0,10.0,300.0,30.0" text="FCU_08" image="" font="bold 18.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
+            <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_08" title="Details" size="1350.0,800.0"/>
+          </Label>
+
+          <IdBinding id="FCU"/>
+
+          <Label layout="10.0,40.0,330.0,30.0" text="Almas - Level 5" image="" font="16.0pt Calibri" foreground="#757575" halign="left" wordWrapEnabled="true">
+            <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_08" title="Details" size="1350.0,800.0"/>
+          </Label>
+
+          <Label layout="400.0,40.0,40.0,30.0" image="" font="28.0pt SansSerif" foreground="#404040">
+            <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_08/points/Occupancy">
+              <IBooleanToSimple name="image">
+                <Image name="trueValue" value="module://kitPxHvac/boolean/occupiedTrue.gif"/>
+                <Image name="falseValue" value="module://kitPxHvac/boolean/occupiedFalse.gif"/>
+              </IBooleanToSimple>
+            </ValueBinding>
+          </Label>
+
+          <GridPane layout="330.0,10.0,60.0,60.0" columnCount="1" rowGap="10.0">
+
+            <Label image="" font="14.0pt SansSerif" foreground="#404040">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_08/points/Active$20setpoint">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+            <Label image="" font="14.0pt SansSerif" foreground="#404040">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_08/points/Space$20Temp">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+          </GridPane>
+
+          <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_08" title="Details" size="1350.0,800.0"/>
+
+          <String name="id" value="widget_249f3_23c4a_0"/>
+
+        </OverCanvasPane>
+
+        <OverCanvasPane layout="0.0,0.0,450.0,80.0" viewSize="450.0,80.0" background="white" overBackground="#1aa1a1a1" radius="8.0px 8.0px 8.0px 8.0px">
+
+          <Picture layout="400.0,10.0,40.0,30.0" image="" scale="fitRatio">
+            <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_Demo" hyperlink="slot:/Drivers/LonNetwork/FCU_Demo|view:view">
+              <IStatusToSimple name="image">
+                <Image name="disabled" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_disabled.png"/>
+                <Image name="fault" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_fault.png"/>
+                <Image name="down" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_down.png"/>
+                <Image name="alarm" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_alarm.png"/>
+                <Image name="stale" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
+                <Image name="overridden" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_overriden.png"/>
+                <Image name="nullStatus" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_disabled.png"/>
+                <Image name="unackedAlarm" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
+                <Image name="ok" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
+              </IStatusToSimple>
+            </ValueBinding>
+          </Picture>
+
+          <Label layout="10.0,10.0,300.0,30.0" text="FCU_Demo" image="" font="bold 18.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
+            <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_Demo" title="Details" size="1350.0,800.0"/>
+          </Label>
+
+          <IdBinding id="FCU"/>
+
+          <Label layout="10.0,40.0,330.0,30.0" text="Almas - Level 5" image="" font="16.0pt Calibri" foreground="#757575" halign="left" wordWrapEnabled="true">
+            <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_Demo" title="Details" size="1350.0,800.0"/>
+          </Label>
+
+          <Label layout="400.0,40.0,40.0,30.0" image="" font="28.0pt SansSerif" foreground="#404040">
+            <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_Demo/points/Occupancy">
+              <IBooleanToSimple name="image">
+                <Image name="trueValue" value="module://kitPxHvac/boolean/occupiedTrue.gif"/>
+                <Image name="falseValue" value="module://kitPxHvac/boolean/occupiedFalse.gif"/>
+              </IBooleanToSimple>
+            </ValueBinding>
+          </Label>
+
+          <GridPane layout="330.0,10.0,60.0,60.0" columnCount="1" rowGap="10.0">
+
+            <Label image="" font="14.0pt SansSerif" foreground="#404040">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_Demo/points/Active$20setpoint">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+            <Label image="" font="14.0pt SansSerif" foreground="#404040">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_Demo/points/Space$20Temp">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+          </GridPane>
+
+          <PopupBinding ord="slot:/Drivers/LonNetwork/FCU_Demo" title="Details" size="1350.0,800.0"/>
+
+          <String name="id" value="widget_214b8_23c4a_0"/>
 
         </OverCanvasPane>
 

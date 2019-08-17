@@ -170,7 +170,7 @@
 
           <GridPane name="content">
 
-            <ActiveProExcelExportButton name="ActiveProExcelExportButton" text="EXPORT TO EXCEL" font="20.0pt SansSerif" foreground="white" background="#2e7d32"/>
+            <ActiveProExcelExportButton name="ActiveProExcelExportButton" text="EXPORT TO EXCEL" font="20.0pt SansSerif" foreground="white" background="#2e7d32" configFilePath="file:^defaultModelConfig.xls"/>
 
           </GridPane>
 

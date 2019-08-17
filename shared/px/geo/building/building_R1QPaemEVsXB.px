@@ -82,7 +82,7 @@
 
   <PxInclude name="left" ord="file:^px/menus/left.px"/>
 
-  <BorderPane name="center" padding="0.0" fill="image( source(file:^images/backgrounds/lePlaza.jpg) valign(top) )">
+  <BorderPane name="center" padding="0.0" fill="image( source(file:^images/backgrounds/lePlaza.jpg) halign(left) valign(top) )">
 
     <GridPane name="content" columnCount="1" valign="fill" halign="fill" rowAlign="fill" columnAlign="fill" rowGap="30.0" stretchRow="1" stretchColumn="0">
 

@@ -11,23 +11,17 @@
 
   <CanvasPane viewSize="300.0,150.0">
 
-    <GridPane layout="0.0,0.0,300.0,110.0" columnCount="1" halign="left" rowGap="10.0">
+    <Label layout="10.0,5.0,260.0,40.0" text="$(displayName)" font="bold 16.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
+      <ValueBinding ord="$(slotPathOrd)" hyperlink="$(slotPathOrd)"/>
+    </Label>
 
-      <Label text="$(displayName)" font="bold 16.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
-        <ValueBinding ord="$(slotPathOrd)" hyperlink="$(slotPathOrd)"/>
-      </Label>
+    <Label layout="10.0,45.0,260.0,60.0" text="$(description)" font="14.0pt Calibri Light" foreground="#797979" halign="left" valign="top" wordWrapEnabled="true">
+      <ValueBinding ord="$(slotPathOrd)" hyperlink="$(slotPathOrd)"/>
+    </Label>
 
-      <Label text="$(description)" font="14.0pt Calibri Light" foreground="#797979" halign="left" valign="top" wordWrapEnabled="true">
-        <ValueBinding ord="$(slotPathOrd)" hyperlink="$(slotPathOrd)"/>
-      </Label>
-
-      <Label/>
-
-      <Button text="Modify">
-        <ValueBinding hyperlink="$(pxFileOrd)"/>
-      </Button>
-
-    </GridPane>
+    <Button layout="10.0,110.0,110.0,30.0" text="Modify">
+      <ValueBinding hyperlink="$(pxFileOrd)"/>
+    </Button>
 
   </CanvasPane>
 

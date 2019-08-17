@@ -79,13 +79,13 @@
 <content>
 <ScrollPane>
 
-  <CanvasPane name="content" viewSize="800.0,800.0" scale="fitRatio" minScaleFactor="0.5" maxScaleFactor="1.0">
+  <CanvasPane name="content" viewSize="800.0,800.0" scale="fitRatio" minScaleFactor="0.5" maxScaleFactor="1.0" background="#e1e1e1">
 
-    <Label name="Label2" layout="20.0,270.0,110.0,20.0" text="FCU" font="18.0pt SansSerif" background="#f7f7f7" halign="left"/>
+    <Label name="Label" layout="20.0,270.0,110.0,20.0" text="FCU" font="18.0pt SansSerif" background="#f7f7f7" halign="left"/>
 
-    <Label name="Label4" layout="20.0,130.0,110.0,30.0" text="AHU" font="18.0pt SansSerif" background="#f7f7f7" halign="left"/>
+    <Label name="Label1" layout="20.0,130.0,110.0,30.0" text="AHU" font="18.0pt SansSerif" background="#f7f7f7" halign="left"/>
 
-    <OverCanvasPane name="OverCanvasPane1" layout="20.0,170.0,450.0,80.0" viewSize="450.0,80.0" background="white" overBackground="#1aa1a1a1" radius="8.0px 8.0px 8.0px 8.0px">
+    <OverCanvasPane name="OverCanvasPane" layout="20.0,170.0,450.0,80.0" viewSize="450.0,80.0" background="white" overBackground="#1aa1a1a1" radius="8.0px 8.0px 8.0px 8.0px">
 
       <ValueBinding name="ValueBinding" ord="$(slotPathOrd)" hyperlink="$(slotPathOrd)|view:view"/>
 
@@ -132,17 +132,17 @@
 
     </OverCanvasPane>
 
-    <Label name="Label" layout="490.0,210.0,270.0,40.0" text="Indicate here the relative path to point value&#xa;you want to display. Example: Discharge Air Temp" font="italic 12.0pt SansSerif" background="white" halign="left"/>
+    <Label name="Label2" layout="490.0,210.0,270.0,40.0" text="Indicate here the relative path to point value&#xa;you want to display. Example: Discharge Air Temp" font="italic 12.0pt SansSerif" background="white" halign="left"/>
 
-    <Label name="Label1" layout="410.0,120.0,240.0,40.0" text="Indicate here the relative path to the point &#xa; representing the discharge fan state" font="italic 12.0pt SansSerif" background="white" halign="left"/>
+    <Label name="Label3" layout="410.0,120.0,240.0,40.0" text="Indicate here the relative path to the point &#xa; representing the discharge fan state" font="italic 12.0pt SansSerif" background="white" halign="left"/>
 
     <Line name="Line" stroke="black" geom="490.0,230.0 460.0,230.0"/>
 
     <Line name="Line1" stroke="black" geom="410.0,140.0 390.0,180.0"/>
 
-    <Label name="Label5" layout="20.0,10.0,110.0,30.0" text="default" font="18.0pt SansSerif" background="#f7f7f7" halign="left"/>
+    <Label name="Label4" layout="20.0,10.0,110.0,30.0" text="default" font="18.0pt SansSerif" background="#f7f7f7" halign="left"/>
 
-    <OverCanvasPane name="OverCanvasPane2" layout="20.0,50.0,300.0,70.0" viewSize="300.0,100.0" overBackground="#1ac3c3c3" radius="8.0px 8.0px 8.0px 8.0px">
+    <OverCanvasPane name="OverCanvasPane1" layout="20.0,50.0,300.0,70.0" viewSize="300.0,100.0" overBackground="#1ac3c3c3" radius="8.0px 8.0px 8.0px 8.0px">
 
       <ValueBinding name="ValueBinding" ord="$(slotPathOrd)" hyperlink="$(slotPathOrd)|view:view">
         <IStatusToSimple name="background">
@@ -170,7 +170,7 @@
 
     </OverCanvasPane>
 
-    <OverCanvasPane name="OverCanvasPane" layout="20.0,300.0,450.0,80.0" viewSize="450.0,80.0" background="white" overBackground="#1aa1a1a1" radius="8.0px 8.0px 8.0px 8.0px">
+    <OverCanvasPane name="OverCanvasPane2" layout="20.0,300.0,450.0,80.0" viewSize="450.0,80.0" background="white" overBackground="#1aa1a1a1" radius="8.0px 8.0px 8.0px 8.0px">
 
       <Picture name="Picture" layout="400.0,10.0,40.0,30.0" scale="fitRatio">
         <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)" hyperlink="$(slotPathOrd)|view:view">
@@ -227,7 +227,7 @@
 
     </OverCanvasPane>
 
-    <Label name="Label3" layout="500.0,340.0,270.0,40.0" text="Indicate here the relative path to point value&#xa;you want to display. Example: Discharge Air Temp" font="italic 12.0pt SansSerif" background="white" halign="left"/>
+    <Label name="Label5" layout="500.0,340.0,270.0,40.0" text="Indicate here the relative path to point value&#xa;you want to display. Example: Discharge Air Temp" font="italic 12.0pt SansSerif" background="white" halign="left"/>
 
     <Line name="Line2" stroke="black" geom="500.0,360.0 470.0,360.0"/>
 

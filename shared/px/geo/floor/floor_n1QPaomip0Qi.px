@@ -239,32 +239,6 @@
 
           </GridPane>
 
-          <GridPane layout="360.0,160.0,60.0,40.0" columnCount="1" valign="top" columnAlign="center" rowGap="0.0">
-
-            <Label image="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
-              <PopupBinding ord="station:|slot:/Drivers/LonNetwork/FCU_Demo|view:btibVision:FlexPane" title="D&#xe9;tails" size="1350.0,800.0"/>
-              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_Demo/b$3amaitre">
-                <IBooleanToSimple name="image">
-                  <Image name="trueValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png"/>
-                  <Image name="falseValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_disabled.png"/>
-                </IBooleanToSimple>
-              </ValueBinding>
-            </Label>
-
-            <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
-              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_Demo/points/Space$20Temp">
-                <ObjectToString name="text" format="%out.value%"/>
-              </ValueBinding>
-            </Label>
-
-            <SourceBinding ord="station:|slot:/Drivers/LonNetwork/FCU_Demo"/>
-
-            <IdBinding id="FCU"/>
-
-            <String name="id" value="widget_214b8_6a76_0"/>
-
-          </GridPane>
-
         </CanvasPane>
 
       </CanvasPane>

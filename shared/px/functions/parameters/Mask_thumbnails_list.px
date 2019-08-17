@@ -21,23 +21,17 @@
 
       <CanvasPane viewSize="300.0,150.0">
 
-        <GridPane layout="0.0,0.0,300.0,110.0" columnCount="1" halign="left" rowGap="10.0">
+        <Label layout="10.0,5.0,260.0,40.0" text="Building Mask" image="" font="bold 16.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
+          <ValueBinding ord="slot:/Services/BtibService/resource/Px$20Masks/Building$20Mask" hyperlink="slot:/Services/BtibService/resource/Px$20Masks/Building$20Mask"/>
+        </Label>
 
-          <Label text="Building Mask" image="" font="bold 16.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
-            <ValueBinding ord="slot:/Services/BtibService/resource/Px$20Masks/Building$20Mask" hyperlink="slot:/Services/BtibService/resource/Px$20Masks/Building$20Mask"/>
-          </Label>
+        <Label layout="10.0,45.0,260.0,60.0" text="Mask used when a new building is declared in the NodeCreator (px copy-pasted)" image="" font="14.0pt Calibri Light" foreground="#797979" halign="left" valign="top" wordWrapEnabled="true">
+          <ValueBinding ord="slot:/Services/BtibService/resource/Px$20Masks/Building$20Mask" hyperlink="slot:/Services/BtibService/resource/Px$20Masks/Building$20Mask"/>
+        </Label>
 
-          <Label text="Mask used when a new building is declared in the NodeCreator (px copy-pasted)" image="" font="14.0pt Calibri Light" foreground="#797979" halign="left" valign="top" wordWrapEnabled="true">
-            <ValueBinding ord="slot:/Services/BtibService/resource/Px$20Masks/Building$20Mask" hyperlink="slot:/Services/BtibService/resource/Px$20Masks/Building$20Mask"/>
-          </Label>
-
-          <Label image=""/>
-
-          <Button text="Modify" image="">
-            <ValueBinding hyperlink="file:^resources/demo/buildingMask.px"/>
-          </Button>
-
-        </GridPane>
+        <Button layout="10.0,110.0,110.0,30.0" text="Modify" image="">
+          <ValueBinding hyperlink="file:^resources/demo/buildingMask.px"/>
+        </Button>
 
       </CanvasPane>
 
@@ -53,23 +47,17 @@
 
       <CanvasPane viewSize="300.0,150.0">
 
-        <GridPane layout="0.0,0.0,300.0,110.0" columnCount="1" halign="left" rowGap="10.0">
+        <Label layout="10.0,5.0,260.0,40.0" text="Floor Mask" image="" font="bold 16.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
+          <ValueBinding ord="slot:/Services/BtibService/resource/Px$20Masks/Floor$20Mask" hyperlink="slot:/Services/BtibService/resource/Px$20Masks/Floor$20Mask"/>
+        </Label>
 
-          <Label text="Floor Mask" image="" font="bold 16.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
-            <ValueBinding ord="slot:/Services/BtibService/resource/Px$20Masks/Floor$20Mask" hyperlink="slot:/Services/BtibService/resource/Px$20Masks/Floor$20Mask"/>
-          </Label>
+        <Label layout="10.0,45.0,260.0,60.0" text="Mask used when a new floor is declared in the NodeCreator (px copy-pasted)" image="" font="14.0pt Calibri Light" foreground="#797979" halign="left" valign="top" wordWrapEnabled="true">
+          <ValueBinding ord="slot:/Services/BtibService/resource/Px$20Masks/Floor$20Mask" hyperlink="slot:/Services/BtibService/resource/Px$20Masks/Floor$20Mask"/>
+        </Label>
 
-          <Label text="Mask used when a new floor is declared in the NodeCreator (px copy-pasted)" image="" font="14.0pt Calibri Light" foreground="#797979" halign="left" valign="top" wordWrapEnabled="true">
-            <ValueBinding ord="slot:/Services/BtibService/resource/Px$20Masks/Floor$20Mask" hyperlink="slot:/Services/BtibService/resource/Px$20Masks/Floor$20Mask"/>
-          </Label>
-
-          <Label image=""/>
-
-          <Button text="Modify" image="">
-            <ValueBinding hyperlink="file:^resources/demo/floorMask.px"/>
-          </Button>
-
-        </GridPane>
+        <Button layout="10.0,110.0,110.0,30.0" text="Modify" image="">
+          <ValueBinding hyperlink="file:^resources/demo/floorMask.px"/>
+        </Button>
 
       </CanvasPane>
 
@@ -85,29 +73,49 @@
 
       <CanvasPane viewSize="300.0,150.0">
 
-        <GridPane layout="0.0,0.0,300.0,110.0" columnCount="1" halign="left" rowGap="10.0">
+        <Label layout="10.0,5.0,260.0,40.0" text="AHU Mask" image="" font="bold 16.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
+          <ValueBinding ord="slot:/Services/BtibService/resource/Px$20Masks/AHU$20Mask" hyperlink="slot:/Services/BtibService/resource/Px$20Masks/AHU$20Mask"/>
+        </Label>
 
-          <Label text="AHU Mask" image="" font="bold 16.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
-            <ValueBinding ord="slot:/Services/BtibService/resource/Px$20Masks/AHU$20Mask" hyperlink="slot:/Services/BtibService/resource/Px$20Masks/AHU$20Mask"/>
-          </Label>
+        <Label layout="10.0,45.0,260.0,60.0" text="Mask used when an equipment is defined as an AHU (Nature aspect)" image="" font="14.0pt Calibri Light" foreground="#797979" halign="left" valign="top" wordWrapEnabled="true">
+          <ValueBinding ord="slot:/Services/BtibService/resource/Px$20Masks/AHU$20Mask" hyperlink="slot:/Services/BtibService/resource/Px$20Masks/AHU$20Mask"/>
+        </Label>
 
-          <Label text="Mask used when an equipment is defined as an AHU (Nature aspect)" image="" font="14.0pt Calibri Light" foreground="#797979" halign="left" valign="top" wordWrapEnabled="true">
-            <ValueBinding ord="slot:/Services/BtibService/resource/Px$20Masks/AHU$20Mask" hyperlink="slot:/Services/BtibService/resource/Px$20Masks/AHU$20Mask"/>
-          </Label>
-
-          <Label image=""/>
-
-          <Button text="Modify" image="">
-            <ValueBinding hyperlink="file:^resources/px/masks/ahuMask.px"/>
-          </Button>
-
-        </GridPane>
+        <Button layout="10.0,110.0,110.0,30.0" text="Modify" image="">
+          <ValueBinding hyperlink="file:^resources/px/masks/ahuMask.px"/>
+        </Button>
 
       </CanvasPane>
 
       <CanvasPane viewSize="1800.0,1000.0" scale="fitRatio" minScaleFactor="0.2" maxScaleFactor="0.21">
 
         <PxInclude ord="file:^resources/px/masks/ahuMask.px"/>
+
+      </CanvasPane>
+
+    </GridPane>
+
+    <GridPane rowAlign="top" columnGap="50.0" uniformColumnWidth="true">
+
+      <CanvasPane viewSize="300.0,150.0">
+
+        <Label layout="10.0,5.0,260.0,40.0" text="Subsystem Nav Mask" image="" font="bold 16.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
+          <ValueBinding ord="slot:/Services/BtibService/resource/Px$20Masks/Subsystem$20Nav$20Mask" hyperlink="slot:/Services/BtibService/resource/Px$20Masks/Subsystem$20Nav$20Mask"/>
+        </Label>
+
+        <Label layout="10.0,45.0,260.0,60.0" text="Mask used for each subsystem dedicated page" image="" font="14.0pt Calibri Light" foreground="#797979" halign="left" valign="top" wordWrapEnabled="true">
+          <ValueBinding ord="slot:/Services/BtibService/resource/Px$20Masks/Subsystem$20Nav$20Mask" hyperlink="slot:/Services/BtibService/resource/Px$20Masks/Subsystem$20Nav$20Mask"/>
+        </Label>
+
+        <Button layout="10.0,110.0,110.0,30.0" text="Modify" image="">
+          <ValueBinding hyperlink="file:^px/functions/subsystemNavigation/subsystemNavigationMask.px"/>
+        </Button>
+
+      </CanvasPane>
+
+      <CanvasPane viewSize="1800.0,1000.0" scale="fitRatio" minScaleFactor="0.2" maxScaleFactor="0.21">
+
+        <PxInclude ord="file:^px/functions/subsystemNavigation/subsystemNavigationMask.px"/>
 
       </CanvasPane>
 

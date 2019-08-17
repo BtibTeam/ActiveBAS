@@ -11,7 +11,7 @@
 </import>
 <properties>
 
-  <property name="bqlToWidgetsHandle" type="baja:String" value="242c3">
+  <property name="bqlToWidgetsHandle" type="baja:String" value="2584e">
   </property>
 
 </properties>

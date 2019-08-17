@@ -23,12 +23,6 @@
 
     <CanvasPane viewSize="120.0,30.0" minScaleFactor="0.5" maxScaleFactor="1.0">
 
-      <Label layout="0.0,0.0,120.0,30.0" text="Ground Floor" image="" font="bold 16.0pt Calibri"/>
-
-    </CanvasPane>
-
-    <CanvasPane viewSize="120.0,30.0" minScaleFactor="0.5" maxScaleFactor="1.0">
-
       <Label layout="0.0,0.0,120.0,30.0" text="Level 2" image="" font="bold 16.0pt Calibri"/>
 
     </CanvasPane>
@@ -36,6 +30,12 @@
     <CanvasPane viewSize="120.0,30.0" minScaleFactor="0.5" maxScaleFactor="1.0">
 
       <Label layout="0.0,0.0,120.0,30.0" text="Level 3" image="" font="bold 16.0pt Calibri"/>
+
+    </CanvasPane>
+
+    <CanvasPane viewSize="120.0,30.0" minScaleFactor="0.5" maxScaleFactor="1.0">
+
+      <Label layout="0.0,0.0,120.0,30.0" text="Level 5" image="" font="bold 16.0pt Calibri"/>
 
     </CanvasPane>
 
@@ -52,8 +52,6 @@
       </Picture>
 
     </CanvasPane>
-
-    <NullWidget/>
 
     <GridPane columnCount="1">
 
@@ -83,6 +81,8 @@
 
     <NullWidget/>
 
+    <NullWidget/>
+
     <CanvasPane viewSize="150.0,140.0" minScaleFactor="0.5" maxScaleFactor="1.0">
 
       <Label layout="0.0,0.0,150.0,20.0" text="EXCEL10" image="" font="bold 14.0pt Calibri" wordWrapEnabled="true"/>
@@ -96,8 +96,6 @@
       </Picture>
 
     </CanvasPane>
-
-    <NullWidget/>
 
     <NullWidget/>
 
@@ -127,6 +125,8 @@
 
     </GridPane>
 
+    <NullWidget/>
+
     <CanvasPane viewSize="150.0,140.0" minScaleFactor="0.5" maxScaleFactor="1.0">
 
       <Label layout="0.0,0.0,150.0,20.0" text="ISMA-AAC20" image="" font="bold 14.0pt Calibri" wordWrapEnabled="true"/>
@@ -141,12 +141,16 @@
 
     </CanvasPane>
 
+    <NullWidget/>
+
+    <NullWidget/>
+
     <GridPane columnCount="1">
 
       <CanvasPane viewSize="120.0,30.0" minScaleFactor="0.5" maxScaleFactor="1.0">
 
         <Label layout="0.0,0.0,50.0,30.0" image="" font="bold 18.0pt Calibri" halign="right">
-          <ValueBinding ord="slot:/Home/System$20Navigation/Almas/Ground$20Floor/ISMA$2dAAC20/DownPointsBqlSize/size">
+          <ValueBinding ord="slot:/Home/System$20Navigation/Almas/Level$205/ISMA$2dAAC20/DownPointsBqlSize/size">
             <ObjectToString name="text" format="%.% "/>
             <INumericToSimple name="foreground" map="gx:Brush 0.0:0.5=black;0.5:+inf=red;default=null;"/>
             <INumericToSimple name="blink" map="baja:Boolean 0.0:0.5=false;0.5:+inf=true;default=false;"/>
@@ -154,22 +158,18 @@
         </Label>
 
         <Label layout="50.0,0.0,70.0,30.0" image="" font="bold 18.0pt Calibri" foreground="black" halign="left">
-          <ValueBinding ord="slot:/Home/System$20Navigation/Almas/Ground$20Floor/ISMA$2dAAC20/BqlSize/size">
+          <ValueBinding ord="slot:/Home/System$20Navigation/Almas/Level$205/ISMA$2dAAC20/BqlSize/size">
             <ObjectToString name="text" format="/ %.%"/>
           </ValueBinding>
         </Label>
 
         <Label layout="0.0,0.0,120.0,30.0" image="">
-          <PopupBinding ord="slot:/Home/System$20Navigation/Almas/Ground$20Floor/ISMA$2dAAC20" title="Information" position="10.0,10.0" size="1280.0,900.0"/>
+          <PopupBinding ord="slot:/Home/System$20Navigation/Almas/Level$205/ISMA$2dAAC20" title="Information" position="10.0,10.0" size="1280.0,900.0"/>
         </Label>
 
       </CanvasPane>
 
     </GridPane>
-
-    <NullWidget/>
-
-    <NullWidget/>
 
     <CanvasPane viewSize="150.0,140.0" minScaleFactor="0.5" maxScaleFactor="1.0">
 
@@ -187,12 +187,14 @@
 
     <NullWidget/>
 
+    <NullWidget/>
+
     <GridPane columnCount="1">
 
       <CanvasPane viewSize="120.0,30.0" minScaleFactor="0.5" maxScaleFactor="1.0">
 
         <Label layout="0.0,0.0,50.0,30.0" image="" font="bold 18.0pt Calibri" halign="right">
-          <ValueBinding ord="slot:/Home/System$20Navigation/Almas/Level$202/ISMA$2dFCU$2dHH/DownPointsBqlSize/size">
+          <ValueBinding ord="slot:/Home/System$20Navigation/Almas/Level$205/ISMA$2dFCU$2dHH/DownPointsBqlSize/size">
             <ObjectToString name="text" format="%.% "/>
             <INumericToSimple name="foreground" map="gx:Brush 0.0:0.5=black;0.5:+inf=red;default=null;"/>
             <INumericToSimple name="blink" map="baja:Boolean 0.0:0.5=false;0.5:+inf=true;default=false;"/>
@@ -200,39 +202,13 @@
         </Label>
 
         <Label layout="50.0,0.0,70.0,30.0" image="" font="bold 18.0pt Calibri" foreground="black" halign="left">
-          <ValueBinding ord="slot:/Home/System$20Navigation/Almas/Level$202/ISMA$2dFCU$2dHH/BqlSize/size">
+          <ValueBinding ord="slot:/Home/System$20Navigation/Almas/Level$205/ISMA$2dFCU$2dHH/BqlSize/size">
             <ObjectToString name="text" format="/ %.%"/>
           </ValueBinding>
         </Label>
 
         <Label layout="0.0,0.0,120.0,30.0" image="">
-          <PopupBinding ord="slot:/Home/System$20Navigation/Almas/Level$202/ISMA$2dFCU$2dHH" title="Information" position="10.0,10.0" size="1280.0,900.0"/>
-        </Label>
-
-      </CanvasPane>
-
-    </GridPane>
-
-    <GridPane columnCount="1">
-
-      <CanvasPane viewSize="120.0,30.0" minScaleFactor="0.5" maxScaleFactor="1.0">
-
-        <Label layout="0.0,0.0,50.0,30.0" image="" font="bold 18.0pt Calibri" halign="right">
-          <ValueBinding ord="slot:/Home/System$20Navigation/Almas/Level$203/ISMA$2dFCU$2dHH/DownPointsBqlSize/size">
-            <ObjectToString name="text" format="%.% "/>
-            <INumericToSimple name="foreground" map="gx:Brush 0.0:0.5=black;0.5:+inf=red;default=null;"/>
-            <INumericToSimple name="blink" map="baja:Boolean 0.0:0.5=false;0.5:+inf=true;default=false;"/>
-          </ValueBinding>
-        </Label>
-
-        <Label layout="50.0,0.0,70.0,30.0" image="" font="bold 18.0pt Calibri" foreground="black" halign="left">
-          <ValueBinding ord="slot:/Home/System$20Navigation/Almas/Level$203/ISMA$2dFCU$2dHH/BqlSize/size">
-            <ObjectToString name="text" format="/ %.%"/>
-          </ValueBinding>
-        </Label>
-
-        <Label layout="0.0,0.0,120.0,30.0" image="">
-          <PopupBinding ord="slot:/Home/System$20Navigation/Almas/Level$203/ISMA$2dFCU$2dHH" title="Information" position="10.0,10.0" size="1280.0,900.0"/>
+          <PopupBinding ord="slot:/Home/System$20Navigation/Almas/Level$205/ISMA$2dFCU$2dHH" title="Information" position="10.0,10.0" size="1280.0,900.0"/>
         </Label>
 
       </CanvasPane>
