@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0">
+<px version="1.0" media="workbench:WbPxMedia">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
   <module name="btibCore"/>
   <module name="btibVision"/>
+  <module name="converters"/>
   <module name="gx"/>
   <module name="kitPx"/>
+  <module name="vykonPro"/>
+  <module name="workbench"/>
 </import>
 <properties>
 
@@ -88,53 +91,7 @@
 
       <GridPane name="content" columnCount="3" valign="top" halign="left" rowGap="30.0" columnGap="30.0">
 
-        <IdBinding id="gridPane"/>
-
-        <OverCanvasPane layout="0.0,0.0,300.0,100.0" viewSize="300.0,100.0" background="white" overBackground="#1a6a1b9a" radius="8.0px 8.0px 8.0px 8.0px">
-
-          <ValueBinding hyperlink="station:|slot:/Home/Subsystem$20Navigation/Electricity"/>
-
-          <Picture layout="10.0,20.0,60.0,60.0" image="file:^images/icons/circularShapeViolet.svg" scale="fitRatio"/>
-
-          <Picture layout="25.0,35.0,30.0,30.0" image="" scale="fitRatio">
-            <ValueBinding hyperlink="station:|slot:/Home/Subsystem$20Navigation/Electricity"/>
-            <ValueBinding ord="station:|module://themeBtib/image/svg/subsystem/electricity_w.svg">
-              <OrdToImage name="image"/>
-            </ValueBinding>
-          </Picture>
-
-          <Label layout="90.0,30.0,190.0,30.0" text="Electricity" image="" font="bold 20.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
-            <ValueBinding hyperlink="station:|slot:/Home/Subsystem$20Navigation/Electricity"/>
-          </Label>
-
-          <IdBinding id="subsystemItem"/>
-
-          <String name="id" value="widget_Electricity_23d1c_0"/>
-
-        </OverCanvasPane>
-
-        <OverCanvasPane layout="0.0,0.0,300.0,100.0" viewSize="300.0,100.0" background="white" overBackground="#1a6a1b9a" radius="8.0px 8.0px 8.0px 8.0px">
-
-          <ValueBinding hyperlink="station:|slot:/Home/Subsystem$20Navigation/HVAC"/>
-
-          <Picture layout="10.0,20.0,60.0,60.0" image="file:^images/icons/circularShapeViolet.svg" scale="fitRatio"/>
-
-          <Picture layout="25.0,35.0,30.0,30.0" image="" scale="fitRatio">
-            <ValueBinding hyperlink="station:|slot:/Home/Subsystem$20Navigation/HVAC"/>
-            <ValueBinding ord="station:|module://themeBtib/image/svg/subsystem/hvac_w.svg">
-              <OrdToImage name="image"/>
-            </ValueBinding>
-          </Picture>
-
-          <Label layout="90.0,30.0,190.0,30.0" text="HVAC" image="" font="bold 20.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
-            <ValueBinding hyperlink="station:|slot:/Home/Subsystem$20Navigation/HVAC"/>
-          </Label>
-
-          <IdBinding id="subsystemItem"/>
-
-          <String name="id" value="widget_HVAC_23d1c_0"/>
-
-        </OverCanvasPane>
+        <IdBinding name="IdBinding" id="gridPane"/>
 
       </GridPane>
 

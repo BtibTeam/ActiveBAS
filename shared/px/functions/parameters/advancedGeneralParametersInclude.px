@@ -6,6 +6,7 @@
   <module name="bajaui"/>
   <module name="gx"/>
   <module name="kitPx"/>
+  <module name="vykonPro"/>
   <module name="workbench"/>
 </import>
 <properties>
@@ -116,7 +117,9 @@
       </GenericFieldEditor>
 
       <Label name="Label3" text="  Build your own theme easily" font="italic underline 12.0pt SansSerif" foreground="#282828" halign="left">
-        <ValueBinding name="ValueBinding" hyperlink="https://github.com/BtibTeam/niagara-theme-generator"/>
+        <EnhancedHyperlinkBinding name="EnhancedHyperlinkBinding" hyperlinkFormat="https://github.com/BtibTeam/niagara-theme-generator">
+          <DynamicEnum name="wbTarget" value="1@bajaui:HyperlinkMode"/>
+        </EnhancedHyperlinkBinding>
       </Label>
 
       <Separator name="Separator3"/>
@@ -124,6 +127,30 @@
       <Separator name="Separator4"/>
 
       <Separator name="Separator5"/>
+
+      <Label name="Label9" text="Client Id" font="14.0pt SansSerif" foreground="#282828" halign="left"/>
+
+      <GenericFieldEditor name="GenericFieldEditor2">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="station:|slot:/Home/Map/Map$20Container/clientId"/>
+      </GenericFieldEditor>
+
+      <Label name="Label10" text="  Create an account here" font="italic underline 12.0pt SansSerif" foreground="#282828" halign="left">
+        <EnhancedHyperlinkBinding name="EnhancedHyperlinkBinding" hyperlinkFormat="https://doc.active-framework.com/display/DEN/Creating+and+configuring+an+Arcgis+for+Developers+account">
+          <DynamicEnum name="wbTarget" value="1@bajaui:HyperlinkMode"/>
+        </EnhancedHyperlinkBinding>
+      </Label>
+
+      <Separator name="Separator6"/>
+
+      <Separator name="Separator7"/>
+
+      <Separator name="Separator8"/>
+
+      <Label name="Label11" text="Client Secret" font="14.0pt SansSerif" foreground="#282828" halign="left"/>
+
+      <GenericFieldEditor name="GenericFieldEditor3">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="station:|slot:/Home/Map/Map$20Container/clientSecret"/>
+      </GenericFieldEditor>
 
     </GridPane>
 
