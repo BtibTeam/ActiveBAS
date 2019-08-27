@@ -127,7 +127,7 @@
       <BoundLabelBinding name="BoundLabelBinding" ord="$(slotPathOrd)" hyperlink="$(slotPathOrd)|view:console" statusEffect="none"/>
     </BoundLabel>
 
-    <ValueBinding name="ValueBinding" ord="$(slotPathOrd)" hyperlink="$(slotPathOrd)|view:console"/>
+    <ValueBinding name="ValueBinding" ord="$(slotPathOrd)" degradeBehavior="hide" hyperlink="$(slotPathOrd)|view:console"/>
 
   </OverCanvasPane>
 

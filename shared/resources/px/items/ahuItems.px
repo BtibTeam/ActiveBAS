@@ -107,9 +107,19 @@
 
     </GridPane>
 
-    <Label name="Label" layout="250.0,150.0,70.0,90.0" image="module://kitPxGraphics/Sensors/sensor_mpress.png">
-      <IdBinding name="IdBinding" id="temperatureSetpoint"/>
-    </Label>
+    <Label name="Label1" layout="70.0,70.0,130.0,20.0" text="temperatureSensor" background="#f7f7f7" halign="left"/>
+
+    <BoundLabel name="BoundLabel" layout="250.0,100.0,134.0,99.0">
+      <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)">
+        <IBooleanToSimple name="image">
+          <Image name="trueValue" value="file:^px/kitPxGraphics/Fans/Fans_Horz/Fans_Horz_Right/Fans_Horz_Right_On.gif"/>
+          <Image name="falseValue" value="file:^px/kitPxGraphics/Fans/Fans_Horz/Fans_Horz_Right/Fans_Horz_Right_Off.png"/>
+        </IBooleanToSimple>
+      </ValueBinding>
+      <IdBinding name="IdBinding" id="Fan"/>
+    </BoundLabel>
+
+    <Label name="Label" layout="250.0,70.0,130.0,20.0" text="Fan" background="#f7f7f7" halign="left"/>
 
   </CanvasPane>
 

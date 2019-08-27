@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="btibVision"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+  <module name="vykonPro"/>
+  <module name="workbench"/>
+</import>
+<properties>
+
+  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/h1EJV75C3hPA">
+  </property>
+
+  <property name="siteName" type="baja:String" value="QG">
+  </property>
+
+  <property name="lightLogo" type="gx:Image" value="file:^images/logos/logo_w.svg">
+  </property>
+
+  <property name="centralDarkForeground" type="gx:Brush" value="#232323">
+  </property>
+
+  <property name="centralWhiteBackground" type="gx:Brush" value="white">
+  </property>
+
+  <property name="centralColorForeground" type="gx:Brush" value="#f0f0f0">
+  </property>
+
+  <property name="centralLightColorBackground" type="gx:Brush" value="#546e7a">
+  </property>
+
+  <property name="centralColorBackground" type="gx:Brush" value="#455a64">
+  </property>
+
+  <property name="centralDarkColorBackground" type="gx:Brush" value="#37474f">
+  </property>
+
+  <property name="elementColorBackground" type="gx:Brush" value="#1976d2">
+  </property>
+
+  <property name="elementLightColorBackground" type="gx:Brush" value="#1976d2">
+  </property>
+
+  <property name="elementDarkColorBackground" type="gx:Brush" value="#1565c0">
+  </property>
+
+  <property name="elementLightForeground" type="gx:Brush" value="#f9f9f9">
+  </property>
+
+  <property name="leftForeground" type="gx:Brush" value="#f4f4f4">
+  </property>
+
+  <property name="leftLightBackground" type="gx:Brush" value="#616161">
+  </property>
+
+  <property name="leftColorBackground" type="gx:Brush" value="#424242">
+  </property>
+
+  <property name="leftDarkBackground" type="gx:Brush" value="#212121">
+  </property>
+
+  <property name="headerForegroundColor" type="gx:Brush" value="#f7f7f7">
+  </property>
+
+  <property name="headerLightColorBackground" type="gx:Brush" value="#039be5">
+  </property>
+
+  <property name="headerColorBackground" type="gx:Brush" value="#0288d1">
+  </property>
+
+  <property name="headerDarkColorBackground" type="gx:Brush" value="#0277bd">
+  </property>
+
+  <property name="vueCentraleForegroundNoire" type="gx:Brush" value="black">
+  </property>
+
+</properties>
+<content>
+<ScrollPane>
+
+  <EdgePane name="content">
+
+    <PxInclude name="top" ord="file:^px/menus/header.px"/>
+
+    <PxInclude name="left" ord="file:^px/menus/left.px"/>
+
+    <BorderPane name="center" padding="20.0">
+
+      <GridPane name="content" columnCount="1" valign="top" rowAlign="fill" columnAlign="fill" rowGap="10.0" colorRows="true" bandBrush="white">
+
+        <Label name="Label" text="Define here how to represent a geo element (a building, a floor...) in a parent view.&#xa;The view on the right is an overview of the px containing all the widgets." font="16.0pt Calibri" halign="left"/>
+
+        <Line name="Line" stroke="#a8a8a8" geom="0.0,0.0 700.0,0.0"/>
+
+        <Label name="Label1" text="To define a new element:&#xa; 1. Duplicate an existing resource&#xa; 2. Define the mapping with the Nature model &#xa; 3. Open the px &#xa; 4. Create the new widget, it can be anything &#xa; 5. Add a binding called &#x22;IdBinding&#x22; and give it the widgetId you used in the resource.&#xa; 6. After you made some changes, you will have to init the Nodes/InfoSource that may be affected" font="16.0pt Calibri" halign="left"/>
+
+        <Line name="Line1" stroke="#a8a8a8" geom="0.0,0.0 700.0,0.0"/>
+
+        <GridPane name="GridPane" valign="top" rowAlign="top" columnGap="30.0">
+
+          <PropertySheet name="PropertySheet">
+            <WbViewBinding name="WbViewBinding" ord="slot:"/>
+          </PropertySheet>
+
+          <GridPane name="GridPane" columnCount="1">
+
+            <GridPane name="GridPane" columnGap="30.0">
+
+              <Label name="Label" text="Px overview" font="16.0pt SansSerif"/>
+
+              <Button name="Button" text="Modify Px">
+                <ValueBinding name="ValueBinding" hyperlink="file:^resources/px/items/geoItemsForGeo.px"/>
+              </Button>
+
+            </GridPane>
+
+            <BorderPane name="BorderPane" padding="0.0" border="3.0 solid #404040">
+
+              <PxInclude name="content" ord="file:^resources/px/items/geoItemsForGeo.px">
+                <ValueBinding name="ValueBinding"/>
+                <Brush name="vueCentraleForegroundNoire" value="black"/>
+              </PxInclude>
+
+            </BorderPane>
+
+          </GridPane>
+
+        </GridPane>
+
+      </GridPane>
+
+    </BorderPane>
+
+    <PxInclude name="right" ord="file:^px/menus/right.px"/>
+
+  </EdgePane>
+
+</ScrollPane>
+</content>
+</px>

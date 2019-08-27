@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="140px"
+	 height="120.13px" viewBox="0 0 140 120.13" style="enable-background:new 0 0 140 120.13;" xml:space="preserve">
+<g id="Duct_x5F_Connector_x5F_Corner_x5F_NW">
+	<g>
+		<polygon style="fill:#E7E9EA;" points="70.078,120.13 70,70 30,70 30.078,90.099 30,120.13 		"/>
+		<polygon style="fill:#E7E9EA;" points="0,70.061 140,70.061 140,20.061 0,20.03 		"/>
+		<rect y="69.97" style="fill:#E7E9EA;" width="30" height="50.03"/>
+		<path style="fill:#E7E9EA;" d="M140,20H0L0,1.74C0,1.74,0.333,0,2.125,0S140,0,140,0V20"/>
+		<path style="fill:#DDDFE1;" d="M100,89.375V120H68.493c0,0,0-47.27,0-49.457s1.738-2.11,1.738-2.11"/>
+		<path style="fill:#DDDFE1;" d="M69.115,68.847L100,89.375h40V68.433c0,0-69.02,0-69.77,0S69.115,68.847,69.115,68.847z"/>
+		<path style="fill:#6A7276;" d="M100,91.97c0-1.1,0.9-2,2-2l38,0v-1.51l-39.507-0.024c-1.1-0.002-2,0.897-2,1.997V120H100V91.97z"
+			/>
+		<path style="fill:none;stroke:#EFEFED;stroke-width:0.5;stroke-miterlimit:10;" d="M71.378,65.543"/>
+		<path style="fill:none;stroke:#EFEFED;stroke-width:0.5;stroke-miterlimit:10;" d="M101.378,85.543"/>
+		<path style="fill:none;stroke:#6A7276;stroke-width:0.2;stroke-miterlimit:10;" d="M68.578,68.611"/>
+		<path style="fill:none;stroke:#6A7276;stroke-width:0.2;stroke-miterlimit:10;" d="M98.578,88.611"/>
+		<line style="fill:none;stroke:#ABAAA9;stroke-width:0.6;stroke-miterlimit:10;" x1="70.231" y1="68.433" x2="140" y2="68.433"/>
+		<path style="fill:none;stroke:#ABAAA9;stroke-width:0.6;stroke-miterlimit:10;" d="M68.578,120c0,0,0-47.91,0-49.785
+			c0.059-1.766,1.653-1.782,1.653-1.782"/>
+		<g>
+			
+				<line style="fill:none;stroke:#E6E7E8;stroke-width:0.6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="69.404" y1="69.09" x2="98.633" y2="88.452"/>
+		</g>
+		<path style="fill:#6A7276;" d="M31.507,23.534c0-1.1,0.9-2,2-2l106.492,0v-1.51L32,20c-1.1-0.002-2,0.897-2,1.997V120h1.507
+			V23.534z"/>
+		
+			<line style="fill:none;stroke:#F9F9FA;stroke-width:0.6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="1.262" y1="0.964" x2="30.491" y2="20.325"/>
+	</g>
+</g>
+<g id="Layer_1">
+</g>
+</svg>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="btibVision"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+</import>
+<properties>
+
+  <property name="bqlToWidgetsHandle" type="baja:String" value="22038">
+  </property>
+
+</properties>
+<content>
+<ScrollPane viewportBackground="#fafafa" borderPolicy="never">
+
+  <FlowPane name="content" hgap="30" vgap="30">
+
+    <OverCanvasPane viewSize="300.0,100.0" background="white" overBackground="#1ae7443c" radius="8.0px 8.0px 8.0px 8.0px">
+
+      <ValueBinding ord="slot:/Services/BtibService/resource/Extensions/History$20Extensions" hyperlink="slot:/Services/BtibService/resource/Extensions/History$20Extensions"/>
+
+      <Picture layout="10.0,20.0,60.0,60.0" image="file:^images/icons/circularShapeRed.svg" scale="fitRatio"/>
+
+      <Label layout="85.0,45.0,210.0,45.0" text="Describe when an history extension should be added to a point" image="" font="14.0pt Calibri Light" foreground="#797979" halign="left" valign="top" wordWrapEnabled="true">
+        <ValueBinding ord="slot:/Services/BtibService/resource/Extensions/History$20Extensions" hyperlink="slot:/Services/BtibService/resource/Extensions/History$20Extensions"/>
+      </Label>
+
+      <Picture layout="25.0,35.0,30.0,30.0" image="" scale="fitRatio">
+        <ValueBinding ord="slot:/Services/BtibService/resource/Extensions/History$20Extensions/icon" hyperlink="slot:/Services/BtibService/resource/Extensions/History$20Extensions">
+          <OrdToImage name="image"/>
+        </ValueBinding>
+      </Picture>
+
+      <Label layout="85.0,15.0,210.0,30.0" text="History Extensions" image="" font="bold 16.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
+        <ValueBinding ord="slot:/Services/BtibService/resource/Extensions/History$20Extensions" hyperlink="slot:/Services/BtibService/resource/Extensions/History$20Extensions"/>
+      </Label>
+
+    </OverCanvasPane>
+
+    <OverCanvasPane viewSize="300.0,100.0" background="white" overBackground="#1ae7443c" radius="8.0px 8.0px 8.0px 8.0px">
+
+      <ValueBinding ord="slot:/Services/BtibService/resource/Extensions/Alarm$20Extensions" hyperlink="slot:/Services/BtibService/resource/Extensions/Alarm$20Extensions"/>
+
+      <Picture layout="10.0,20.0,60.0,60.0" image="file:^images/icons/circularShapeRed.svg" scale="fitRatio"/>
+
+      <Label layout="85.0,45.0,210.0,45.0" text="Describe when an history extension should be added to a point" image="" font="14.0pt Calibri Light" foreground="#797979" halign="left" valign="top" wordWrapEnabled="true">
+        <ValueBinding ord="slot:/Services/BtibService/resource/Extensions/Alarm$20Extensions" hyperlink="slot:/Services/BtibService/resource/Extensions/Alarm$20Extensions"/>
+      </Label>
+
+      <Picture layout="25.0,35.0,30.0,30.0" image="" scale="fitRatio">
+        <ValueBinding ord="slot:/Services/BtibService/resource/Extensions/Alarm$20Extensions/icon" hyperlink="slot:/Services/BtibService/resource/Extensions/Alarm$20Extensions">
+          <OrdToImage name="image"/>
+        </ValueBinding>
+      </Picture>
+
+      <Label layout="85.0,15.0,210.0,30.0" text="Alarm Extensions" image="" font="bold 16.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
+        <ValueBinding ord="slot:/Services/BtibService/resource/Extensions/Alarm$20Extensions" hyperlink="slot:/Services/BtibService/resource/Extensions/Alarm$20Extensions"/>
+      </Label>
+
+    </OverCanvasPane>
+
+    <OverCanvasPane viewSize="300.0,100.0" background="white" overBackground="#1ae7443c" radius="8.0px 8.0px 8.0px 8.0px">
+
+      <ValueBinding ord="slot:/Services/BtibService/resource/Extensions/Metering$20Extensions" hyperlink="slot:/Services/BtibService/resource/Extensions/Metering$20Extensions"/>
+
+      <Picture layout="10.0,20.0,60.0,60.0" image="file:^images/icons/circularShapeRed.svg" scale="fitRatio"/>
+
+      <Label layout="85.0,45.0,210.0,45.0" text="Describe when a MeterExt extension should be added to a point" image="" font="14.0pt Calibri Light" foreground="#797979" halign="left" valign="top" wordWrapEnabled="true">
+        <ValueBinding ord="slot:/Services/BtibService/resource/Extensions/Metering$20Extensions" hyperlink="slot:/Services/BtibService/resource/Extensions/Metering$20Extensions"/>
+      </Label>
+
+      <Picture layout="25.0,35.0,30.0,30.0" image="" scale="fitRatio">
+        <ValueBinding ord="slot:/Services/BtibService/resource/Extensions/Metering$20Extensions/icon" hyperlink="slot:/Services/BtibService/resource/Extensions/Metering$20Extensions">
+          <OrdToImage name="image"/>
+        </ValueBinding>
+      </Picture>
+
+      <Label layout="85.0,15.0,210.0,30.0" text="Metering Extensions" image="" font="bold 16.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
+        <ValueBinding ord="slot:/Services/BtibService/resource/Extensions/Metering$20Extensions" hyperlink="slot:/Services/BtibService/resource/Extensions/Metering$20Extensions"/>
+      </Label>
+
+    </OverCanvasPane>
+
+  </FlowPane>
+
+</ScrollPane>
+</content>
+</px>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="510px"
+	 height="90px" viewBox="0 0 510 90" style="enable-background:new 0 0 510 90;" xml:space="preserve">
+<g id="Duct_x5F_Horz_x5F_Long">
+	<g>
+		<g>
+			
+				<rect x="0" y="20.051" transform="matrix(-1 -4.092057e-05 4.092057e-05 -1 509.9984 90.1122)" style="fill:#E7E9EA;" width="510" height="50"/>
+			<g>
+				<polyline style="fill:#E7E9EA;" points="510,20 0,20 0,0 510,0 				"/>
+				<polygon style="fill:#6A7276;" points="510,21.583 0,21.576 0,19.953 510,20.016 				"/>
+				<g>
+					<polyline style="fill:#DDDFE1;" points="510,88.494 0,88.494 0,68.494 510,68.494 					"/>
+					<rect x="0" y="88.433" style="fill:#6A7276;" width="510" height="1.567"/>
+				</g>
+			</g>
+		</g>
+		<line style="fill:none;stroke:#ABAAA9;stroke-width:0.6;stroke-miterlimit:10;" x1="0" y1="68.422" x2="510" y2="68.422"/>
+	</g>
+</g>
+<g id="Layer_1">
+</g>
+</svg>

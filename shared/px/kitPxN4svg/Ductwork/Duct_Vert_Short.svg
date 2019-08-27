@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px"
+	 height="70.004px" viewBox="0 0 100 70.004" style="enable-background:new 0 0 100 70.004;" xml:space="preserve">
+<g id="Duct_x5F_Vert_x5F_Short">
+	<g>
+		<g>
+			<polygon style="fill:#E7E9EA;" points="70.047,70.001 70.078,0.036 30,0 30,70.001 			"/>
+			<g>
+				<g>
+					<polygon style="fill:#DDDFE1;" points="98.493,0.002 98.493,70.001 68.493,70.001 68.493,0.037 					"/>
+					<polygon style="fill:#E7E9EA;" points="30,0.026 30,70.001 0,70.001 0,0.002 					"/>
+				</g>
+				<rect x="30" y="0.003" style="fill:#6A7276;" width="1.507" height="70.001"/>
+				<rect x="98.493" y="0.003" style="fill:#6A7276;" width="1.507" height="69.936"/>
+			</g>
+		</g>
+		<line style="fill:none;stroke:#ABAAA9;stroke-width:0.6;stroke-miterlimit:10;" x1="68.493" y1="70.001" x2="68.493" y2="0.037"/>
+	</g>
+</g>
+<g id="Layer_1">
+</g>
+</svg>

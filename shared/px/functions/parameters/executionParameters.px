@@ -90,17 +90,17 @@
 
     <PxInclude name="left" ord="file:^px/menus/left.px"/>
 
-    <BorderPane name="center" padding="40.0 10.0 10.0 10.0" fill="#37474f">
+    <BorderPane name="center" padding="40.0 10.0 10.0 20.0" fill="#fafafa">
 
       <GridPane name="content" columnCount="1" valign="top" rowGap="30.0">
 
-        <Label name="Label" text="Careful with the executions on start, specifically on a JACE&#xa;It can drastically reduce general performance on quering the alarm database" font="14.0pt SansSerif" foreground="white" halign="left" wordWrapEnabled="true"/>
+        <Label name="Label" text="Careful with the executions on start, specifically on a JACE&#xa;It can drastically reduce general performance on quering the alarm database" font="14.0pt SansSerif" foreground="#282828" halign="left" wordWrapEnabled="true"/>
 
-        <PxInclude name="PxInclude" ord="file:^px/functions/parameters/BqltoWidgets_Update_components_list.px"/>
-
-        <SaveButton name="SaveButton" image="module://icons/x16/save.png" foreground="#484848" background="white">
+        <SaveButton name="SaveButton" image="module://icons/x16/save.png" foreground="#484848" background="white" halign="right">
           <WsAnnotation name="wsAnnotation" value="14,14,8"/>
         </SaveButton>
+
+        <PxInclude name="PxInclude" ord="file:^px/functions/parameters/BqltoWidgets_Update_components_list.px"/>
 
       </GridPane>
 

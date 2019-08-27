@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="btibVision"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+</import>
+<properties>
+
+  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/h1EJV75C3hPA">
+  </property>
+
+  <property name="siteName" type="baja:String" value="QG">
+  </property>
+
+  <property name="lightLogo" type="gx:Image" value="file:^images/logos/logo_w.svg">
+  </property>
+
+  <property name="centralDarkForeground" type="gx:Brush" value="#232323">
+  </property>
+
+  <property name="centralWhiteBackground" type="gx:Brush" value="white">
+  </property>
+
+  <property name="centralColorForeground" type="gx:Brush" value="#f0f0f0">
+  </property>
+
+  <property name="centralLightColorBackground" type="gx:Brush" value="#546e7a">
+  </property>
+
+  <property name="centralColorBackground" type="gx:Brush" value="#455a64">
+  </property>
+
+  <property name="centralDarkColorBackground" type="gx:Brush" value="#37474f">
+  </property>
+
+  <property name="elementColorBackground" type="gx:Brush" value="#1976d2">
+  </property>
+
+  <property name="elementLightColorBackground" type="gx:Brush" value="#1976d2">
+  </property>
+
+  <property name="elementDarkColorBackground" type="gx:Brush" value="#1565c0">
+  </property>
+
+  <property name="elementLightForeground" type="gx:Brush" value="#f9f9f9">
+  </property>
+
+  <property name="leftForeground" type="gx:Brush" value="#f4f4f4">
+  </property>
+
+  <property name="leftLightBackground" type="gx:Brush" value="#616161">
+  </property>
+
+  <property name="leftColorBackground" type="gx:Brush" value="#424242">
+  </property>
+
+  <property name="leftDarkBackground" type="gx:Brush" value="#212121">
+  </property>
+
+  <property name="headerForegroundColor" type="gx:Brush" value="#f7f7f7">
+  </property>
+
+  <property name="headerLightColorBackground" type="gx:Brush" value="#039be5">
+  </property>
+
+  <property name="headerColorBackground" type="gx:Brush" value="#0288d1">
+  </property>
+
+  <property name="headerDarkColorBackground" type="gx:Brush" value="#0277bd">
+  </property>
+
+</properties>
+<content>
+<ScrollPane>
+
+  <CanvasPane name="content" viewSize="800.0,800.0" scale="fitRatio" minScaleFactor="0.5" maxScaleFactor="1.0" background="#e1e1e1">
+
+    <Label name="Label" layout="20.0,270.0,110.0,20.0" text="FCU" font="18.0pt SansSerif" background="#f7f7f7" halign="left"/>
+
+    <Label name="Label1" layout="20.0,130.0,110.0,30.0" text="AHU" font="18.0pt SansSerif" background="#f7f7f7" halign="left"/>
+
+    <OverCanvasPane name="OverCanvasPane" layout="20.0,170.0,450.0,80.0" viewSize="450.0,80.0" background="white" overBackground="#1aa1a1a1" radius="8.0px 8.0px 8.0px 8.0px">
+
+      <ValueBinding name="ValueBinding" ord="$(slotPathOrd)" hyperlink="$(slotPathOrd)|view:view"/>
+
+      <Picture name="Picture" layout="405.0,10.0,30.0,30.0" scale="fitRatio">
+        <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)" hyperlink="$(slotPathOrd)|view:view">
+          <IStatusToSimple name="image">
+            <Image name="disabled" value="module://themeBtib/image/x30/devices/hvac/ahu_disabled.png"/>
+            <Image name="fault" value="module://themeBtib/image/x30/devices/hvac/ahu_fault.png"/>
+            <Image name="down" value="module://themeBtib/image/x30/devices/hvac/ahu_down.png"/>
+            <Image name="alarm" value="module://themeBtib/image/x30/devices/hvac/ahu_alarm.png"/>
+            <Image name="stale" value="module://themeBtib/image/x30/devices/hvac/ahu_ok.png"/>
+            <Image name="overridden" value="module://themeBtib/image/x30/devices/hvac/ahu_overriden.png"/>
+            <Image name="nullStatus" value="module://themeBtib/image/x30/devices/hvac/ahu_disabled.png"/>
+            <Image name="unackedAlarm" value="module://themeBtib/image/x30/devices/hvac/ahu_ok.png"/>
+            <Image name="ok" value="module://themeBtib/image/x30/devices/hvac/ahu_ok.png"/>
+          </IStatusToSimple>
+        </ValueBinding>
+      </Picture>
+
+      <Label name="Label" layout="10.0,10.0,320.0,30.0" text="$(displayName)" font="bold 18.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
+        <ValueBinding name="ValueBinding" ord="$(slotPathOrd)" hyperlink="$(slotPathOrd)|view:view"/>
+      </Label>
+
+      <IdBinding name="IdBinding" id="AHU"/>
+
+      <Label name="Label1" layout="10.0,40.0,330.0,30.0" text="$(location)" font="16.0pt Calibri" foreground="#757575" halign="left" wordWrapEnabled="true">
+        <ValueBinding name="ValueBinding" ord="$(slotPathOrd)" hyperlink="$(slotPathOrd)|view:view"/>
+      </Label>
+
+      <Label name="Label2" layout="350.0,40.0,90.0,30.0" font="28.0pt SansSerif" foreground="#404040">
+        <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)/points/Discharge$20air$20temp">
+          <ObjectToString name="text" format="%out.value%"/>
+        </ValueBinding>
+      </Label>
+
+      <Label name="Label3" layout="355.0,10.0,30.0,30.0">
+        <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)/points/Discharge$20Air$20Fan$20Status">
+          <IBooleanToSimple name="image">
+            <Image name="trueValue" value="module://themeBtib/image/x30/play_c.png"/>
+            <Image name="falseValue" value="module://themeBtib/image/x30/stop_c.png"/>
+          </IBooleanToSimple>
+        </ValueBinding>
+      </Label>
+
+    </OverCanvasPane>
+
+    <Label name="Label2" layout="490.0,210.0,270.0,40.0" text="Indicate here the relative path to point value&#xa;you want to display. Example: Discharge Air Temp" font="italic 12.0pt SansSerif" background="white" halign="left"/>
+
+    <Label name="Label3" layout="410.0,120.0,240.0,40.0" text="Indicate here the relative path to the point &#xa; representing the discharge fan state" font="italic 12.0pt SansSerif" background="white" halign="left"/>
+
+    <Line name="Line" stroke="black" geom="490.0,230.0 460.0,230.0"/>
+
+    <Line name="Line1" stroke="black" geom="410.0,140.0 390.0,180.0"/>
+
+    <Label name="Label4" layout="20.0,10.0,110.0,30.0" text="default" font="18.0pt SansSerif" background="#f7f7f7" halign="left"/>
+
+    <OverCanvasPane name="OverCanvasPane1" layout="20.0,50.0,300.0,70.0" viewSize="300.0,100.0" overBackground="#1ac3c3c3" radius="8.0px 8.0px 8.0px 8.0px">
+
+      <ValueBinding name="ValueBinding" ord="$(slotPathOrd)" hyperlink="station:|$(slotPathOrd)">
+        <IStatusToSimple name="background">
+          <Brush name="disabled" value="#d6d6d6"/>
+          <Brush name="fault" value="#fc7734"/>
+          <Brush name="down" value="#fac600"/>
+          <Brush name="alarm" value="#cf1624"/>
+          <Brush name="stale" value="#d9c09d"/>
+          <Brush name="overridden" value="#bfaddd"/>
+          <Brush name="nullStatus" value="white"/>
+          <Brush name="unackedAlarm" value="white"/>
+          <Brush name="ok" value="white"/>
+        </IStatusToSimple>
+      </ValueBinding>
+
+      <Label name="Label" layout="10.0,20.0,205.0,30.0" text="$(displayName)" font="bold 16.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
+        <ValueBinding name="ValueBinding" ord="$(slotPathOrd)" hyperlink="station:|$(slotPathOrd)"/>
+      </Label>
+
+      <IdBinding name="IdBinding" id="default"/>
+
+      <Label name="Label1" layout="10.0,50.0,240.0,30.0" text="$(location)" font="16.0pt Calibri" foreground="#757575" halign="left" wordWrapEnabled="true">
+        <ValueBinding name="ValueBinding" ord="$(slotPathOrd)" hyperlink="station:|$(slotPathOrd)"/>
+      </Label>
+
+    </OverCanvasPane>
+
+    <OverCanvasPane name="OverCanvasPane2" layout="20.0,300.0,450.0,80.0" viewSize="450.0,80.0" background="white" overBackground="#1aa1a1a1" radius="8.0px 8.0px 8.0px 8.0px">
+
+      <Picture name="Picture" layout="400.0,10.0,40.0,30.0" scale="fitRatio">
+        <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)" hyperlink="$(slotPathOrd)|view:view">
+          <IStatusToSimple name="image">
+            <Image name="disabled" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_disabled.png"/>
+            <Image name="fault" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_fault.png"/>
+            <Image name="down" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_down.png"/>
+            <Image name="alarm" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_alarm.png"/>
+            <Image name="stale" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
+            <Image name="overridden" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_overriden.png"/>
+            <Image name="nullStatus" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_disabled.png"/>
+            <Image name="unackedAlarm" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
+            <Image name="ok" value="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png"/>
+          </IStatusToSimple>
+        </ValueBinding>
+      </Picture>
+
+      <Label name="Label" layout="10.0,10.0,300.0,30.0" text="$(displayName)" font="bold 18.0pt Calibri" foreground="#2b2b2b" halign="left" wordWrapEnabled="true">
+        <PopupBinding name="PopupBinding" ord="$(slotPathOrd)" title="Details" size="1350.0,800.0"/>
+      </Label>
+
+      <IdBinding name="IdBinding" id="FCU"/>
+
+      <Label name="Label1" layout="10.0,40.0,330.0,30.0" text="$(location)" font="16.0pt Calibri" foreground="#757575" halign="left" wordWrapEnabled="true">
+        <PopupBinding name="PopupBinding" ord="$(slotPathOrd)" title="Details" size="1350.0,800.0"/>
+      </Label>
+
+      <Label name="Label2" layout="400.0,40.0,40.0,30.0" font="28.0pt SansSerif" foreground="#404040">
+        <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)/points/Occupancy">
+          <IBooleanToSimple name="image">
+            <Image name="trueValue" value="module://kitPxHvac/boolean/occupiedTrue.gif"/>
+            <Image name="falseValue" value="module://kitPxHvac/boolean/occupiedFalse.gif"/>
+          </IBooleanToSimple>
+        </ValueBinding>
+      </Label>
+
+      <GridPane name="GridPane" layout="330.0,10.0,60.0,60.0" columnCount="1" rowGap="10.0">
+
+        <Label name="Label" font="14.0pt SansSerif" foreground="#404040">
+          <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)/points/Active$20setpoint">
+            <ObjectToString name="text" format="%out.value%"/>
+          </ValueBinding>
+        </Label>
+
+        <Label name="Label1" font="14.0pt SansSerif" foreground="#404040">
+          <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)/points/Space$20Temp">
+            <ObjectToString name="text" format="%out.value%"/>
+          </ValueBinding>
+        </Label>
+
+      </GridPane>
+
+      <PopupBinding name="PopupBinding" ord="$(slotPathOrd)" title="Details" size="1350.0,800.0"/>
+
+    </OverCanvasPane>
+
+    <Label name="Label5" layout="500.0,340.0,270.0,40.0" text="Indicate here the relative path to point value&#xa;you want to display. Example: Discharge Air Temp" font="italic 12.0pt SansSerif" background="white" halign="left"/>
+
+    <Line name="Line2" stroke="black" geom="500.0,360.0 470.0,360.0"/>
+
+  </CanvasPane>
+
+</ScrollPane>
+</content>
+</px>

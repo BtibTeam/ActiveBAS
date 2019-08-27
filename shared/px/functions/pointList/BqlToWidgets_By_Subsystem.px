@@ -26,21 +26,73 @@
       <CanvasPane name="content" viewSize="200.0,200.0" minScaleFactor="0.5" maxScaleFactor="1.0">
 
         <Picture layout="60.0,20.0,80.0,80.0" image="" scale="fitRatio">
-          <ValueBinding ord="module://themeBtib/image/svg/subsystem/hvac_b.svg">
+          <ValueBinding ord="module://themeBtib/image/svg/subsystem/elevator_b.svg">
             <OrdToImage name="image"/>
           </ValueBinding>
         </Picture>
 
-        <Label layout="0.0,120.0,200.0,40.0" text="HVAC" image="" font="16.0pt Calibri" foreground="#37474f" wordWrapEnabled="true"/>
+        <Label layout="0.0,120.0,200.0,40.0" text="Elevators" image="" font="16.0pt Calibri" foreground="#37474f" wordWrapEnabled="true"/>
 
         <Label layout="20.0,160.0,160.0,40.0" image="" font="bold 18.0pt Calibri" foreground="#37474f">
-          <ValueBinding ord="slot:/Home/Point$20Lists/By$20Subsystem/HVAC/BqlSize">
+          <ValueBinding ord="slot:/Home/Point$20Lists/By$20Subsystem/Elevators/BqlSize">
             <ObjectToString name="text" format="%Size%"/>
           </ValueBinding>
         </Label>
 
         <Label layout="0.0,0.0,200.0,200.0" image="" foreground="#37474f">
-          <ValueBinding ord="slot:" hyperlink="station:|slot:/Home/Point$20Lists/By$20Subsystem/HVAC"/>
+          <ValueBinding ord="slot:" hyperlink="station:|slot:/Home/Point$20Lists/By$20Subsystem/Elevators"/>
+        </Label>
+
+      </CanvasPane>
+
+    </OverBorderPane>
+
+    <OverBorderPane fill="#fafafa" overFill="#ebebeb" radius="10.0px 10.0px 10.0px 10.0px">
+
+      <CanvasPane name="content" viewSize="200.0,200.0" minScaleFactor="0.5" maxScaleFactor="1.0">
+
+        <Picture layout="60.0,20.0,80.0,80.0" image="" scale="fitRatio">
+          <ValueBinding ord="module://themeBtib/image/svg/subsystem/electricity_b.svg">
+            <OrdToImage name="image"/>
+          </ValueBinding>
+        </Picture>
+
+        <Label layout="0.0,120.0,200.0,40.0" text="Electricity" image="" font="16.0pt Calibri" foreground="#37474f" wordWrapEnabled="true"/>
+
+        <Label layout="20.0,160.0,160.0,40.0" image="" font="bold 18.0pt Calibri" foreground="#37474f">
+          <ValueBinding ord="slot:/Home/Point$20Lists/By$20Subsystem/Electricity/BqlSize">
+            <ObjectToString name="text" format="%Size%"/>
+          </ValueBinding>
+        </Label>
+
+        <Label layout="0.0,0.0,200.0,200.0" image="" foreground="#37474f">
+          <ValueBinding ord="slot:" hyperlink="station:|slot:/Home/Point$20Lists/By$20Subsystem/Electricity"/>
+        </Label>
+
+      </CanvasPane>
+
+    </OverBorderPane>
+
+    <OverBorderPane fill="#fafafa" overFill="#ebebeb" radius="10.0px 10.0px 10.0px 10.0px">
+
+      <CanvasPane name="content" viewSize="200.0,200.0" minScaleFactor="0.5" maxScaleFactor="1.0">
+
+        <Picture layout="60.0,20.0,80.0,80.0" image="" scale="fitRatio">
+          <ValueBinding ord="module://themeBtib/image/svg/subsystem/lighting_b.svg">
+            <OrdToImage name="image"/>
+          </ValueBinding>
+        </Picture>
+
+        <Label layout="0.0,120.0,200.0,40.0" text="Lighting" image="" font="16.0pt Calibri" foreground="#37474f" wordWrapEnabled="true"/>
+
+        <Label layout="20.0,160.0,160.0,40.0" image="" font="bold 18.0pt Calibri" foreground="#37474f">
+          <ValueBinding ord="slot:/Home/Point$20Lists/By$20Subsystem/Lighting/BqlSize">
+            <ObjectToString name="text" format="%Size%"/>
+          </ValueBinding>
+        </Label>
+
+        <Label layout="0.0,0.0,200.0,200.0" image="" foreground="#37474f">
+          <ValueBinding ord="slot:" hyperlink="station:|slot:/Home/Point$20Lists/By$20Subsystem/Lighting"/>
         </Label>
 
       </CanvasPane>
@@ -67,6 +119,32 @@
 
         <Label layout="0.0,0.0,200.0,200.0" image="" foreground="#37474f">
           <ValueBinding ord="slot:" hyperlink="station:|slot:/Home/Point$20Lists/By$20Subsystem/Plumbing"/>
+        </Label>
+
+      </CanvasPane>
+
+    </OverBorderPane>
+
+    <OverBorderPane fill="#fafafa" overFill="#ebebeb" radius="10.0px 10.0px 10.0px 10.0px">
+
+      <CanvasPane name="content" viewSize="200.0,200.0" minScaleFactor="0.5" maxScaleFactor="1.0">
+
+        <Picture layout="60.0,20.0,80.0,80.0" image="" scale="fitRatio">
+          <ValueBinding ord="module://themeBtib/image/svg/subsystem/hvac_b.svg">
+            <OrdToImage name="image"/>
+          </ValueBinding>
+        </Picture>
+
+        <Label layout="0.0,120.0,200.0,40.0" text="HVAC" image="" font="16.0pt Calibri" foreground="#37474f" wordWrapEnabled="true"/>
+
+        <Label layout="20.0,160.0,160.0,40.0" image="" font="bold 18.0pt Calibri" foreground="#37474f">
+          <ValueBinding ord="slot:/Home/Point$20Lists/By$20Subsystem/HVAC/BqlSize">
+            <ObjectToString name="text" format="%Size%"/>
+          </ValueBinding>
+        </Label>
+
+        <Label layout="0.0,0.0,200.0,200.0" image="" foreground="#37474f">
+          <ValueBinding ord="slot:" hyperlink="station:|slot:/Home/Point$20Lists/By$20Subsystem/HVAC"/>
         </Label>
 
       </CanvasPane>

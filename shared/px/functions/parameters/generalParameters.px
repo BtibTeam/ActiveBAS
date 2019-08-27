@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0">
+<px version="1.0" media="workbench:WbPxMedia">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
+  <module name="converters"/>
   <module name="gx"/>
   <module name="kitPx"/>
+  <module name="vykonPro"/>
+  <module name="wbutil"/>
   <module name="workbench"/>
 </import>
 <properties>
@@ -83,47 +86,29 @@
 
     <PxInclude name="left" ord="file:^px/menus/left.px"/>
 
-    <CanvasPane name="center" viewSize="1300.0,800.0" minScaleFactor="0.5" maxScaleFactor="1.0" valign="top" background="#455a64">
+    <BorderPane name="center" padding="20.0" fill="#f7f7f7">
 
-      <Label layout="30.0,70.0,330.0,20.0" text="Set here the main parameters of the station" font="bold 12.0pt SansSerif" foreground="white" halign="left"/>
+      <GridPane name="content" columnCount="1" valign="top" halign="fill" columnAlign="fill" rowGap="20.0" stretchColumn="0">
 
-      <GridPane layout="30.0,110.0,pref,pref" columnAlign="fill" rowGap="10.0" columnGap="10.0">
+        <BorderPane name="BorderPane" padding="20.0 10.0 0.0 10.0">
 
-        <Label text="Geographic Navigation Mode" font="14.0pt SansSerif" foreground="white" halign="left"/>
+          <Label name="content" text="Main parameters of the station" font="bold 22.0pt Calibri" foreground="#282828" halign="left"/>
 
-        <GenericFieldEditor>
-          <WbFieldEditorBinding ord="slot:geographicNavigationMode"/>
-        </GenericFieldEditor>
+        </BorderPane>
 
-        <Separator/>
+        <PxInclude name="PxInclude" ord="file:^px/functions/parameters/simpleGeneralParametersInclude.px"/>
 
-        <Separator/>
+        <BorderPane name="BorderPane1" padding="20.0 10.0 0.0 10.0">
 
-        <Label text="Station theme" font="14.0pt SansSerif" foreground="white" halign="left"/>
+          <Label name="content" text="Advanced parameters of the station" font="bold 22.0pt Calibri" foreground="#282828" halign="left"/>
 
-        <GenericFieldEditor>
-          <WbFieldEditorBinding ord="slot:theme"/>
-        </GenericFieldEditor>
+        </BorderPane>
 
-        <Separator/>
-
-        <Separator/>
-
-        <Label text="Site name (if several buildings)" font="14.0pt SansSerif" foreground="white" halign="left"/>
-
-        <GenericFieldEditor>
-          <WbFieldEditorBinding ord="slot:siteName"/>
-        </GenericFieldEditor>
+        <PxInclude name="PxInclude1" ord="file:^px/functions/parameters/advancedGeneralParametersInclude.px"/>
 
       </GridPane>
 
-      <SaveButton layout="440.0,60.0,100.0,30.0" image="module://icons/x16/save.png" foreground="#484848" background="white">
-        <WsAnnotation name="wsAnnotation" value="14,14,8"/>
-      </SaveButton>
-
-    </CanvasPane>
-
-    <PxInclude name="right" ord="file:^px/menus/right.px"/>
+    </BorderPane>
 
   </EdgePane>
 

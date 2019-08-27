@@ -1,23 +1,29 @@
-# Active-StandAlone
-BMS boiler plate station based on the [Active-Framework](https://active-framework.com). Active is an appliance Framework dedicated to industrialize applications on Niagara by automating a lot of tasks. This boiler plate is dedicated to a tradionnal BMS application. It includes the following features:
-- Geographic and System navigation
+# ActiveBAS
+BAS boiler plate station based on [Active-Framework](https://active-framework.com). Active is an appliance Framework dedicated to industrialize applications on Niagara by automating a lot of tasks. This boiler plate is dedicated to a tradionnal BAS application. It includes the following features:
+- Geographic and System and Subsystem navigation
 - Alarm management by subsystems (HVAC, Plumbing...)
-- User rights management by subsystems
-- Detailed view on devices and points (Automated dashboard views)
-- Point list per status and subsystem
-
-You will also find:
+- Automated user rights management by subsystems
+- Automated detailed views on devices and points
+- Automated Point list per status and subsystem
 - Dashboards capabilities for alarms and energy
 - A kiosk (to display on a tv)
 - Advanced tagging features based on the project [BSO](https://bso-project.org) (Building Semantic Ontology) which is based on [Haystack](https://project-haystack.org)
 
-All of the station can be personalized as the result is mainly Niagara vanilla components and widgets.
+All of the station can be easily personalized as the result is mainly Niagara vanilla components and widgets.
 
-## Installation
+## Discover the station
+There is a dedicated free e-learning program to discover all the features of the station.
+Available here: [ActiveBAS E-Learning](https://active-framework.360learning.com/channel/5a82e973da496870db3689d7/Active_Framework/course/play/5d56bb45abe71539c7389ece/program/5d56f79c5a421929684ca604)
 
-To use the station:
-- Install the latest Active-Framework modules (min version 46.10.0)
-- Download the station from the doc platform
+## Installation and set up
+To set up the station:
+- Install the latest Active-Framework modules (min version 46.13.0). [Downloads](https://download.active-framework.com)
+- Install the station (available also in the downloads page)
+- Choose whether you want to set up a station for a new project or for a demo (to explore and showcase its features)
+![Project assistant](https://user-images.githubusercontent.com/24372104/63809446-9bb65680-c922-11e9-883b-6e9a3c44378c.JPG)
+
+- To start a new project, follow the step by step tutorial to save a large amount of time
+![Project assistant 2](https://user-images.githubusercontent.com/24372104/63809644-2434f700-c923-11e9-9a2c-537087f7a7b3.JPG)
 
 ## Screenshots
 

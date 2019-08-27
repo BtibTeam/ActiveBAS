@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="gx"/>
+</import>
+<properties>
+
+  <property name="bqlToWidgetsHandle" type="baja:String" value="2389f">
+  </property>
+
+</properties>
+<content>
+<ScrollPane viewportBackground="#fafafa" borderPolicy="never">
+
+  <FlowPane name="content" hgap="30" vgap="30">
+
+    <CanvasPane viewSize="120.0,30.0" minScaleFactor="0.5" maxScaleFactor="1.0">
+
+      <Label layout="0.0,0.0,120.0,30.0" text="IconFolder" image="" font="bold 16.0pt Calibri"/>
+
+    </CanvasPane>
+
+    <CanvasPane viewSize="120.0,30.0" minScaleFactor="0.5" maxScaleFactor="1.0">
+
+      <Label layout="0.0,0.0,120.0,30.0" text="IconFolder1" image="" font="bold 16.0pt Calibri"/>
+
+    </CanvasPane>
+
+  </FlowPane>
+
+</ScrollPane>
+</content>
+</px>
