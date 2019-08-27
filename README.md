@@ -64,7 +64,7 @@ To set up the station:
 ![Temperature Reset](https://user-images.githubusercontent.com/24372104/57019772-b522ec80-6c27-11e9-810f-af9d1d7b18f1.png)
 
 ### Login
-![Login](https://user-images.githubusercontent.com/24372104/57019847-ddaae680-6c27-11e9-9113-48654d3d62cb.png)7
+![Login](https://user-images.githubusercontent.com/24372104/57019847-ddaae680-6c27-11e9-9113-48654d3d62cb.png)
 
 ### Strategies
 Here is an example of a strategy to automate integration tasks
