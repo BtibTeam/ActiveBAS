@@ -83,10 +83,10 @@
 
     <Label name="Label" layout="140.0,50.0,60.0,50.0" image="module://themeBtib/image/x30/devices/electricity/powerMeasurementDevice_ok.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
       <IdBinding name="IdBinding" id="Meter"/>
-      <SourceBinding name="SourceBinding" ord="station:|$(slotPathOrd)"/>
       <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)">
         <ObjectToString name="text" format="%displayName%"/>
       </ValueBinding>
+      <PopupBinding name="PopupBinding" ord="station:|$(slotPathOrd)" title="Details" size="1350.0,800.0"/>
     </Label>
 
     <Label name="Label1" layout="240.0,50.0,70.0,50.0" image="module://themeBtib/image/x30/devices/hvac/ahu_ok.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
