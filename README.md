@@ -57,6 +57,9 @@ To set up the station:
 ### Alarm Statistics
 ![Alarm Statistics](https://user-images.githubusercontent.com/24372104/57019574-3c239500-6c27-11e9-9927-b0e44e9ad628.png)
 
+### Dashboard
+![Dashboard](https://user-images.githubusercontent.com/24372104/65385986-e6ff3180-dd35-11e9-8c54-4bae43406627.JPG)
+
 ### Map
 ![Map](https://user-images.githubusercontent.com/24372104/57019622-5c535400-6c27-11e9-8629-36be99f7ddfc.png)
 
@@ -64,7 +67,7 @@ To set up the station:
 ![Temperature Reset](https://user-images.githubusercontent.com/24372104/57019772-b522ec80-6c27-11e9-810f-af9d1d7b18f1.png)
 
 ### Login
-![Login](https://user-images.githubusercontent.com/24372104/57019847-ddaae680-6c27-11e9-9113-48654d3d62cb.png)7
+![Login](https://user-images.githubusercontent.com/24372104/57019847-ddaae680-6c27-11e9-9113-48654d3d62cb.png)
 
 ### Strategies
 Here is an example of a strategy to automate integration tasks
