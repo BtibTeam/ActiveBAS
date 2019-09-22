@@ -57,6 +57,9 @@ To set up the station:
 ### Alarm Statistics
 ![Alarm Statistics](https://user-images.githubusercontent.com/24372104/57019574-3c239500-6c27-11e9-9927-b0e44e9ad628.png)
 
+### Dashboard
+![Dashboard](https://user-images.githubusercontent.com/24372104/65385986-e6ff3180-dd35-11e9-8c54-4bae43406627.JPG)
+
 ### Map
 ![Map](https://user-images.githubusercontent.com/24372104/57019622-5c535400-6c27-11e9-8629-36be99f7ddfc.png)
 

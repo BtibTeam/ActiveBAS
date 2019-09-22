@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="gx"/>
+  <module name="jxBrowser"/>
+  <module name="workbench"/>
+</import>
+<content>
+<WebWidget js="view:btibVision:LiveChartView">
+  <WbViewBinding ord="slot:"/>
+  <Boolean name="displayLegend" f="3" value="true"/>
+  <Boolean name="displayTitle" f="3" value="true"/>
+  <Boolean name="displayMenu" f="3" value="true"/>
+  <Color name="legendForeground" f="3" value="#c6c7c7"/>
+  <Color name="chartBackground" f="3" value="#2c3034"/>
+  <Double name="chartProportion" f="3" value="85.0"/>
+</WebWidget>
+</content>
+</px>
