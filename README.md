@@ -6,7 +6,7 @@ BAS boiler plate station based on [Active-Framework](https://active-framework.co
 - Automated detailed views on devices and points
 - Automated Point list per status and subsystem
 - Dashboards capabilities for alarms and energy
-- A kiosk (to display on a tv)
+- A kiosk (to display on a tv screen)
 - Advanced tagging features based on the project [BSO](https://bso-project.org) (Building Semantic Ontology) which is based on [Haystack](https://project-haystack.org)
 
 All of the station can be easily personalized as the result is mainly Niagara vanilla components and widgets.
@@ -38,6 +38,9 @@ To set up the station:
 
 ### Dashboard
 ![Dashboard](https://user-images.githubusercontent.com/24372104/57018862-39c03b80-6c25-11e9-860e-2e3d2e84ceb7.png)
+
+### Chart Builder
+![Chart Builder presentation](https://user-images.githubusercontent.com/24372104/69919194-abda5680-147a-11ea-9bbf-8254f1f049e4.gif)
 
 ### Point List
 ![Point List](https://user-images.githubusercontent.com/24372104/57018895-5492b000-6c25-11e9-8858-fe0899e7645f.png)

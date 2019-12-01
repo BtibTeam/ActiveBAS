@@ -183,13 +183,13 @@
           <ValueBinding name="ValueBinding" hyperlink="https://github.com/BtibTeam/niagara-theme-generator"/>
         </Label>
 
-        <CanvasPane name="CanvasPane" viewSize="1920.0,600.0" scale="fitRatio" minScaleFactor="0.1" maxScaleFactor="0.11">
+        <CanvasPane name="CanvasPane" viewSize="400.0,200.0" scale="fitRatio" minScaleFactor="0.1" maxScaleFactor="0.11">
 
           <ValueBinding name="ValueBinding" ord="station:|slot:/Home/Station$20parameters/General$20Parameters/Main$20Parameters/homePicture">
             <PassThrough name="background"/>
           </ValueBinding>
 
-          <PopupBinding name="PopupBinding" ord="file:^px/homeHeader.px" title="Home header" size="1920.0,600.0"/>
+          <PopupBinding name="PopupBinding" ord="file:^px/homeHeader.px" title="Home header" size="1920.0,1080.0"/>
 
         </CanvasPane>
 
